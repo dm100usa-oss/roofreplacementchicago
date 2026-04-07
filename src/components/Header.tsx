@@ -30,7 +30,7 @@ export default function Header() {
 
   return (
     <>
-      <div className={styles.langBar}>
+      <div className={isEs ? styles.langBarEs : styles.langBar}>
         <span>{isEs ? 'También disponible en' : 'Also available in'}</span>
         <Link href={togglePath}>{isEs ? 'English' : 'Español'}</Link>
       </div>

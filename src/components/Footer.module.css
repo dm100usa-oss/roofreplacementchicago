@@ -1,7 +1,4 @@
-.footer {
-  background: #1A1A2E;
-  padding: 1.75rem 1.25rem 1.5rem;
-}
+.footer { background: var(--navy); padding: 1.75rem 1.25rem 1.5rem; }
 .inner { max-width: var(--max-width); margin: 0 auto; }
 
 .links {
@@ -26,17 +23,17 @@
   line-height: 1.6;
   margin-bottom: .875rem;
   padding-bottom: .875rem;
-  border-bottom: 1px solid #2D2D4E;
+  border-bottom: 1px solid #1a3a5c;
 }
+.disclosure { font-size: 11px; color: #6B7280; line-height: 1.6; margin-bottom: .875rem; }
+.copy { font-size: 11px; color: #4B5563; }
 
-.disclosure {
-  font-size: 11px;
-  color: #6B7280;
-  line-height: 1.6;
-  margin-bottom: .875rem;
-}
-
-.copy {
-  font-size: 11px;
-  color: #4B5563;
+/* ═══ DESKTOP 1024px+ ════════════════════════════════════ */
+@media (min-width: 1024px) {
+  .footer { padding: 2.5rem 2rem 2rem; }
+  .links { gap: .5rem; }
+  .links a { font-size: 13px; }
+  .disclaimer { font-size: 12px; }
+  .disclosure { font-size: 12px; }
+  .copy { font-size: 12px; }
 }

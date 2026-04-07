@@ -1,4 +1,4 @@
-/* HERO */
+/* ─── HERO ─────────────────────────────────────────────────── */
 .hero {
   background: var(--white);
   padding: 2rem 1.25rem 1.75rem;
@@ -6,46 +6,35 @@
 }
 .heroInner { max-width: var(--max-width); margin: 0 auto; }
 
-.heroInner h1 {
+.heroContent {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.heroLeft { text-align: center; }
+.heroLeft h1 {
   font-size: 22px;
   font-weight: 900;
   color: var(--text);
   line-height: 1.25;
   margin-bottom: .75rem;
   letter-spacing: -.01em;
-  text-align: center;
 }
-
-.heroSubBlock {
-  text-align: center;
-  margin-bottom: 1.5rem;
-}
-
-.heroSubBlock p { line-height: 1.6; margin: 0 0 .5rem; }
-
-.heroP1 { font-size: 18px; font-weight: 700; color: var(--text); }
-.heroP2 { font-size: 15px; color: var(--text-muted); }
-
-.factors {
-  display: flex;
-  gap: .5rem;
-  flex-wrap: wrap;
-  justify-content: center;
+.heroSubtitle {
+  font-size: 15px;
+  color: var(--text-muted);
+  line-height: 1.65;
   margin-bottom: 1rem;
 }
-
-.factor {
-  display: flex;
-  align-items: center;
-  background: var(--blue-light);
-  border: 1px solid #BFDBFE;
-  border-radius: 20px;
-  padding: 5px 12px;
-  font-size: 13px;
+.heroCallout {
+  font-size: 15px;
   font-weight: 700;
   color: var(--blue);
-  white-space: nowrap;
+  margin-bottom: 0;
 }
+
+
+.heroRight { display: flex; flex-direction: column; align-items: center; }
 
 .btnCall {
   display: block;
@@ -71,7 +60,6 @@
   margin-top: .625rem;
   flex-wrap: wrap;
 }
-
 .btnCallNoteItem {
   font-size: 12px;
   font-weight: 500;
@@ -79,11 +67,8 @@
   white-space: nowrap;
 }
 
-/* EXPERT STRIP */
-.expertStrip {
-  background: var(--text);
-  padding: 1rem 1.25rem;
-}
+/* ─── EXPERT STRIP ──────────────────────────────────────────── */
+.expertStrip { background: var(--navy); padding: 1rem 1.25rem; }
 .expertInner {
   max-width: var(--max-width);
   margin: 0 auto;
@@ -92,27 +77,28 @@
   gap: .5rem;
   flex-wrap: wrap;
 }
-.expertItem { text-align: center; flex: 1; min-width: 100px; }
+.expertItem { text-align: center; flex: 1; min-width: 90px; }
 .expertNum { font-size: 18px; font-weight: 900; color: #fff; letter-spacing: -.02em; }
 .expertLabel { font-size: 10px; color: #9CA3AF; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; margin-top: 2px; }
 
-/* WHY US */
+/* ─── WHY US ────────────────────────────────────────────────── */
 .whyUs { padding: 1.75rem 1.25rem; background: var(--bg); }
 .whyInner { max-width: var(--max-width); margin: 0 auto; }
 .sectionLabel { font-size: 12px; font-weight: 700; letter-spacing: .09em; text-transform: uppercase; color: var(--blue); margin-bottom: .875rem; }
 .whyTitle { font-size: 19px; font-weight: 900; color: var(--text); margin-bottom: 1.25rem; letter-spacing: -.01em; }
-.whyGrid { display: flex; flex-direction: column; gap: .75rem; }
+.whyGrid { display: grid; grid-template-columns: 1fr; gap: .75rem; }
 .whyCard { background: var(--white); border-radius: var(--radius); padding: 1rem 1.125rem; box-shadow: var(--shadow); border: 1px solid var(--border); }
 .whyCard strong { display: block; font-size: 14px; font-weight: 800; color: var(--text); margin-bottom: 4px; }
-.whyCard p { font-size: 13px; color: var(--text-muted); line-height: 1.55; }
+.whyCard p { font-size: 13px; color: var(--text-muted); line-height: 1.55; margin: 0; }
 
-/* COMPANIES */
+/* ─── COMPANIES ─────────────────────────────────────────────── */
 .companies { padding: 0 1.25rem 1.5rem; background: var(--bg); }
 .companiesInner { max-width: var(--max-width); margin: 0 auto; }
 .rankedLabel { font-size: 12px; font-weight: 700; letter-spacing: .09em; text-transform: uppercase; color: var(--blue); margin-bottom: 1rem; padding-top: 1.5rem; }
+.cardsGrid { display: grid; grid-template-columns: 1fr; }
 
-/* CTA */
-.cta { background: #1A1A2E; padding: 1.75rem 1.25rem; }
+/* ─── CTA ───────────────────────────────────────────────────── */
+.cta { background: var(--navy); padding: 1.75rem 1.25rem; }
 .ctaInner { max-width: var(--max-width); margin: 0 auto; text-align: center; }
 .ctaInner h2 { font-size: 21px; font-weight: 900; color: #fff; margin-bottom: .5rem; letter-spacing: -.01em; }
 .ctaInner p { font-size: 13px; color: #9CA3AF; margin-bottom: 1.25rem; line-height: 1.6; }
@@ -126,41 +112,114 @@
 }
 .btnCallCta:hover { background: var(--blue-dark); }
 
-/* FAQ */
+/* ─── FAQ ───────────────────────────────────────────────────── */
 .faq { padding: 1.75rem 1.25rem; background: var(--white); border-top: 1px solid var(--border); }
 .faqInner { max-width: var(--max-width); margin: 0 auto; }
 .faqTitle { font-size: 19px; font-weight: 900; color: var(--text); margin-bottom: .5rem; letter-spacing: -.01em; }
 .faqSub { font-size: 13px; color: var(--text-muted); margin-bottom: 1.25rem; line-height: 1.5; }
 .faqItem { background: var(--bg); border-radius: var(--radius); border: 1px solid var(--border); margin-bottom: .625rem; overflow: hidden; }
-.faqQ { width: 100%; padding: 1rem 1.125rem; font-size: 14px; font-weight: 700; color: var(--text); cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; }
+.faqQ { width: 100%; padding: 1rem 1.125rem; font-size: 14px; font-weight: 700; color: var(--text); cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; gap: .75rem; }
 .faqQ::-webkit-details-marker { display: none; }
 .faqQ::after { content: '+'; font-size: 18px; color: var(--blue); flex-shrink: 0; transition: transform .2s; font-weight: 400; }
 details[open] .faqQ::after { transform: rotate(45deg); }
 .faqA { padding: 0 1.125rem 1rem; font-size: 13px; color: var(--text-muted); line-height: 1.65; }
 
-/* HOW WE RANK */
+/* ─── HOW WE RANK ───────────────────────────────────────────── */
 .howRank { padding: 1.75rem 1.25rem; background: var(--bg); border-top: 1px solid var(--border); }
 .howRankInner { max-width: var(--max-width); margin: 0 auto; }
 .howRankText { font-size: 14px; color: var(--text-muted); line-height: 1.65; }
 
-/* TABLET */
+/* ═══ TABLET 768px+ ═══════════════════════════════════════════ */
 @media (min-width: 768px) {
-  .heroInner h1 { font-size: 30px; }
-  .heroP1 { font-size: 22px; }
-  .heroP2 { font-size: 17px; }
-  .whyGrid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+  .hero { padding: 2.5rem 1.5rem 2rem; }
+  .heroLeft h1 { font-size: 30px; }
+  .heroP1 { font-size: 20px; }
+  .heroP2 { font-size: 16px; }
+  .btnCall { font-size: 18px; }
   .expertNum { font-size: 22px; }
+  .expertLabel { font-size: 11px; }
+  .whyGrid { grid-template-columns: 1fr 1fr; gap: 1rem; }
+  .whyTitle { font-size: 22px; }
+  .faqTitle { font-size: 22px; }
+  .ctaInner h2 { font-size: 24px; }
 }
 
-/* DESKTOP */
+/* ═══ DESKTOP 1024px+ ═════════════════════════════════════════ */
 @media (min-width: 1024px) {
-  .heroInner h1 { font-size: 38px; }
-  .hero { padding: 3rem 1.25rem 2.5rem; }
-  .heroP1 { font-size: 24px; }
-  .heroP2 { font-size: 18px; }
-  .btnCall { font-size: 19px; padding: 20px; max-width: 600px; margin: 0 auto; display: block; }
+  .hero { padding: 3.5rem 2rem 3rem; }
+
+  /* 2-column hero */
+  .heroContent { flex-direction: row; align-items: center; gap: 3rem; }
+  .heroLeft { flex: 1 1 0; text-align: left; }
+  .heroLeft h1 { font-size: 40px; text-align: left; }
+  .heroSubBlock { text-align: left; margin-bottom: 1.5rem; }
+  .heroP1 { font-size: 22px; }
+  .heroP2 { font-size: 17px; }
+  .factors { justify-content: flex-start; }
+
+  /* CTA card */
+  .heroRight {
+    flex: 0 0 380px;
+    align-items: stretch;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 2rem 1.75rem;
+    box-shadow: var(--shadow);
+  }
+  .btnCall { font-size: 18px; padding: 20px; }
+  .btnCallNote { justify-content: center; }
+
+  /* Expert strip */
+  .expertInner { flex-wrap: nowrap; gap: 1.5rem; }
+  .expertItem { flex: 1; }
+  .expertNum { font-size: 26px; }
+
+  /* Why Us: 4 columns */
+  .whyGrid { grid-template-columns: repeat(4, 1fr); }
+  .whyTitle { font-size: 24px; }
   .whyCard strong { font-size: 15px; }
   .whyCard p { font-size: 14px; }
-  .faqTitle { font-size: 22px; }
-  .ctaInner h2 { font-size: 28px; }
+
+  /* 2-column cards grid */
+  .cardsGrid { grid-template-columns: 1fr 1fr; gap: 1rem; }
+
+  /* CTA */
+  .ctaInner h2 { font-size: 30px; }
+  .ctaInner p { font-size: 15px; }
+  .btnCallCta { font-size: 18px; padding: 20px; }
+
+  /* FAQ */
+  .faqTitle { font-size: 24px; }
+  .faqQ { font-size: 15px; }
+  .faqA { font-size: 14px; }
+
+  /* How we rank */
+  .howRankText { font-size: 15px; }
+
+  /* Section padding */
+  .whyUs { padding: 3rem 2rem; }
+  .companies { padding: 0 2rem 2rem; }
+  .cta { padding: 3rem 2rem; }
+  .faq { padding: 3rem 2rem; }
+  .howRank { padding: 3rem 2rem; }
+}
+
+/* ═══ LARGE DESKTOP 1280px+ ═══════════════════════════════════ */
+@media (min-width: 1280px) {
+  .heroLeft h1 { font-size: 46px; }
+  .heroP1 { font-size: 24px; }
+  .heroP2 { font-size: 18px; }
+  .heroRight { flex: 0 0 420px; padding: 2.5rem 2rem; }
+  .expertNum { font-size: 28px; }
+}
+
+/* subtitle / callout responsive */
+@media (min-width: 768px) {
+  .heroSubtitle { font-size: 16px; }
+  .heroCallout { font-size: 16px; }
+}
+@media (min-width: 1024px) {
+  .heroSubtitle { font-size: 17px; }
+  .heroCallout { font-size: 17px; }
 }

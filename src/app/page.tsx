@@ -86,23 +86,22 @@ export default function HomePage() {
       {/* HERO */}
       <section className={styles.hero}>
         <div className={styles.heroInner}>
-          <h1>Roof Replacement Chicago</h1>
-          <div className={styles.heroSubBlock}>
-            <p className={styles.heroP1}>Replacing your roof is one of the biggest decisions a homeowner makes. We get it.</p>
-            <p className={styles.heroP2}>Call us first. Get honest answers, no pressure, no obligation.</p>
-          </div>
-          <div className={styles.factors}>
-            <div className={styles.factor}>Free consultation</div>
-            <div className={styles.factor}>Licensed contractors</div>
-            <div className={styles.factor}>No obligation</div>
-          </div>
-          <a href={`tel:${MAIN_PHONE}`} className={styles.btnCall}>
-            CALL NOW — {MAIN_PHONE_DISPLAY}
-          </a>
-          <div className={styles.btnCallNote}>
-            <span className={styles.btnCallNoteItem}>No obligation</span>
-            <span className={styles.btnCallNoteItem}>Real answers</span>
-            <span className={styles.btnCallNoteItem}>Available 7 days a week</span>
+          <div className={styles.heroContent}>
+            <div className={styles.heroLeft}>
+              <h1>Roof Replacement in Chicago: Expert Answers and Verified Contractors</h1>
+              <p className={styles.heroSubtitle}>Everything a Chicago homeowner needs before replacing their roof: answers to the most important questions and our verified contractor ranking for 2026.</p>
+              <p className={styles.heroCallout}>Need a free consultation right now? Call us. We'll help.</p>
+            </div>
+            <div className={styles.heroRight}>
+              <a href={`tel:${MAIN_PHONE}`} className={styles.btnCall}>
+                CALL NOW — {MAIN_PHONE_DISPLAY}
+              </a>
+              <div className={styles.btnCallNote}>
+                <span className={styles.btnCallNoteItem}>No obligation</span>
+                <span className={styles.btnCallNoteItem}>Real answers</span>
+                <span className={styles.btnCallNoteItem}>Available 7 days a week</span>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -154,9 +153,11 @@ export default function HomePage() {
       <section id="companies" className={styles.companies}>
         <div className={styles.companiesInner}>
           <div className={styles.rankedLabel}>6 verified contractors</div>
-          {companies.map((company, i) => (
-            <CompanyCard key={company.id} company={company} isFirst={i === 0} />
-          ))}
+          <div className={styles.cardsGrid}>
+            {companies.map((company, i) => (
+              <CompanyCard key={company.id} company={company} isFirst={i === 0} />
+            ))}
+          </div>
         </div>
       </section>
 

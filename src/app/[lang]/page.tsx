@@ -27,23 +27,22 @@ export default function LangHomePage({ params }: Props) {
     <>
       <section className={styles.hero}>
         <div className={styles.heroInner}>
-          <h1>Reemplazo de Techo en Chicago</h1>
-          <div className={styles.heroSubBlock}>
-            <p className={styles.heroP1}>Reemplazar su techo es una de las decisiones más importantes que toma un propietario. Lo entendemos.</p>
-            <p className={styles.heroP2}>Llámenos primero. Obtenga respuestas honestas, sin presión, sin obligación.</p>
-          </div>
-          <div className={styles.factors}>
-            <div className={styles.factor}>Consulta gratuita</div>
-            <div className={styles.factor}>Contratistas con licencia</div>
-            <div className={styles.factor}>Sin obligación</div>
-          </div>
-          <a href={`tel:${MAIN_PHONE}`} className={styles.btnCall}>
-            LLAMAR AHORA — {MAIN_PHONE_DISPLAY}
-          </a>
-          <div className={styles.btnCallNote}>
-            <span className={styles.btnCallNoteItem}>Sin obligación</span>
-            <span className={styles.btnCallNoteItem}>Respuestas reales</span>
-            <span className={styles.btnCallNoteItem}>Disponible 7 días a la semana</span>
+          <div className={styles.heroContent}>
+            <div className={styles.heroLeft}>
+              <h1>Reemplazo de Techo en Chicago: Respuestas Profesionales y Contratistas Verificados</h1>
+              <p className={styles.heroSubtitle}>Todo lo que un propietario en Chicago necesita antes de reemplazar su techo: respuestas a las preguntas más importantes y nuestro ranking verificado de contratistas para 2026.</p>
+              <p className={styles.heroCallout}>¿Necesita una consulta gratuita ahora mismo? Llámenos. Le ayudaremos.</p>
+            </div>
+            <div className={styles.heroRight}>
+              <a href={`tel:${MAIN_PHONE}`} className={styles.btnCall}>
+                LLAMAR AHORA — {MAIN_PHONE_DISPLAY}
+              </a>
+              <div className={styles.btnCallNote}>
+                <span className={styles.btnCallNoteItem}>Sin obligación</span>
+                <span className={styles.btnCallNoteItem}>Respuestas reales</span>
+                <span className={styles.btnCallNoteItem}>Disponible 7 días a la semana</span>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -72,9 +71,11 @@ export default function LangHomePage({ params }: Props) {
       <section id="companies" className={styles.companies}>
         <div className={styles.companiesInner}>
           <div className={styles.rankedLabel}>6 contratistas verificados</div>
-          {companies.map((company, i) => (
-            <CompanyCard key={company.id} company={company} isFirst={i === 0} lang="es" />
-          ))}
+          <div className={styles.cardsGrid}>
+            {companies.map((company, i) => (
+              <CompanyCard key={company.id} company={company} isFirst={i === 0} lang="es" />
+            ))}
+          </div>
         </div>
       </section>
 
