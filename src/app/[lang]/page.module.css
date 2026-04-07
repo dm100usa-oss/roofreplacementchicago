@@ -148,25 +148,15 @@ details[open] .faqQ::after { transform: rotate(45deg); }
 @media (min-width: 1024px) {
   .hero { padding: 3.5rem 2rem 3rem; }
 
-  /* 2-column hero */
-  .heroContent { flex-direction: row; align-items: center; gap: 3rem; }
-  .heroLeft { flex: 1 1 0; text-align: left; }
-  .heroLeft h1 { font-size: 40px; text-align: left; }
-  .heroSubBlock { text-align: left; margin-bottom: 1.5rem; }
-  .heroP1 { font-size: 22px; }
-  .heroP2 { font-size: 17px; }
-  .factors { justify-content: flex-start; }
+  /* Single column centred */
+  .heroContent { flex-direction: column; align-items: center; gap: 1.5rem; }
+  .heroLeft { text-align: center; max-width: 720px; }
+  .heroLeft h1 { font-size: 40px; text-align: center; }
+  .heroSubtitle { font-size: 17px; }
+  .heroCallout { font-size: 17px; }
 
-  /* CTA card */
-  .heroRight {
-    flex: 0 0 380px;
-    align-items: stretch;
-    background: var(--bg);
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    padding: 2rem 1.75rem;
-    box-shadow: var(--shadow);
-  }
+  /* CTA */
+  .heroRight { width: 100%; max-width: 520px; }
   .btnCall { font-size: 18px; padding: 20px; }
   .btnCallNote { justify-content: center; }
 
@@ -210,7 +200,7 @@ details[open] .faqQ::after { transform: rotate(45deg); }
   .heroLeft h1 { font-size: 46px; }
   .heroP1 { font-size: 24px; }
   .heroP2 { font-size: 18px; }
-  .heroRight { flex: 0 0 420px; padding: 2.5rem 2rem; }
+  .heroRight { max-width: 560px; }
   .expertNum { font-size: 28px; }
 }
 
