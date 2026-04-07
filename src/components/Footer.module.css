@@ -1,0 +1,42 @@
+.footer {
+  background: #1A1A2E;
+  padding: 1.75rem 1.25rem 1.5rem;
+}
+.inner { max-width: var(--max-width); margin: 0 auto; }
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .375rem;
+  margin-bottom: 1.25rem;
+}
+.links a {
+  font-size: 12px;
+  color: #9CA3AF;
+  text-decoration: none;
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: color .15s;
+}
+.links a:hover { color: #fff; }
+
+.disclaimer {
+  font-size: 11px;
+  color: #6B7280;
+  line-height: 1.6;
+  margin-bottom: .875rem;
+  padding-bottom: .875rem;
+  border-bottom: 1px solid #2D2D4E;
+}
+
+.disclosure {
+  font-size: 11px;
+  color: #6B7280;
+  line-height: 1.6;
+  margin-bottom: .875rem;
+}
+
+.copy {
+  font-size: 11px;
+  color: #4B5563;
+}

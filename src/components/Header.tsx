@@ -1,0 +1,65 @@
+'use client'
+import Link from 'next/link'
+import { usePathname } from 'next/navigation'
+import { useState } from 'react'
+import styles from './Header.module.css'
+
+export default function Header() {
+  const pathname = usePathname()
+  const isEs = pathname.startsWith('/es')
+  const togglePath = isEs ? pathname.replace(/^\/es/, '') || '/' : `/es${pathname}`
+  const [menuOpen, setMenuOpen] = useState(false)
+
+  const navLinks = isEs
+    ? [
+        { href: '/es', label: 'Inicio' },
+        { href: '/es/insurance-guide', label: 'Seguro' },
+        { href: '/es/roofing-guide', label: 'Guía' },
+        { href: '/es/about', label: 'Acerca de' },
+        { href: '/es/how-we-rank', label: 'Cómo clasificamos' },
+        { href: '/es/contact', label: 'Contacto' },
+      ]
+    : [
+        { href: '/', label: 'Home' },
+        { href: '/insurance-guide', label: 'Insurance Guide' },
+        { href: '/roofing-guide', label: 'Roofing Guide' },
+        { href: '/about', label: 'About' },
+        { href: '/how-we-rank', label: 'How We Rank' },
+        { href: '/contact', label: 'Contact' },
+      ]
+
+  return (
+    <>
+      <div className={styles.langBar}>
+        <span>{isEs ? 'También disponible en' : 'Also available in'}</span>
+        <Link href={togglePath}>{isEs ? 'English' : 'Español'}</Link>
+      </div>
+      <header className={styles.header}>
+        <div className={styles.inner}>
+          <Link href={isEs ? '/es' : '/'} className={styles.logo}>
+            Roof Replacement <span>Chicago</span>
+          </Link>
+          <nav className={styles.desktopNav}>
+            {navLinks.map(l => (
+              <Link key={l.href} href={l.href} className={styles.navLink}>{l.label}</Link>
+            ))}
+          </nav>
+          <button className={styles.hamburger} onClick={() => setMenuOpen(!menuOpen)} aria-label="Menu">
+            <span className={`${styles.bar} ${menuOpen ? styles.barOpen1 : ''}`} />
+            <span className={`${styles.bar} ${menuOpen ? styles.barOpen2 : ''}`} />
+            <span className={`${styles.bar} ${menuOpen ? styles.barOpen3 : ''}`} />
+          </button>
+        </div>
+        {menuOpen && (
+          <div className={styles.mobileMenu}>
+            {navLinks.map(l => (
+              <Link key={l.href} href={l.href} className={styles.mobileNavLink} onClick={() => setMenuOpen(false)}>
+                {l.label}
+              </Link>
+            ))}
+          </div>
+        )}
+      </header>
+    </>
+  )
+}

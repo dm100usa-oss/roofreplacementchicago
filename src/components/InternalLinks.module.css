@@ -1,0 +1,36 @@
+.wrap {
+  background: var(--white);
+  border-top: 1px solid var(--border);
+  padding: 1.75rem 1.25rem 2rem;
+}
+.inner { max-width: var(--max-width); margin: 0 auto; }
+
+.group { margin-bottom: 1.5rem; }
+.group:last-child { margin-bottom: 0; }
+
+.groupTitle {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--blue);
+  margin-bottom: .625rem;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .375rem;
+}
+
+.link {
+  font-size: 13px;
+  color: var(--text-muted);
+  text-decoration: none;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 4px 10px;
+  transition: color .15s, border-color .15s;
+}
+.link:hover { color: var(--blue); border-color: var(--blue); }
