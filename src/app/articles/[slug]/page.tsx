@@ -15,9 +15,9 @@ export function generateMetadata({ params }: Props): Metadata {
   const a = articles.find(a => a.slug === params.slug)
   if (!a) return {}
   return {
-    title: `${a.title} — Roof Repair Chicago NOW`,
+    title: `${a.title} — Roof Replacement Chicago`,
     description: a.metaDescription,
-    alternates: { canonical: `https://www.roofrepairchicagonow.com/articles/${a.slug}` },
+    alternates: { canonical: `https://www.roofreplacementchicago.com/articles/${a.slug}` },
   }
 }
 
@@ -30,7 +30,7 @@ export default function ArticlePage({ params }: Props) {
     '@type': 'Article',
     headline: a.title,
     description: a.metaDescription,
-    publisher: { '@type': 'Organization', name: 'Roof Repair Chicago NOW', url: 'https://www.roofrepairchicagonow.com' },
+    publisher: { '@type': 'Organization', name: 'Roof Replacement Chicago', url: 'https://www.roofreplacementchicago.com' },
   }
 
   return (
@@ -48,11 +48,11 @@ export default function ArticlePage({ params }: Props) {
           </div>
         ))}
         <div className={styles.cta}>
-          <p>Need a trusted roofer in Chicago now?</p>
+          <p>Have questions about roof replacement in Chicago?</p>
           <a href={`tel:${MAIN_PHONE}`} className={styles.btnCall}>
             CALL NOW — {MAIN_PHONE_DISPLAY}
           </a>
-          <span className={styles.ctaNote}>Free · No obligation · Same-day available</span>
+          <span className={styles.ctaNote}>Free consultation. No obligation.</span>
         </div>
       </div>
       <InternalLinks type="article" />

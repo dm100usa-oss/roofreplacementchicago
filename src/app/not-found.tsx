@@ -1,23 +1,9 @@
-import styles from './static-page.module.css'
-import { MAIN_PHONE, MAIN_PHONE_DISPLAY } from '@/lib/companies'
-
 export default function NotFound() {
   return (
-    <div className={styles.page}>
-      <div className={styles.inner}>
-        <h1>Page not found</h1>
-        <p>The page you're looking for doesn't exist. Try one of these:</p>
-        <ul>
-          <li><a href="/">Home — Top 10 roof repair companies in Chicago</a></li>
-          <li><a href="/services/emergency-roof-repair">Emergency roof repair Chicago</a></li>
-          <li><a href="/services/roof-leak-repair">Roof leak repair Chicago</a></li>
-          <li><a href="/neighborhoods/north-side">Roof repair North Side Chicago</a></li>
-          <li><a href="/contact">Contact us</a></li>
-        </ul>
-        <p style={{ marginTop: '1.5rem' }}>
-          Or call us directly: <a href={`tel:${MAIN_PHONE}`}><strong>{MAIN_PHONE_DISPLAY}</strong></a>
-        </p>
-      </div>
+    <div style={{ padding: '3rem 1.25rem', textAlign: 'center', maxWidth: '560px', margin: '0 auto' }}>
+      <h1 style={{ fontSize: '24px', fontWeight: 900, marginBottom: '1rem' }}>Page not found</h1>
+      <p style={{ color: '#666', marginBottom: '1.5rem' }}>The page you are looking for does not exist.</p>
+      <a href="/" style={{ color: '#0057A8', fontWeight: 700 }}>Back to Home</a>
     </div>
   )
 }

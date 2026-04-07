@@ -3,7 +3,11 @@ import { neighborhoods } from '@/lib/neighborhoods'
 import { services } from '@/lib/services'
 import styles from './InternalLinks.module.css'
 
-type Props = { type: 'home' | 'neighborhood' | 'service' | 'article' }
+type Props = {
+  type: 'home' | 'neighborhood' | 'service' | 'article'
+  currentSlug?: string
+  lang?: string
+}
 
 export default function InternalLinks({ type }: Props) {
   return (
@@ -19,7 +23,6 @@ export default function InternalLinks({ type }: Props) {
             </div>
           </div>
         )}
-
         {(type === 'home' || type === 'neighborhood') && (
           <div className={styles.group}>
             <div className={styles.groupTitle}>Serving Chicago neighborhoods</div>
@@ -30,7 +33,6 @@ export default function InternalLinks({ type }: Props) {
             </div>
           </div>
         )}
-
         <div className={styles.group}>
           <div className={styles.groupTitle}>Resources</div>
           <div className={styles.links}>
