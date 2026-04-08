@@ -88,6 +88,31 @@ export default function LangHomePage({ params }: Props) {
       </div>
       <p className={styles.belowStrip}>Este recurso fue creado para ayudarle a elegir la opción más conveniente y confiable para el reemplazo de su techo</p>
 
+      <section className={styles.whyUs}>
+        <div className={styles.whyInner}>
+          <div className={styles.sectionLabel}>Por qué este recurso</div>
+          <div className={styles.whyTitle}>Investigamos para que pueda decidir con confianza</div>
+          <div className={styles.whyGrid}>
+            {[
+              { title: 'Licencias verificadas', text: 'Cada contratista en nuestra lista tiene una licencia activa de techado en Illinois. Verificamos los registros de IDFPR antes de incluir cualquier empresa.', img: '/foto2.png' },
+              { title: 'Experiencia real en Chicago', text: 'Chicago tiene reglas de permisos específicas, exigencias climáticas y requisitos para techos planos. Solo incluimos contratistas que conocen este mercado.', img: '/foto3.png' },
+              { title: 'Experiencia con reclamaciones de seguro', text: 'Los daños por tormentas y las reclamaciones de seguro son comunes en Chicago. Priorizamos contratistas con experiencia documentada en este proceso.', img: '/foto4.png' },
+              { title: 'Sin presión', text: 'El reemplazo de techo es una inversión importante. Nuestro recurso existe para informar, no para presionar. Llame cuando esté listo.', img: '/foto5.png' },
+            ].map((item) => (
+              <div key={item.title} className={styles.whyCard}>
+                <div className={styles.whyCardImgWrap}>
+                  <Image src={item.img} alt={item.title} width={600} height={220} className={styles.whyCardImg} />
+                </div>
+                <div className={styles.whyCardBody}>
+                  <strong>{item.title}</strong>
+                  <p>{item.text}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section id="companies" className={styles.companies}>
         <div className={styles.companiesInner}>
           <div className={styles.rankedLabel}>6 contratistas verificados</div>
