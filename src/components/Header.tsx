@@ -36,8 +36,8 @@ export default function Header() {
             <Link href={isEs ? '/es' : '/'} className={styles.logo}>
               Roof Replacement <span>Chicago</span>
             </Link>
-            <Link href={togglePath} className={styles.langBtn}>
-              {isEs ? 'EN' : 'ES'}
+            <Link href={togglePath} className={isEs ? styles.langBtnEng : styles.langBtnEsp}>
+              {isEs ? 'ENG' : 'ESP'}
             </Link>
           </div>
           <nav className={styles.desktopNav}>

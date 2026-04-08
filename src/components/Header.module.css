@@ -18,25 +18,38 @@
 .logoWrap {
   display: flex;
   align-items: center;
-  gap: .625rem;
+  gap: 1.25rem;
   flex-shrink: 0;
 }
-.langBtn {
-  font-size: 11px;
+.langBtnEsp {
+  font-size: 12px;
   font-weight: 700;
-  color: var(--blue);
   text-decoration: none;
-  border: 1.5px solid var(--blue);
   border-radius: 20px;
-  padding: 2px 8px;
-  letter-spacing: .04em;
-  transition: background .15s, color .15s;
+  padding: 4px 18px;
+  letter-spacing: .05em;
   white-space: nowrap;
+  transition: opacity .15s;
+  color: #7A5C00;
+  background: #F5C518;
+  border: 1.5px solid #D4A800;
 }
-.langBtn:hover {
-  background: var(--blue);
-  color: #fff;
+.langBtnEsp:hover { opacity: .85; }
+
+.langBtnEng {
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 20px;
+  padding: 4px 18px;
+  letter-spacing: .05em;
+  white-space: nowrap;
+  transition: opacity .15s;
+  color: #1A4A8A;
+  background: #DBEAFE;
+  border: 1.5px solid #93C5FD;
 }
+.langBtnEng:hover { opacity: .85; }
 
 .logo {
   font-size: 18px;
