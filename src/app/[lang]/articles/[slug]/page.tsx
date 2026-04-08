@@ -16,8 +16,8 @@ export function generateMetadata({ params }: Props): Metadata {
   const a = articles.find(a => a.slug === params.slug)
   if (!a) return {}
   return {
-    title: `${a.title} — Roof Replacement Chicago`,
-    description: a.metaDescription,
+    title: `${a.titleEs} — Reemplazo de Techo Chicago`,
+    description: a.metaDescriptionEs,
     alternates: { canonical: `https://www.roofreplacementchicago.com/es/articles/${a.slug}` },
   }
 }
@@ -28,25 +28,49 @@ export default function LangArticlePage({ params }: Props) {
   const a = articles.find(a => a.slug === params.slug)
   if (!a) notFound()
 
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: 'Inicio', item: 'https://www.roofreplacementchicago.com/es' },
+          { '@type': 'ListItem', position: 2, name: 'Artículos', item: 'https://www.roofreplacementchicago.com/es/articles' },
+          { '@type': 'ListItem', position: 3, name: a.titleEs },
+        ],
+      },
+      {
+        '@type': 'Article',
+        headline: a.titleEs,
+        description: a.metaDescriptionEs,
+        datePublished: '2026-01-15',
+        dateModified: new Date().toISOString().split('T')[0],
+        inLanguage: 'es',
+        publisher: { '@type': 'Organization', name: 'Roof Replacement Chicago', url: 'https://www.roofreplacementchicago.com' },
+      },
+    ],
+  }
+
   return (
     <div className={styles.page}>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <div className={styles.inner}>
         <div className={styles.breadcrumb}>
-          <a href={lang === 'es' ? '/es' : '/'}>Home</a> › <span>Articles</span>
+          <a href="/es">Inicio</a> › <span>Artículos</span>
         </div>
-        <h1>{a.title}</h1>
-        {a.sections.map(section => (
+        <h1>{a.titleEs}</h1>
+        {a.sectionsEs.map(section => (
           <div key={section.heading} className={styles.section}>
             <h2>{section.heading}</h2>
             <p>{section.text}</p>
           </div>
         ))}
         <div className={styles.cta}>
-          <p>Have questions about roof replacement in Chicago?</p>
+          <p>¿Tiene preguntas sobre el reemplazo de techo en Chicago?</p>
           <a href={`tel:${MAIN_PHONE}`} className={styles.btnCall}>
-            CALL NOW — {MAIN_PHONE_DISPLAY}
+            LLAMAR AHORA — {MAIN_PHONE_DISPLAY}
           </a>
-          <span className={styles.ctaNote}>Free consultation. No obligation.</span>
+          <span className={styles.ctaNote}>Consulta gratuita. Sin obligación.</span>
         </div>
       </div>
       <InternalLinks type="article" lang={params.lang} />

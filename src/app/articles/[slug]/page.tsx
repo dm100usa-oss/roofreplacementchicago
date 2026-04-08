@@ -30,6 +30,9 @@ export default function ArticlePage({ params }: Props) {
     '@type': 'Article',
     headline: a.title,
     description: a.metaDescription,
+    datePublished: '2026-01-15',
+    dateModified: new Date().toISOString().split('T')[0],
+    inLanguage: 'en',
     publisher: { '@type': 'Organization', name: 'Roof Replacement Chicago', url: 'https://www.roofreplacementchicago.com' },
   }
 

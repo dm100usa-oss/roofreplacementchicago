@@ -25,7 +25,7 @@ export default function InternalLinks({ type, lang }: Props) {
             <div className={styles.links}>
               {services.map(s => (
                 <Link key={s.slug} href={`${prefix}/services/${s.slug}`} className={styles.link}>
-                  {s.name}
+                  {isEs ? s.nameEs : s.name}
                 </Link>
               ))}
             </div>
@@ -52,7 +52,7 @@ export default function InternalLinks({ type, lang }: Props) {
           <div className={styles.links}>
             {articles.map(a => (
               <Link key={a.slug} href={`${prefix}/articles/${a.slug}`} className={styles.link}>
-                {a.title}
+                {isEs ? a.titleEs : a.title}
               </Link>
             ))}
           </div>

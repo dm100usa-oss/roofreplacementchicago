@@ -3,6 +3,9 @@ export type Article = {
   title: string
   metaDescription: string
   sections: { heading: string; text: string }[]
+  titleEs: string
+  metaDescriptionEs: string
+  sectionsEs: { heading: string; text: string }[]
 }
 
 export const articles: Article[] = [
@@ -18,6 +21,16 @@ export const articles: Article[] = [
       { heading: 'Watch for red flags', text: 'Be wary of door-to-door solicitors after storms, companies that ask for full payment upfront, contractors without a physical address, and anyone who refuses to provide a written estimate. These are common signs of storm chasers or unlicensed operators.' },
       { heading: 'Why our list saves you time', text: 'We pre-verify every company on our list for licensing, insurance, Google rating, and warranty terms. You can call any company on our list with confidence that the basics are already checked.' },
     ],
+    titleEs: 'Cómo Elegir una Empresa de Reemplazo de Techo en Chicago',
+    metaDescriptionEs: 'Qué buscar al contratar una empresa de reemplazo de techo en Chicago — licencias, seguros, reseñas, garantías y señales de alerta.',
+    sectionsEs: [
+      { heading: 'Verifique la licencia y el seguro primero', text: 'En Illinois, los contratistas de techos deben tener una licencia activa de IDFPR. La Ciudad de Chicago requiere además una licencia municipal de techado para la mayoría de los trabajos. Siempre solicite el número de licencia y verifíquelo. El seguro de responsabilidad general es esencial — sin él, usted podría ser responsable de lesiones en su propiedad.' },
+      { heading: 'Revise las reseñas de Google con cuidado', text: 'Una calificación alta con pocas reseñas vale menos que un 4.6 con más de 150 reseñas. Lea el texto de las reseñas recientes. Busque patrones: respuesta lenta, mala comunicación o trabajo incompleto son señales de alerta. Responder a las reseñas negativas de forma profesional es una buena señal.' },
+      { heading: 'Obtenga al menos dos presupuestos', text: 'Los precios de techado varían significativamente en Chicago. Obtener dos o tres presupuestos gratuitos le da una idea realista del precio justo y le permite comparar los términos de garantía. Tenga cuidado con los presupuestos dramáticamente más bajos que los demás — esto suele indicar materiales de baja calidad o trabajo deficiente.' },
+      { heading: 'Pregunte sobre la garantía', text: 'Una empresa de buena reputación proporciona una garantía escrita tanto de mano de obra como de materiales. Las garantías de mano de obra cubren la instalación — filtraciones causadas por instalación incorrecta. Las garantías de materiales vienen del fabricante. Pida ambas por escrito antes de firmar cualquier cosa.' },
+      { heading: 'Tenga cuidado con las señales de alerta', text: 'Desconfíe de quienes van puerta a puerta después de tormentas, empresas que piden el pago completo por adelantado, contratistas sin dirección física y cualquiera que se niegue a dar un presupuesto escrito. Estas son señales comunes de operadores sin licencia o cazadores de tormentas.' },
+      { heading: 'Por qué nuestra lista le ahorra tiempo', text: 'Verificamos previamente cada empresa de nuestra lista en cuanto a licencia, seguro, calificación en Google y términos de garantía. Puede llamar a cualquier empresa de nuestra lista con la confianza de que los aspectos básicos ya han sido comprobados.' },
+    ],
   },
   {
     slug: 'average-cost',
@@ -30,6 +43,16 @@ export const articles: Article[] = [
       { heading: 'Full replacement: $8,000–$25,000+', text: 'A full roof replacement on a typical Chicago single-family home runs $8,000–$15,000 for standard asphalt shingles. Premium materials, complex rooflines, or larger homes push costs higher. Flat roof replacements are priced per square foot — typically $5–$15 depending on material.' },
       { heading: 'What affects the price', text: 'Key factors include roof size (measured in squares — 100 square feet each), pitch (steep roofs cost more to work on), material (asphalt, metal, slate, TPO), the extent of damage, and whether permits are required. Emergency or same-day calls may carry a small surcharge.' },
       { heading: 'How to get an accurate estimate', text: 'All companies on our list offer free on-site estimates. The estimate should be written, itemized, and include labor, materials, disposal, and permit costs. Do not accept verbal estimates only.' },
+    ],
+    titleEs: 'Costo Promedio del Reemplazo de Techo en Chicago',
+    metaDescriptionEs: 'Cuánto cuesta el reemplazo de techo en Chicago. Desglose de precios por tipo de material y tamaño del techo en 2026.',
+    sectionsEs: [
+      { heading: 'Reparaciones menores: $200–$500', text: 'Los trabajos pequeños como reparar algunas tejas, sellar alrededor de una tubería de ventilación o arreglar una pequeña sección de tapajuntas cuestan típicamente entre $200 y $500 en Chicago. Generalmente se completan en pocas horas y no requieren permisos.' },
+      { heading: 'Reparaciones moderadas: $500–$1,500', text: 'Las reparaciones intermedias incluyen reemplazar secciones más grandes de tejas, reparar daños significativos en tapajuntas, arreglar daños por diques de hielo o parchear una sección de techo plano. Estos trabajos suelen tomar un día completo y el precio depende mucho de los materiales.' },
+      { heading: 'Reparaciones mayores: $1,500–$5,000+', text: 'Las reparaciones grandes — reemplazo generalizado de tejas, parches grandes en techos planos o trabajos estructurales alrededor de chimeneas — pueden costar entre $1,500 y $5,000 o más. A este precio, vale la pena evaluar si un reemplazo completo tiene más sentido.' },
+      { heading: 'Reemplazo completo: $8,000–$25,000+', text: 'Un reemplazo completo de techo en una casa unifamiliar típica de Chicago cuesta entre $8,000 y $15,000 para tejas de asfalto estándar. Los materiales premium, líneas de techo complejas o casas más grandes elevan los costos. Los reemplazos de techo plano se cotizan por pie cuadrado — típicamente entre $5 y $15 según el material.' },
+      { heading: 'Qué afecta el precio', text: 'Los factores clave incluyen el tamaño del techo (medido en cuadrados — 100 pies cuadrados cada uno), la inclinación (los techos empinados cuestan más), el material (asfalto, metal, pizarra, TPO), la extensión del daño y si se requieren permisos. Las llamadas de emergencia o el mismo día pueden tener un pequeño recargo.' },
+      { heading: 'Cómo obtener un presupuesto preciso', text: 'Todas las empresas de nuestra lista ofrecen presupuestos gratuitos en sitio. El presupuesto debe ser escrito, detallado e incluir mano de obra, materiales, eliminación y costos de permisos. No acepte solo presupuestos verbales.' },
     ],
   },
   {
@@ -45,6 +68,17 @@ export const articles: Article[] = [
       { heading: 'Flashing damage', text: 'Flashing — the metal strips around chimneys, skylights, and vents — is a common failure point. Cracked, lifted, or rusted flashing allows water to seep into the home. This is often invisible from the ground but shows up as ceiling stains.' },
       { heading: 'When to call immediately', text: 'Call for emergency service if you see active water entry during rain, large sections of missing shingles after a storm, visible structural damage, or mold forming on interior walls or ceilings. These situations worsen rapidly and should not wait.' },
     ],
+    titleEs: 'Señales de que su Techo Necesita Reemplazo Urgente',
+    metaDescriptionEs: 'Cómo saber si su techo necesita atención urgente. Señales de advertencia que los propietarios de Chicago no deben ignorar.',
+    sectionsEs: [
+      { heading: 'Manchas de agua en techos o paredes', text: 'Las manchas marrones o amarillas en su techo interior son un fuerte indicador de una filtración activa o reciente. La mancha puede aparecer lejos del punto de entrada real — el agua viaja por las vigas y el aislamiento. Actúe de inmediato, especialmente antes de que llueva.' },
+      { heading: 'Tejas faltantes o curvadas', text: 'Las tejas que faltan, están agrietadas, curvadas en los bordes o cubiertas de musgo han llegado al final de su vida útil. Incluso unas pocas tejas en mal estado pueden permitir que el agua entre al tablero del techo y cause pudrición.' },
+      { heading: 'Gránulos en las canaletas', text: 'Las tejas de asfalto pierden gránulos con el tiempo. Si nota gránulos negros con apariencia de arena en sus canaletas o bajantes, sus tejas se están deteriorando y probablemente necesitan reemplazo pronto.' },
+      { heading: 'Secciones hundidas', text: 'Un techo que parece hundirse o arquearse en secciones indica daño estructural — generalmente tableros podridos o vigas comprometidas. Este es un problema de seguridad grave que requiere evaluación profesional inmediata.' },
+      { heading: 'Luz del día en el ático', text: 'Si puede ver luz entrando por los tablones del techo cuando está en su ático, el agua y las plagas también pueden entrar. Revise su ático de noche con una linterna para detectar las mismas señales.' },
+      { heading: 'Daños en los tapajuntas', text: 'Los tapajuntas — las tiras de metal alrededor de chimeneas, claraboyas y ventilaciones — son un punto de falla común. Los tapajuntas agrietados, levantados u oxidados permiten que el agua se filtre al hogar. Esto suele ser invisible desde el suelo pero aparece como manchas en el techo interior.' },
+      { heading: 'Cuándo llamar de inmediato', text: 'Llame para servicio de emergencia si ve entrada activa de agua durante la lluvia, grandes secciones de tejas faltantes después de una tormenta, daño estructural visible o moho formándose en paredes o techos interiores. Estas situaciones empeoran rápidamente y no deben esperar.' },
+    ],
   },
   {
     slug: 'after-storm-damage',
@@ -58,6 +92,17 @@ export const articles: Article[] = [
       { heading: 'Step 5: Get a temporary repair to prevent further damage', text: 'Before your insurance adjuster arrives, you can authorize a contractor to place a temporary tarp or cover over damaged areas to prevent further water entry. This is covered by most policies and does not affect your claim.' },
       { heading: 'Step 6: Get a professional estimate', text: 'Once the adjuster has been, get a written estimate from a licensed contractor before committing to any permanent repair. Compare the estimate to what your insurer offers. If there is a significant discrepancy, you can negotiate or hire a public adjuster.' },
       { heading: 'Beware of storm chasers', text: 'After major Chicago storms, out-of-town contractors flood the area offering quick, cheap repairs. Many are unlicensed, uninsured, and do poor work. Use only local, verified contractors — like those on our list.' },
+    ],
+    titleEs: 'Qué Hacer Después de Daños por Tormenta en su Techo en Chicago',
+    metaDescriptionEs: 'Guía paso a paso para propietarios de Chicago después de que una tormenta dañe su techo. Consejos de seguro, reparaciones temporales y cómo encontrar un techador de confianza.',
+    sectionsEs: [
+      { heading: 'Paso 1: Manténgase seguro y evalúe desde el suelo', text: 'No suba a un techo dañado por una tormenta. Evalúe el exterior desde el suelo o a través de una ventana del ático. Busque tejas faltantes, tapajuntas dañados, escombros caídos o canaletas abolladas. Tome fotos de inmediato para la documentación del seguro.' },
+      { heading: 'Paso 2: Detenga los daños interiores', text: 'Si el agua está entrando activamente al hogar, coloque cubos para recoger las gotas y mueva los objetos de valor lejos de las áreas mojadas. Coloque toallas o lona de plástico para proteger los pisos. No encienda las luces del techo si hay agua cerca del accesorio.' },
+      { heading: 'Paso 3: Documente todo', text: 'Fotografíe todos los daños exteriores, las manchas interiores y cualquier escombro de la tormenta. Anote la fecha y la hora. Esta documentación es esencial para su reclamo de seguro. No descarte ningún material dañado hasta que su ajustador lo haya visto.' },
+      { heading: 'Paso 4: Llame a su compañía de seguros', text: 'Reporte el daño a su compañía de seguro de propietario lo antes posible. La mayoría de las pólizas requieren un reporte oportuno después de un evento de tormenta. Su aseguradora enviará un ajustador para evaluar el daño.' },
+      { heading: 'Paso 5: Obtenga una reparación temporal para prevenir más daños', text: 'Antes de que llegue el ajustador de su seguro, puede autorizar a un contratista a colocar una lona temporal sobre las áreas dañadas para evitar más entrada de agua. Esto está cubierto por la mayoría de las pólizas y no afecta su reclamo.' },
+      { heading: 'Paso 6: Obtenga un presupuesto profesional', text: 'Una vez que el ajustador haya visitado, obtenga un presupuesto escrito de un contratista con licencia antes de comprometerse con cualquier reparación permanente. Compare el presupuesto con lo que ofrece su aseguradora. Si hay una discrepancia significativa, puede negociar o contratar a un ajustador público.' },
+      { heading: 'Cuidado con los cazadores de tormentas', text: 'Después de las grandes tormentas de Chicago, contratistas de fuera de la ciudad inundan el área ofreciendo reparaciones rápidas y baratas. Muchos no tienen licencia ni seguro y hacen un trabajo deficiente. Use solo contratistas locales verificados — como los de nuestra lista.' },
     ],
   },
   {
@@ -73,6 +118,18 @@ export const articles: Article[] = [
       { heading: 'Factor 5: Pricing transparency', text: 'We favor companies that provide written, itemized estimates with no hidden fees. Vague pricing or refusal to provide a written quote lowers a company\'s score.' },
       { heading: 'What does not affect ranking', text: 'Companies cannot pay to be ranked higher. We do not accept sponsored placement. Our compensation comes from referral fees, which are disclosed separately and do not influence rankings.' },
       { heading: 'How often we update', text: 'We review rankings periodically — at minimum every quarter, and immediately when we receive credible reports of poor service, license issues, or closure.' },
+    ],
+    titleEs: 'Cómo Clasificamos las Empresas de Reemplazo de Techo en Chicago',
+    metaDescriptionEs: 'Nuestra metodología para evaluar y clasificar empresas de reemplazo de techo en Chicago — transparente, editorial y sin pago por posición.',
+    sectionsEs: [
+      { heading: 'Nuestro objetivo', text: 'Creamos esta clasificación para resolver un problema real: cuando un propietario de Chicago necesita un techador rápido, no debería tener que filtrar anuncios pagados, reseñas falsas y operadores sin licencia. Nuestra lista da a los propietarios un punto de partida en el que pueden confiar.' },
+      { heading: 'Factor 1: Licencia y seguro', text: 'Verificamos que cada empresa tenga una licencia válida de contratista de techado de Chicago y lleve seguro de responsabilidad general. Este es un requisito obligatorio — las empresas sin ambos quedan excluidas por completo.' },
+      { heading: 'Factor 2: Reseñas de Google', text: 'Analizamos tanto la calificación de estrellas como el número de reseñas. El volumen importa — un 5.0 con 8 reseñas es mucho menos confiable que un 4.7 con 200 reseñas. También leemos el texto de las reseñas para identificar patrones recurrentes.' },
+      { heading: 'Factor 3: Tiempo de respuesta', text: 'Probamos o verificamos los tiempos de respuesta que cada empresa dice tener para situaciones de emergencia. La disponibilidad el mismo día es un diferenciador clave y se refleja en la etiqueta de Emergencia en nuestras tarjetas.' },
+      { heading: 'Factor 4: Términos de garantía', text: 'Recopilamos y comparamos los términos de garantía que cada empresa ofrece sobre mano de obra y materiales. Las garantías más largas y completas obtienen una puntuación más alta.' },
+      { heading: 'Factor 5: Transparencia de precios', text: 'Favorecemos las empresas que proporcionan presupuestos escritos y detallados sin tarifas ocultas. Los precios vagos o la negativa a proporcionar una cotización escrita reducen la puntuación de una empresa.' },
+      { heading: 'Qué no afecta la clasificación', text: 'Las empresas no pueden pagar para obtener una clasificación más alta. No aceptamos posicionamiento patrocinado. Nuestra compensación proviene de honorarios de referencia, que se divulgan por separado y no influyen en las clasificaciones.' },
+      { heading: 'Con qué frecuencia actualizamos', text: 'Revisamos las clasificaciones periódicamente — como mínimo cada trimestre, e inmediatamente cuando recibimos informes creíbles de mal servicio, problemas de licencia o cierre.' },
     ],
   },
 ]

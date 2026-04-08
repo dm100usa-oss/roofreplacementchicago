@@ -1,6 +1,7 @@
 import { MetadataRoute } from 'next'
 import { neighborhoods } from '@/lib/neighborhoods'
 import { services } from '@/lib/services'
+import { articles } from '@/lib/articles'
 
 const BASE = 'https://www.roofreplacementchicago.com'
 
@@ -13,6 +14,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const serviceUrls = services.flatMap(s => [
     { url: `${BASE}/services/${s.slug}`, lastModified: new Date(), changeFrequency: 'monthly' as const, priority: 0.8 },
     { url: `${BASE}/es/services/${s.slug}`, lastModified: new Date(), changeFrequency: 'monthly' as const, priority: 0.7 },
+  ])
+
+  const articleUrls = articles.flatMap(a => [
+    { url: `${BASE}/articles/${a.slug}`, lastModified: new Date(), changeFrequency: 'monthly' as const, priority: 0.7 },
+    { url: `${BASE}/es/articles/${a.slug}`, lastModified: new Date(), changeFrequency: 'monthly' as const, priority: 0.6 },
   ])
 
   return [
@@ -30,5 +36,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/privacy`, lastModified: new Date(), changeFrequency: 'yearly', priority: 0.3 },
     ...serviceUrls,
     ...neighborhoodUrls,
+    ...articleUrls,
   ]
 }

@@ -17,8 +17,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const s = services.find(s => s.slug === params.slug)
   if (!s) return {}
   return {
-    title: `${s.name} Chicago`,
-    description: s.metaDescription,
+    title: `${s.titleEs}`,
+    description: s.metaDescriptionEs,
     alternates: { canonical: `https://www.roofreplacementchicago.com/es/services/${s.slug}` },
   }
 }
@@ -28,22 +28,21 @@ export default function LangServicePage({ params }: Props) {
   if (!locales.includes(lang)) notFound()
   const s = services.find(s => s.slug === params.slug)
   if (!s) notFound()
-  const isEs = lang === 'es'
 
   return (
     <>
       <div className={styles.wrap}>
         <div className={styles.inner}>
           <div className={nbStyles.breadcrumb}>
-            <a href={isEs ? '/es' : '/'}>Home</a> / {s.name}
+            <a href="/es">Inicio</a> / {s.nameEs}
           </div>
-          <h1 className={styles.h1}>{s.title}</h1>
-          <p className={styles.intro}>{s.intro}</p>
-          <p className={styles.p}>{s.bodyText}</p>
-          {s.faq.length > 0 && (
+          <h1 className={styles.h1}>{s.titleEs}</h1>
+          <p className={styles.intro}>{s.introEs}</p>
+          <p className={styles.p}>{s.bodyTextEs}</p>
+          {s.faqEs.length > 0 && (
             <>
-              <h2 className={styles.h2}>{isEs ? 'Preguntas frecuentes' : 'Common questions'}</h2>
-              {s.faq.map(item => (
+              <h2 className={styles.h2}>Preguntas frecuentes</h2>
+              {s.faqEs.map(item => (
                 <details key={item.q} className={nbStyles.faqItem}>
                   <summary className={nbStyles.faqQ}>{item.q}</summary>
                   <div className={nbStyles.faqA}>{item.a}</div>
@@ -52,11 +51,11 @@ export default function LangServicePage({ params }: Props) {
             </>
           )}
           <div className={styles.ctaBlock}>
-            <p>{isEs ? `Tiene preguntas sobre ${s.name.toLowerCase()} en Chicago?` : `Have questions about ${s.name.toLowerCase()} in Chicago?`}</p>
+            <p>¿Tiene preguntas sobre {s.nameEs.toLowerCase()} en Chicago?</p>
             <a href={`tel:${MAIN_PHONE}`} className={styles.ctaBtn}>
-              {isEs ? 'LLAMAR AHORA' : 'CALL NOW'} — {MAIN_PHONE_DISPLAY}
+              LLAMAR AHORA — {MAIN_PHONE_DISPLAY}
             </a>
-            <p className={styles.ctaNote}>{isEs ? 'Consulta gratuita. Sin obligación.' : 'Free consultation. No obligation.'}</p>
+            <p className={styles.ctaNote}>Consulta gratuita. Sin obligación.</p>
           </div>
         </div>
       </div>

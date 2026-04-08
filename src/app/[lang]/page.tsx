@@ -2,6 +2,8 @@ import type { Metadata } from 'next'
 import Image from 'next/image'
 import { notFound } from 'next/navigation'
 import { companies, MAIN_PHONE, MAIN_PHONE_DISPLAY } from '@/lib/companies'
+import { articles } from '@/lib/articles'
+import { services } from '@/lib/services'
 import CompanyCard from '@/components/CompanyCard'
 import InternalLinks from '@/components/InternalLinks'
 import DateDisplay from '@/components/DateDisplay'
@@ -22,11 +24,64 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 }
 
+const faqItems = [
+  {
+    q: '¿Cuánto cuesta el reemplazo de techo en Chicago en 2026?',
+    a: 'El costo promedio del reemplazo de techo en Chicago oscila entre $8,000 y $25,000. Las tejas de asfalto cuestan entre $8,000 y $14,000 para una casa típica de 2,000 pies cuadrados. Los techos de metal cuestan entre $15,000 y $25,000. Los techos planos de TPO o EPDM promedian entre $10,000 y $20,000. El precio final depende del tamaño del techo, la inclinación, el material y si hay que retirar capas antiguas.',
+  },
+  {
+    q: '¿Cuándo se necesita un reemplazo completo en lugar de una reparación?',
+    a: 'Reemplace su techo cuando tenga 20 años o más, cuando más del 30% de las tejas estén dañadas, cuando vea luz del día a través de los tablones del ático, o cuando las reparaciones costarían más del 40% de un techo nuevo. Una fuga aislada en un techo de menos de 10 años generalmente es una reparación. Si tiene dudas, solicite una inspección gratuita antes de decidir.',
+  },
+  {
+    q: '¿Cuánto tiempo tarda el reemplazo de techo en Chicago?',
+    a: 'La mayoría de los techos residenciales en Chicago se reemplazan en uno o dos días. Un techo de tejas de asfalto de 2,000 pies cuadrados generalmente tarda un día completo. Las casas más grandes, formas de techo complejas o techos de metal pueden tardar de dos a tres días. El clima puede afectar la programación, especialmente de noviembre a marzo.',
+  },
+  {
+    q: '¿El seguro pagará el reemplazo de mi techo en Chicago?',
+    a: 'El seguro de propietario cubre el reemplazo del techo cuando el daño es causado por una tormenta, granizo o viento. No cubre el desgaste normal y el envejecimiento. Documente los daños dentro de las 48 horas posteriores a una tormenta, obtenga una evaluación escrita de un contratista con licencia y solicite que el contratista esté presente durante la visita del ajustador. Los propietarios de Illinois generalmente tienen de 12 a 24 meses para presentar un reclamo por daños de granizo.',
+  },
+  {
+    q: '¿Necesito un permiso para reemplazar mi techo en Chicago?',
+    a: 'Sí. La Ciudad de Chicago requiere un permiso de construcción para el reemplazo completo del techo. Un contratista de buena reputación obtiene este permiso como parte del trabajo. Debe estar incluido en su contrato sin cargo adicional. Omitir el permiso crea problemas al vender la casa o presentar un reclamo de seguro.',
+  },
+  {
+    q: '¿Qué material de techo es mejor para los inviernos de Chicago?',
+    a: 'Las tejas de asfalto arquitectónicas son la opción más práctica para la mayoría de los hogares de Chicago. Manejan bien los ciclos de congelación-descongelación y el viento, y se ajustan a la mayoría de los presupuestos. Los techos de metal duran de 40 a 70 años y son ideales si planea quedarse en la casa a largo plazo. Para techos planos, la membrana TPO es el material preferido por el código en Chicago. Evite las tejas básicas de 3 solapas ya que raramente duran mucho en el clima de Chicago.',
+  },
+  {
+    q: '¿Cómo verifico que un contratista de techos tiene licencia en Illinois?',
+    a: 'Busque el nombre del contratista o el número de licencia en el sitio web de IDFPR en idfpr.com antes de firmar cualquier contrato. Illinois emite dos tipos de licencia: Limitada para edificios residenciales de hasta 8 unidades e Ilimitada para todos los tipos de edificios. También confirme el seguro de responsabilidad general de al menos $250,000 y cobertura de compensación laboral.',
+  },
+]
+
 export default function LangHomePage({ params }: Props) {
   if (params.lang !== 'es') notFound()
 
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'WebPage',
+        name: 'Reemplazo de Techo en Chicago',
+        url: 'https://www.roofreplacementchicago.com/es',
+        description: 'Guía experta para el reemplazo de techo en Chicago con contratistas verificados, precios reales y orientación sobre seguros.',
+        inLanguage: 'es',
+      },
+      {
+        '@type': 'FAQPage',
+        mainEntity: faqItems.map(f => ({
+          '@type': 'Question',
+          name: f.q,
+          acceptedAnswer: { '@type': 'Answer', text: f.a },
+        })),
+      },
+    ],
+  }
+
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <section className={styles.hero}>
         <div className={styles.heroInner}>
           <div className={styles.heroContent}>
@@ -142,6 +197,101 @@ export default function LangHomePage({ params }: Props) {
             LLAMAR AHORA — {MAIN_PHONE_DISPLAY}
           </a>
           <p className={styles.ctaNote}>Sin obligación. Respuestas reales. 7 días a la semana</p>
+        </div>
+      </section>
+
+      {/* COST */}
+      <section className={styles.cost}>
+        <div className={styles.costInner}>
+          <div className={styles.sectionLabel}>Precios 2026</div>
+          <div className={styles.whyTitle}>¿Cuánto cuesta el reemplazo de techo en Chicago?</div>
+          <p className={styles.costIntro}>Los precios dependen del tamaño del techo, la inclinación y el material. Estos son los rangos típicos para hogares de Chicago en 2026.</p>
+          <div className={styles.costGrid}>
+            {[
+              { type: 'Teja de asfalto', range: '$8,000 – $16,000', note: 'Lo más común. Ideal para la mayoría de las casas unifamiliares y bungalows de Chicago.' },
+              { type: 'Techo plano (TPO / EPDM)', range: '$8,000 – $20,000', note: 'Estándar para edificios de dos y tres pisos y edificios de patio.' },
+              { type: 'Techo de metal', range: '$15,000 – $30,000', note: 'Dura 40–70 años. Mejor valor a largo plazo para propietarios que planean quedarse.' },
+              { type: 'Daños por tormenta', range: 'A menudo cubierto por el seguro', note: 'Documente los daños dentro de las 48 horas. Plazo de reclamo en Illinois: 12–24 meses.' },
+            ].map((item) => (
+              <div key={item.type} className={styles.costCard}>
+                <div className={styles.costType}>{item.type}</div>
+                <div className={styles.costRange}>{item.range}</div>
+                <div className={styles.costNote}>{item.note}</div>
+              </div>
+            ))}
+          </div>
+          <p className={styles.costSub}>Todos los presupuestos incluyen mano de obra, materiales, permisos y eliminación. <a href="/es/roofing-guide" className={styles.costLink}>Desglose completo de costos →</a></p>
+        </div>
+      </section>
+
+      {/* INSURANCE */}
+      <section className={styles.insSection}>
+        <div className={styles.insInner}>
+          <div className={styles.sectionLabel}>Cobertura de seguro</div>
+          <div className={styles.whyTitle}>¿Su seguro cubrirá el reemplazo?</div>
+          <div className={styles.insGrid}>
+            {[
+              { title: 'Qué está cubierto', text: 'Daños por tormentas, granizo, viento y ramas de árboles caídas. Si un evento climático causó el daño, su póliza de propietario probablemente cubre el reemplazo completo.' },
+              { title: 'Qué no está cubierto', text: 'El desgaste normal, el envejecimiento y el descuido de mantenimiento. El seguro cubre daños por eventos, no el fin natural de la vida útil de un techo.' },
+              { title: 'Plazo de reclamo en Illinois', text: 'Los propietarios de Illinois tienen de 12 a 24 meses desde la fecha de la tormenta para presentar un reclamo por daños de granizo. Documente todo inmediatamente después de la tormenta.' },
+              { title: 'Cómo maximizar su reclamo', text: 'Obtenga una evaluación escrita del contratista antes de llamar a su aseguradora. Solicite que su contratista esté presente durante la visita del ajustador.' },
+            ].map((item) => (
+              <div key={item.title} className={styles.insCard}>
+                <strong>{item.title}</strong>
+                <p>{item.text}</p>
+              </div>
+            ))}
+          </div>
+          <a href="/es/insurance-guide" className={styles.insLink}>Guía completa de seguros →</a>
+        </div>
+      </section>
+
+      {/* ARTICLES */}
+      <section className={styles.articlesSection}>
+        <div className={styles.articlesInner}>
+          <div className={styles.sectionLabel}>Guías para propietarios</div>
+          <div className={styles.whyTitle}>Infórmese antes de decidir</div>
+          <div className={styles.articlesGrid}>
+            {articles.slice(0, 4).map((article) => (
+              <a key={article.slug} href={`/es/articles/${article.slug}`} className={styles.articleCard}>
+                <div className={styles.articleTitle}>{article.titleEs}</div>
+                <div className={styles.articleExcerpt}>{article.sectionsEs[0].text.slice(0, 110)}…</div>
+                <span className={styles.articleMore}>Leer más →</span>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className={styles.faq}>
+        <div className={styles.faqInner}>
+          <div className={styles.faqTitle}>Reemplazo de techo en Chicago — preguntas frecuentes</div>
+          <p className={styles.faqSub}>Respuestas basadas en datos actuales del mercado de Chicago, requisitos de permisos de la ciudad y regulaciones de seguros de Illinois.</p>
+          {faqItems.map((item) => (
+            <details key={item.q} className={styles.faqItem}>
+              <summary className={styles.faqQ}>{item.q}</summary>
+              <div className={styles.faqA}>{item.a}</div>
+            </details>
+          ))}
+        </div>
+      </section>
+
+      {/* MATERIALS */}
+      <section className={styles.materials}>
+        <div className={styles.materialsInner}>
+          <div className={styles.sectionLabel}>Tipos de reemplazo</div>
+          <div className={styles.whyTitle}>Encuentre la solución adecuada para su hogar</div>
+          <div className={styles.materialsGrid}>
+            {services.slice(0, 4).map((service) => (
+              <a key={service.slug} href={`/es/services/${service.slug}`} className={styles.materialCard}>
+                <div className={styles.materialName}>{service.nameEs}</div>
+                <div className={styles.materialIntro}>{service.introEs.slice(0, 120)}…</div>
+                <span className={styles.materialMore}>Saber más →</span>
+              </a>
+            ))}
+          </div>
+          <a href="/es/services/asphalt-shingle-replacement" className={styles.materialsAll}>Ver todos los tipos de reemplazo →</a>
         </div>
       </section>
 

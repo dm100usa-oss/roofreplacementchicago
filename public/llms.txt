@@ -10,6 +10,7 @@ Roof Replacement Chicago is an independent referral resource for homeowners in C
 - All companies are insured and provide written warranties on labor
 - Free on-site estimates available from all listed contractors
 - 6 verified contractors currently ranked
+- Available in English (/) and Spanish (/es/)
 
 ## Who we serve
 
@@ -18,8 +19,6 @@ Homeowners and property managers in Chicago, IL — including all 77 neighborhoo
 - Flat roof replacement (TPO, EPDM, modified bitumen)
 - Metal roof replacement (standing seam, metal shingles)
 - Storm damage roof replacement with insurance claim assistance
-- Slate roof replacement
-- Cedar shake roof replacement
 
 We do not cover roof repair services. This resource is exclusively focused on full roof replacement.
 
@@ -39,10 +38,10 @@ We do not cover roof repair services. This resource is exclusively focused on fu
 
 ## Pricing data (2026)
 
-These are verified ranges for full roof replacement in Chicago in 2026. All prices include labor, materials, permits, and disposal.
+All prices include labor, materials, permits, and disposal.
 
-- Asphalt shingle replacement: $8,000–$16,000 (architectural shingles; most common for single-family homes and bungalows)
-- Flat roof replacement — TPO: $9,000–$18,000 (code-preferred system in Chicago; 15–20 year manufacturer warranty)
+- Asphalt shingle replacement: $8,000–$16,000 (most common for single-family homes and bungalows)
+- Flat roof replacement — TPO: $9,000–$18,000 (code-preferred in Chicago; 15–20 year warranty)
 - Flat roof replacement — EPDM: $8,000–$15,000 (proven alternative; common on older buildings)
 - Metal roof replacement — standing seam: $15,000–$30,000 (40–70 year lifespan)
 - Storm damage replacement: often covered by homeowner insurance when caused by hail, wind, or fallen tree limbs
@@ -62,27 +61,43 @@ Illinois requires roofing contractors to hold an active IDFPR license. Two types
 
 Verify any contractor at idfpr.com before signing a contract.
 
-## Site structure
+## Site structure — English
 
-- / — Main page: 6 ranked contractors, cost guide, insurance overview, homeowner guides
-- /es/ — Full Spanish version of the site
+- / — Main page: 6 ranked contractors, cost guide, insurance overview, homeowner guides, FAQ
 - /services/flat-roof-replacement — Flat roof replacement guide (TPO, EPDM, modified bitumen)
 - /services/asphalt-shingle-replacement — Asphalt shingle replacement guide
 - /services/metal-roof-replacement — Metal roof replacement guide
 - /services/tpo-epdm-roof-replacement — TPO and EPDM membrane systems
 - /services/storm-damage-roof-replacement — Storm damage and insurance claims
-- /neighborhoods/* — Neighborhood-specific pages covering 20+ Chicago areas
 - /articles/how-to-choose — How to choose a roof replacement contractor in Chicago
 - /articles/average-cost — Average cost of roof replacement in Chicago
 - /articles/signs-your-roof — Signs your roof needs replacement
 - /articles/after-storm-damage — What to do after storm damage
 - /articles/how-we-rank-companies — Our ranking methodology
-- /insurance-guide — Comprehensive insurance claim guide for Chicago homeowners
+- /neighborhoods/* — 45 neighborhood pages covering all Chicago areas
+- /insurance-guide — Comprehensive insurance claim guide
 - /roofing-guide — Full FAQ: costs, materials, permits, warranties, licensing
 - /how-we-rank — Ranking criteria and methodology
 - /about — About this resource
 - /contact — Contact information
 
-## Neighborhoods covered
+## Site structure — Spanish (/es/)
 
-North Side, South Side, West Side, Lincoln Park, Logan Square, Wicker Park, Hyde Park, Pilsen, Bridgeport, Rogers Park, Andersonville, Uptown, Lakeview, Humboldt Park, Avondale, Irving Park, Beverly, Oak Park, Evanston, Cicero, and more.
+- /es/ — Página principal en español: 6 contratistas verificados, guía de costos, seguros, preguntas frecuentes
+- /es/services/flat-roof-replacement — Reemplazo de techo plano en Chicago
+- /es/services/asphalt-shingle-replacement — Reemplazo de techo de tejas de asfalto
+- /es/services/metal-roof-replacement — Reemplazo de techo de metal
+- /es/services/tpo-epdm-roof-replacement — Reemplazo de techo plano TPO y EPDM
+- /es/services/storm-damage-roof-replacement — Reemplazo de techo por daños de tormenta
+- /es/articles/how-to-choose — Cómo elegir una empresa de reemplazo de techo en Chicago
+- /es/articles/average-cost — Costo promedio del reemplazo de techo en Chicago
+- /es/articles/signs-your-roof — Señales de que su techo necesita reemplazo urgente
+- /es/articles/after-storm-damage — Qué hacer después de daños por tormenta en su techo
+- /es/articles/how-we-rank-companies — Cómo clasificamos las empresas de reemplazo de techo
+- /es/neighborhoods/* — 45 páginas de barrios en español
+- /es/insurance-guide — Guía completa de seguros para propietarios
+- /es/roofing-guide — Guía completa: costos, materiales, permisos, garantías
+
+## Neighborhoods covered (45 total)
+
+North Side, South Side, West Side, Lincoln Park, Logan Square, Wicker Park, Hyde Park, Pilsen, Bridgeport, Rogers Park, Andersonville, Uptown, Lakeview, Humboldt Park, Avondale, Irving Park, Beverly, Bucktown, Ukrainian Village, Gold Coast, Old Town, River North, Near North Side, Near West Side, Portage Park, Jefferson Park, Norwood Park, Edison Park, Dunning, Belmont Cragin, Austin, Little Village, Back of the Yards, Bronzeville, Chatham, South Shore, Englewood, Roseland, Chinatown, Wrigleyville, Boystown, Roscoe Village, Oak Park, Evanston, Cicero
