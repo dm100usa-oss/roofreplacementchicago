@@ -15,7 +15,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: 'Guía de Reemplazo de Techo en Chicago 2026',
     description: 'Guía completa para el reemplazo de techo en Chicago. Costos reales, comparación de materiales, requisitos de permisos.',
-    alternates: { canonical: 'https://www.roofreplacementchicago.com/es/roofing-guide' },
+    alternates: {
+      canonical: 'https://www.roofreplacementchicago.com/es/roofing-guide',
+      languages: { 'en': 'https://www.roofreplacementchicago.com/roofing-guide' },
+    },
   }
 }
 

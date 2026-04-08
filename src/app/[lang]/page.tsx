@@ -20,7 +20,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: 'Reemplazo de Techo en Chicago — 6 Contratistas Verificados',
     description: 'Reemplazar su techo en Chicago es una decisión importante. Contratistas verificados, precios reales, guía de seguros. Recurso experto para propietarios en Chicago.',
-    alternates: { canonical: 'https://www.roofreplacementchicago.com/es' },
+    alternates: {
+      canonical: 'https://www.roofreplacementchicago.com/es',
+      languages: { 'en': 'https://www.roofreplacementchicago.com' },
+    },
   }
 }
 

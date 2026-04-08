@@ -19,7 +19,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: `${s.titleEs}`,
     description: s.metaDescriptionEs,
-    alternates: { canonical: `https://www.roofreplacementchicago.com/es/services/${s.slug}` },
+    alternates: {
+      canonical: `https://www.roofreplacementchicago.com/es/services/${s.slug}`,
+      languages: { 'en': `https://www.roofreplacementchicago.com/services/${s.slug}` },
+    },
   }
 }
 

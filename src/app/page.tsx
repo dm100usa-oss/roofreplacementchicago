@@ -11,7 +11,10 @@ import styles from './page.module.css'
 export const metadata: Metadata = {
   title: 'Roof Replacement Chicago — 6 Verified Contractors (2026)',
   description: 'Replacing your roof in Chicago? Get real cost estimates, insurance guidance, and verified licensed contractors. Expert resource for Chicago homeowners.',
-  alternates: { canonical: 'https://www.roofreplacementchicago.com' },
+  alternates: {
+    canonical: 'https://www.roofreplacementchicago.com',
+    languages: { 'es': 'https://www.roofreplacementchicago.com/es' },
+  },
 }
 
 const faqItems = [

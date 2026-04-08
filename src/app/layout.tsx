@@ -12,6 +12,11 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   title: 'Roof Replacement Chicago — 6 Verified Contractors',
   description: 'Expert guide to roof replacement in Chicago. Verified contractors, real pricing, insurance help. Find the right company for your home.',
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true },
+  },
   icons: {
     icon: '/favicon.ico',
     apple: '/apple-touch-icon.png',
@@ -23,10 +28,6 @@ export const metadata: Metadata = {
     siteName: 'Roof Replacement Chicago',
     locale: 'en_US',
     type: 'website',
-  },
-  alternates: {
-    canonical: 'https://www.roofreplacementchicago.com',
-    languages: { 'es': 'https://www.roofreplacementchicago.com/es' },
   },
 }
 

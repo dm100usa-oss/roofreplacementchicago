@@ -5,7 +5,10 @@ import styles from '../roofing-guide/roofing-guide.module.css'
 export const metadata: Metadata = {
   title: 'How to Get Insurance to Pay for Roof Replacement in Chicago',
   description: 'Step-by-step guide for Chicago homeowners on filing a roof replacement insurance claim after hail or storm damage. What to document, what to say, and how to get approved.',
-  alternates: { canonical: 'https://www.roofreplacementchicago.com/insurance-guide' },
+  alternates: {
+    canonical: 'https://www.roofreplacementchicago.com/insurance-guide',
+    languages: { 'es': 'https://www.roofreplacementchicago.com/es/insurance-guide' },
+  },
 }
 
 export default function InsuranceGuidePage() {

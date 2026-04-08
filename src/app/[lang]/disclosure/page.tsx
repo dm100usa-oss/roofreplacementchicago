@@ -4,7 +4,10 @@ import styles from '../static-page.module.css'
 export const metadata: Metadata = {
   title: 'Disclosure — Roof Replacement Chicago',
   description: 'Advertising and referral disclosure for Roof Replacement Chicago.',
-  alternates: { canonical: 'https://www.roofreplacementchicago.com/disclosure' },
+  alternates: {
+    canonical: 'https://www.roofreplacementchicago.com/es/disclosure',
+    languages: { 'en': 'https://www.roofreplacementchicago.com/disclosure' },
+  },
 }
 
 export default function DisclosurePage() {

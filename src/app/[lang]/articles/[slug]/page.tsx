@@ -18,7 +18,10 @@ export function generateMetadata({ params }: Props): Metadata {
   return {
     title: `${a.titleEs} — Reemplazo de Techo Chicago`,
     description: a.metaDescriptionEs,
-    alternates: { canonical: `https://www.roofreplacementchicago.com/es/articles/${a.slug}` },
+    alternates: {
+      canonical: `https://www.roofreplacementchicago.com/es/articles/${a.slug}`,
+      languages: { 'en': `https://www.roofreplacementchicago.com/articles/${a.slug}` },
+    },
   }
 }
 

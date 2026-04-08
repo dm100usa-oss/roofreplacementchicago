@@ -14,7 +14,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: 'Cómo Conseguir que el Seguro Pague el Reemplazo de Techo en Chicago',
     description: 'Guía paso a paso para propietarios de Chicago sobre cómo presentar un reclamo de seguro para el reemplazo de techo después de daños por tormenta o granizo.',
-    alternates: { canonical: 'https://www.roofreplacementchicago.com/es/insurance-guide' },
+    alternates: {
+      canonical: 'https://www.roofreplacementchicago.com/es/insurance-guide',
+      languages: { 'en': 'https://www.roofreplacementchicago.com/insurance-guide' },
+    },
   }
 }
 

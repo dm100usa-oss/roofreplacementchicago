@@ -5,7 +5,10 @@ import styles from './roofing-guide.module.css'
 export const metadata: Metadata = {
   title: 'Chicago Roof Replacement Guide (2026) — Cost, Materials, Permits',
   description: 'Complete guide to roof replacement in Chicago. Real cost data, material comparisons, permit requirements, and how to avoid common mistakes.',
-  alternates: { canonical: 'https://www.roofreplacementchicago.com/roofing-guide' },
+  alternates: {
+    canonical: 'https://www.roofreplacementchicago.com/roofing-guide',
+    languages: { 'es': 'https://www.roofreplacementchicago.com/es/roofing-guide' },
+  },
 }
 
 export default function RoofingGuidePage() {

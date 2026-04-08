@@ -4,7 +4,10 @@ import styles from '../static-page.module.css'
 export const metadata: Metadata = {
   title: 'How It Works — Roof Replacement Chicago',
   description: 'See how Roof Replacement Chicago connects Chicago homeowners with top-rated local roofers — fast, free, and with no obligation.',
-  alternates: { canonical: 'https://www.roofreplacementchicago.com/how-it-works' },
+  alternates: {
+    canonical: 'https://www.roofreplacementchicago.com/es/how-it-works',
+    languages: { 'en': 'https://www.roofreplacementchicago.com/how-it-works' },
+  },
 }
 
 export default function HowItWorksPage() {

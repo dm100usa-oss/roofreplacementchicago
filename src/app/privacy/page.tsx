@@ -4,7 +4,10 @@ import styles from '../static-page.module.css'
 export const metadata: Metadata = {
   title: 'Privacy Policy — Roof Replacement Chicago',
   description: 'Privacy policy for roofreplacementchicago.com.',
-  alternates: { canonical: 'https://www.roofreplacementchicago.com/privacy' },
+  alternates: {
+    canonical: 'https://www.roofreplacementchicago.com/privacy',
+    languages: { 'es': 'https://www.roofreplacementchicago.com/es/privacy' },
+  },
 }
 
 export default function PrivacyPage() {

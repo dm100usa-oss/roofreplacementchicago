@@ -4,7 +4,10 @@ import styles from '../static-page.module.css'
 export const metadata: Metadata = {
   title: 'Contact — Roof Replacement Chicago',
   description: 'Contact Roof Replacement Chicago with questions, feedback, or partnership inquiries.',
-  alternates: { canonical: 'https://www.roofreplacementchicago.com/contact' },
+  alternates: {
+    canonical: 'https://www.roofreplacementchicago.com/es/contact',
+    languages: { 'en': 'https://www.roofreplacementchicago.com/contact' },
+  },
 }
 
 export default function ContactPage() {

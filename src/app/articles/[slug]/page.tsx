@@ -17,7 +17,10 @@ export function generateMetadata({ params }: Props): Metadata {
   return {
     title: `${a.title} — Roof Replacement Chicago`,
     description: a.metaDescription,
-    alternates: { canonical: `https://www.roofreplacementchicago.com/articles/${a.slug}` },
+    alternates: {
+      canonical: `https://www.roofreplacementchicago.com/articles/${a.slug}`,
+      languages: { 'es': `https://www.roofreplacementchicago.com/es/articles/${a.slug}` },
+    },
   }
 }
 

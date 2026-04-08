@@ -19,7 +19,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: `Reemplazo de Techo en ${n.name} Chicago`,
     description: n.metaDescription,
-    alternates: { canonical: `https://www.roofreplacementchicago.com/es/neighborhoods/${n.slug}` },
+    alternates: {
+      canonical: `https://www.roofreplacementchicago.com/es/neighborhoods/${n.slug}`,
+      languages: { 'en': `https://www.roofreplacementchicago.com/neighborhoods/${n.slug}` },
+    },
   }
 }
 

@@ -4,7 +4,10 @@ import styles from '../static-page.module.css'
 export const metadata: Metadata = {
   title: 'About — Roof Replacement Chicago',
   description: 'Learn about Roof Replacement Chicago — an independent service that researches and ranks the best roof repair companies in Chicago.',
-  alternates: { canonical: 'https://www.roofreplacementchicago.com/about' },
+  alternates: {
+    canonical: 'https://www.roofreplacementchicago.com/es/about',
+    languages: { 'en': 'https://www.roofreplacementchicago.com/about' },
+  },
 }
 
 export default function AboutPage() {
