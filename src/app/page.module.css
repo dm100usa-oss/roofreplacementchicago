@@ -21,9 +21,17 @@
   letter-spacing: -.01em;
 }
 .heroSubtitle {
-  font-size: 15px;
-  color: #000;
-  font-weight: 700;
+  font-size: 16px;
+  color: var(--text);
+  font-weight: 800;
+  line-height: 1.4;
+  margin-bottom: .625rem;
+  letter-spacing: -.01em;
+}
+.heroBody {
+  font-size: 14px;
+  color: var(--text-muted);
+  font-weight: 400;
   line-height: 1.65;
   margin-bottom: 1rem;
 }
@@ -159,10 +167,13 @@ details[open] .faqQ::after { transform: rotate(45deg); }
 /* ═══ TABLET 768px+ ═══════════════════════════════════════════ */
 @media (min-width: 768px) {
   .hero { padding: 2.5rem 1.5rem 2rem; }
-  .heroLeft h1 { font-size: 24px; }
+  .heroLeft h1 { font-size: 26px; }
+  .heroSubtitle { font-size: 18px; }
+  .heroBody { font-size: 15px; }
   .heroP1 { font-size: 20px; }
   .heroP2 { font-size: 16px; }
   .btnCall { font-size: 18px; }
+  .btnCallNoteItem { font-size: 15px; }
   .expertNum { font-size: 22px; }
   .expertLabel { font-size: 11px; }
   .whyGrid { grid-template-columns: 1fr 1fr; gap: 1rem; }
@@ -178,8 +189,9 @@ details[open] .faqQ::after { transform: rotate(45deg); }
   /* Single column centred */
   .heroContent { flex-direction: column; align-items: center; gap: 1.5rem; }
   .heroLeft { text-align: center; max-width: 720px; }
-  .heroLeft h1 { font-size: 32px; text-align: center; }
-  .heroSubtitle { font-size: 17px; }
+  .heroLeft h1 { font-size: 34px; text-align: center; }
+  .heroSubtitle { font-size: 20px; }
+  .heroBody { font-size: 16px; }
   .heroExtra { font-size: 17px; }
   .heroCallout { font-size: 20px; }
 
@@ -225,23 +237,12 @@ details[open] .faqQ::after { transform: rotate(45deg); }
 
 /* ═══ LARGE DESKTOP 1280px+ ═══════════════════════════════════ */
 @media (min-width: 1280px) {
-  .heroLeft h1 { font-size: 37px; }
+  .heroLeft h1 { font-size: 40px; }
+  .heroSubtitle { font-size: 22px; }
+  .heroBody { font-size: 17px; }
   .heroP1 { font-size: 24px; }
   .heroP2 { font-size: 18px; }
   .heroRight { max-width: 560px; }
-  .expertNum { font-size: 28px; }
-}
-
-/* subtitle / callout responsive */
-@media (min-width: 768px) {
-  .heroSubtitle { font-size: 16px; }
-  .heroExtra { font-size: 16px; }
-  .heroCallout { font-size: 19px; }
   .btnCallNoteItem { font-size: 17px; }
-}
-@media (min-width: 1024px) {
-  .heroSubtitle { font-size: 17px; }
-  .heroExtra { font-size: 17px; }
-  .heroCallout { font-size: 20px; }
-  .btnCallNoteItem { font-size: 18px; }
+  .expertNum { font-size: 28px; }
 }
