@@ -64,30 +64,37 @@ Verify any contractor at idfpr.com before signing a contract.
 ## Site structure — English
 
 - / — Main page: 6 ranked contractors, cost guide, insurance overview, homeowner guides, FAQ
+- /roofing-guide — Complete guide: costs, materials, permits, warranties, when to replace vs repair
+- /insurance-guide — Step-by-step guide to filing a roof insurance claim after storm damage in Chicago
+- /how-we-rank — Ranking criteria and methodology
+- /how-it-works — How this referral resource works
+- /about — About this resource
+- /contact — Contact information
 - /services/flat-roof-replacement — Flat roof replacement guide (TPO, EPDM, modified bitumen)
 - /services/asphalt-shingle-replacement — Asphalt shingle replacement guide
 - /services/metal-roof-replacement — Metal roof replacement guide
-- /services/tpo-epdm-roof-replacement — TPO and EPDM membrane systems
-- /services/storm-damage-roof-replacement — Storm damage and insurance claims
+- /services/tpo-epdm-roof-replacement — TPO and EPDM membrane systems compared
+- /services/storm-damage-roof-replacement — Storm damage assessment and insurance claims
 - /articles/how-to-choose — How to choose a roof replacement contractor in Chicago
 - /articles/average-cost — Average cost of roof replacement in Chicago
 - /articles/signs-your-roof — Signs your roof needs replacement
-- /articles/after-storm-damage — What to do after storm damage
-- /articles/how-we-rank-companies — Our ranking methodology
+- /articles/after-storm-damage — What to do after storm damage to your roof
+- /articles/how-we-rank-companies — Our ranking methodology explained
 - /neighborhoods/* — 45 neighborhood pages covering all Chicago areas
-- /insurance-guide — Comprehensive insurance claim guide
-- /roofing-guide — Full FAQ: costs, materials, permits, warranties, licensing
-- /how-we-rank — Ranking criteria and methodology
-- /about — About this resource
-- /contact — Contact information
 
 ## Site structure — Spanish (/es/)
 
-- /es/ — Página principal en español: 6 contratistas verificados, guía de costos, seguros, preguntas frecuentes
+- /es/ — Página principal: 6 contratistas verificados, precios 2026, seguros, preguntas frecuentes
+- /es/roofing-guide — Guía completa: costos, materiales, permisos, garantías, cuándo reemplazar
+- /es/insurance-guide — Guía paso a paso para reclamar el seguro por daños de tormenta en Chicago
+- /es/how-we-rank — Criterios y metodología de clasificación
+- /es/how-it-works — Cómo funciona este recurso
+- /es/about — Acerca de este recurso
+- /es/contact — Información de contacto
 - /es/services/flat-roof-replacement — Reemplazo de techo plano en Chicago
 - /es/services/asphalt-shingle-replacement — Reemplazo de techo de tejas de asfalto
 - /es/services/metal-roof-replacement — Reemplazo de techo de metal
-- /es/services/tpo-epdm-roof-replacement — Reemplazo de techo plano TPO y EPDM
+- /es/services/tpo-epdm-roof-replacement — Reemplazo de techo plano TPO y EPDM comparados
 - /es/services/storm-damage-roof-replacement — Reemplazo de techo por daños de tormenta
 - /es/articles/how-to-choose — Cómo elegir una empresa de reemplazo de techo en Chicago
 - /es/articles/average-cost — Costo promedio del reemplazo de techo en Chicago
@@ -95,8 +102,6 @@ Verify any contractor at idfpr.com before signing a contract.
 - /es/articles/after-storm-damage — Qué hacer después de daños por tormenta en su techo
 - /es/articles/how-we-rank-companies — Cómo clasificamos las empresas de reemplazo de techo
 - /es/neighborhoods/* — 45 páginas de barrios en español
-- /es/insurance-guide — Guía completa de seguros para propietarios
-- /es/roofing-guide — Guía completa: costos, materiales, permisos, garantías
 
 ## Neighborhoods covered (45 total)
 
