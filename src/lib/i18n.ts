@@ -10,16 +10,23 @@ export const dict = {
     langSwitchHref: '/es',
 
     // Hero
-    heroH1: 'Best Roofing Contractors in Chicago',
-    heroSub: 'Browse top-rated roofers below.',
-    heroP2: 'If you need help fast, call now and we\'ll connect you with a roofer today.',
-    factor1: 'Same-day availability',
-    factor2: 'Free estimate',
-    factor3: 'Warranty on work',
+    heroH1: 'Roof Replacement in Chicago: Expert Answers and Verified Contractors',
+    heroH2: 'Get the Best Price on Your New Roof Without Sacrificing Quality',
+    heroDesc: 'Start with a free expert consultation. Compare your options and take your time to make a confident, well-informed decision.',
     callNow: 'CALL NOW',
-    callNote: 'Free · No obligation · Available 24/7',
+    noteNoPress: 'No pressure',
+    noteNoObligation: 'No obligation',
+    noteAdvice: 'Just expert advice',
 
-    // Trust strip
+    // Stats bar
+    statsHeader: 'Average project cost and timeline in Chicago today',
+    statsUpdated: 'UPDATED',
+    statsDuration: 'AVERAGE PROJECT DURATION',
+    statsCost: 'TYPICAL COST IN CHICAGO',
+    statsPermit: 'REQUIRED BY CITY OF CHICAGO',
+    statsContractors: 'VERIFIED CONTRACTORS',
+
+    // (kept for other pages)
     companiesRanked: 'Companies ranked',
     emergencyService: 'Emergency service',
     response: 'Response',
@@ -122,14 +129,20 @@ export const dict = {
     langSwitch: 'English',
     langSwitchHref: '/',
 
-    heroH1: 'Los mejores contratistas de techos en Chicago',
-    heroSub: 'Explore los mejores techeros a continuación.',
-    heroP2: 'Si necesita ayuda rápido, llame ahora y lo conectaremos con un techero hoy.',
-    factor1: 'Disponibilidad el mismo día',
-    factor2: 'Presupuesto gratuito',
-    factor3: 'Garantía en el trabajo',
+    heroH1: 'Reemplazo de Techo en Chicago: Respuestas de Expertos y Contratistas Verificados',
+    heroH2: 'Obtenga el Mejor Precio en su Nuevo Techo Sin Sacrificar la Calidad',
+    heroDesc: 'Comience con una consulta gratuita con un experto. Compare sus opciones y tómese el tiempo para tomar una decisión segura y bien informada.',
     callNow: 'LLAMAR AHORA',
-    callNote: 'Gratis · Sin compromiso · Disponible 24/7',
+    noteNoPress: 'Sin presión',
+    noteNoObligation: 'Sin compromiso',
+    noteAdvice: 'Solo consejos expertos',
+
+    statsHeader: 'Costo promedio y plazo del proyecto en Chicago hoy',
+    statsUpdated: 'ACTUALIZADO',
+    statsDuration: 'DURACIÓN PROMEDIO',
+    statsCost: 'COSTO EN CHICAGO',
+    statsPermit: 'REQUERIDO POR LA CIUDAD',
+    statsContractors: 'CONTRATISTAS VERIFICADOS',
 
     companiesRanked: 'Empresas clasificadas',
     emergencyService: 'Servicio de emergencia',

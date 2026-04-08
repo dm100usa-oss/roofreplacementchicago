@@ -11,66 +11,28 @@
   font-weight: 900;
   color: var(--text);
   line-height: 1.25;
-  margin-bottom: .6rem;
+  margin-bottom: .75rem;
   letter-spacing: -.01em;
   text-align: center;
 }
 
-.heroSub {
-  font-size: 14px;
-  color: var(--text-muted);
-  line-height: 1.55;
-  margin-bottom: 1.5rem;
-}
-
-.heroSubBlock {
-  text-align: center;
-  margin-bottom: 1.5rem;
-}
-
-.heroSubBlock p {
-  line-height: 1.6;
-  margin: 0 0 .5rem;
-}
-
-.heroP1 {
-  font-size: 20px;
-  font-weight: 700;
-  color: var(--text);
-}
-
-.heroP2 {
+.heroH2 {
   font-size: 16px;
-  color: #444;
-}
-
-.heroP3 {
-  font-size: 14px;
+  font-weight: 600;
   color: var(--text);
-}
-
-.factors {
-  display: flex;
-  gap: .5rem;
-  flex-wrap: nowrap;
-  justify-content: center;
+  line-height: 1.4;
   margin-bottom: .75rem;
+  text-align: center;
 }
 
-.factor {
-  display: flex;
-  align-items: center;
-  gap: 4px;
-  background: #F0FDF4;
-  border: 1px solid #BBF7D0;
-  border-radius: 20px;
-  padding: 5px 10px;
-  font-size: 13px;
-  font-weight: 700;
-  color: #15803D;
-  white-space: nowrap;
+.heroDesc {
+  font-size: 14px;
+  color: #444;
+  line-height: 1.6;
+  margin-bottom: .44rem;
+  text-align: center;
 }
-.factor::before { content: ''; }
+
 
 .btnCall {
   display: block;
@@ -110,22 +72,37 @@
   white-space: nowrap;
 }
 
-/* TRUST STRIP */
-.trustStrip {
-  background: var(--white);
+/* STATS HEADER */
+.statsHeader {
+  background: #F8FAFC;
+  border-top: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
-  padding: .875rem 1.25rem;
+  padding: .75rem 1.25rem;
+  text-align: center;
 }
-.trustInner {
+.statsHeaderText {
+  font-size: 13px;
+  font-weight: 600;
+  color: #444;
+  letter-spacing: .03em;
+  text-transform: uppercase;
+}
+
+/* STATS BAR */
+.statsBar {
+  background: #1e293b;
+  padding: 1.25rem 1.25rem;
+}
+.statsInner {
   max-width: var(--max-width);
   margin: 0 auto;
   display: flex;
   justify-content: space-around;
   gap: .5rem;
 }
-.trustItem { text-align: center; flex: 1; }
-.trustNum { font-size: 20px; font-weight: 900; color: var(--text); letter-spacing: -.02em; }
-.trustLabel { font-size: 10px; color: var(--text-light); font-weight: 600; letter-spacing: .04em; text-transform: uppercase; margin-top: 1px; }
+.statItem { text-align: center; flex: 1; }
+.statNum { font-size: 14px; font-weight: 700; color: #fff; }
+.statLabel { font-size: 10px; color: #94a3b8; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; margin-top: 2px; }
 
 /* WHY US */
 .whyUs { padding: 1.75rem 1.25rem; background: var(--bg); }
@@ -174,28 +151,48 @@ details[open] .faqQ::after { transform: rotate(180deg); }
 .reviewsSub { font-size: 13px; color: var(--text-muted); margin-bottom: 1.25rem; }
 .reviewsPlaceholder { border: 2px dashed var(--border); border-radius: var(--radius); padding: 2rem; text-align: center; color: var(--text-light); font-size: 13px; line-height: 1.6; }
 
+/* MOBILE TWEAKS (default = mobile-first) */
+.btnCallNote { gap: .25rem; }
+.btnCallNoteItem { font-size: 12px; padding: 5px 8px; }
+.statNum { font-size: 13px; }
+.statDate { font-size: 11px; white-space: nowrap; }
+.statLabel { font-size: 8px; }
+.statsHeader { padding: .6rem 1rem; }
+.statsHeaderText { font-size: 11px; }
+.statsBar { padding: .875rem 1rem; }
+
 /* TABLET */
+@media (min-width: 640px) {
+  .heroInner h1 { font-size: 26px; }
+  .heroH2 { font-size: 16px; }
+  .heroDesc { font-size: 14px; max-width: 520px; margin-left: auto; margin-right: auto; }
+  .btnCall { max-width: 480px; margin-left: auto; margin-right: auto; display: block; }
+  .btnCallNote { gap: .4rem; }
+  .btnCallNoteItem { font-size: 13px; padding: 6px 12px; }
+  .statNum { font-size: 14px; }
+  .statDate { font-size: 14px; }
+  .statLabel { font-size: 9px; }
+  .statsHeaderText { font-size: 12px; }
+  .statsBar { padding: 1.25rem; }
+}
+
 @media (min-width: 768px) {
   .heroInner h1 { font-size: 28px; }
-  .heroSub { font-size: 16px; }
-  .heroP1 { font-size: 24px; }
-  .heroP2 { font-size: 18px; }
-  .heroP3 { font-size: 17px; }
+  .heroH2 { font-size: 17px; }
+  .statLabel { font-size: 10px; }
+  .statsHeaderText { font-size: 13px; }
   .whyGrid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
-  .trustNum { font-size: 24px; }
 }
 
 /* DESKTOP */
 @media (min-width: 1024px) {
-  .heroInner h1 { font-size: 36px; }
   .hero { padding: 3rem 1.25rem 2.5rem; }
-  .heroP1 { font-size: 26px; }
-  .heroP2 { font-size: 19px; }
-  .heroP3 { font-size: 18px; }
-  .btnCall { font-size: 19px; padding: 20px; max-width: 600px; margin: 0 auto; display: block; }
-  .factors { gap: .75rem; }
-  .factor { font-size: 14px; padding: 6px 14px; }
-  .btnCallNoteItem { font-size: 14px; }
+  .heroInner h1 { font-size: 36px; }
+  .heroH2 { font-size: 18px; }
+  .heroDesc { font-size: 15px; }
+  .btnCall { font-size: 19px; padding: 20px; max-width: 600px; margin-left: auto; margin-right: auto; display: block; }
+  .btnCallNote { gap: .5rem; }
+  .btnCallNoteItem { font-size: 14px; padding: 7px 16px; }
   .whyCard strong { font-size: 15px; }
   .whyCard p { font-size: 14px; }
   .faqTitle { font-size: 22px; }
