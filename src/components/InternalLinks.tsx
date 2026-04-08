@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { neighborhoods } from '@/lib/neighborhoods'
 import { services } from '@/lib/services'
+import { articles } from '@/lib/articles'
 import styles from './InternalLinks.module.css'
 
 type Props = {
@@ -44,6 +45,18 @@ export default function InternalLinks({ type, lang }: Props) {
             </div>
           </div>
         )}
+        <div className={styles.group}>
+          <div className={styles.groupTitle}>
+            {isEs ? 'Guías para propietarios' : 'Guides for homeowners'}
+          </div>
+          <div className={styles.links}>
+            {articles.map(a => (
+              <Link key={a.slug} href={`${prefix}/articles/${a.slug}`} className={styles.link}>
+                {a.title}
+              </Link>
+            ))}
+          </div>
+        </div>
         <div className={styles.group}>
           <div className={styles.groupTitle}>
             {isEs ? 'Recursos' : 'Resources'}

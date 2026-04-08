@@ -13,15 +13,18 @@ export default function Header() {
   const navLinks = isEs
     ? [
         { href: '/es', label: 'Inicio' },
-        { href: '/es/insurance-guide', label: 'Seguro' },
+        { href: '/es/services/flat-roof-replacement', label: 'Servicios' },
         { href: '/es/roofing-guide', label: 'Guía' },
+        { href: '/es/insurance-guide', label: 'Seguro' },
         { href: '/es/about', label: 'Acerca de' },
         { href: '/es/how-we-rank', label: 'Cómo clasificamos' },
         { href: '/es/contact', label: 'Contacto' },
       ]
     : [
         { href: '/', label: 'Home' },
-        { href: '/insurance-guide', label: 'Insurance Guide' },
+        { href: '/services/asphalt-shingle-replacement', label: 'Services' },
+        { href: '/articles/how-to-choose', label: 'Articles' },
+        { href: '/insurance-guide', label: 'Insurance' },
         { href: '/roofing-guide', label: 'Roofing Guide' },
         { href: '/about', label: 'About' },
         { href: '/how-we-rank', label: 'How We Rank' },

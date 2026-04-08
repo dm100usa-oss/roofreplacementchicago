@@ -150,6 +150,32 @@ export default function HomePage() {
       </div>
       <p className={styles.belowStrip}>This resource was created to help you choose the most convenient and reliable option for your roof replacement</p>
 
+      {/* WHY US */}
+      <section className={styles.whyUs}>
+        <div className={styles.whyInner}>
+          <div className={styles.sectionLabel}>Why this resource</div>
+          <div className={styles.whyTitle}>We research so you can decide with confidence.</div>
+          <div className={styles.whyGrid}>
+            {[
+              { title: 'Verified licensing', text: 'Every contractor on our list holds an active Illinois roofing license. We check IDFPR records before any company makes the list.', img: '/foto2.png' },
+              { title: 'Real Chicago expertise', text: 'Chicago has specific permit rules, climate demands, and flat roof requirements. We only include contractors who know this market.', img: '/foto3.png' },
+              { title: 'Insurance claim experience', text: 'Storm damage and insurance claims are common in Chicago. We prioritize contractors with documented experience navigating this process.', img: '/foto4.png' },
+              { title: 'No pressure approach', text: 'Roof replacement is a major investment. Our resource exists to inform, not to pressure. Call when you are ready.', img: '/foto5.png' },
+            ].map((item) => (
+              <div key={item.title} className={styles.whyCard}>
+                <div className={styles.whyCardImgWrap}>
+                  <Image src={item.img} alt={item.title} width={600} height={220} className={styles.whyCardImg} />
+                </div>
+                <div className={styles.whyCardBody}>
+                  <strong>{item.title}</strong>
+                  <p>{item.text}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* COMPANIES */}
       <section id="companies" className={styles.companies}>
         <div className={styles.companiesInner}>
@@ -170,69 +196,6 @@ export default function HomePage() {
           <p className={styles.howRankText}>
             We evaluate each contractor on active Illinois IDFPR license, Google rating and review volume, BBB accreditation, years in business, workmanship warranty length, and documented experience with Chicago building permits and insurance claims. Only companies that meet all criteria appear on our list.
           </p>
-        </div>
-      </section>
-
-      {/* COST */}
-      <section className={styles.cost}>
-        <div className={styles.costInner}>
-          <div className={styles.sectionLabel}>2026 pricing</div>
-          <div className={styles.whyTitle}>How much does roof replacement cost in Chicago?</div>
-          <p className={styles.costIntro}>Prices depend on roof size, pitch, and material. Here are typical ranges for Chicago homes in 2026.</p>
-          <div className={styles.costGrid}>
-            {[
-              { type: 'Asphalt Shingle', range: '$8,000 – $16,000', note: 'Most common. Suits most Chicago single-family homes and bungalows.' },
-              { type: 'Flat Roof (TPO / EPDM)', range: '$8,000 – $20,000', note: 'Standard for two-flats, three-flats, and courtyard buildings.' },
-              { type: 'Metal Roof', range: '$15,000 – $30,000', note: 'Lasts 40–70 years. Best long-term value for owners staying long term.' },
-              { type: 'Storm Damage', range: 'Often covered by insurance', note: 'Document damage within 48 hours. Illinois claim window: 12–24 months.' },
-            ].map((item) => (
-              <div key={item.type} className={styles.costCard}>
-                <div className={styles.costType}>{item.type}</div>
-                <div className={styles.costRange}>{item.range}</div>
-                <div className={styles.costNote}>{item.note}</div>
-              </div>
-            ))}
-          </div>
-          <p className={styles.costSub}>All estimates include labor, materials, permits, and disposal. <a href="/roofing-guide" className={styles.costLink}>Full cost breakdown →</a></p>
-        </div>
-      </section>
-
-      {/* INSURANCE */}
-      <section className={styles.insSection}>
-        <div className={styles.insInner}>
-          <div className={styles.sectionLabel}>Insurance coverage</div>
-          <div className={styles.whyTitle}>Will your insurance cover the replacement?</div>
-          <div className={styles.insGrid}>
-            {[
-              { title: 'What is covered', text: 'Storm damage, hail, wind, and fallen tree limbs. If a weather event caused the damage, your homeowner policy likely covers full replacement.' },
-              { title: 'What is not covered', text: "Normal wear, aging, and maintenance neglect. Insurance covers damage from events — not the natural end of a roof's life." },
-              { title: 'Illinois claim window', text: 'Illinois homeowners have 12 to 24 months from the storm date to file a hail damage claim. Document everything immediately after the storm.' },
-              { title: 'How to maximize your claim', text: 'Get a written contractor assessment before calling your insurer. Request that your contractor be present during the adjuster visit.' },
-            ].map((item) => (
-              <div key={item.title} className={styles.insCard}>
-                <strong>{item.title}</strong>
-                <p>{item.text}</p>
-              </div>
-            ))}
-          </div>
-          <a href="/insurance-guide" className={styles.insLink}>Full insurance guide →</a>
-        </div>
-      </section>
-
-      {/* ARTICLES */}
-      <section className={styles.articlesSection}>
-        <div className={styles.articlesInner}>
-          <div className={styles.sectionLabel}>Guides for homeowners</div>
-          <div className={styles.whyTitle}>Know before you decide</div>
-          <div className={styles.articlesGrid}>
-            {articles.slice(0, 4).map((article) => (
-              <a key={article.slug} href={`/articles/${article.slug}`} className={styles.articleCard}>
-                <div className={styles.articleTitle}>{article.title}</div>
-                <div className={styles.articleExcerpt}>{article.sections[0].text.slice(0, 110)}…</div>
-                <span className={styles.articleMore}>Read more →</span>
-              </a>
-            ))}
-          </div>
         </div>
       </section>
 
@@ -259,50 +222,6 @@ export default function HomePage() {
               <div className={styles.faqA}>{item.a}</div>
             </details>
           ))}
-        </div>
-      </section>
-
-      {/* MATERIALS */}
-      <section className={styles.materials}>
-        <div className={styles.materialsInner}>
-          <div className={styles.sectionLabel}>Replacement types</div>
-          <div className={styles.whyTitle}>Find the right solution for your home</div>
-          <div className={styles.materialsGrid}>
-            {services.slice(0, 4).map((service) => (
-              <a key={service.slug} href={`/services/${service.slug}`} className={styles.materialCard}>
-                <div className={styles.materialName}>{service.name}</div>
-                <div className={styles.materialIntro}>{service.intro.slice(0, 120)}…</div>
-                <span className={styles.materialMore}>Learn more →</span>
-              </a>
-            ))}
-          </div>
-          <a href="/services/asphalt-shingle-replacement" className={styles.materialsAll}>See all replacement types →</a>
-        </div>
-      </section>
-
-      {/* WHY US */}
-      <section className={styles.whyUs}>
-        <div className={styles.whyInner}>
-          <div className={styles.sectionLabel}>Why this resource</div>
-          <div className={styles.whyTitle}>We research so you can decide with confidence.</div>
-          <div className={styles.whyGrid}>
-            {[
-              { title: 'Verified licensing', text: 'Every contractor on our list holds an active Illinois roofing license. We check IDFPR records before any company makes the list.', img: '/foto2.png' },
-              { title: 'Real Chicago expertise', text: 'Chicago has specific permit rules, climate demands, and flat roof requirements. We only include contractors who know this market.', img: '/foto3.png' },
-              { title: 'Insurance claim experience', text: 'Storm damage and insurance claims are common in Chicago. We prioritize contractors with documented experience navigating this process.', img: '/foto4.png' },
-              { title: 'No pressure approach', text: 'Roof replacement is a major investment. Our resource exists to inform, not to pressure. Call when you are ready.', img: '/foto5.png' },
-            ].map((item) => (
-              <div key={item.title} className={styles.whyCard}>
-                <div className={styles.whyCardImgWrap}>
-                  <Image src={item.img} alt={item.title} width={600} height={220} className={styles.whyCardImg} />
-                </div>
-                <div className={styles.whyCardBody}>
-                  <strong>{item.title}</strong>
-                  <p>{item.text}</p>
-                </div>
-              </div>
-            ))}
-          </div>
         </div>
       </section>
 

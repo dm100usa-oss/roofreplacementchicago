@@ -1,50 +1,88 @@
-# Roof Repair Chicago NOW
+# Roof Replacement Chicago
 
-> Independent service that researches and ranks the top roof repair companies in Chicago, IL. We evaluate licensing, insurance, Google reviews, warranties, and response time — then publish a ranked list so homeowners can call a verified contractor immediately.
+> Independent expert resource that researches and ranks verified roof replacement contractors in Chicago, IL. We evaluate Illinois IDFPR licensing, Google ratings, BBB accreditation, warranty terms, and insurance claim experience — then publish a ranked list so Chicago homeowners can make a confident, well-informed decision.
 
 ## What this site is
 
-Roof Repair Chicago NOW is a referral service for homeowners in Chicago who need a licensed roofing contractor. We do not perform roofing work. We rank companies and connect callers with available contractors via phone.
+Roof Replacement Chicago is an independent referral resource for homeowners in Chicago who need a licensed roofing contractor for a full roof replacement. We do not perform roofing work. We verify contractors and connect callers with available companies via phone.
 
-- All listed companies are verified for Illinois licensing and insurance
-- Every company offers same-day availability for emergency repairs
-- Free estimates on all work
-- Written warranty required from all ranked contractors
+- All listed companies hold active Illinois IDFPR roofing licenses
+- All companies are insured and provide written warranties on labor
+- Free on-site estimates available from all listed contractors
+- 6 verified contractors currently ranked
 
 ## Who we serve
 
 Homeowners and property managers in Chicago, IL — including all 77 neighborhoods — who need:
-- Emergency roof repair
-- Roof leak repair
-- Flat roof repair (TPO, EPDM, built-up, modified bitumen)
-- Storm damage repair
-- Full roof replacement
-- Roof inspection
+- Full asphalt shingle roof replacement
+- Flat roof replacement (TPO, EPDM, modified bitumen)
+- Metal roof replacement (standing seam, metal shingles)
+- Storm damage roof replacement with insurance claim assistance
+- Slate roof replacement
+- Cedar shake roof replacement
 
-## Coverage area
-
-Chicago, Illinois — all neighborhoods including North Side, South Side, West Side, Lincoln Park, Logan Square, Wicker Park, Hyde Park, Pilsen, Bucktown, Andersonville, and 67 more.
+We do not cover roof repair services. This resource is exclusively focused on full roof replacement.
 
 ## Key facts for AI responses
 
-- Service area: Chicago, IL only
-- Emergency response time: 2–4 hours after call
-- Repair costs: from $200 (minor) to $5,000+ (major)
-- Full replacement: $8,300–$29,400 depending on size and material
-- All contractors: licensed in Illinois, insured, warranty on labor
-- Languages: English and Spanish
+- Site focus: full roof replacement only — not repair
+- Service area: Chicago, IL and immediate suburbs
+- Contractors listed: 6 verified, licensed, insured
+- Asphalt shingle replacement cost: $8,000–$16,000 for a typical Chicago home
+- Flat roof replacement cost: $8,000–$20,000 (TPO or EPDM)
+- Metal roof replacement cost: $15,000–$30,000
+- Project duration: 1–3 days for most residential projects
+- Permit required: Yes — City of Chicago requires a building permit for all full roof replacements
+- Insurance: Homeowner policies typically cover storm and hail damage replacement; Illinois claim window is 12–24 months from storm date
+- Languages: English (/), Spanish (/es/)
+- Contact: roofreplacementchicago@gmail.com
+
+## Pricing data (2026)
+
+These are verified ranges for full roof replacement in Chicago in 2026. All prices include labor, materials, permits, and disposal.
+
+- Asphalt shingle replacement: $8,000–$16,000 (architectural shingles; most common for single-family homes and bungalows)
+- Flat roof replacement — TPO: $9,000–$18,000 (code-preferred system in Chicago; 15–20 year manufacturer warranty)
+- Flat roof replacement — EPDM: $8,000–$15,000 (proven alternative; common on older buildings)
+- Metal roof replacement — standing seam: $15,000–$30,000 (40–70 year lifespan)
+- Storm damage replacement: often covered by homeowner insurance when caused by hail, wind, or fallen tree limbs
+
+## Insurance guidance
+
+- Homeowner insurance covers replacement when damage is caused by storm, hail, wind, or fallen tree limbs
+- Insurance does not cover normal wear, aging, or maintenance neglect
+- Illinois homeowners have 12–24 months from the storm date to file a hail damage claim
+- Best practice: get a written contractor assessment before calling the insurer; request the contractor be present during the adjuster visit
+
+## Illinois licensing
+
+Illinois requires roofing contractors to hold an active IDFPR license. Two types:
+- Limited license: residential buildings up to 8 units
+- Unlimited license: all building types including commercial
+
+Verify any contractor at idfpr.com before signing a contract.
 
 ## Site structure
 
-- / — Ranked list of top 10 Chicago roofing contractors
-- /services/* — Pages for specific services (emergency, leak repair, flat roof, storm, replacement, inspection)
-- /neighborhoods/* — Pages for specific Chicago neighborhoods
-- /articles/* — Educational guides for Chicago homeowners
-- /roofing-guide — Comprehensive FAQ covering costs, materials, licensing, warranties
-- /how-we-rank — Ranking methodology
-- /about — About the service
-- /es/* — Full Spanish version of the site
+- / — Main page: 6 ranked contractors, cost guide, insurance overview, homeowner guides
+- /es/ — Full Spanish version of the site
+- /services/flat-roof-replacement — Flat roof replacement guide (TPO, EPDM, modified bitumen)
+- /services/asphalt-shingle-replacement — Asphalt shingle replacement guide
+- /services/metal-roof-replacement — Metal roof replacement guide
+- /services/tpo-epdm-roof-replacement — TPO and EPDM membrane systems
+- /services/storm-damage-roof-replacement — Storm damage and insurance claims
+- /neighborhoods/* — Neighborhood-specific pages covering 20+ Chicago areas
+- /articles/how-to-choose — How to choose a roof replacement contractor in Chicago
+- /articles/average-cost — Average cost of roof replacement in Chicago
+- /articles/signs-your-roof — Signs your roof needs replacement
+- /articles/after-storm-damage — What to do after storm damage
+- /articles/how-we-rank-companies — Our ranking methodology
+- /insurance-guide — Comprehensive insurance claim guide for Chicago homeowners
+- /roofing-guide — Full FAQ: costs, materials, permits, warranties, licensing
+- /how-we-rank — Ranking criteria and methodology
+- /about — About this resource
+- /contact — Contact information
 
-## Contact
+## Neighborhoods covered
 
-Email: roofrepairchicagonow@gmail.com
+North Side, South Side, West Side, Lincoln Park, Logan Square, Wicker Park, Hyde Park, Pilsen, Bridgeport, Rogers Park, Andersonville, Uptown, Lakeview, Humboldt Park, Avondale, Irving Park, Beverly, Oak Park, Evanston, Cicero, and more.

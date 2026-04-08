@@ -71,7 +71,6 @@
   white-space: nowrap;
 }
 .navLink:hover { color: var(--blue); }
-
 .hamburger {
   display: flex;
   flex-direction: column;
@@ -102,7 +101,8 @@
 
 /* ═══ TABLET 768px+ ═══════════════════════════════════ */
 @media (min-width: 768px) {
-  .desktopNav { display: flex; }
+  .desktopNav { display: flex; gap: 0.75rem; }
+  .navLink { font-size: 12px; }
   .hamburger { display: none; }
   .mobileMenu { display: none !important; }
   .inner { padding: 1rem 1.5rem; }
@@ -113,11 +113,12 @@
 @media (min-width: 1024px) {
   .inner { padding: 1.125rem 2rem; }
   .logo { font-size: 22px; }
-  .navLink { font-size: 14px; }
-  .desktopNav { gap: 1.75rem; }
+  .navLink { font-size: 13px; }
+  .desktopNav { gap: 1.25rem; }
 }
 
 /* ═══ LARGE DESKTOP 1280px+ ══════════════════════════ */
 @media (min-width: 1280px) {
-  .navLink { font-size: 15px; }
+  .navLink { font-size: 14px; }
+  .desktopNav { gap: 1.75rem; }
 }
