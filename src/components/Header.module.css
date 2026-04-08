@@ -30,9 +30,9 @@
   letter-spacing: .05em;
   white-space: nowrap;
   transition: opacity .15s;
-  color: #7A4F00;
-  background: #F59E0B;
-  border: 1.5px solid #D97706;
+  color: #D97706;
+  background: rgba(245, 158, 11, 0.15);
+  border: 1.5px solid #F59E0B;
 }
 .langBtnEsp:hover { opacity: .85; }
 
