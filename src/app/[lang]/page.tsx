@@ -32,7 +32,6 @@ export default function LangHomePage({ params }: Props) {
             <div className={styles.heroLeft}>
               <h1>Reemplazo de Techo en Chicago: Respuestas Profesionales y Contratistas Verificados</h1>
               <p className={styles.heroSubtitle}>Todo lo que un propietario en Chicago necesita antes de reemplazar su techo: respuestas a las preguntas más importantes y nuestro ranking verificado de contratistas para 2026</p>
-              <p className={styles.heroExtra}>Costo promedio y duración de un proyecto en Chicago hoy</p>
               <p className={styles.heroCallout}>¿Necesita una consulta gratuita ahora mismo? Llámenos. Le ayudaremos.</p>
             </div>
             <div className={styles.heroRight}>
@@ -49,6 +48,7 @@ export default function LangHomePage({ params }: Props) {
         </div>
       </section>
 
+      <p className={styles.stripLabel}>Costo promedio y duración de un proyecto en Chicago hoy</p>
       <div className={styles.expertStrip}>
         <div className={styles.expertInner}>
           <div className={styles.expertItem}>
@@ -73,7 +73,7 @@ export default function LangHomePage({ params }: Props) {
           </div>
         </div>
       </div>
-      <p className={styles.belowStrip}>Este recurso fue creado para ayudarle a elegir la opción más conveniente y confiable para el reemplazo de su techo.</p>
+      <p className={styles.belowStrip}>Este recurso fue creado para ayudarle a elegir la opción más conveniente y confiable para el reemplazo de su techo</p>
 
       <section id="companies" className={styles.companies}>
         <div className={styles.companiesInner}>
