@@ -1,4 +1,6 @@
 import Link from 'next/link'
+import { neighborhoods } from '@/lib/neighborhoods'
+import { services } from '@/lib/services'
 import styles from './InternalLinks.module.css'
 
 type Props = {
@@ -7,101 +9,64 @@ type Props = {
   lang?: string
 }
 
-const serviceLinks = [
-  { href: '/services/emergency-roof-repair', label: 'Emergency Roof Repair Chicago', labelEs: 'Reparación de Techo de Emergencia Chicago' },
-  { href: '/services/roof-leak-repair', label: 'Roof Leak Repair Chicago', labelEs: 'Reparación de Goteras Chicago' },
-  { href: '/services/flat-roof-repair', label: 'Flat Roof Repair Chicago', labelEs: 'Reparación de Techo Plano Chicago' },
-  { href: '/services/roof-repair-after-storm', label: 'Roof Repair After Storm', labelEs: 'Reparación de Techo Después de Tormenta' },
-  { href: '/services/same-day-roof-repair', label: 'Same Day Roof Repair Chicago', labelEs: 'Reparación de Techo el Mismo Día Chicago' },
-  { href: '/services/roof-replacement', label: 'Roof Replacement Chicago', labelEs: 'Reemplazo de Techo Chicago' },
-  { href: '/services/roof-inspection', label: 'Roof Inspection Chicago', labelEs: 'Inspección de Techo Chicago' },
-]
-
-const neighborhoodLinks = [
-  { href: '/neighborhoods/north-side', label: 'North Side', labelEs: 'North Side' },
-  { href: '/neighborhoods/south-side', label: 'South Side', labelEs: 'South Side' },
-  { href: '/neighborhoods/west-side', label: 'West Side', labelEs: 'West Side' },
-  { href: '/neighborhoods/lincoln-park', label: 'Lincoln Park', labelEs: 'Lincoln Park' },
-  { href: '/neighborhoods/logan-square', label: 'Logan Square', labelEs: 'Logan Square' },
-  { href: '/neighborhoods/wicker-park', label: 'Wicker Park', labelEs: 'Wicker Park' },
-  { href: '/neighborhoods/hyde-park', label: 'Hyde Park', labelEs: 'Hyde Park' },
-  { href: '/neighborhoods/pilsen', label: 'Pilsen', labelEs: 'Pilsen' },
-  { href: '/neighborhoods/bucktown', label: 'Bucktown', labelEs: 'Bucktown' },
-  { href: '/neighborhoods/andersonville', label: 'Andersonville', labelEs: 'Andersonville' },
-  { href: '/neighborhoods/lakeview', label: 'Lakeview', labelEs: 'Lakeview' },
-  { href: '/neighborhoods/river-north', label: 'River North', labelEs: 'River North' },
-  { href: '/neighborhoods/gold-coast', label: 'Gold Coast', labelEs: 'Gold Coast' },
-  { href: '/neighborhoods/old-town', label: 'Old Town', labelEs: 'Old Town' },
-  { href: '/neighborhoods/streeterville', label: 'Streeterville', labelEs: 'Streeterville' },
-  { href: '/neighborhoods/roscoe-village', label: 'Roscoe Village', labelEs: 'Roscoe Village' },
-  { href: '/neighborhoods/west-loop', label: 'West Loop', labelEs: 'West Loop' },
-  { href: '/neighborhoods/fulton-market', label: 'Fulton Market', labelEs: 'Fulton Market' },
-  { href: '/neighborhoods/south-loop', label: 'South Loop', labelEs: 'South Loop' },
-  { href: '/neighborhoods/ukrainian-village', label: 'Ukrainian Village', labelEs: 'Ukrainian Village' },
-  { href: '/neighborhoods/lincoln-square', label: 'Lincoln Square', labelEs: 'Lincoln Square' },
-  { href: '/neighborhoods/edgewater', label: 'Edgewater', labelEs: 'Edgewater' },
-  { href: '/neighborhoods/beverly', label: 'Beverly', labelEs: 'Beverly' },
-  { href: '/neighborhoods/ravenswood', label: 'Ravenswood', labelEs: 'Ravenswood' },
-]
-
-const articleLinks = [
-  { href: '/articles/how-to-choose', label: 'How to choose a roof repair company', labelEs: 'Cómo elegir una empresa de reparación de techos' },
-  { href: '/articles/average-cost', label: 'Average cost of roof repair in Chicago', labelEs: 'Costo promedio de reparación de techos en Chicago' },
-  { href: '/articles/signs-your-roof', label: 'Signs your roof needs immediate repair', labelEs: 'Señales de que su techo necesita reparación urgente' },
-  { href: '/articles/after-storm-damage', label: 'What to do after storm damage', labelEs: 'Qué hacer después de daños por tormenta' },
-  { href: '/articles/how-we-rank-companies', label: 'How we rank companies', labelEs: 'Cómo clasificamos las empresas' },
-]
-
-export default function InternalLinks({ type, currentSlug, lang }: Props) {
+export default function InternalLinks({ type, lang }: Props) {
   const isEs = lang === 'es'
   const prefix = isEs ? '/es' : ''
 
-  const serviceGroupTitle = isEs ? 'Servicios' : 'Services'
-  const neighborhoodGroupTitle = isEs ? 'Áreas de servicio' : 'Service areas'
-  const articleGroupTitle = isEs ? 'Guías de techado' : 'Roofing guides'
-
   return (
-    <div className={styles.wrapper}>
+    <section className={styles.wrap}>
       <div className={styles.inner}>
-        {(type === 'home' || type === 'neighborhood' || type === 'article') && (
+        {(type === 'home' || type === 'service') && (
           <div className={styles.group}>
-            <div className={styles.groupTitle}>{serviceGroupTitle}</div>
+            <div className={styles.groupTitle}>
+              {isEs ? 'Reemplazo por tipo' : 'Replacement by type'}
+            </div>
             <div className={styles.links}>
-              {serviceLinks.map(l => (
-                <Link key={l.href} href={`${prefix}${l.href}`} className={styles.link}>
-                  {isEs ? l.labelEs : l.label}
+              {services.map(s => (
+                <Link key={s.slug} href={`${prefix}/services/${s.slug}`} className={styles.link}>
+                  {s.name}
                 </Link>
               ))}
             </div>
           </div>
         )}
-
-        {(type === 'home' || type === 'service' || type === 'article') && (
+        {(type === 'home' || type === 'neighborhood') && (
           <div className={styles.group}>
-            <div className={styles.groupTitle}>{neighborhoodGroupTitle}</div>
+            <div className={styles.groupTitle}>
+              {isEs ? 'Barrios de Chicago' : 'Serving Chicago neighborhoods'}
+            </div>
             <div className={styles.links}>
-              {neighborhoodLinks.map(l => (
-                <Link key={l.href} href={`${prefix}${l.href}`} className={styles.link}>
-                  {isEs ? l.labelEs : l.label}
+              {neighborhoods.map(n => (
+                <Link key={n.slug} href={`${prefix}/neighborhoods/${n.slug}`} className={styles.link}>
+                  {n.name}
                 </Link>
               ))}
             </div>
           </div>
         )}
-
-        {(type === 'home' || type === 'neighborhood' || type === 'service') && (
-          <div className={styles.group}>
-            <div className={styles.groupTitle}>{articleGroupTitle}</div>
-            <div className={styles.links}>
-              {articleLinks.map(l => (
-                <Link key={l.href} href={`${prefix}${l.href}`} className={styles.link}>
-                  {isEs ? l.labelEs : l.label}
-                </Link>
-              ))}
-            </div>
+        <div className={styles.group}>
+          <div className={styles.groupTitle}>
+            {isEs ? 'Recursos' : 'Resources'}
           </div>
-        )}
+          <div className={styles.links}>
+            <Link href={`${prefix}/insurance-guide`} className={styles.link}>
+              {isEs ? 'Guía de seguros' : 'Insurance Guide'}
+            </Link>
+            <Link href={`${prefix}/roofing-guide`} className={styles.link}>
+              {isEs ? 'Guía de techos' : 'Roofing Guide'}
+            </Link>
+            <Link href={`${prefix}/how-we-rank`} className={styles.link}>
+              {isEs ? 'Cómo clasificamos' : 'How We Rank'}
+            </Link>
+            <Link href={`${prefix}/about`} className={styles.link}>
+              {isEs ? 'Acerca de' : 'About'}
+            </Link>
+            <Link href={`${prefix}/contact`} className={styles.link}>
+              {isEs ? 'Contacto' : 'Contact'}
+            </Link>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
   )
 }

@@ -2,9 +2,9 @@ import type { Metadata } from 'next'
 import styles from '../static-page.module.css'
 
 export const metadata: Metadata = {
-  title: 'How We Rank Roof Repair Companies — Roof Repair Chicago NOW',
+  title: 'How We Rank Roof Repair Companies — Roof Replacement Chicago',
   description: 'Our methodology for ranking roof repair companies in Chicago. We evaluate licensing, reviews, response time, warranties, and pricing.',
-  alternates: { canonical: 'https://www.roofrepairchicagonow.com/how-we-rank' },
+  alternates: { canonical: 'https://www.roofreplacementchicago.com/how-we-rank' },
 }
 
 export default function HowWeRankPage() {

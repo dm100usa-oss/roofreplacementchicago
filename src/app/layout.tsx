@@ -10,38 +10,38 @@ export const viewport: Viewport = {
 }
 
 export const metadata: Metadata = {
-  title: 'Roof Repair Chicago NOW — Top 10 Vetted Companies',
-  description: 'We researched roof repair companies in Chicago and selected the top 10 — with same-day availability, free estimates, and a warranty on all work.',
+  title: 'Roof Replacement Chicago — 6 Verified Contractors',
+  description: 'Expert guide to roof replacement in Chicago. Verified contractors, real pricing, insurance help. Find the right company for your home.',
   icons: {
     icon: '/favicon.ico',
     apple: '/apple-touch-icon.png',
   },
   openGraph: {
-    title: 'Roof Repair Chicago NOW',
-    description: 'Top 10 vetted roof repair companies in Chicago. Same-day availability, free estimates, warranty on all work.',
-    url: 'https://roofrepairchicagonow.com',
-    siteName: 'Roof Repair Chicago NOW',
+    title: 'Roof Replacement Chicago',
+    description: 'Expert guide to roof replacement in Chicago. Verified contractors, real pricing, insurance help.',
+    url: 'https://www.roofreplacementchicago.com',
+    siteName: 'Roof Replacement Chicago',
     locale: 'en_US',
     type: 'website',
   },
   alternates: {
-    canonical: 'https://roofrepairchicagonow.com',
-    languages: { 'es': 'https://roofrepairchicagonow.com/es' },
+    canonical: 'https://www.roofreplacementchicago.com',
+    languages: { 'es': 'https://www.roofreplacementchicago.com/es' },
   },
 }
 
 const organizationSchema = {
   '@context': 'https://schema.org',
   '@type': 'Organization',
-  name: 'Roof Repair Chicago NOW',
-  url: 'https://roofrepairchicagonow.com',
-  email: 'roofrepairchicagonow@gmail.com',
+  name: 'Roof Replacement Chicago',
+  url: 'https://www.roofreplacementchicago.com',
+  email: 'roofreplacementchicago@gmail.com',
   areaServed: {
     '@type': 'City',
     name: 'Chicago',
     address: { '@type': 'PostalAddress', addressLocality: 'Chicago', addressRegion: 'IL', addressCountry: 'US' },
   },
-  description: 'Independent referral service ranking the top roof repair companies in Chicago.',
+  description: 'Independent expert resource ranking verified roof replacement contractors in Chicago, IL.',
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

@@ -2,160 +2,93 @@
   background: var(--white);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
-  padding: 1.25rem;
   margin-bottom: .875rem;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
 }
-
-.cardFirst { padding-top: 1.75rem; }
+.cardFirst { border: 2px solid var(--blue); }
 
 .top {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: .875rem;
-  margin-bottom: .75rem;
+  padding: 1rem 1.125rem .75rem;
 }
-
-.num {
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 15px;
-  font-weight: 900;
-  background: var(--blue);
-  color: #fff;
-  flex-shrink: 0;
-}
-
-.numLeader {
-  outline: 3px solid var(--green);
-  outline-offset: 4px;
-  box-shadow: 0 0 8px rgba(132,204,22,0.3);
-}
-
+.num { font-size: 18px; font-weight: 900; color: var(--text-light); min-width: 24px; padding-top: 2px; }
+.numLeader { color: var(--blue); }
 .info { flex: 1; min-width: 0; }
+.name { font-size: 16px; font-weight: 800; color: var(--text); margin-bottom: 3px; }
+.metaRow { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+.stars { color: #F59E0B; font-size: 13px; letter-spacing: 1px; }
+.dot { color: var(--text-light); }
+.tag { font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 20px; letter-spacing: .03em; }
+.tagTop { background: var(--blue-light); color: var(--blue); border: 1px solid #BFDBFE; }
+.tagRated { background: #F0FDF4; color: #166534; border: 1px solid #BBF7D0; }
 
-.name {
-  font-size: 15px;
-  font-weight: 800;
-  color: var(--text);
-  margin-bottom: .4rem;
-}
-
-.metaRow {
+.body {
+  padding: .75rem 1.125rem 1rem;
+  border-top: 1px solid var(--border);
+  flex: 1;
   display: flex;
-  align-items: center;
-  gap: .5rem;
-  flex-wrap: wrap;
+  flex-direction: column;
 }
+.desc { font-size: 13px; color: var(--text-muted); line-height: 1.5; margin-bottom: 4px; }
+.ratingsRow { display: flex; align-items: center; gap: .5rem; margin: .625rem 0; flex-wrap: wrap; }
+.ratingItem { font-size: 12px; color: var(--text-muted); }
+.ratingLabel { font-weight: 600; }
+.ratingStar { color: #F59E0B; }
+.ratingDivider { color: var(--border); }
 
-.stars { color: #F59E0B; font-size: 13px; }
-
-.price { font-size: 13px; font-weight: 700; color: #333; }
-
-.dot { color: #ddd; font-size: 11px; }
-
-.tag {
-  font-size: 11px;
-  font-weight: 700;
-  padding: 3px 10px;
-  border-radius: 6px;
-  background: var(--white);
-  border: 1px solid var(--border);
-  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
-}
-
-.tagEmergency { color: var(--red); }
-.tagBook { color: #6B7280; }
-
-.body { padding-left: 58px; }
-
-.desc {
-  font-size: 13px;
-  color: #444;
-  line-height: 1.55;
-  margin-bottom: .25rem;
-  font-weight: 500;
-}
-
-.ratingsRow {
-  display: flex;
-  align-items: center;
-  gap: .75rem;
-  margin: .5rem 0 .875rem;
-  flex-wrap: nowrap;
-  white-space: nowrap;
-  overflow: hidden;
-}
-
-.ratingItem {
-  font-size: 11px;
-  font-weight: 700;
-  color: #6B7280;
-}
-
-.ratingLabel { color: #444; }
-
-.ratingStar { color: #F59E0B; font-size: 13px; }
-
-.ratingDivider { color: #ddd; font-size: 11px; }
-
-.btnRow {
-  display: flex;
-  gap: .5rem;
-  margin-bottom: .5rem;
-}
-
+.btnRow { display: flex; gap: .625rem; margin-top: auto; padding-top: .75rem; }
 .btnCall {
   flex: 1;
-  background: #FEF0F1;
-  border: 1px solid #FBBFC3;
+  background: var(--blue);
   border-radius: 10px;
-  padding: 13px 10px;
+  padding: 13px;
   font-size: 14px;
-  font-weight: 800;
+  font-weight: 900;
   text-align: center;
-  color: var(--red);
+  color: #fff;
   text-decoration: none;
+  letter-spacing: .02em;
   transition: background .15s;
 }
-
-.btnCall:hover { background: #FDE2E4; }
-
-.btnQuote {
-  flex: 1;
-  background: var(--blue-light);
-  border: 1px solid #BFDBFE;
+.btnCall:hover { background: var(--blue-dark); }
+.btnSite {
+  flex: 0 0 auto;
+  background: transparent;
+  border: 2px solid var(--blue);
   border-radius: 10px;
-  padding: 13px 10px;
+  padding: 13px 16px;
   font-size: 14px;
-  font-weight: 800;
+  font-weight: 700;
   text-align: center;
   color: var(--blue);
   text-decoration: none;
-  transition: background .15s;
+  transition: background .15s, color .15s;
+  white-space: nowrap;
 }
+.btnSite:hover { background: var(--blue-light); }
+.btnNote { font-size: 11px; color: var(--text-light); text-align: center; margin-top: .5rem; font-weight: 500; }
 
-.btnQuote:hover { background: #DBEAFE; }
-
-.btnNote {
-  font-size: 11px;
-  color: var(--text-light);
-  text-align: center;
-  font-weight: 500;
-}
-
+/* ═══ TABLET 768px+ ════════════════════════════════════════ */
 @media (min-width: 768px) {
-  .card { padding: 1.5rem; }
   .name { font-size: 17px; }
-  .desc { font-size: 14px; }
-  .btnCall, .btnQuote { font-size: 15px; padding: 14px; }
+  .desc { font-size: 13px; }
+  .btnCall { font-size: 14px; }
 }
 
+/* ═══ DESKTOP 1024px+ ══════════════════════════════════════ */
 @media (min-width: 1024px) {
-  .card { padding: 1.75rem; }
-  .num { width: 52px; height: 52px; font-size: 17px; }
-  .body { padding-left: 68px; }
+  /* Cards are in a 2-col grid on main page — keep them tall and self-contained */
+  .card { margin-bottom: 0; height: 100%; }
+  .top { padding: 1.25rem 1.375rem .875rem; }
+  .body { padding: .875rem 1.375rem 1.25rem; }
+  .name { font-size: 18px; }
+  .desc { font-size: 14px; }
+  .ratingItem { font-size: 13px; }
+  .btnCall { padding: 14px; font-size: 15px; }
+  .btnSite { padding: 14px 18px; font-size: 15px; }
 }

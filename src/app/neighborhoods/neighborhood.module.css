@@ -1,188 +1,82 @@
-.page { background: var(--bg); }
+.wrap { background: var(--bg); padding: 1.5rem 1.25rem 2.5rem; }
+.inner { max-width: 720px; margin: 0 auto; }
 
-.hero {
-  background: var(--white);
-  padding: 1.75rem 1.25rem 1.5rem;
-  border-bottom: 1px solid var(--border);
-}
-
-.heroInner { max-width: 560px; margin: 0 auto; }
-
-.breadcrumb {
-  font-size: 11px;
-  color: var(--text-light);
-  margin-bottom: .75rem;
-}
-
+.breadcrumb { font-size: 12px; color: var(--text-light); margin-bottom: 1rem; }
 .breadcrumb a { color: var(--blue); text-decoration: none; }
 .breadcrumb a:hover { text-decoration: underline; }
 
-.heroInner h1 {
-  font-size: 22px;
-  font-weight: 900;
-  color: var(--text);
-  line-height: 1.2;
-  margin-bottom: .5rem;
-  letter-spacing: -.01em;
-}
+.h1 { font-size: 22px; font-weight: 900; color: var(--text); line-height: 1.3; margin-bottom: 1rem; letter-spacing: -.01em; }
+.intro { font-size: 14px; color: var(--text-muted); line-height: 1.65; margin-bottom: 1.25rem; }
 
-.heroInner p {
-  font-size: 14px;
-  color: var(--text-muted);
-  line-height: 1.55;
-  margin-bottom: 1.25rem;
+.callBlock {
+  background: var(--blue-light);
+  border: 1px solid #BFDBFE;
+  border-radius: var(--radius);
+  padding: 1.125rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
 }
-
-.heroUrgency {
-  font-size: 14px;
-  color: #444;
-  line-height: 1.55;
-  margin-bottom: 1rem;
-}
-
+.callBlock p { font-size: 13px; color: var(--text); margin-bottom: .875rem; font-weight: 500; }
 .btnCall {
   display: block;
-  width: 100%;
-  background: var(--red);
-  border-radius: 14px;
-  padding: 15px;
-  font-size: 16px;
+  background: var(--blue);
+  border-radius: 10px;
+  padding: 14px;
+  font-size: 15px;
   font-weight: 900;
   text-align: center;
   color: #fff;
   text-decoration: none;
-  box-shadow: 0 4px 16px rgba(230,57,70,0.3);
   transition: background .15s;
-}
-
-.btnCall:hover { background: var(--red-dark); }
-
-.companies {
-  padding: 1.25rem 1.25rem 1.5rem;
-}
-
-.companiesInner { max-width: 560px; margin: 0 auto; }
-
-.sectionLabel {
-  font-size: 13px;
-  font-weight: 700;
-  letter-spacing: .09em;
-  text-transform: uppercase;
-  color: #888;
-  margin-bottom: 1rem;
-}
-
-.areaInfo {
-  background: var(--white);
-  padding: 1.5rem 1.25rem;
-  border-top: 1px solid var(--border);
-}
-
-.areaInner { max-width: 560px; margin: 0 auto; }
-
-.areaInner h2 {
-  font-size: 17px;
-  font-weight: 900;
-  color: var(--text);
-  margin-bottom: .75rem;
-}
-
-.areaInner p {
-  font-size: 13px;
-  color: var(--text-muted);
-  line-height: 1.6;
-  margin-bottom: .625rem;
-}
-
-.faq { padding: 1.5rem 1.25rem 2rem; background: var(--bg); }
-.faqInner { max-width: 560px; margin: 0 auto; }
-
-.faqTitle {
-  font-size: 17px;
-  font-weight: 900;
-  color: var(--text);
-  margin-bottom: 1rem;
-}
-
-.faqItem {
-  background: var(--white);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
-  margin-bottom: .625rem;
-  overflow: hidden;
-}
-
-.faqQ {
-  width: 100%;
-  padding: 1rem 1.125rem;
-  font-size: 14px;
-  font-weight: 700;
-  color: var(--text);
-  cursor: pointer;
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.faqQ::-webkit-details-marker { display: none; }
-.faqQ::after { content: '▾'; font-size: 16px; color: var(--text-light); }
-details[open] .faqQ::after { transform: rotate(180deg); }
-
-.faqA {
-  padding: 0 1.125rem 1rem;
-  font-size: 13px;
-  color: var(--text-muted);
-  line-height: 1.6;
-}
-
-.ctaBottom {
-  background: #111;
-  padding: 1.75rem 1.25rem;
-  text-align: center;
-}
-
-.ctaInner { max-width: 560px; margin: 0 auto; }
-
-.ctaInner h2 {
-  font-size: 19px;
-  font-weight: 900;
-  color: #fff;
-  margin-bottom: .5rem;
-}
-
-.ctaInner p {
-  font-size: 13px;
-  color: #999;
-  margin-bottom: 1.25rem;
-}
-
-.btnCallDark {
-  display: block;
-  width: 100%;
-  max-width: 400px;
+  max-width: 360px;
   margin: 0 auto;
-  background: var(--red);
-  border-radius: 14px;
-  padding: 16px;
-  font-size: 16px;
-  font-weight: 900;
-  text-align: center;
-  color: #fff;
-  text-decoration: none;
+}
+.btnCall:hover { background: var(--blue-dark); }
+
+.areaText {
+  font-size: 14px;
+  color: var(--text-muted);
+  line-height: 1.7;
+  margin-bottom: 1.75rem;
+  padding-bottom: 1.75rem;
+  border-bottom: 1px solid var(--border);
 }
 
-.btnCallDark:hover { background: var(--red-dark); }
+.companiesSection { margin-bottom: 1.75rem; }
+.companiesLabel { font-size: 12px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--blue); margin-bottom: 1rem; }
 
+.faqSection { margin-top: 1.5rem; }
+.faqTitle { font-size: 18px; font-weight: 900; color: var(--text); margin-bottom: 1rem; letter-spacing: -.01em; }
+.faqItem { background: var(--white); border-radius: var(--radius); border: 1px solid var(--border); margin-bottom: .625rem; overflow: hidden; }
+.faqQ { width: 100%; padding: .875rem 1rem; font-size: 14px; font-weight: 700; color: var(--text); cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; gap: .75rem; }
+.faqQ::-webkit-details-marker { display: none; }
+.faqQ::after { content: '+'; font-size: 18px; color: var(--blue); flex-shrink: 0; transition: transform .2s; font-weight: 400; }
+details[open] .faqQ::after { transform: rotate(45deg); }
+.faqA { padding: 0 1rem .875rem; font-size: 13px; color: var(--text-muted); line-height: 1.65; }
+
+/* ═══ TABLET 768px+ ═══════════════════════════════════ */
 @media (min-width: 768px) {
-  .heroInner h1 { font-size: 28px; }
-  .heroInner p { font-size: 15px; }
-  .areaInner h2 { font-size: 20px; }
-  .areaInner p { font-size: 14px; }
+  .h1 { font-size: 28px; }
+  .intro { font-size: 15px; }
+  .areaText { font-size: 15px; }
+  .callBlock { display: flex; align-items: center; justify-content: space-between; text-align: left; gap: 1.5rem; }
+  .callBlock p { margin-bottom: 0; flex: 1; }
+  .btnCall { margin: 0; flex: 0 0 auto; white-space: nowrap; }
+  .faqTitle { font-size: 20px; }
+  .faqQ { font-size: 15px; }
 }
 
+/* ═══ DESKTOP 1024px+ ═════════════════════════════════ */
 @media (min-width: 1024px) {
-  .heroInner h1 { font-size: 34px; }
-  .hero { padding: 2.5rem 1.25rem 2rem; }
-  .ctaInner h2 { font-size: 26px; }
+  .wrap { padding: 2.5rem 2rem 3.5rem; }
+  .inner { max-width: 800px; }
+  .h1 { font-size: 34px; }
+  .intro { font-size: 16px; }
+  .areaText { font-size: 15px; }
+  .callBlock { padding: 1.5rem 1.75rem; }
+  .callBlock p { font-size: 15px; }
+  .btnCall { font-size: 16px; padding: 16px 24px; }
+  .faqTitle { font-size: 22px; }
+  .faqQ { font-size: 15px; padding: 1rem 1.25rem; }
+  .faqA { font-size: 14px; padding: 0 1.25rem 1rem; }
 }

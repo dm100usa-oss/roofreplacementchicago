@@ -13,29 +13,31 @@ export default function Header() {
   const navLinks = isEs
     ? [
         { href: '/es', label: 'Inicio' },
+        { href: '/es/insurance-guide', label: 'Seguro' },
+        { href: '/es/roofing-guide', label: 'Guía' },
         { href: '/es/about', label: 'Acerca de' },
         { href: '/es/how-we-rank', label: 'Cómo clasificamos' },
-        { href: '/es#companies', label: 'Top 10' },
         { href: '/es/contact', label: 'Contacto' },
       ]
     : [
         { href: '/', label: 'Home' },
+        { href: '/insurance-guide', label: 'Insurance Guide' },
+        { href: '/roofing-guide', label: 'Roofing Guide' },
         { href: '/about', label: 'About' },
-        { href: '/how-we-rank', label: 'How we rank' },
-        { href: '/#companies', label: 'Top 10' },
+        { href: '/how-we-rank', label: 'How We Rank' },
         { href: '/contact', label: 'Contact' },
       ]
 
   return (
     <>
-      <div className={styles.langBar}>
+      <div className={isEs ? styles.langBarEs : styles.langBar}>
         <span>{isEs ? 'También disponible en' : 'Also available in'}</span>
         <Link href={togglePath}>{isEs ? 'English' : 'Español'}</Link>
       </div>
       <header className={styles.header}>
         <div className={styles.inner}>
           <Link href={isEs ? '/es' : '/'} className={styles.logo}>
-            Roof Repair Chicago <span>NOW</span>
+            Roof Replacement <span>Chicago</span>
           </Link>
           <nav className={styles.desktopNav}>
             {navLinks.map(l => (
