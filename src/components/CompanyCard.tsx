@@ -21,23 +21,15 @@ export default function CompanyCard({ company, isFirst, lang = 'en' }: Props) {
           <div className={styles.metaRow}>
             <span className={styles.stars}>{company.stars}</span>
             <span className={styles.dot}>·</span>
-            <span className={`${styles.tag} ${company.tag === 'Top Pick' ? styles.tagTop : styles.tagRated}`}>
-              {isEs ? company.tagEs : company.tag}
-            </span>
+            <span className={styles.expertRatingInline}>{company.expertRating}</span>
+            <span className={styles.dot}>·</span>
+            <span className={styles.expertLabel}>{isEs ? 'Puntuación experta' : 'Expert score'}</span>
           </div>
         </div>
       </div>
       <div className={styles.body}>
         <div className={styles.desc}>{isEs ? company.descEs : company.desc}</div>
         <div className={styles.desc}>{isEs ? company.warrantyEs : company.warranty}</div>
-        <div className={styles.ratingsRow}>
-          <div className={styles.ratingItem}>
-            <span className={styles.ratingLabel}>{isEs ? 'Puntuación experta' : 'Expert score'}</span>
-            {' · '}
-            <span className={styles.ratingStar}>★</span>
-            {' '}{company.expertRating}
-          </div>
-        </div>
         <div className={styles.btnRow}>
           <a href={company.website} target="_blank" rel="noopener noreferrer" className={styles.btnCall}>
             {isEs ? 'VER SITIO' : 'VISIT SITE'}
