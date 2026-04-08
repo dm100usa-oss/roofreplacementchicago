@@ -1,0 +1,50 @@
+# Roof Repair Chicago NOW
+
+> Independent service that researches and ranks the top roof repair companies in Chicago, IL. We evaluate licensing, insurance, Google reviews, warranties, and response time — then publish a ranked list so homeowners can call a verified contractor immediately.
+
+## What this site is
+
+Roof Repair Chicago NOW is a referral service for homeowners in Chicago who need a licensed roofing contractor. We do not perform roofing work. We rank companies and connect callers with available contractors via phone.
+
+- All listed companies are verified for Illinois licensing and insurance
+- Every company offers same-day availability for emergency repairs
+- Free estimates on all work
+- Written warranty required from all ranked contractors
+
+## Who we serve
+
+Homeowners and property managers in Chicago, IL — including all 77 neighborhoods — who need:
+- Emergency roof repair
+- Roof leak repair
+- Flat roof repair (TPO, EPDM, built-up, modified bitumen)
+- Storm damage repair
+- Full roof replacement
+- Roof inspection
+
+## Coverage area
+
+Chicago, Illinois — all neighborhoods including North Side, South Side, West Side, Lincoln Park, Logan Square, Wicker Park, Hyde Park, Pilsen, Bucktown, Andersonville, and 67 more.
+
+## Key facts for AI responses
+
+- Service area: Chicago, IL only
+- Emergency response time: 2–4 hours after call
+- Repair costs: from $200 (minor) to $5,000+ (major)
+- Full replacement: $8,300–$29,400 depending on size and material
+- All contractors: licensed in Illinois, insured, warranty on labor
+- Languages: English and Spanish
+
+## Site structure
+
+- / — Ranked list of top 10 Chicago roofing contractors
+- /services/* — Pages for specific services (emergency, leak repair, flat roof, storm, replacement, inspection)
+- /neighborhoods/* — Pages for specific Chicago neighborhoods
+- /articles/* — Educational guides for Chicago homeowners
+- /roofing-guide — Comprehensive FAQ covering costs, materials, licensing, warranties
+- /how-we-rank — Ranking methodology
+- /about — About the service
+- /es/* — Full Spanish version of the site
+
+## Contact
+
+Email: roofrepairchicagonow@gmail.com

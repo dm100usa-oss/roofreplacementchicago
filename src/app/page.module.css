@@ -1,39 +1,81 @@
-/* ─── HERO ─────────────────────────────────────────────────────────── */
+/* HERO */
 .hero {
   background: var(--white);
   padding: 2rem 1.25rem 1.75rem;
   border-bottom: 1px solid var(--border);
 }
-.heroInner { max-width: var(--max-width); margin: 0 auto; text-align: center; }
+.heroInner { max-width: var(--max-width); margin: 0 auto; }
 
 .heroInner h1 {
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 900;
   color: var(--text);
   line-height: 1.25;
-  margin-bottom: .75rem;
+  margin-bottom: .6rem;
   letter-spacing: -.01em;
+  text-align: center;
 }
 
-.heroH2 {
-  font-size: 15px;
-  font-weight: 600;
-  color: var(--text);
-  line-height: 1.4;
-  margin-bottom: .75rem;
-}
-
-.heroDesc {
+.heroSub {
   font-size: 14px;
   color: var(--text-muted);
-  line-height: 1.65;
-  margin-bottom: .44rem;
+  line-height: 1.55;
+  margin-bottom: 1.5rem;
 }
+
+.heroSubBlock {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.heroSubBlock p {
+  line-height: 1.6;
+  margin: 0 0 .5rem;
+}
+
+.heroP1 {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.heroP2 {
+  font-size: 16px;
+  color: #444;
+}
+
+.heroP3 {
+  font-size: 14px;
+  color: var(--text);
+}
+
+.factors {
+  display: flex;
+  gap: .5rem;
+  flex-wrap: nowrap;
+  justify-content: center;
+  margin-bottom: .75rem;
+}
+
+.factor {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background: #F0FDF4;
+  border: 1px solid #BBF7D0;
+  border-radius: 20px;
+  padding: 5px 10px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #15803D;
+  white-space: nowrap;
+}
+.factor::before { content: ''; }
 
 .btnCall {
   display: block;
   width: 100%;
-  background: var(--blue);
+  background: var(--red);
   border-radius: 14px;
   padding: 17px;
   font-size: 17px;
@@ -42,154 +84,120 @@
   color: #fff;
   text-decoration: none;
   letter-spacing: .01em;
-  box-shadow: 0 4px 16px rgba(0,87,168,0.3);
+  box-shadow: 0 4px 16px rgba(230,57,70,0.35);
   transition: background .15s, transform .1s;
 }
-.btnCall:hover { background: var(--blue-dark); transform: translateY(-1px); }
+.btnCall:hover { background: var(--red-dark); transform: translateY(-1px); }
 
 .btnCallNote {
   display: flex;
   gap: .5rem;
   justify-content: center;
-  margin-top: .625rem;
-  flex-wrap: wrap;
+  margin-top: .5rem;
 }
+
 .btnCallNoteItem {
-  font-size: 12px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 20px;
+  padding: 7px 14px;
+  font-size: 13px;
   font-weight: 500;
   color: var(--text-light);
   white-space: nowrap;
 }
 
-/* ─── STATS HEADER ──────────────────────────────────────────────────── */
-.statsHeader {
-  background: #F8FAFC;
-  border-top: 1px solid var(--border);
+/* TRUST STRIP */
+.trustStrip {
+  background: var(--white);
   border-bottom: 1px solid var(--border);
-  padding: .6rem 1.25rem;
-  text-align: center;
+  padding: .875rem 1.25rem;
 }
-.statsHeaderText {
-  font-size: 11px;
-  font-weight: 600;
-  color: #444;
-  letter-spacing: .03em;
-  text-transform: uppercase;
-}
-
-/* ─── STATS BAR ─────────────────────────────────────────────────────── */
-.statsBar { background: var(--navy); padding: .875rem 1rem; }
-.statsInner {
+.trustInner {
   max-width: var(--max-width);
   margin: 0 auto;
   display: flex;
   justify-content: space-around;
   gap: .5rem;
-  flex-wrap: nowrap;
 }
-.statItem { text-align: center; flex: 1; min-width: 0; }
-.statNum { font-size: 13px; font-weight: 900; color: #fff; letter-spacing: -.01em; }
-.statDate { font-size: 11px; white-space: nowrap; }
-.statLabel { font-size: 8px; color: #9CA3AF; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; margin-top: 2px; }
+.trustItem { text-align: center; flex: 1; }
+.trustNum { font-size: 20px; font-weight: 900; color: var(--text); letter-spacing: -.02em; }
+.trustLabel { font-size: 10px; color: var(--text-light); font-weight: 600; letter-spacing: .04em; text-transform: uppercase; margin-top: 1px; }
 
-/* ─── WHY US ────────────────────────────────────────────────────────── */
+/* WHY US */
 .whyUs { padding: 1.75rem 1.25rem; background: var(--bg); }
 .whyInner { max-width: var(--max-width); margin: 0 auto; }
-.sectionLabel { font-size: 12px; font-weight: 700; letter-spacing: .09em; text-transform: uppercase; color: var(--blue); margin-bottom: .875rem; }
+.sectionLabel { font-size: 13px; font-weight: 700; letter-spacing: .09em; text-transform: uppercase; color: #888; margin-bottom: .875rem; }
 .whyTitle { font-size: 19px; font-weight: 900; color: var(--text); margin-bottom: 1.25rem; letter-spacing: -.01em; }
-.whyGrid { display: grid; grid-template-columns: 1fr; gap: .75rem; }
-.whyCard { background: var(--white); border-radius: var(--radius); padding: 1rem 1.125rem; box-shadow: var(--shadow); border: 1px solid var(--border); }
-.whyCard strong { display: block; font-size: 14px; font-weight: 800; color: var(--text); margin-bottom: 4px; }
-.whyCard p { font-size: 13px; color: var(--text-muted); line-height: 1.55; margin: 0; }
+.whyGrid { display: flex; flex-direction: column; gap: .75rem; }
+.whyCard { background: var(--white); border-radius: var(--radius); padding: 1rem 1.125rem; box-shadow: var(--shadow); }
+.whyCard strong { display: block; font-size: 14px; font-weight: 800; color: var(--text); margin-bottom: 2px; }
+.whyCard p { font-size: 13px; color: var(--text-muted); line-height: 1.5; }
 
-/* ─── COMPANIES ─────────────────────────────────────────────────────── */
+/* COMPANIES */
 .companies { padding: 0 1.25rem 1.5rem; background: var(--bg); }
 .companiesInner { max-width: var(--max-width); margin: 0 auto; }
-.rankedLabel { font-size: 12px; font-weight: 700; letter-spacing: .09em; text-transform: uppercase; color: var(--blue); margin-bottom: 1rem; padding-top: 1.5rem; }
-.cardsGrid { display: grid; grid-template-columns: 1fr; }
+.rankedLabel { font-size: 13px; font-weight: 700; letter-spacing: .09em; text-transform: uppercase; color: #888; margin-bottom: 1rem; padding-top: 1.5rem; }
 
-/* ─── CTA ───────────────────────────────────────────────────────────── */
-.cta { background: var(--navy); padding: 1.75rem 1.25rem; }
-.ctaInner { max-width: var(--max-width); margin: 0 auto; text-align: center; }
-.ctaInner h2 { font-size: 21px; font-weight: 900; color: #fff; margin-bottom: .5rem; letter-spacing: -.01em; }
-.ctaInner p { font-size: 13px; color: #9CA3AF; margin-bottom: 1.25rem; line-height: 1.6; }
-.ctaNote { font-size: 12px; color: #6B7280; margin-top: .75rem; margin-bottom: 0; }
-.btnCallCta {
+/* URGENCY */
+.urgency { background: #111; padding: 1.75rem 1.25rem; }
+.urgencyInner { max-width: var(--max-width); margin: 0 auto; text-align: center; }
+.urgencyInner h2 { font-size: 21px; font-weight: 900; color: #fff; margin-bottom: .5rem; letter-spacing: -.01em; }
+.urgencyInner p { font-size: 13px; color: #fff; margin-bottom: 1.25rem; line-height: 1.5; }
+.btnCallUrgency {
   display: block; width: 100%; max-width: 400px; margin: 0 auto;
-  background: var(--blue); border-radius: 14px; padding: 17px;
+  background: var(--red); border-radius: 14px; padding: 17px;
   font-size: 17px; font-weight: 900; text-align: center; color: #fff;
-  text-decoration: none; box-shadow: 0 4px 16px rgba(0,87,168,0.4);
+  text-decoration: none; box-shadow: 0 4px 16px rgba(230,57,70,0.4);
   transition: background .15s;
 }
-.btnCallCta:hover { background: var(--blue-dark); }
+.btnCallUrgency:hover { background: var(--red-dark); }
 
-/* ─── FAQ ───────────────────────────────────────────────────────────── */
-.faq { padding: 1.75rem 1.25rem; background: var(--white); border-top: 1px solid var(--border); }
+/* FAQ */
+.faq { padding: 1.75rem 1.25rem; background: var(--bg); }
 .faqInner { max-width: var(--max-width); margin: 0 auto; }
-.faqTitle { font-size: 19px; font-weight: 900; color: var(--text); margin-bottom: .5rem; letter-spacing: -.01em; }
-.faqSub { font-size: 13px; color: var(--text-muted); margin-bottom: 1.25rem; line-height: 1.5; }
-.faqItem { background: var(--bg); border-radius: var(--radius); border: 1px solid var(--border); margin-bottom: .625rem; overflow: hidden; }
-.faqQ { width: 100%; padding: 1rem 1.125rem; font-size: 14px; font-weight: 700; color: var(--text); cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; gap: .75rem; }
+.faqTitle { font-size: 19px; font-weight: 900; color: var(--text); margin-bottom: 1.25rem; letter-spacing: -.01em; }
+.faqItem { background: var(--white); border-radius: var(--radius); box-shadow: var(--shadow); margin-bottom: .625rem; overflow: hidden; }
+.faqQ { width: 100%; padding: 1rem 1.125rem; font-size: 14px; font-weight: 700; color: var(--text); cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; }
 .faqQ::-webkit-details-marker { display: none; }
-.faqQ::after { content: '+'; font-size: 18px; color: var(--blue); flex-shrink: 0; transition: transform .2s; font-weight: 400; }
-details[open] .faqQ::after { transform: rotate(45deg); }
-.faqA { padding: 0 1.125rem 1rem; font-size: 13px; color: var(--text-muted); line-height: 1.65; }
+.faqQ::after { content: '▾'; font-size: 16px; color: var(--text-light); flex-shrink: 0; transition: transform .2s; }
+details[open] .faqQ::after { transform: rotate(180deg); }
+.faqA { padding: 0 1.125rem 1rem; font-size: 13px; color: var(--text-muted); line-height: 1.6; }
 
-/* ─── HOW WE RANK ───────────────────────────────────────────────────── */
-.howRank { padding: 1.75rem 1.25rem; background: var(--bg); border-top: 1px solid var(--border); }
-.howRankInner { max-width: var(--max-width); margin: 0 auto; }
-.howRankText { font-size: 14px; color: var(--text-muted); line-height: 1.65; }
+/* REVIEWS */
+.reviews { padding: 1.75rem 1.25rem; background: var(--white); border-top: 1px solid var(--border); }
+.reviewsInner { max-width: var(--max-width); margin: 0 auto; }
+.reviewsTitle { font-size: 19px; font-weight: 900; color: var(--text); margin-bottom: .375rem; letter-spacing: -.01em; }
+.reviewsSub { font-size: 13px; color: var(--text-muted); margin-bottom: 1.25rem; }
+.reviewsPlaceholder { border: 2px dashed var(--border); border-radius: var(--radius); padding: 2rem; text-align: center; color: var(--text-light); font-size: 13px; line-height: 1.6; }
 
-/* ══ TABLET 768px+ ══════════════════════════════════════════════════════ */
+/* TABLET */
 @media (min-width: 768px) {
-  .hero { padding: 2.5rem 1.5rem 2rem; }
   .heroInner h1 { font-size: 28px; }
-  .heroH2 { font-size: 16px; }
-  .heroDesc { font-size: 14px; max-width: 540px; margin-left: auto; margin-right: auto; }
-  .btnCall { font-size: 18px; max-width: 480px; margin-left: auto; margin-right: auto; display: block; }
-  .statNum { font-size: 14px; }
-  .statDate { font-size: 14px; }
-  .statLabel { font-size: 10px; }
-  .statsHeaderText { font-size: 12px; }
-  .statsBar { padding: 1.25rem; }
-  .whyGrid { grid-template-columns: 1fr 1fr; gap: 1rem; }
-  .whyTitle { font-size: 22px; }
-  .faqTitle { font-size: 22px; }
-  .ctaInner h2 { font-size: 24px; }
+  .heroSub { font-size: 16px; }
+  .heroP1 { font-size: 24px; }
+  .heroP2 { font-size: 18px; }
+  .heroP3 { font-size: 17px; }
+  .whyGrid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+  .trustNum { font-size: 24px; }
 }
 
-/* ══ DESKTOP 1024px+ ════════════════════════════════════════════════════ */
+/* DESKTOP */
 @media (min-width: 1024px) {
-  .hero { padding: 3.5rem 2rem 3rem; }
   .heroInner h1 { font-size: 36px; }
-  .heroH2 { font-size: 18px; }
-  .heroDesc { font-size: 15px; max-width: 600px; }
-  .btnCall { font-size: 18px; padding: 20px; max-width: 560px; }
-  .statsHeaderText { font-size: 13px; }
-  .statsBar { padding: 1.25rem 2rem; }
-  .statNum { font-size: 14px; }
-  .statLabel { font-size: 10px; }
-  .whyGrid { grid-template-columns: repeat(4, 1fr); }
-  .whyTitle { font-size: 24px; }
+  .hero { padding: 3rem 1.25rem 2.5rem; }
+  .heroP1 { font-size: 26px; }
+  .heroP2 { font-size: 19px; }
+  .heroP3 { font-size: 18px; }
+  .btnCall { font-size: 19px; padding: 20px; max-width: 600px; margin: 0 auto; display: block; }
+  .factors { gap: .75rem; }
+  .factor { font-size: 14px; padding: 6px 14px; }
+  .btnCallNoteItem { font-size: 14px; }
   .whyCard strong { font-size: 15px; }
   .whyCard p { font-size: 14px; }
-  .cardsGrid { grid-template-columns: 1fr 1fr; gap: 1rem; }
-  .ctaInner h2 { font-size: 30px; }
-  .ctaInner p { font-size: 15px; }
-  .btnCallCta { font-size: 18px; padding: 20px; }
-  .faqTitle { font-size: 24px; }
-  .faqQ { font-size: 15px; }
-  .faqA { font-size: 14px; }
-  .howRankText { font-size: 15px; }
-  .whyUs { padding: 3rem 2rem; }
-  .companies { padding: 0 2rem 2rem; }
-  .cta { padding: 3rem 2rem; }
-  .faq { padding: 3rem 2rem; }
-  .howRank { padding: 3rem 2rem; }
-}
-
-/* ══ LARGE DESKTOP 1280px+ ══════════════════════════════════════════════ */
-@media (min-width: 1280px) {
-  .heroInner h1 { font-size: 40px; }
-  .heroH2 { font-size: 19px; }
+  .faqTitle { font-size: 22px; }
+  .urgencyInner h2 { font-size: 28px; }
 }

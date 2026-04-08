@@ -2,31 +2,33 @@ import type { Metadata } from 'next'
 import styles from '../static-page.module.css'
 
 export const metadata: Metadata = {
-  title: 'How We Rank — Roof Replacement Chicago',
-  description: 'Our methodology for ranking roof replacement contractors in Chicago. Transparent criteria based on licensing, reviews, experience, and warranty.',
-  alternates: { canonical: 'https://www.roofreplacementchicago.com/how-we-rank' },
+  title: 'How We Rank Roof Repair Companies — Roof Repair Chicago NOW',
+  description: 'Our methodology for ranking roof repair companies in Chicago. We evaluate licensing, reviews, response time, warranties, and pricing.',
+  alternates: { canonical: 'https://www.roofrepairchicagonow.com/how-we-rank' },
 }
 
 export default function HowWeRankPage() {
   return (
-    <div className={styles.wrap}>
+    <div className={styles.page}>
       <div className={styles.inner}>
-        <h1>How We Rank</h1>
-        <p>Every contractor on our list is evaluated against the same set of verifiable criteria. We do not accept payment for rankings. Here is exactly how we assess each company.</p>
-        <h2>Illinois IDFPR license</h2>
-        <p>We verify active licensing through the Illinois Department of Financial and Professional Regulation database before any company appears on our list. We check for both Limited and Unlimited license types. Expired or suspended licenses result in immediate removal.</p>
-        <h2>Google rating and review volume</h2>
-        <p>We look for a minimum of 4.5 stars with at least 30 reviews. Volume matters because it indicates consistent performance across many projects. We read reviews for patterns around communication, permit handling, cleanup, and warranty follow-through.</p>
-        <h2>BBB accreditation</h2>
-        <p>We note BBB accreditation and rating as a secondary trust signal. We also check complaint history and resolution records.</p>
-        <h2>Years in business</h2>
-        <p>Roofing warranties are only as good as the company backing them. We prioritize contractors who have been in business long enough to honor a 5 to 10 year workmanship warranty. We note founding year for each company.</p>
-        <h2>Workmanship warranty</h2>
-        <p>We require a minimum 3 year workmanship warranty. Five years is our standard threshold. Ten years is the mark of exceptional confidence in installation quality.</p>
-        <h2>Chicago permit and insurance experience</h2>
-        <p>We favor contractors with documented experience pulling City of Chicago building permits and working with homeowner insurance companies on storm damage claims. These are specific to the Chicago market and distinguish experienced local operators from out-of-state contractors.</p>
-        <h2>Compensation disclosure</h2>
-        <p>We may receive compensation when homeowners contact contractors through our site. This compensation does not influence our rankings. Companies cannot pay to be ranked higher or included on our list.</p>
+        <h1>How we rank roof repair companies in Chicago</h1>
+        <p>Every company on our list is evaluated against the same criteria. No company can pay to be ranked higher. Here is exactly what we look at.</p>
+        <h2>1. Licensing and insurance</h2>
+        <p>We verify that every company holds a valid Illinois contractor license and carries general liability insurance. Unlicensed or uninsured companies are excluded from our list entirely.</p>
+        <h2>2. Google reviews</h2>
+        <p>We look at the overall star rating and the number of reviews. A company with 200+ reviews at 4.8 stars carries more weight than one with 10 reviews at 5.0. We also read the reviews to spot patterns — good or bad.</p>
+        <h2>3. Response time</h2>
+        <p>For emergency roof repair, speed matters. We evaluate whether a company offers same-day or next-day service. Companies that clearly state 24/7 availability rank higher for emergency queries.</p>
+        <h2>4. Warranty terms</h2>
+        <p>We check whether the company offers a written warranty on labor and materials. Longer warranties and broader coverage improve a company's score.</p>
+        <h2>5. Pricing transparency</h2>
+        <p>We favor companies that are upfront about pricing — starting costs, what affects the final price, and whether estimates are free. Hidden fees or vague pricing lowers a company's ranking.</p>
+        <h2>6. Our expert score</h2>
+        <p>After evaluating all five factors, we assign an expert score from 1.0 to 5.0. This score, combined with the Google rating, determines the final ranking order.</p>
+        <h2>How often we update</h2>
+        <p>We review our rankings regularly. If a company's reviews drop, loses its license, or stops offering same-day service, it is removed or moved down the list.</p>
+        <h2>Transparency</h2>
+        <p>We may receive compensation when homeowners call or request quotes through our site. This compensation does not influence rankings. See our <a href="/disclosure">Disclosure</a>.</p>
       </div>
     </div>
   )

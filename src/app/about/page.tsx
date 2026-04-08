@@ -2,21 +2,25 @@ import type { Metadata } from 'next'
 import styles from '../static-page.module.css'
 
 export const metadata: Metadata = {
-  title: 'About — Roof Replacement Chicago',
-  description: 'About Roof Replacement Chicago. An independent expert resource for homeowners researching roof replacement contractors in Chicago, IL.',
-  alternates: { canonical: 'https://www.roofreplacementchicago.com/about' },
+  title: 'About — Roof Repair Chicago NOW',
+  description: 'Learn about Roof Repair Chicago NOW — an independent service that researches and ranks the best roof repair companies in Chicago.',
+  alternates: { canonical: 'https://www.roofrepairchicagonow.com/about' },
 }
 
 export default function AboutPage() {
   return (
-    <div className={styles.wrap}>
+    <div className={styles.page}>
       <div className={styles.inner}>
-        <h1>About Roof Replacement Chicago</h1>
-        <p>Roof Replacement Chicago is an independent editorial resource for homeowners in Chicago and the surrounding area who are researching full roof replacement.</p>
-        <p>We created this resource because replacing a roof is one of the largest home improvement investments most homeowners make, typically $8,000 to $25,000, and the information available online is often vague, promotional, or outdated. We wanted to build something genuinely useful: real cost data, honest contractor evaluation, and practical guidance on insurance, permits, and materials for the Chicago climate specifically.</p>
-        <p>We are not a roofing company. We do not do roofing work. We independently research and rank contractors based on verifiable criteria including active Illinois IDFPR licensing, Google review volume and rating, BBB accreditation, years in business, workmanship warranty terms, and documented experience with Chicago permit and insurance processes.</p>
-        <p>We may receive compensation when homeowners contact contractors through our site. This compensation does not affect our rankings. Our methodology is described in full on the How We Rank page.</p>
-        <p>Our goal is simple: help Chicago homeowners make a confident, informed decision about one of the most important investments in their home.</p>
+        <h1>About Roof Repair Chicago NOW</h1>
+        <p>Roof Repair Chicago NOW is an independent referral service. We research, evaluate, and rank local roofing companies in Chicago so homeowners can make a confident decision fast — especially in emergencies.</p>
+        <h2>What we do</h2>
+        <p>We don't just list roofing companies. We rank them based on real criteria: licensing, insurance, Google reviews, response time, warranty terms, and pricing transparency. Only companies that meet our standards make the list.</p>
+        <h2>Who we are</h2>
+        <p>A small team focused on one city — Chicago. We believe local homeowners deserve a trustworthy resource, not a paid directory. Our rankings reflect editorial judgment, not advertising spend.</p>
+        <h2>How we make money</h2>
+        <p>We may receive compensation when homeowners call or request quotes through our site. This does not influence our rankings. Full details in our <a href="/disclosure">Disclosure</a>.</p>
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:roofrepairchicagonow@gmail.com">roofrepairchicagonow@gmail.com</a></p>
       </div>
     </div>
   )

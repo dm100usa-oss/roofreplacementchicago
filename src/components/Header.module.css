@@ -1,50 +1,15 @@
 .langBar {
-  background: #FFFBF0;
-  color: #7A6A40;
+  background: #F1F5F9;
+  color: #666;
   text-align: center;
   padding: 6px 1rem;
   font-size: 12px;
   font-weight: 500;
   letter-spacing: .03em;
-  border-bottom: 1px solid #F0E4B8;
+  border-bottom: 1px solid var(--border);
 }
-.langBar a {
-  display: inline-block;
-  color: #7A6A40;
-  text-decoration: none;
-  margin-left: 8px;
-  background: #F5DFA0;
-  border: 1px solid #E8C84A;
-  border-radius: 20px;
-  padding: 2px 10px;
-  font-weight: 700;
-  transition: background .15s;
-}
-.langBar a:hover { background: #EDD070; }
-
-.langBarEs {
-  background: #EFF4FB;
-  color: #3A5A7A;
-  text-align: center;
-  padding: 6px 1rem;
-  font-size: 12px;
-  font-weight: 500;
-  letter-spacing: .03em;
-  border-bottom: 1px solid #BFDBFE;
-}
-.langBarEs a {
-  display: inline-block;
-  color: #1A4A8A;
-  text-decoration: none;
-  margin-left: 8px;
-  background: #DBEAFE;
-  border: 1px solid #93C5FD;
-  border-radius: 20px;
-  padding: 2px 10px;
-  font-weight: 700;
-  transition: background .15s;
-}
-.langBarEs a:hover { background: #BFDBFE; }
+.langBar a { color: #444; text-decoration: underline; margin-left: 8px; cursor: pointer; }
+.langBar a:hover { color: var(--text); }
 
 .header {
   background: var(--white);
@@ -54,6 +19,7 @@
   z-index: 100;
   box-shadow: 0 1px 8px rgba(0,0,0,0.06);
 }
+
 .inner {
   max-width: var(--max-width);
   margin: 0 auto;
@@ -63,28 +29,34 @@
   justify-content: space-between;
   gap: 1rem;
 }
+
 .logo {
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 900;
   color: var(--text);
   letter-spacing: .01em;
   text-decoration: none;
   flex-shrink: 0;
-  line-height: 1.2;
 }
-.logo span { color: var(--blue); }
+.logo span { color: var(--red); }
 
-.desktopNav { display: none; align-items: center; gap: 1.25rem; }
+/* Desktop nav - hidden on mobile */
+.desktopNav {
+  display: none;
+  align-items: center;
+  gap: 1.5rem;
+}
+
 .navLink {
   font-size: 13px;
   font-weight: 600;
   color: var(--text-muted);
   text-decoration: none;
   transition: color .15s;
-  white-space: nowrap;
 }
-.navLink:hover { color: var(--blue); }
+.navLink:hover { color: var(--text); }
 
+/* Hamburger - visible on mobile */
 .hamburger {
   display: flex;
   flex-direction: column;
@@ -93,14 +65,28 @@
   border: none;
   cursor: pointer;
   padding: 4px;
-  flex-shrink: 0;
 }
-.bar { display: block; width: 22px; height: 2px; background: var(--text); border-radius: 2px; transition: transform .2s, opacity .2s; }
+
+.bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: var(--text);
+  border-radius: 2px;
+  transition: transform .2s, opacity .2s;
+}
+
 .barOpen1 { transform: translateY(7px) rotate(45deg); }
 .barOpen2 { opacity: 0; }
 .barOpen3 { transform: translateY(-7px) rotate(-45deg); }
 
-.mobileMenu { border-top: 1px solid var(--border); background: var(--white); padding: .5rem 0; }
+/* Mobile menu */
+.mobileMenu {
+  border-top: 1px solid var(--border);
+  background: var(--white);
+  padding: .5rem 0;
+}
+
 .mobileNavLink {
   display: block;
   padding: .75rem 1.25rem;
@@ -111,26 +97,18 @@
   border-bottom: 1px solid var(--border);
 }
 .mobileNavLink:last-child { border-bottom: none; }
-.mobileNavLink:hover { background: var(--bg); color: var(--blue); }
+.mobileNavLink:hover { background: var(--bg); }
 
-/* ═══ TABLET 768px+ ═══════════════════════════════════ */
+/* Desktop breakpoint */
 @media (min-width: 768px) {
   .desktopNav { display: flex; }
   .hamburger { display: none; }
-  .mobileMenu { display: none !important; }
-  .inner { padding: 1rem 1.5rem; }
-  .logo { font-size: 20px; }
+  .mobileMenu { display: none; }
+
+  .inner { justify-content: space-between; }
 }
 
-/* ═══ DESKTOP 1024px+ ═════════════════════════════════ */
 @media (min-width: 1024px) {
-  .inner { padding: 1.125rem 2rem; }
-  .logo { font-size: 22px; }
+  .logo { font-size: 24px; }
   .navLink { font-size: 14px; }
-  .desktopNav { gap: 1.75rem; }
-}
-
-/* ═══ LARGE DESKTOP 1280px+ ══════════════════════════ */
-@media (min-width: 1280px) {
-  .navLink { font-size: 15px; }
 }

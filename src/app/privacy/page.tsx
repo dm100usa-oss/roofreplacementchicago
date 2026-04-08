@@ -2,9 +2,9 @@ import type { Metadata } from 'next'
 import styles from '../static-page.module.css'
 
 export const metadata: Metadata = {
-  title: 'Privacy Policy — Roof Replacement Chicago',
-  description: 'Privacy policy for roofreplacementchicago.com.',
-  alternates: { canonical: 'https://www.roofreplacementchicago.com/privacy' },
+  title: 'Privacy Policy — Roof Repair Chicago NOW',
+  description: 'Privacy policy for roofrepairchicagonow.com.',
+  alternates: { canonical: 'https://www.roofrepairchicagonow.com/privacy' },
 }
 
 export default function PrivacyPage() {
@@ -24,7 +24,7 @@ export default function PrivacyPage() {
         <h2>Data sharing</h2>
         <p>We do not sell personal data. We do not share data with third parties except as needed to operate this site (analytics providers, hosting).</p>
         <h2>Contact</h2>
-        <p>Questions about this policy: <a href="mailto:roofreplacementchicago@gmail.com">roofreplacementchicago@gmail.com</a></p>
+        <p>Questions about this policy: <a href="mailto:roofrepairchicagonow@gmail.com">roofrepairchicagonow@gmail.com</a></p>
       </div>
     </div>
   )

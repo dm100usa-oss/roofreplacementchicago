@@ -20,8 +20,9 @@ export default function CompanyCard({ company, isFirst, lang = 'en' }: Props) {
           <div className={styles.name}>{company.name}</div>
           <div className={styles.metaRow}>
             <span className={styles.stars}>{company.stars}</span>
+            <span className={styles.price}>{company.price}</span>
             <span className={styles.dot}>·</span>
-            <span className={`${styles.tag} ${company.tag === 'Top Pick' ? styles.tagTop : styles.tagRated}`}>
+            <span className={`${styles.tag} ${company.tag === 'Emergency' ? styles.tagEmergency : styles.tagBook}`}>
               {isEs ? company.tagEs : company.tag}
             </span>
           </div>
@@ -32,7 +33,7 @@ export default function CompanyCard({ company, isFirst, lang = 'en' }: Props) {
         <div className={styles.desc}>{isEs ? company.warrantyEs : company.warranty}</div>
         <div className={styles.ratingsRow}>
           <div className={styles.ratingItem}>
-            <span className={styles.ratingLabel}>{isEs ? 'Puntuación experta' : 'Expert score'}</span>
+            <span className={styles.ratingLabel}>{isEs ? 'Calificación experta' : 'Expert rating'}</span>
             {' · '}
             <span className={styles.ratingStar}>★</span>
             {' '}{company.expertRating}
@@ -46,15 +47,15 @@ export default function CompanyCard({ company, isFirst, lang = 'en' }: Props) {
           </div>
         </div>
         <div className={styles.btnRow}>
-          <a href={`tel:${MAIN_PHONE}`} className={styles.btnCall}>
+          <a href={`tel:${company.phone}`} className={styles.btnCall}>
             {isEs ? 'LLAMAR AHORA' : 'CALL NOW'}
           </a>
-          <a href={company.website} target="_blank" rel="noopener noreferrer" className={styles.btnSite}>
-            {isEs ? 'VER SITIO' : 'VISIT SITE'}
+          <a href={company.website} className={styles.btnQuote}>
+            {isEs ? 'COTIZAR' : 'GET QUOTE'}
           </a>
         </div>
         <div className={styles.btnNote}>
-          {isEs ? 'Estimado gratis · Sin obligación' : 'Free estimate · No obligation'}
+          {isEs ? 'Presupuesto gratis · Disponible hoy' : 'Free estimate · Same-day available'}
         </div>
       </div>
     </div>

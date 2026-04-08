@@ -54,44 +54,43 @@ export default function LangHomePage({ params }: Props) {
       <section className={styles.hero}>
         <div className={styles.heroInner}>
           <h1>{t.heroH1}</h1>
-          <h2 className={styles.heroH2}>{t.heroH2}</h2>
-          <p className={styles.heroDesc}>{t.heroDesc}</p>
+          <div className={styles.heroSubBlock}>
+            <p className={styles.heroP1}>{t.heroSub}</p>
+            <p className={styles.heroP2}>{t.heroP2}</p>
+          </div>
+          <div className={styles.factors}>
+            <div className={styles.factor}>{t.factor1}</div>
+            <div className={styles.factor}>{t.factor2}</div>
+            <div className={styles.factor}>{t.factor3}</div>
+          </div>
           <a href={`tel:${MAIN_PHONE}`} className={styles.btnCall}>
             {t.callNow} — {MAIN_PHONE_DISPLAY}
           </a>
           <div className={styles.btnCallNote}>
-            <span className={styles.btnCallNoteItem}>{t.noteNoPress}</span>
-            <span className={styles.btnCallNoteItem}>{t.noteNoObligation}</span>
-            <span className={styles.btnCallNoteItem}>{t.noteAdvice}</span>
+            <span className={styles.btnCallNoteItem}>{isEs ? 'Conexión rápida' : 'Fast connection'}</span>
+            <span className={styles.btnCallNoteItem}>{isEs ? 'Disponible hoy' : 'Available today'}</span>
+            <span className={styles.btnCallNoteItem}>{isEs ? 'Sirviendo Chicago' : 'Serving Chicago'}</span>
           </div>
         </div>
       </section>
 
-      <div className={styles.statsHeader}>
-        <div className={styles.statsHeaderText}>{t.statsHeader}</div>
-      </div>
-
-      <div className={styles.statsBar}>
-        <div className={styles.statsInner}>
-          <div className={styles.statItem}>
-            <div className={`${styles.statNum} ${styles.statDate}`}>Apr 7, 2026</div>
-            <div className={styles.statLabel}>{t.statsUpdated}</div>
+      <div className={styles.trustStrip}>
+        <div className={styles.trustInner}>
+          <div className={styles.trustItem}>
+            <div className={styles.trustNum}>10</div>
+            <div className={styles.trustLabel}>{t.companiesRanked}</div>
           </div>
-          <div className={styles.statItem}>
-            <div className={styles.statNum}>1–3 days</div>
-            <div className={styles.statLabel}>{t.statsDuration}</div>
+          <div className={styles.trustItem}>
+            <div className={styles.trustNum}>24/7</div>
+            <div className={styles.trustLabel}>{t.emergencyService}</div>
           </div>
-          <div className={styles.statItem}>
-            <div className={styles.statNum}>$8K–$25K</div>
-            <div className={styles.statLabel}>{t.statsCost}</div>
+          <div className={styles.trustItem}>
+            <div className={styles.trustNum}>{isEs ? 'Calidad' : 'Quality'}</div>
+            <div className={styles.trustLabel}>{isEs ? 'Trabajo verificado' : 'Verified work'}</div>
           </div>
-          <div className={styles.statItem}>
-            <div className={styles.statNum}>Permit</div>
-            <div className={styles.statLabel}>{t.statsPermit}</div>
-          </div>
-          <div className={styles.statItem}>
-            <div className={styles.statNum}>6</div>
-            <div className={styles.statLabel}>{t.statsContractors}</div>
+          <div className={styles.trustItem}>
+            <div className={styles.trustNum}>{isEs ? 'Accesible' : 'Affordable'}</div>
+            <div className={styles.trustLabel}>{isEs ? 'Precios desde $200' : 'Prices from $200'}</div>
           </div>
         </div>
       </div>

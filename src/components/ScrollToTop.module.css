@@ -19,6 +19,6 @@
   justify-content: center;
 }
 .btn:hover {
-  background: var(--blue);
+  background: var(--red);
   transform: translateY(-2px);
 }

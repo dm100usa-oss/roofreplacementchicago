@@ -1,23 +1,24 @@
 import type { Metadata } from 'next'
-import { MAIN_PHONE, MAIN_PHONE_DISPLAY, EMAIL } from '@/lib/companies'
 import styles from '../static-page.module.css'
 
 export const metadata: Metadata = {
-  title: 'Contact — Roof Replacement Chicago',
-  description: 'Contact Roof Replacement Chicago. Questions about our rankings, contractor listings, or roof replacement in Chicago.',
-  alternates: { canonical: 'https://www.roofreplacementchicago.com/contact' },
+  title: 'Contact — Roof Repair Chicago NOW',
+  description: 'Contact Roof Repair Chicago NOW with questions, feedback, or partnership inquiries.',
+  alternates: { canonical: 'https://www.roofrepairchicagonow.com/contact' },
 }
 
 export default function ContactPage() {
   return (
-    <div className={styles.wrap}>
+    <div className={styles.page}>
       <div className={styles.inner}>
-        <h1>Contact</h1>
-        <p>For questions about our contractor rankings, content, or to request a contractor listing review, contact us by email.</p>
-        <p>Email: <a href={`mailto:${EMAIL}`}>{EMAIL}</a></p>
-        <p>To speak with a roofing advisor about your Chicago roof replacement project, call our main line:</p>
-        <p><a href={`tel:${MAIN_PHONE}`}>{MAIN_PHONE_DISPLAY}</a></p>
-        <p>Available 7 days a week. Free consultation, no obligation.</p>
+        <h1>Contact us</h1>
+        <p>Have a question, found an error, or want to discuss a partnership? Reach out by email — we respond within one business day.</p>
+        <h2>Email</h2>
+        <p><a href="mailto:roofrepairchicagonow@gmail.com">roofrepairchicagonow@gmail.com</a></p>
+        <h2>For roofing companies</h2>
+        <p>If you represent a roofing company in Chicago and want to be considered for our list, email us with your company name, license number, service area, and Google Business Profile link. We review all submissions but cannot guarantee placement.</p>
+        <h2>For homeowners</h2>
+        <p>If you had a bad experience with a company on our list, please let us know. We take feedback seriously and use it to update our rankings.</p>
       </div>
     </div>
   )

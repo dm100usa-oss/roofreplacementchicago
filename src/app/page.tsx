@@ -106,49 +106,45 @@ export default function HomePage() {
       {/* HERO */}
       <section className={styles.hero}>
         <div className={styles.heroInner}>
-          <h1>Roof Replacement in Chicago: Expert Answers and Verified Contractors</h1>
-          <h2 className={styles.heroH2}>Get the Best Price on Your New Roof Without Sacrificing Quality</h2>
-          <p className={styles.heroDesc}>
-            Start with a free expert consultation. Compare your options and take your time to make a confident, well-informed decision.
-          </p>
+          <h1>Best Roofing Contractors in Chicago</h1>
+          <div className={styles.heroSubBlock}>
+            <p className={styles.heroP1}>Browse top-rated roofers below.</p>
+            <p className={styles.heroP2}>If you need help fast, call now and we&apos;ll connect you with a roofer right away.</p>
+          </div>
+          <div className={styles.factors}>
+            <div className={styles.factor}>Near you</div>
+            <div className={styles.factor}>Free estimate</div>
+            <div className={styles.factor}>Warranty on work</div>
+          </div>
           <a href={`tel:${MAIN_PHONE}`} className={styles.btnCall}>
             CALL NOW — {MAIN_PHONE_DISPLAY}
           </a>
           <div className={styles.btnCallNote}>
-            <span className={styles.btnCallNoteItem}>No pressure</span>
-            <span className={styles.btnCallNoteItem}>No obligation</span>
-            <span className={styles.btnCallNoteItem}>Just expert advice</span>
+            <span className={styles.btnCallNoteItem}>Fast connection</span>
+            <span className={styles.btnCallNoteItem}>Available today</span>
+            <span className={styles.btnCallNoteItem}>Serving Chicago</span>
           </div>
         </div>
       </section>
 
-      {/* STATS HEADER */}
-      <div className={styles.statsHeader}>
-        <div className={styles.statsHeaderText}>Average project cost and timeline in Chicago today</div>
-      </div>
-
-      {/* STATS BAR */}
-      <div className={styles.statsBar}>
-        <div className={styles.statsInner}>
-          <div className={styles.statItem}>
-            <div className={`${styles.statNum} ${styles.statDate}`}>Apr 7, 2026</div>
-            <div className={styles.statLabel}>UPDATED</div>
+      {/* TRUST STRIP */}
+      <div className={styles.trustStrip}>
+        <div className={styles.trustInner}>
+          <div className={styles.trustItem}>
+            <div className={styles.trustNum}>10</div>
+            <div className={styles.trustLabel}>Companies ranked</div>
           </div>
-          <div className={styles.statItem}>
-            <div className={styles.statNum}>1–3 days</div>
-            <div className={styles.statLabel}>AVERAGE PROJECT DURATION</div>
+          <div className={styles.trustItem}>
+            <div className={styles.trustNum}>24/7</div>
+            <div className={styles.trustLabel}>Emergency service</div>
           </div>
-          <div className={styles.statItem}>
-            <div className={styles.statNum}>$8K–$25K</div>
-            <div className={styles.statLabel}>TYPICAL COST IN CHICAGO</div>
+          <div className={styles.trustItem}>
+            <div className={styles.trustNum}>Quality</div>
+            <div className={styles.trustLabel}>Verified work</div>
           </div>
-          <div className={styles.statItem}>
-            <div className={styles.statNum}>Permit</div>
-            <div className={styles.statLabel}>REQUIRED BY CITY OF CHICAGO</div>
-          </div>
-          <div className={styles.statItem}>
-            <div className={styles.statNum}>6</div>
-            <div className={styles.statLabel}>VERIFIED CONTRACTORS</div>
+          <div className={styles.trustItem}>
+            <div className={styles.trustNum}>Affordable</div>
+            <div className={styles.trustLabel}>Prices from $200</div>
           </div>
         </div>
       </div>
