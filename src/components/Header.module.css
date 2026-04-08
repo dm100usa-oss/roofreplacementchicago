@@ -30,9 +30,9 @@
   letter-spacing: .05em;
   white-space: nowrap;
   transition: opacity .15s;
-  color: #7A5C00;
-  background: #F5C518;
-  border: 1.5px solid #D4A800;
+  color: #7A4F00;
+  background: #F59E0B;
+  border: 1.5px solid #D97706;
 }
 .langBtnEsp:hover { opacity: .85; }
 
@@ -45,9 +45,9 @@
   letter-spacing: .05em;
   white-space: nowrap;
   transition: opacity .15s;
-  color: #1A4A8A;
-  background: #DBEAFE;
-  border: 1.5px solid #93C5FD;
+  color: #fff;
+  background: var(--blue);
+  border: 1.5px solid var(--blue);
 }
 .langBtnEng:hover { opacity: .85; }
 
