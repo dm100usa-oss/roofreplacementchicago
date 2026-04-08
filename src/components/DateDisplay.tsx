@@ -2,6 +2,6 @@
 
 export default function DateDisplay() {
   const now = new Date()
-  const formatted = `${now.getMonth() + 1}/${now.getDate()}/${now.getFullYear()}`
+  const formatted = now.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })
   return <>{formatted}</>
 }
