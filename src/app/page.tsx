@@ -150,32 +150,6 @@ export default function HomePage() {
       </div>
       <p className={styles.belowStrip}>This resource was created to help you choose the most convenient and reliable option for your roof replacement</p>
 
-      {/* WHY US */}
-      <section className={styles.whyUs}>
-        <div className={styles.whyInner}>
-          <div className={styles.sectionLabel}>Why this resource</div>
-          <div className={styles.whyTitle}>We research so you can decide with confidence.</div>
-          <div className={styles.whyGrid}>
-            {[
-              { title: 'Verified licensing', text: 'Every contractor on our list holds an active Illinois roofing license. We check IDFPR records before any company makes the list.', img: '/foto2.png' },
-              { title: 'Real Chicago expertise', text: 'Chicago has specific permit rules, climate demands, and flat roof requirements. We only include contractors who know this market.', img: '/foto3.png' },
-              { title: 'Insurance claim experience', text: 'Storm damage and insurance claims are common in Chicago. We prioritize contractors with documented experience navigating this process.', img: '/foto4.png' },
-              { title: 'No pressure approach', text: 'Roof replacement is a major investment. Our resource exists to inform, not to pressure. Call when you are ready.', img: '/foto5.png' },
-            ].map((item) => (
-              <div key={item.title} className={styles.whyCard}>
-                <div className={styles.whyCardImgWrap}>
-                  <Image src={item.img} alt={item.title} width={600} height={220} className={styles.whyCardImg} />
-                </div>
-                <div className={styles.whyCardBody}>
-                  <strong>{item.title}</strong>
-                  <p>{item.text}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* COMPANIES */}
       <section id="companies" className={styles.companies}>
         <div className={styles.companiesInner}>
@@ -303,6 +277,32 @@ export default function HomePage() {
             ))}
           </div>
           <a href="/services/asphalt-shingle-replacement" className={styles.materialsAll}>See all replacement types →</a>
+        </div>
+      </section>
+
+      {/* WHY US */}
+      <section className={styles.whyUs}>
+        <div className={styles.whyInner}>
+          <div className={styles.sectionLabel}>Why this resource</div>
+          <div className={styles.whyTitle}>We research so you can decide with confidence.</div>
+          <div className={styles.whyGrid}>
+            {[
+              { title: 'Verified licensing', text: 'Every contractor on our list holds an active Illinois roofing license. We check IDFPR records before any company makes the list.', img: '/foto2.png' },
+              { title: 'Real Chicago expertise', text: 'Chicago has specific permit rules, climate demands, and flat roof requirements. We only include contractors who know this market.', img: '/foto3.png' },
+              { title: 'Insurance claim experience', text: 'Storm damage and insurance claims are common in Chicago. We prioritize contractors with documented experience navigating this process.', img: '/foto4.png' },
+              { title: 'No pressure approach', text: 'Roof replacement is a major investment. Our resource exists to inform, not to pressure. Call when you are ready.', img: '/foto5.png' },
+            ].map((item) => (
+              <div key={item.title} className={styles.whyCard}>
+                <div className={styles.whyCardImgWrap}>
+                  <Image src={item.img} alt={item.title} width={600} height={220} className={styles.whyCardImg} />
+                </div>
+                <div className={styles.whyCardBody}>
+                  <strong>{item.title}</strong>
+                  <p>{item.text}</p>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
