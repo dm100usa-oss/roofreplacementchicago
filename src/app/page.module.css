@@ -9,7 +9,12 @@
 .heroContent {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1.75rem;
+}
+.heroTextCol {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
 }
 .heroLeft { text-align: center; }
 .heroLeft h1 {
@@ -25,7 +30,7 @@
   color: var(--text);
   font-weight: 800;
   line-height: 1.4;
-  margin-bottom: .625rem;
+  margin-bottom: 0;
   letter-spacing: -.01em;
 }
 .heroBody {
@@ -34,6 +39,7 @@
   font-weight: 400;
   line-height: 1.65;
   margin-bottom: 1rem;
+  text-align: center;
 }
 .heroExtra {
   font-size: 15px;
@@ -48,8 +54,21 @@
   margin-bottom: 0;
 }
 
-
 .heroRight { display: flex; flex-direction: column; align-items: center; }
+
+/* Image */
+.heroImageWrap {
+  width: 100%;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.13);
+}
+.heroImage {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
 
 .btnCall {
   display: block;
@@ -167,13 +186,23 @@ details[open] .faqQ::after { transform: rotate(45deg); }
 /* ═══ TABLET 768px+ ═══════════════════════════════════════════ */
 @media (min-width: 768px) {
   .hero { padding: 2.5rem 1.5rem 2rem; }
-  .heroLeft h1 { font-size: 26px; }
-  .heroSubtitle { font-size: 18px; }
+
+  /* Two-column layout: text left, image right */
+  .heroContent { flex-direction: row; align-items: center; gap: 2rem; }
+  .heroTextCol { flex: 1; gap: 1.25rem; }
+  .heroLeft { text-align: left; }
+  .heroBody { text-align: left; }
+  .heroLeft h1 { font-size: 24px; }
+  .heroSubtitle { font-size: 17px; }
   .heroBody { font-size: 15px; }
-  .heroP1 { font-size: 20px; }
-  .heroP2 { font-size: 16px; }
+  .heroRight { align-items: flex-start; }
   .btnCall { font-size: 18px; }
-  .btnCallNoteItem { font-size: 15px; }
+  .btnCallNote { justify-content: flex-start; }
+  .btnCallNoteItem { font-size: 14px; }
+
+  /* Image */
+  .heroImageWrap { flex: 1; max-width: 460px; margin-top: 0; }
+
   .expertNum { font-size: 22px; }
   .expertLabel { font-size: 11px; }
   .whyGrid { grid-template-columns: 1fr 1fr; gap: 1rem; }
@@ -186,19 +215,23 @@ details[open] .faqQ::after { transform: rotate(45deg); }
 @media (min-width: 1024px) {
   .hero { padding: 3.5rem 2rem 3rem; }
 
-  /* Single column centred */
-  .heroContent { flex-direction: column; align-items: center; gap: 1.5rem; }
-  .heroLeft { text-align: center; max-width: 720px; }
-  .heroLeft h1 { font-size: 34px; text-align: center; }
+  /* Two-column layout */
+  .heroContent { flex-direction: row; align-items: center; gap: 3rem; }
+  .heroTextCol { flex: 1; }
+  .heroLeft { text-align: left; max-width: none; }
+  .heroLeft h1 { font-size: 34px; text-align: left; }
   .heroSubtitle { font-size: 20px; }
-  .heroBody { font-size: 16px; }
+  .heroBody { font-size: 16px; text-align: left; }
   .heroExtra { font-size: 17px; }
   .heroCallout { font-size: 20px; }
 
   /* CTA */
-  .heroRight { width: 100%; max-width: 520px; }
+  .heroRight { width: 100%; align-items: flex-start; }
   .btnCall { font-size: 18px; padding: 20px; }
-  .btnCallNote { justify-content: center; }
+  .btnCallNote { justify-content: flex-start; }
+
+  /* Image */
+  .heroImageWrap { flex: 1; max-width: 520px; }
 
   /* Expert strip */
   .expertInner { flex-wrap: nowrap; gap: 1.5rem; }
@@ -237,12 +270,10 @@ details[open] .faqQ::after { transform: rotate(45deg); }
 
 /* ═══ LARGE DESKTOP 1280px+ ═══════════════════════════════════ */
 @media (min-width: 1280px) {
-  .heroLeft h1 { font-size: 40px; }
+  .heroLeft h1 { font-size: 42px; }
   .heroSubtitle { font-size: 22px; }
   .heroBody { font-size: 17px; }
-  .heroP1 { font-size: 24px; }
-  .heroP2 { font-size: 18px; }
-  .heroRight { max-width: 560px; }
-  .btnCallNoteItem { font-size: 17px; }
+  .heroImageWrap { max-width: 580px; }
+  .btnCallNoteItem { font-size: 15px; }
   .expertNum { font-size: 28px; }
 }

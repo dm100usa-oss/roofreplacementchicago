@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import { companies, MAIN_PHONE, MAIN_PHONE_DISPLAY } from '@/lib/companies'
 import CompanyCard from '@/components/CompanyCard'
 import InternalLinks from '@/components/InternalLinks'
@@ -88,20 +89,32 @@ export default function HomePage() {
       <section className={styles.hero}>
         <div className={styles.heroInner}>
           <div className={styles.heroContent}>
-            <div className={styles.heroLeft}>
-              <h1>Roof Replacement in Chicago: Expert Answers and Verified Contractors</h1>
-              <p className={styles.heroSubtitle}>Get the Best Price on Your New Roof Without Sacrificing Quality</p>
-              <p className={styles.heroBody}>Start with a free expert consultation. Compare your options and take your time to make a confident, well-informed decision.</p>
-            </div>
-            <div className={styles.heroRight}>
-              <a href={`tel:${MAIN_PHONE}`} className={styles.btnCall}>
-                CALL NOW — {MAIN_PHONE_DISPLAY}
-              </a>
-              <div className={styles.btnCallNote}>
-                <span className={styles.btnCallNoteItem}>No pressure</span>
-                <span className={styles.btnCallNoteItem}>No obligation</span>
-                <span className={styles.btnCallNoteItem}>Just expert advice</span>
+            <div className={styles.heroTextCol}>
+              <div className={styles.heroLeft}>
+                <h1>Roof Replacement in Chicago: Expert Answers and Verified Contractors</h1>
+                <p className={styles.heroSubtitle}>Get the Best Price on Your New Roof Without Sacrificing Quality</p>
               </div>
+              <div className={styles.heroRight}>
+                <p className={styles.heroBody}>Start with a free expert consultation. Compare your options and take your time to make a confident, well-informed decision</p>
+                <a href={`tel:${MAIN_PHONE}`} className={styles.btnCall}>
+                  CALL NOW — {MAIN_PHONE_DISPLAY}
+                </a>
+                <div className={styles.btnCallNote}>
+                  <span className={styles.btnCallNoteItem}>No pressure</span>
+                  <span className={styles.btnCallNoteItem}>No obligation</span>
+                  <span className={styles.btnCallNoteItem}>Just expert advice</span>
+                </div>
+              </div>
+            </div>
+            <div className={styles.heroImageWrap}>
+              <Image
+                src="/foto1.png"
+                alt="Chicago roofing contractor at work"
+                width={700}
+                height={500}
+                className={styles.heroImage}
+                priority
+              />
             </div>
           </div>
         </div>
