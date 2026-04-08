@@ -139,7 +139,10 @@
 .sectionLabel { font-size: 12px; font-weight: 700; letter-spacing: .09em; text-transform: uppercase; color: var(--blue); margin-bottom: .875rem; }
 .whyTitle { font-size: 19px; font-weight: 900; color: var(--text); margin-bottom: 1.25rem; letter-spacing: -.01em; }
 .whyGrid { display: grid; grid-template-columns: 1fr; gap: .75rem; }
-.whyCard { background: var(--white); border-radius: var(--radius); padding: 1rem 1.125rem; box-shadow: var(--shadow); border: 1px solid var(--border); }
+.whyCard { background: var(--white); border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); border: 1px solid var(--border); }
+.whyCardImgWrap { width: 100%; overflow: hidden; }
+.whyCardImg { width: 100%; height: 180px; object-fit: cover; display: block; }
+.whyCardBody { padding: 1rem 1.125rem; }
 .whyCard strong { display: block; font-size: 14px; font-weight: 800; color: var(--text); margin-bottom: 4px; }
 .whyCard p { font-size: 13px; color: var(--text-muted); line-height: 1.55; margin: 0; }
 
