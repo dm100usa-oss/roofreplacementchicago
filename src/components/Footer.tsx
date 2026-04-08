@@ -24,13 +24,13 @@ export default function Footer() {
         </div>
         <p className={styles.disclaimer}>
           {isEs
-            ? 'Aviso legal: Este sitio es un servicio gratuito para ayudar a los propietarios a conectarse con proveedores de servicios locales. Todos los contratistas/proveedores son independientes y este sitio no garantiza ningún trabajo realizado. Es responsabilidad del propietario verificar que el contratista contratado cuente con la licencia y el seguro necesarios para el trabajo. Todas las personas en fotos o videos son actores o modelos y no contratistas listados en este sitio.'
-            : 'Disclaimer: This site is a free service to assist homeowners in connecting with local service providers. All contractors/providers are independent and this site does not warrant or guarantee any work performed. It is the responsibility of the homeowner to verify that the hired contractor furnishes the necessary license and insurance required for the work being performed. All persons depicted in a photo or video are actors or models and not contractors listed on this site.'}
+            ? 'Aviso legal: roofreplacementchicago.com es un servicio gratuito para ayudar a los propietarios a conectarse con proveedores de servicios locales. Todos los contratistas/proveedores son independientes y roofreplacementchicago.com no garantiza ningún trabajo realizado. Es responsabilidad del propietario verificar que el contratista contratado cuente con la licencia y el seguro necesarios para el trabajo. Todas las personas en fotos o videos son actores o modelos y no contratistas listados en roofreplacementchicago.com.'
+            : 'Disclaimer: roofreplacementchicago.com is a free service to assist homeowners in connecting with local service providers. All contractors/providers are independent and roofreplacementchicago.com does not warrant or guarantee any work performed. It is the responsibility of the homeowner to verify that the hired contractor furnishes the necessary license and insurance required for the work being performed. All persons depicted in a photo or video are actors or models and not contractors listed on roofreplacementchicago.com.'}
         </p>
         <p className={styles.disclosure}>
           {isEs
-            ? 'Este sitio web es un recurso editorial independiente. Podemos recibir compensación por referencias. Las clasificaciones reflejan investigación independiente y no constituyen un respaldo.'
-            : 'This website is an independent editorial resource. We may receive compensation for referrals. Rankings reflect independent research and do not constitute an endorsement. FTC Disclosure: We receive compensation from partners. Our rankings remain independent.'}
+            ? 'Este sitio web es también un recurso editorial independiente. Podemos recibir compensación por referencias. Las clasificaciones reflejan investigación independiente y no constituyen un respaldo.'
+            : 'This website is also an independent editorial resource. We may receive compensation for referrals. Rankings reflect independent research and do not constitute an endorsement.'}
         </p>
         <p className={styles.copy}>
           © {new Date().getFullYear()} Roof Replacement Chicago · {EMAIL}
