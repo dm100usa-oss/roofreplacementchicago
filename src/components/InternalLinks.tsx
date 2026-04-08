@@ -2,6 +2,7 @@ import Link from 'next/link'
 import { neighborhoods } from '@/lib/neighborhoods'
 import { services } from '@/lib/services'
 import { articles } from '@/lib/articles'
+import NeighborhoodLinks from './NeighborhoodLinks'
 import styles from './InternalLinks.module.css'
 
 type Props = {
@@ -32,18 +33,14 @@ export default function InternalLinks({ type, lang }: Props) {
           </div>
         )}
         {(type === 'home' || type === 'neighborhood') && (
-          <div className={styles.group}>
-            <div className={styles.groupTitle}>
-              {isEs ? 'Barrios de Chicago' : 'Serving Chicago neighborhoods'}
-            </div>
-            <div className={styles.links}>
-              {neighborhoods.map(n => (
-                <Link key={n.slug} href={`${prefix}/neighborhoods/${n.slug}`} className={styles.link}>
-                  {n.name}
-                </Link>
-              ))}
-            </div>
-          </div>
+          <NeighborhoodLinks
+            neighborhoods={neighborhoods}
+            prefix={prefix}
+            labelTitle={isEs ? 'Barrios de Chicago' : 'Serving Chicago neighborhoods'}
+            labelMore={isEs ? 'Ver más barrios' : 'Show more neighborhoods'}
+            labelLess={isEs ? 'Ver menos' : 'Show less'}
+            initialCount={10}
+          />
         )}
         <div className={styles.group}>
           <div className={styles.groupTitle}>
