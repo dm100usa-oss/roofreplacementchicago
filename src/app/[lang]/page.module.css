@@ -18,7 +18,7 @@
 }
 .heroLeft { text-align: center; }
 .heroLeft h1 {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 900;
   color: var(--text);
   line-height: 1.25;
@@ -34,7 +34,7 @@
   letter-spacing: -.01em;
 }
 .heroBody {
-  font-size: 14px;
+  font-size: 16px;
   color: var(--text-muted);
   font-weight: 400;
   line-height: 1.65;
@@ -105,20 +105,18 @@
 .expertStrip { background: var(--navy); padding: 1rem 1.25rem; }
 .stripLabel {
   text-align: center;
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 600;
   color: var(--text-muted);
-  text-transform: uppercase;
-  letter-spacing: .06em;
+  letter-spacing: .01em;
   margin: 0;
   padding: 0.75rem 1.25rem 0.4rem;
 }
 .belowStrip {
   text-align: center;
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 700;
-  letter-spacing: .09em;
-  text-transform: uppercase;
+  letter-spacing: .01em;
   color: var(--blue);
   padding: 0.9rem 1.25rem 0;
   margin: 0;
