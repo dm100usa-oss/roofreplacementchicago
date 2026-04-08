@@ -37,19 +37,19 @@
 .btnCall {
   display: block;
   width: 100%;
-  background: var(--red);
+  background: #1e3a8a;
   border-radius: 14px;
   padding: 17px;
   font-size: 17px;
   font-weight: 900;
   text-align: center;
-  color: #fff;
-  text-decoration: none;
+  color: #ffffff !important;
+  text-decoration: none !important;
   letter-spacing: .01em;
-  box-shadow: 0 4px 16px rgba(230,57,70,0.35);
+  box-shadow: 0 4px 16px rgba(30,58,138,0.35);
   transition: background .15s, transform .1s;
 }
-.btnCall:hover { background: var(--red-dark); transform: translateY(-1px); }
+.btnCall:hover { background: #1e40af; transform: translateY(-1px); }
 
 .btnCallNote {
   display: flex;
