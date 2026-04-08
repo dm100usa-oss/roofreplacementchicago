@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { companies, MAIN_PHONE, MAIN_PHONE_DISPLAY } from '@/lib/companies'
 import CompanyCard from '@/components/CompanyCard'
 import InternalLinks from '@/components/InternalLinks'
+import DateDisplay from '@/components/DateDisplay'
 import styles from './page.module.css'
 
 export const metadata: Metadata = {
@@ -90,6 +91,8 @@ export default function HomePage() {
             <div className={styles.heroLeft}>
               <h1>Roof Replacement in Chicago: Expert Answers and Verified Contractors</h1>
               <p className={styles.heroSubtitle}>Everything a Chicago homeowner needs before replacing their roof: answers to the most important questions and our verified contractor ranking for 2026.</p>
+              <p className={styles.heroExtra}>This resource was created to help you choose the most convenient and reliable option for your roof replacement.</p>
+              <p className={styles.heroExtra}>Average project cost and timeline in Chicago today.</p>
               <p className={styles.heroCallout}>Need a free consultation right now? Call us. We'll help.</p>
             </div>
             <div className={styles.heroRight}>
@@ -110,12 +113,16 @@ export default function HomePage() {
       <div className={styles.expertStrip}>
         <div className={styles.expertInner}>
           <div className={styles.expertItem}>
-            <div className={styles.expertNum}>$8K–$25K</div>
-            <div className={styles.expertLabel}>Typical cost in Chicago</div>
+            <div className={styles.expertNum}><DateDisplay /></div>
+            <div className={styles.expertLabel}>Updated</div>
           </div>
           <div className={styles.expertItem}>
-            <div className={styles.expertNum}>1–2 days</div>
+            <div className={styles.expertNum}>1–3 days</div>
             <div className={styles.expertLabel}>Average project duration</div>
+          </div>
+          <div className={styles.expertItem}>
+            <div className={styles.expertNum}>$8K–$25K</div>
+            <div className={styles.expertLabel}>Typical cost in Chicago</div>
           </div>
           <div className={styles.expertItem}>
             <div className={styles.expertNum}>Permit</div>

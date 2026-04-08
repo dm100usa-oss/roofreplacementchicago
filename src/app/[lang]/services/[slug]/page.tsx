@@ -60,7 +60,7 @@ export default function LangServicePage({ params }: Props) {
           </div>
         </div>
       </div>
-      <InternalLinks type="service" />
+      <InternalLinks type="service" lang={lang} />
     </>
   )
 }

@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation'
 import { companies, MAIN_PHONE, MAIN_PHONE_DISPLAY } from '@/lib/companies'
 import CompanyCard from '@/components/CompanyCard'
 import InternalLinks from '@/components/InternalLinks'
+import DateDisplay from '@/components/DateDisplay'
 import styles from './page.module.css'
 
 type Props = { params: { lang: string } }
@@ -31,6 +32,8 @@ export default function LangHomePage({ params }: Props) {
             <div className={styles.heroLeft}>
               <h1>Reemplazo de Techo en Chicago: Respuestas Profesionales y Contratistas Verificados</h1>
               <p className={styles.heroSubtitle}>Todo lo que un propietario en Chicago necesita antes de reemplazar su techo: respuestas a las preguntas más importantes y nuestro ranking verificado de contratistas para 2026.</p>
+              <p className={styles.heroExtra}>Este recurso fue creado para ayudarle a elegir la opción más conveniente y confiable para el reemplazo de su techo.</p>
+              <p className={styles.heroExtra}>Costo promedio y duración de un proyecto en Chicago hoy.</p>
               <p className={styles.heroCallout}>¿Necesita una consulta gratuita ahora mismo? Llámenos. Le ayudaremos.</p>
             </div>
             <div className={styles.heroRight}>
@@ -50,12 +53,16 @@ export default function LangHomePage({ params }: Props) {
       <div className={styles.expertStrip}>
         <div className={styles.expertInner}>
           <div className={styles.expertItem}>
-            <div className={styles.expertNum}>$8K–$25K</div>
-            <div className={styles.expertLabel}>Costo típico en Chicago</div>
+            <div className={styles.expertNum}><DateDisplay /></div>
+            <div className={styles.expertLabel}>Actualizado</div>
           </div>
           <div className={styles.expertItem}>
-            <div className={styles.expertNum}>1–2 días</div>
+            <div className={styles.expertNum}>1–3 días</div>
             <div className={styles.expertLabel}>Duración promedio del proyecto</div>
+          </div>
+          <div className={styles.expertItem}>
+            <div className={styles.expertNum}>$8K–$25K</div>
+            <div className={styles.expertLabel}>Costo típico en Chicago</div>
           </div>
           <div className={styles.expertItem}>
             <div className={styles.expertNum}>Permiso</div>
@@ -90,7 +97,7 @@ export default function LangHomePage({ params }: Props) {
         </div>
       </section>
 
-      <InternalLinks type="home" />
+      <InternalLinks type="home" lang={params.lang} />
     </>
   )
 }

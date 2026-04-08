@@ -69,7 +69,7 @@ export default function LangNeighborhoodPage({ params }: Props) {
           )}
         </div>
       </div>
-      <InternalLinks type="neighborhood" />
+      <InternalLinks type="neighborhood" lang={lang} />
     </>
   )
 }

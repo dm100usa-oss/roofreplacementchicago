@@ -13,7 +13,7 @@
 }
 .heroLeft { text-align: center; }
 .heroLeft h1 {
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 900;
   color: var(--text);
   line-height: 1.25;
@@ -26,8 +26,14 @@
   line-height: 1.65;
   margin-bottom: 1rem;
 }
-.heroCallout {
+.heroExtra {
   font-size: 15px;
+  color: var(--text-muted);
+  line-height: 1.65;
+  margin-bottom: 1rem;
+}
+.heroCallout {
+  font-size: 18px;
   font-weight: 700;
   color: var(--blue);
   margin-bottom: 0;
@@ -61,7 +67,7 @@
   flex-wrap: wrap;
 }
 .btnCallNoteItem {
-  font-size: 12px;
+  font-size: 18px;
   font-weight: 500;
   color: var(--text-light);
   white-space: nowrap;
@@ -132,7 +138,7 @@ details[open] .faqQ::after { transform: rotate(45deg); }
 /* ═══ TABLET 768px+ ═══════════════════════════════════════════ */
 @media (min-width: 768px) {
   .hero { padding: 2.5rem 1.5rem 2rem; }
-  .heroLeft h1 { font-size: 30px; }
+  .heroLeft h1 { font-size: 24px; }
   .heroP1 { font-size: 20px; }
   .heroP2 { font-size: 16px; }
   .btnCall { font-size: 18px; }
@@ -151,9 +157,10 @@ details[open] .faqQ::after { transform: rotate(45deg); }
   /* Single column centred */
   .heroContent { flex-direction: column; align-items: center; gap: 1.5rem; }
   .heroLeft { text-align: center; max-width: 720px; }
-  .heroLeft h1 { font-size: 40px; text-align: center; }
+  .heroLeft h1 { font-size: 32px; text-align: center; }
   .heroSubtitle { font-size: 17px; }
-  .heroCallout { font-size: 17px; }
+  .heroExtra { font-size: 17px; }
+  .heroCallout { font-size: 20px; }
 
   /* CTA */
   .heroRight { width: 100%; max-width: 520px; }
@@ -197,7 +204,7 @@ details[open] .faqQ::after { transform: rotate(45deg); }
 
 /* ═══ LARGE DESKTOP 1280px+ ═══════════════════════════════════ */
 @media (min-width: 1280px) {
-  .heroLeft h1 { font-size: 46px; }
+  .heroLeft h1 { font-size: 37px; }
   .heroP1 { font-size: 24px; }
   .heroP2 { font-size: 18px; }
   .heroRight { max-width: 560px; }
@@ -207,9 +214,13 @@ details[open] .faqQ::after { transform: rotate(45deg); }
 /* subtitle / callout responsive */
 @media (min-width: 768px) {
   .heroSubtitle { font-size: 16px; }
-  .heroCallout { font-size: 16px; }
+  .heroExtra { font-size: 16px; }
+  .heroCallout { font-size: 19px; }
+  .btnCallNoteItem { font-size: 19px; }
 }
 @media (min-width: 1024px) {
   .heroSubtitle { font-size: 17px; }
-  .heroCallout { font-size: 17px; }
+  .heroExtra { font-size: 17px; }
+  .heroCallout { font-size: 20px; }
+  .btnCallNoteItem { font-size: 20px; }
 }

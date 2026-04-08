@@ -49,7 +49,7 @@ export default function LangArticlePage({ params }: Props) {
           <span className={styles.ctaNote}>Free consultation. No obligation.</span>
         </div>
       </div>
-      <InternalLinks type="article" />
+      <InternalLinks type="article" lang={params.lang} />
     </div>
   )
 }
