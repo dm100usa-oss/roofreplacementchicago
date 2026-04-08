@@ -31,17 +31,17 @@ export default function LangHomePage({ params }: Props) {
           <div className={styles.heroContent}>
             <div className={styles.heroLeft}>
               <h1>Reemplazo de Techo en Chicago: Respuestas Profesionales y Contratistas Verificados</h1>
-              <p className={styles.heroSubtitle}>Todo lo que un propietario en Chicago necesita antes de reemplazar su techo: respuestas a las preguntas más importantes y nuestro ranking verificado de contratistas para 2026</p>
-              <p className={styles.heroCallout}>¿Necesita una consulta gratuita ahora mismo? Llámenos. Le ayudaremos.</p>
+              <p className={styles.heroSubtitle}>Obtenga el Mejor Precio para su Nuevo Techo Sin Sacrificar la Calidad</p>
+              <p className={styles.heroBody}>Comience con una consulta gratuita de expertos. Compare sus opciones y tómese el tiempo necesario para tomar una decisión segura y bien informada.</p>
             </div>
             <div className={styles.heroRight}>
               <a href={`tel:${MAIN_PHONE}`} className={styles.btnCall}>
                 LLAMAR AHORA — {MAIN_PHONE_DISPLAY}
               </a>
               <div className={styles.btnCallNote}>
+                <span className={styles.btnCallNoteItem}>Sin presión</span>
                 <span className={styles.btnCallNoteItem}>Sin obligación</span>
-                <span className={styles.btnCallNoteItem}>Respuestas reales</span>
-                <span className={styles.btnCallNoteItem}>Disponible 7 días a la semana</span>
+                <span className={styles.btnCallNoteItem}>Solo consejo experto</span>
               </div>
             </div>
           </div>
