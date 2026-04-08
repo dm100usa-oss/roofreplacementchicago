@@ -30,15 +30,16 @@ export default function Header() {
 
   return (
     <>
-      <div className={isEs ? styles.langBarEs : styles.langBar}>
-        <span>{isEs ? 'También disponible en' : 'Also available in'}</span>
-        <Link href={togglePath}>{isEs ? 'English' : 'Español'}</Link>
-      </div>
       <header className={styles.header}>
         <div className={styles.inner}>
-          <Link href={isEs ? '/es' : '/'} className={styles.logo}>
-            Roof Replacement <span>Chicago</span>
-          </Link>
+          <div className={styles.logoWrap}>
+            <Link href={isEs ? '/es' : '/'} className={styles.logo}>
+              Roof Replacement <span>Chicago</span>
+            </Link>
+            <Link href={togglePath} className={styles.langBtn}>
+              {isEs ? 'EN' : 'ES'}
+            </Link>
+          </div>
           <nav className={styles.desktopNav}>
             {navLinks.map(l => (
               <Link key={l.href} href={l.href} className={styles.navLink}>{l.label}</Link>
