@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import { notFound } from 'next/navigation'
 import { companies, MAIN_PHONE, MAIN_PHONE_DISPLAY } from '@/lib/companies'
 import CompanyCard from '@/components/CompanyCard'
@@ -29,20 +30,32 @@ export default function LangHomePage({ params }: Props) {
       <section className={styles.hero}>
         <div className={styles.heroInner}>
           <div className={styles.heroContent}>
-            <div className={styles.heroLeft}>
-              <h1>Reemplazo de Techo en Chicago: Respuestas Profesionales y Contratistas Verificados</h1>
-              <p className={styles.heroSubtitle}>Obtenga el Mejor Precio para su Nuevo Techo Sin Sacrificar la Calidad</p>
-              <p className={styles.heroBody}>Comience con una consulta gratuita de expertos. Compare sus opciones y tómese el tiempo necesario para tomar una decisión segura y bien informada.</p>
-            </div>
-            <div className={styles.heroRight}>
-              <a href={`tel:${MAIN_PHONE}`} className={styles.btnCall}>
-                LLAMAR AHORA — {MAIN_PHONE_DISPLAY}
-              </a>
-              <div className={styles.btnCallNote}>
-                <span className={styles.btnCallNoteItem}>Sin presión</span>
-                <span className={styles.btnCallNoteItem}>Sin obligación</span>
-                <span className={styles.btnCallNoteItem}>Solo consejo experto</span>
+            <div className={styles.heroTextCol}>
+              <div className={styles.heroLeft}>
+                <h1>Reemplazo de Techo en Chicago: Respuestas Profesionales y Contratistas Verificados</h1>
+                <p className={styles.heroSubtitle}>Obtenga el Mejor Precio para su Nuevo Techo Sin Sacrificar la Calidad</p>
               </div>
+              <div className={styles.heroRight}>
+                <p className={styles.heroBody}>Comience con una consulta gratuita de expertos. Compare sus opciones y tómese el tiempo necesario para tomar una decisión segura y bien informada</p>
+                <a href={`tel:${MAIN_PHONE}`} className={styles.btnCall}>
+                  LLAMAR AHORA — {MAIN_PHONE_DISPLAY}
+                </a>
+                <div className={styles.btnCallNote}>
+                  <span className={styles.btnCallNoteItem}>Sin presión</span>
+                  <span className={styles.btnCallNoteItem}>Sin obligación</span>
+                  <span className={styles.btnCallNoteItem}>Solo consejo experto</span>
+                </div>
+              </div>
+            </div>
+            <div className={styles.heroImageWrap}>
+              <Image
+                src="/foto1.png"
+                alt="Contratista de techos en Chicago"
+                width={700}
+                height={500}
+                className={styles.heroImage}
+                priority
+              />
             </div>
           </div>
         </div>
