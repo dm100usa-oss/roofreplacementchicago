@@ -112,6 +112,11 @@
   margin: 0;
   padding: 0.75rem 1.25rem 0.4rem;
 }
+@media (max-width: 640px) {
+  .stripLabel {
+    font-size: 14px;
+  }
+}
 .belowStrip {
   text-align: center;
   font-size: 16px;
@@ -156,8 +161,8 @@
 .cta { background: var(--navy); padding: 1.75rem 1.25rem; }
 .ctaInner { max-width: var(--max-width); margin: 0 auto; text-align: center; }
 .ctaInner h2 { font-size: 21px; font-weight: 900; color: #fff; margin-bottom: .5rem; letter-spacing: -.01em; }
-.ctaInner p { font-size: 13px; color: #9CA3AF; margin-bottom: 1.25rem; line-height: 1.6; }
-.ctaNote { font-size: 12px; color: #6B7280; margin-top: .75rem; margin-bottom: 0; }
+.ctaInner p { font-size: 13px; color: #fff; margin-bottom: 1.25rem; line-height: 1.6; }
+.ctaNote { font-size: 12px; color: #fff; margin-top: .75rem; margin-bottom: 0; }
 .btnCallCta {
   display: block; width: 100%; max-width: 400px; margin: 0 auto;
   background: var(--blue); border-radius: 14px; padding: 17px;

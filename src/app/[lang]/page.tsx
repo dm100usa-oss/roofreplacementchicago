@@ -124,14 +124,24 @@ export default function LangHomePage({ params }: Props) {
         </div>
       </section>
 
+      <section className={styles.howRank}>
+        <div className={styles.howRankInner}>
+          <div className={styles.sectionLabel}>Cómo clasificamos</div>
+          <div className={styles.whyTitle}>Nuestros criterios de selección</div>
+          <p className={styles.howRankText}>
+            Evaluamos a cada contratista según su licencia activa de IDFPR de Illinois, calificación y volumen de reseñas en Google, acreditación BBB, años en el negocio, duración de la garantía de mano de obra y experiencia documentada con permisos de construcción de Chicago y reclamaciones de seguros. Solo las empresas que cumplen todos los criterios aparecen en nuestra lista.
+          </p>
+        </div>
+      </section>
+
       <section className={styles.cta}>
         <div className={styles.ctaInner}>
           <h2>No sabe por dónde empezar?</h2>
-          <p>Una llamada lo conecta con un asesor de techado que puede responder sus preguntas sobre costos, materiales, permisos y seguros. Gratis, sin compromiso.</p>
+          <p>Una llamada lo conecta con un asesor de techado que puede responder sus preguntas sobre costos, materiales, permisos y seguros. Gratis, sin compromiso</p>
           <a href={`tel:${MAIN_PHONE}`} className={styles.btnCallCta}>
             LLAMAR AHORA — {MAIN_PHONE_DISPLAY}
           </a>
-          <p className={styles.ctaNote}>Sin obligación. Respuestas reales. 7 días a la semana.</p>
+          <p className={styles.ctaNote}>Sin obligación. Respuestas reales. 7 días a la semana</p>
         </div>
       </section>
 
