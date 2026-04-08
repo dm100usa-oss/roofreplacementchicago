@@ -186,15 +186,26 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* HOW WE RANK */}
+      <section className={styles.howRank}>
+        <div className={styles.howRankInner}>
+          <div className={styles.sectionLabel}>How we rank</div>
+          <div className={styles.whyTitle}>Our selection criteria</div>
+          <p className={styles.howRankText}>
+            We evaluate each contractor on active Illinois IDFPR license, Google rating and review volume, BBB accreditation, years in business, workmanship warranty length, and documented experience with Chicago building permits and insurance claims. Only companies that meet all criteria appear on our list.
+          </p>
+        </div>
+      </section>
+
       {/* CTA BLOCK */}
       <section className={styles.cta}>
         <div className={styles.ctaInner}>
           <h2>Not sure where to start?</h2>
-          <p>One call connects you with a roofing advisor who can answer your questions about cost, materials, permits, and insurance. Free, no commitment.</p>
+          <p>One call connects you with a roofing advisor who can answer your questions about cost, materials, permits, and insurance. Free, no commitment</p>
           <a href={`tel:${MAIN_PHONE}`} className={styles.btnCallCta}>
             CALL NOW — {MAIN_PHONE_DISPLAY}
           </a>
-          <p className={styles.ctaNote}>No obligation. Real answers. 7 days a week.</p>
+          <p className={styles.ctaNote}>No obligation. Real answers. 7 days a week</p>
         </div>
       </section>
 
@@ -209,17 +220,6 @@ export default function HomePage() {
               <div className={styles.faqA}>{item.a}</div>
             </details>
           ))}
-        </div>
-      </section>
-
-      {/* HOW WE RANK */}
-      <section className={styles.howRank}>
-        <div className={styles.howRankInner}>
-          <div className={styles.sectionLabel}>How we rank</div>
-          <div className={styles.whyTitle}>Our selection criteria</div>
-          <p className={styles.howRankText}>
-            We evaluate each contractor on active Illinois IDFPR license, Google rating and review volume, BBB accreditation, years in business, workmanship warranty length, and documented experience with Chicago building permits and insurance claims. Only companies that meet all criteria appear on our list.
-          </p>
         </div>
       </section>
 
