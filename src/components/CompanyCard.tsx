@@ -1,4 +1,4 @@
-import { Company, MAIN_PHONE, MAIN_PHONE_DISPLAY } from '@/lib/companies'
+import { Company } from '@/lib/companies'
 import { type Locale } from '@/lib/i18n'
 import styles from './CompanyCard.module.css'
 
@@ -37,19 +37,9 @@ export default function CompanyCard({ company, isFirst, lang = 'en' }: Props) {
             <span className={styles.ratingStar}>★</span>
             {' '}{company.expertRating}
           </div>
-          <span className={styles.ratingDivider}>|</span>
-          <div className={styles.ratingItem}>
-            <span className={styles.ratingLabel}>Google ({company.googleReviews} {isEs ? 'reseñas' : 'reviews'})</span>
-            {' · '}
-            <span className={styles.ratingStar}>★</span>
-            {' '}{company.googleRating}
-          </div>
         </div>
         <div className={styles.btnRow}>
-          <a href={`tel:${MAIN_PHONE}`} className={styles.btnCall}>
-            {isEs ? 'LLAMAR AHORA' : 'CALL NOW'}
-          </a>
-          <a href={company.website} target="_blank" rel="noopener noreferrer" className={styles.btnSite}>
+          <a href={company.website} target="_blank" rel="noopener noreferrer" className={styles.btnCall}>
             {isEs ? 'VER SITIO' : 'VISIT SITE'}
           </a>
         </div>
