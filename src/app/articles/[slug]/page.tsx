@@ -24,6 +24,10 @@ export function generateMetadata({ params }: Props): Metadata {
   }
 }
 
+function parseLinks(text: string): string {
+  return text.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2">$1</a>')
+}
+
 export default function ArticlePage({ params }: Props) {
   const a = articles.find(a => a.slug === params.slug)
   if (!a) notFound()
@@ -50,7 +54,7 @@ export default function ArticlePage({ params }: Props) {
         {a.sections.map(section => (
           <div key={section.heading} className={styles.section}>
             <h2>{section.heading}</h2>
-            <p>{section.text}</p>
+            <p dangerouslySetInnerHTML={{ __html: parseLinks(section.text) }} />
           </div>
         ))}
         <div className={styles.cta}>
