@@ -2,8 +2,8 @@ import type { Metadata } from 'next'
 import styles from '../static-page.module.css'
 
 export const metadata: Metadata = {
-  title: 'How It Works — Roof Replacement Chicago',
-  description: 'See how Roof Replacement Chicago connects Chicago homeowners with top-rated local roofers — fast, free, and with no obligation.',
+  title: 'Cómo Funciona — Reemplazo de Techo Chicago',
+  description: 'Cómo Roof Replacement Chicago ayuda a los propietarios a encontrar contratistas verificados. Consulta gratuita, sin presión, sin obligación.',
   alternates: {
     canonical: 'https://www.roofreplacementchicago.com/es/how-it-works',
     languages: { 'en': 'https://www.roofreplacementchicago.com/how-it-works' },
@@ -14,16 +14,18 @@ export default function HowItWorksPage() {
   return (
     <div className={styles.page}>
       <div className={styles.inner}>
-        <h1>How it works</h1>
-        <p>Getting a trusted roofer in Chicago takes three simple steps — no forms, no waiting, no cost to you.</p>
-        <h2>1. Browse our ranked list</h2>
-        <p>We've done the research. Our list shows the top 10 roofing companies in Chicago, ranked by licensing, reviews, response time, and warranty. Each card shows what makes that company stand out.</p>
-        <h2>2. Call or get a quote</h2>
-        <p>Click CALL NOW to connect directly with the company. Or click GET QUOTE to visit their site and request an estimate. All companies on our list offer free estimates with no obligation.</p>
-        <h2>3. Get your roof fixed</h2>
-        <p>Most companies offer same-day service for emergencies. For non-urgent repairs, you can schedule at your convenience. All work comes with a written warranty.</p>
-        <h2>Is this service free?</h2>
-        <p>Yes, completely free for homeowners. We may receive a referral fee from companies, but this never affects our rankings. See our <a href="/disclosure">Disclosure</a> for full details.</p>
+        <h1>Cómo Funciona</h1>
+        <p>Reemplazar un techo es una de las decisiones más estresantes que puede enfrentar un propietario. Grandes costos, contratistas desconocidos, preguntas de seguro, permisos de la ciudad. La mayoría de las personas no sabe por dónde empezar y tiene miedo de tomar la decisión equivocada. Entendemos eso, y es exactamente por eso que creamos este sitio.</p>
+
+        <h2>1. Revise nuestro listado</h2>
+        <p>Ya hemos hecho la parte difícil por usted. Cada empresa en nuestra lista ha sido verificada por licencia de Illinois, reseñas, años en el negocio y garantía. No necesita pasar horas buscando en internet. Solo revise nuestra lista y elija la empresa que le parezca adecuada.</p>
+
+        <h2>2. Llame para una consulta gratuita</h2>
+        <p>¿No sabe por dónde empezar? Llame al número en la parte superior de la página. Un especialista responderá sus preguntas, le ayudará a entender su situación y le orientará sobre los próximos pasos, incluidas las preguntas de seguro. Sin obligación.</p>
+        <p>Tómese su tiempo y tome una decisión informada de forma independiente.</p>
+
+        <h2>3. Contacte a la empresa directamente</h2>
+        <p>¿Ya encontró una empresa que le gusta? Haga clic en VISIT SITE en su tarjeta y solicite un presupuesto gratuito directamente en su sitio web. Todas las empresas de nuestra lista ofrecen una inspección gratuita en el lugar sin obligación.</p>
       </div>
     </div>
   )
