@@ -403,13 +403,13 @@ Founded: Est. 2016
 Tag: Highly Rated
 Specialties: 30+ years combined team experience, Unlimited IL license #104.018445
 Warranty: 5 years workmanship
-Expert Rating: 4.8
+Expert Rating: 4.7
 Website: qualitywaychicago.com
 Why recommended: Unlimited Illinois license (covers all building types), experienced team despite younger company age
 
 COMPANY_4:
 Name: Second City Roofing
-Founded: Est. 1979
+Founded: Est. 1978
 Tag: Highly Rated
 Specialties: 45+ years in Chicago, flat and pitched roofs, IL license #104.013526
 Warranty: 5 years workmanship
@@ -419,7 +419,7 @@ Why recommended: Longest company history, both flat and pitched roof expertise, 
 
 COMPANY_5:
 Name: Prestige Roofing
-Founded: Est. 1997
+Founded: —
 Tag: Highly Rated
 Specialties: NRCA member, all roof types including flat and slate
 Warranty: 5 years workmanship
@@ -432,7 +432,7 @@ Name: Salazar Roofing
 Founded: Est. 2019
 Tag: Highly Rated
 Specialties: BBB A+, transparent pricing, free on-site estimate
-Warranty: 3 years workmanship
+Warranty: 10 years workmanship
 Expert Rating: 4.5
 Website: salazarroofing.com
 Why recommended: Transparent pricing approach, BBB A+ accreditation, free on-site estimate
