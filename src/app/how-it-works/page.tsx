@@ -3,7 +3,7 @@ import styles from '../static-page.module.css'
 
 export const metadata: Metadata = {
   title: 'How It Works — Roof Replacement Chicago',
-  description: 'See how Roof Replacement Chicago connects Chicago homeowners with top-rated local roofers — fast, free, and with no obligation.',
+  description: 'How Roof Replacement Chicago helps homeowners find verified roofing contractors. Free consultation, no pressure, no obligation.',
   alternates: {
     canonical: 'https://www.roofreplacementchicago.com/how-it-works',
     languages: { 'es': 'https://www.roofreplacementchicago.com/es/how-it-works' },
@@ -14,16 +14,18 @@ export default function HowItWorksPage() {
   return (
     <div className={styles.page}>
       <div className={styles.inner}>
-        <h1>How it works</h1>
-        <p>Getting a trusted roofer in Chicago takes three simple steps — no forms, no waiting, no cost to you.</p>
+        <h1>How It Works</h1>
+        <p>Replacing a roof is one of the most stressful decisions a homeowner can face. Big costs, unfamiliar contractors, insurance questions, city permits. Most people do not know where to start and are afraid of making the wrong choice. We understand that, and it is exactly why we built this site.</p>
+
         <h2>1. Browse our ranked list</h2>
-        <p>We've done the research. Our list shows the top 10 roofing companies in Chicago, ranked by licensing, reviews, response time, and warranty. Each card shows what makes that company stand out.</p>
-        <h2>2. Call or get a quote</h2>
-        <p>Click CALL NOW to connect directly with the company. Or click GET QUOTE to visit their site and request an estimate. All companies on our list offer free estimates with no obligation.</p>
-        <h2>3. Get your roof fixed</h2>
-        <p>Most companies offer same-day service for emergencies. For non-urgent repairs, you can schedule at your convenience. All work comes with a written warranty.</p>
-        <h2>Is this service free?</h2>
-        <p>Yes, completely free for homeowners. We may receive a referral fee from companies, but this never affects our rankings. See our <a href="/disclosure">Disclosure</a> for full details.</p>
+        <p>We have already done the hard part for you. Every company on our list has been verified for an Illinois license, reviews, years in business, and warranty. You do not need to spend hours searching online. Just look through our list and choose the company that feels right for you.</p>
+
+        <h2>2. Call for a free consultation</h2>
+        <p>Not sure where to start? Call the number at the top of the page. A specialist will answer your questions, help you understand your situation, and guide you on next steps, including insurance questions. No obligation.</p>
+        <p>Take your time and make a confident, independent decision.</p>
+
+        <h2>3. Contact the company directly</h2>
+        <p>Already found a company you like? Click VISIT SITE on their card and request a free estimate directly on their website. All companies on our list offer a free on-site inspection with no obligation.</p>
       </div>
     </div>
   )
