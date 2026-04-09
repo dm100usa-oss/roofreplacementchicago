@@ -347,18 +347,18 @@ Nombre: Quality Way Roofing
 Fundado: 2016
 Especialidades: Más de 30 años de experiencia del equipo, Licencia ilimitada IL #104.018445
 Garantía: 5 años mano de obra
-Puntuación experta: 4.8
+Puntuación experta: 4.7
 
 CONTRATISTA_4:
 Nombre: Second City Roofing
-Fundado: 1979
+Fundado: 1978
 Especialidades: Más de 45 años en Chicago, techos planos e inclinados, Licencia IL #104.013526
 Garantía: 5 años mano de obra
 Puntuación experta: 4.7
 
 CONTRATISTA_5:
 Nombre: Prestige Roofing
-Fundado: 1997
+Fundado: —
 Especialidades: Miembro NRCA, todos los tipos de techo incluyendo planos y pizarra
 Garantía: 5 años mano de obra
 Puntuación experta: 4.6
@@ -367,7 +367,7 @@ CONTRATISTA_6:
 Nombre: Salazar Roofing
 Fundado: 2019
 Especialidades: BBB A+, precios transparentes, presupuesto gratuito en sitio
-Garantía: 3 años mano de obra
+Garantía: 10 años mano de obra
 Puntuación experta: 4.5
 
 SECCION: MAPA_DE_CONSULTAS_ESPANOL
