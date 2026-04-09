@@ -8,6 +8,26 @@ type Props = {
   lang?: Locale
 }
 
+// Изменение 1 — звёзды заполняются пропорционально expertRating (из 5)
+function StarRating({ rating }: { rating: number }) {
+  const pct = (rating / 5) * 100
+  return (
+    <span style={{ position: 'relative', display: 'inline-block', lineHeight: 1 }}>
+      <span style={{ color: '#d1d5db', letterSpacing: '1px' }}>★★★★★</span>
+      <span style={{
+        position: 'absolute',
+        top: 0,
+        left: 0,
+        overflow: 'hidden',
+        width: `${pct}%`,
+        color: '#f59e0b',
+        letterSpacing: '1px',
+        whiteSpace: 'nowrap',
+      }}>★★★★★</span>
+    </span>
+  )
+}
+
 export default function CompanyCard({ company, isFirst, lang = 'en' }: Props) {
   const isEs = lang === 'es'
   return (
@@ -19,7 +39,7 @@ export default function CompanyCard({ company, isFirst, lang = 'en' }: Props) {
         <div className={styles.info}>
           <div className={styles.name}>{company.name}</div>
           <div className={styles.metaRow}>
-            <span className={styles.stars}>{company.stars}</span>
+            <StarRating rating={company.expertRating} />
             <span className={styles.dot}>·</span>
             <span className={styles.expertRatingInline}>{company.expertRating}</span>
             <span className={styles.dot}>·</span>
