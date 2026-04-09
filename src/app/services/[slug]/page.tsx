@@ -78,7 +78,7 @@ export default function ServicePage({ params }: Props) {
           <div className={styles.ctaBlock}>
             <p>Have questions about {s.name.toLowerCase()} in Chicago? Our advisors can help.</p>
             <a href={`tel:${MAIN_PHONE}`} className={styles.ctaBtn}>
-              CALL NOW — {MAIN_PHONE_DISPLAY}
+              CALL NOW{'  '}{MAIN_PHONE_DISPLAY}
             </a>
             <p className={styles.ctaNote}>Free consultation. No obligation. Available 7 days a week.</p>
           </div>

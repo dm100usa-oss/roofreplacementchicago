@@ -55,7 +55,7 @@ export default function RoofingGuidePage() {
         <div className={styles.ctaBlock}>
           <p>Ready to get estimates for your Chicago roof replacement? Our advisors can connect you with licensed contractors.</p>
           <a href={`tel:${MAIN_PHONE}`} className={styles.ctaBtn}>
-            CALL NOW — {MAIN_PHONE_DISPLAY}
+            CALL NOW{'  '}{MAIN_PHONE_DISPLAY}
           </a>
           <p className={styles.ctaNote}>Free consultation. No obligation. 7 days a week.</p>
         </div>

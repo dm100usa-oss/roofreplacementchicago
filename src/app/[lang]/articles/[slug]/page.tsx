@@ -71,7 +71,7 @@ export default function LangArticlePage({ params }: Props) {
         <div className={styles.cta}>
           <p>¿Tiene preguntas sobre el reemplazo de techo en Chicago?</p>
           <a href={`tel:${MAIN_PHONE}`} className={styles.btnCall}>
-            LLAMAR AHORA — {MAIN_PHONE_DISPLAY}
+            LLAMAR AHORA{'  '}{MAIN_PHONE_DISPLAY}
           </a>
           <span className={styles.ctaNote}>Consulta gratuita. Sin obligación.</span>
         </div>

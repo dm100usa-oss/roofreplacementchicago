@@ -45,7 +45,7 @@ export default function LangNeighborhoodPage({ params }: Props) {
           <div className={styles.callBlock}>
             <p>{isEs ? `Hable con un asesor sobre su proyecto en ${n.name}. Gratis, sin obligación.` : `Speak with a roofing advisor about your ${n.name} project. Free, no obligation.`}</p>
             <a href={`tel:${MAIN_PHONE}`} className={styles.btnCall}>
-              {isEs ? 'LLAMAR AHORA' : 'CALL NOW'} — {MAIN_PHONE_DISPLAY}
+              {isEs ? 'LLAMAR AHORA' : 'CALL NOW'}{'  '}{MAIN_PHONE_DISPLAY}
             </a>
           </div>
           <div className={styles.areaText}>{isEs ? n.areaTextEs : n.areaText}</div>

@@ -61,7 +61,7 @@ export default function InsuranceGuidePage() {
         <div className={styles.ctaBlock}>
           <p>Have questions about your specific situation? Our roofing advisors can help you understand what to expect from the insurance process.</p>
           <a href={`tel:${MAIN_PHONE}`} className={styles.ctaBtn}>
-            CALL NOW — {MAIN_PHONE_DISPLAY}
+            CALL NOW{'  '}{MAIN_PHONE_DISPLAY}
           </a>
           <p className={styles.ctaNote}>Free consultation. No obligation.</p>
         </div>

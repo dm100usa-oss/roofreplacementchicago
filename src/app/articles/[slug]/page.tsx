@@ -56,7 +56,7 @@ export default function ArticlePage({ params }: Props) {
         <div className={styles.cta}>
           <p>Have questions about roof replacement in Chicago?</p>
           <a href={`tel:${MAIN_PHONE}`} className={styles.btnCall}>
-            CALL NOW — {MAIN_PHONE_DISPLAY}
+            CALL NOW{'  '}{MAIN_PHONE_DISPLAY}
           </a>
           <span className={styles.ctaNote}>Free consultation. No obligation.</span>
         </div>
