@@ -33,7 +33,7 @@ export const companies: Company[] = [
     expertRating: 4.9,
     googleRating: 4.9,
     googleReviews: 275,
-    phone: '3120000000',
+    phone: '+18445780719',
     website: 'https://www.horizonrestoration.com',
   },
   {
@@ -51,7 +51,7 @@ export const companies: Company[] = [
     expertRating: 4.8,
     googleRating: 5.0,
     googleReviews: 163,
-    phone: '3120000000',
+    phone: '+18445780719',
     website: 'https://www.anchorpointroofing.com',
   },
   {
@@ -69,7 +69,7 @@ export const companies: Company[] = [
     expertRating: 4.7,
     googleRating: 4.9,
     googleReviews: 95,
-    phone: '3120000000',
+    phone: '+18445780719',
     website: 'https://qwchicagoroof.com',
   },
   {
@@ -87,7 +87,7 @@ export const companies: Company[] = [
     expertRating: 4.7,
     googleRating: 4.3,
     googleReviews: 110,
-    phone: '3120000000',
+    phone: '+18445780719',
     website: 'https://www.secondcityconstruction.com',
   },
   {
@@ -105,7 +105,7 @@ export const companies: Company[] = [
     expertRating: 4.5,
     googleRating: 4.8,
     googleReviews: 88,
-    phone: '3120000000',
+    phone: '+18445780719',
     website: 'https://chicagoprestigeroofing.com',
   },
   {
@@ -123,11 +123,11 @@ export const companies: Company[] = [
     expertRating: 4.6,
     googleRating: 4.8,
     googleReviews: 40,
-    phone: '3120000000',
+    phone: '+18445780719',
     website: 'https://salazarroofing.com',
   },
 ]
 
-export const MAIN_PHONE = '3120000000'
-export const MAIN_PHONE_DISPLAY = '(312) 000-0000'
+export const MAIN_PHONE = '+18445780719'
+export const MAIN_PHONE_DISPLAY = '(844) 578-0719'
 export const EMAIL = 'roofreplacementchicago@gmail.com'
