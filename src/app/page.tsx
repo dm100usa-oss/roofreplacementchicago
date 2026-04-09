@@ -102,7 +102,7 @@ export default function HomePage() {
               <div className={styles.heroRight}>
                 <p className={styles.heroBody}>Start with a free expert consultation. Compare your options and take your time to make a confident, well-informed decision</p>
                 <a href={`tel:${MAIN_PHONE}`} className={styles.btnCall}>
-                  CALL NOW{'  '}{MAIN_PHONE_DISPLAY}
+                  CALL NOW{'     '}{MAIN_PHONE_DISPLAY}
                 </a>
                 <div className={styles.btnCallNote}>
                   <span className={styles.btnCallNoteItem}>No pressure</span>
@@ -271,7 +271,7 @@ export default function HomePage() {
           <h2>Not sure where to start?</h2>
           <p>One call connects you with a roofing advisor who can answer your questions about cost, materials, permits, and insurance. Free, no commitment</p>
           <a href={`tel:${MAIN_PHONE}`} className={styles.btnCallCta}>
-            CALL NOW{'  '}{MAIN_PHONE_DISPLAY}
+            CALL NOW{'     '}{MAIN_PHONE_DISPLAY}
           </a>
           <p className={styles.ctaNote}>No obligation. Real answers. 7 days a week</p>
         </div>

@@ -65,7 +65,7 @@ export default function NeighborhoodPage({ params }: Props) {
           <div className={styles.callBlock}>
             <p>Speak with a roofing advisor about your {n.name} project. Free, no obligation.</p>
             <a href={`tel:${MAIN_PHONE}`} className={styles.btnCall}>
-              CALL NOW{'  '}{MAIN_PHONE_DISPLAY}
+              CALL NOW{'     '}{MAIN_PHONE_DISPLAY}
             </a>
           </div>
 

@@ -56,7 +56,7 @@ export default function LangServicePage({ params }: Props) {
           <div className={styles.ctaBlock}>
             <p>¿Tiene preguntas sobre {s.nameEs.toLowerCase()} en Chicago?</p>
             <a href={`tel:${MAIN_PHONE}`} className={styles.ctaBtn}>
-              LLAMAR AHORA{'  '}{MAIN_PHONE_DISPLAY}
+              LLAMAR AHORA{'     '}{MAIN_PHONE_DISPLAY}
             </a>
             <p className={styles.ctaNote}>Consulta gratuita. Sin obligación.</p>
           </div>

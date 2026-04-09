@@ -48,7 +48,7 @@ export default function LangRoofingGuidePage({ params }: Props) {
         <div className={styles.ctaBlock}>
           <p>Listo para obtener estimados para el reemplazo de su techo en Chicago? Nuestros asesores pueden conectarlo con contratistas con licencia.</p>
           <a href={`tel:${MAIN_PHONE}`} className={styles.ctaBtn}>
-            LLAMAR AHORA{'  '}{MAIN_PHONE_DISPLAY}
+            LLAMAR AHORA{'     '}{MAIN_PHONE_DISPLAY}
           </a>
           <p className={styles.ctaNote}>Consulta gratuita. Sin obligación. 7 días a la semana.</p>
         </div>

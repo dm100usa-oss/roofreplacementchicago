@@ -96,7 +96,7 @@ export default function LangHomePage({ params }: Props) {
               <div className={styles.heroRight}>
                 <p className={styles.heroBody}>Comience con una consulta gratuita de expertos. Compare sus opciones y tómese el tiempo necesario para tomar una decisión segura y bien informada</p>
                 <a href={`tel:${MAIN_PHONE}`} className={styles.btnCall}>
-                  LLAMAR AHORA{'  '}{MAIN_PHONE_DISPLAY}
+                  LLAMAR AHORA{'     '}{MAIN_PHONE_DISPLAY}
                 </a>
                 <div className={styles.btnCallNote}>
                   <span className={styles.btnCallNoteItem}>Sin presión</span>
@@ -197,7 +197,7 @@ export default function LangHomePage({ params }: Props) {
           <h2>No sabe por dónde empezar?</h2>
           <p>Una llamada lo conecta con un asesor de techado que puede responder sus preguntas sobre costos, materiales, permisos y seguros. Gratis, sin compromiso</p>
           <a href={`tel:${MAIN_PHONE}`} className={styles.btnCallCta}>
-            LLAMAR AHORA{'  '}{MAIN_PHONE_DISPLAY}
+            LLAMAR AHORA{'     '}{MAIN_PHONE_DISPLAY}
           </a>
           <p className={styles.ctaNote}>Sin obligación. Respuestas reales. 7 días a la semana</p>
         </div>

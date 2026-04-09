@@ -53,7 +53,7 @@ export default function EsInsuranceGuidePage({ params }: Props) {
         <div className={styles.ctaBlock}>
           <p>Tiene preguntas sobre su situación específica? Nuestros asesores de techado pueden ayudarle a entender qué esperar del proceso de seguro.</p>
           <a href={`tel:${MAIN_PHONE}`} className={styles.ctaBtn}>
-            LLAMAR AHORA{'  '}{MAIN_PHONE_DISPLAY}
+            LLAMAR AHORA{'     '}{MAIN_PHONE_DISPLAY}
           </a>
           <p className={styles.ctaNote}>Consulta gratuita. Sin obligación.</p>
         </div>
