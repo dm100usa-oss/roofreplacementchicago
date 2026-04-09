@@ -35,9 +35,7 @@ export default function CompanyCard({ company, isFirst, lang = 'en' }: Props) {
             {isEs ? 'VER SITIO' : 'VISIT SITE'}
           </a>
         </div>
-        <div className={styles.btnNote}>
-          {isEs ? 'Estimado gratis · Sin obligación' : 'Free estimate · No obligation'}
-        </div>
+
       </div>
     </div>
   )
