@@ -6,6 +6,10 @@ export const metadata: Metadata = {
   description: 'Recurso experto para el reemplazo de techo en Chicago. Contratistas verificados, precios reales, guía de seguros.',
 }
 
+export function generateStaticParams() {
+  return [{ lang: 'es' }]
+}
+
 export default function LangLayout({ children, params }: { children: React.ReactNode; params: { lang: string } }) {
   if (params.lang !== 'es') notFound()
   return <>{children}</>
