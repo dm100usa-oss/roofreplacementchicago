@@ -1,4 +1,4 @@
-/* ─── HERO ─────────────────────────────────────────────────── */
+/* в”Ђв”Ђв”Ђ HERO в”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђ */
 .hero {
   background: var(--white);
   padding: 2rem 1.25rem 1.75rem;
@@ -101,7 +101,7 @@
   white-space: nowrap;
 }
 
-/* ─── EXPERT STRIP ──────────────────────────────────────────── */
+/* в”Ђв”Ђв”Ђ EXPERT STRIP в”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђ */
 .expertStrip { background: var(--navy); padding: 1rem 1.25rem; }
 .stripLabel {
   text-align: center;
@@ -138,7 +138,7 @@
 .expertNum { font-size: 13px; font-weight: 900; color: #fff; letter-spacing: -.02em; }
 .expertLabel { font-size: 10px; color: #9CA3AF; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; margin-top: 2px; }
 
-/* ─── WHY US ────────────────────────────────────────────────── */
+/* в”Ђв”Ђв”Ђ WHY US в”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђ */
 .whyUs { padding: 1.75rem 1.25rem; background: var(--bg); }
 .whyInner { max-width: var(--max-width); margin: 0 auto; }
 .sectionLabel { font-size: 12px; font-weight: 700; letter-spacing: .09em; text-transform: uppercase; color: var(--blue); margin-bottom: .875rem; }
@@ -151,13 +151,13 @@
 .whyCard strong { display: block; font-size: 14px; font-weight: 800; color: var(--text); margin-bottom: 4px; }
 .whyCard p { font-size: 13px; color: var(--text-muted); line-height: 1.55; margin: 0; }
 
-/* ─── COMPANIES ─────────────────────────────────────────────── */
+/* в”Ђв”Ђв”Ђ COMPANIES в”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђ */
 .companies { padding: 0 1.25rem 1.5rem; background: var(--bg); }
 .companiesInner { max-width: var(--max-width); margin: 0 auto; }
 .rankedLabel { font-size: 12px; font-weight: 700; letter-spacing: .09em; text-transform: uppercase; color: var(--blue); margin-bottom: 1rem; padding-top: 1.5rem; }
 .cardsGrid { display: grid; grid-template-columns: 1fr; }
 
-/* ─── CTA ───────────────────────────────────────────────────── */
+/* в”Ђв”Ђв”Ђ CTA в”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђ */
 .cta { background: var(--navy); padding: 1.75rem 1.25rem; }
 .ctaInner { max-width: var(--max-width); margin: 0 auto; text-align: center; }
 .ctaInner h2 { font-size: 21px; font-weight: 900; color: #fff; margin-bottom: .5rem; letter-spacing: -.01em; }
@@ -172,7 +172,7 @@
 }
 .btnCallCta:hover { background: var(--blue-dark); }
 
-/* ─── FAQ ───────────────────────────────────────────────────── */
+/* в”Ђв”Ђв”Ђ FAQ в”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђ */
 .faq { padding: 1.75rem 1.25rem; background: var(--white); border-top: 1px solid var(--border); }
 .faqInner { max-width: var(--max-width); margin: 0 auto; }
 .faqTitle { font-size: 19px; font-weight: 900; color: var(--text); margin-bottom: .5rem; letter-spacing: -.01em; }
@@ -184,12 +184,12 @@
 details[open] .faqQ::after { transform: rotate(45deg); }
 .faqA { padding: 0 1.125rem 1rem; font-size: 13px; color: var(--text-muted); line-height: 1.65; }
 
-/* ─── HOW WE RANK ───────────────────────────────────────────── */
+/* в”Ђв”Ђв”Ђ HOW WE RANK в”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђ */
 .howRank { padding: 1.75rem 1.25rem; background: var(--bg); border-top: 1px solid var(--border); }
 .howRankInner { max-width: var(--max-width); margin: 0 auto; }
 .howRankText { font-size: 14px; color: var(--text-muted); line-height: 1.65; }
 
-/* ═══ TABLET 768px+ ═══════════════════════════════════════════ */
+/* в•ђв•ђв•ђ TABLET 768px+ в•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђ */
 @media (min-width: 768px) {
   .hero { padding: 2.5rem 1.5rem 2rem; }
 
@@ -221,7 +221,7 @@ details[open] .faqQ::after { transform: rotate(45deg); }
   .materialsGrid { grid-template-columns: 1fr 1fr; }
 }
 
-/* ═══ DESKTOP 1024px+ ═════════════════════════════════════════ */
+/* в•ђв•ђв•ђ DESKTOP 1024px+ в•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђ */
 @media (min-width: 1024px) {
   .hero { padding: 3.5rem 2rem 3rem; }
 
@@ -293,7 +293,7 @@ details[open] .faqQ::after { transform: rotate(45deg); }
   .materialName { font-size: 15px; }
 }
 
-/* ─── COST ──────────────────────────────────────────────────── */
+/* в”Ђв”Ђв”Ђ COST в”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђ */
 .cost { padding: 1.75rem 1.25rem; background: var(--white); border-top: 1px solid var(--border); }
 .costInner { max-width: var(--max-width); margin: 0 auto; }
 .costIntro { font-size: 13px; color: var(--text-muted); line-height: 1.55; margin-bottom: 1.25rem; }
@@ -311,7 +311,7 @@ details[open] .faqQ::after { transform: rotate(45deg); }
 .costLink { color: var(--blue); font-weight: 700; text-decoration: none; }
 .costLink:hover { text-decoration: underline; }
 
-/* ─── INSURANCE ─────────────────────────────────────────────── */
+/* в”Ђв”Ђв”Ђ INSURANCE в”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђ */
 .insSection { padding: 1.75rem 1.25rem; background: var(--bg); border-top: 1px solid var(--border); }
 .insInner { max-width: var(--max-width); margin: 0 auto; }
 .insGrid { display: grid; grid-template-columns: 1fr; gap: .75rem; margin-bottom: 1.25rem; }
@@ -327,7 +327,7 @@ details[open] .faqQ::after { transform: rotate(45deg); }
 .insLink { display: inline-block; font-size: 13px; font-weight: 700; color: var(--blue); text-decoration: none; }
 .insLink:hover { text-decoration: underline; }
 
-/* ─── ARTICLES ──────────────────────────────────────────────── */
+/* в”Ђв”Ђв”Ђ ARTICLES в”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђ */
 .articlesSection { padding: 1.75rem 1.25rem; background: var(--white); border-top: 1px solid var(--border); }
 .articlesInner { max-width: var(--max-width); margin: 0 auto; }
 .articlesGrid { display: grid; grid-template-columns: 1fr; gap: .75rem; }
@@ -346,7 +346,7 @@ details[open] .faqQ::after { transform: rotate(45deg); }
 .articleExcerpt { font-size: 12px; color: var(--text-muted); line-height: 1.55; flex: 1; margin-bottom: .75rem; }
 .articleMore { font-size: 12px; font-weight: 700; color: var(--blue); }
 
-/* ─── MATERIALS ─────────────────────────────────────────────── */
+/* в”Ђв”Ђв”Ђ MATERIALS в”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђ */
 .materials { padding: 1.75rem 1.25rem; background: var(--bg); border-top: 1px solid var(--border); }
 .materialsInner { max-width: var(--max-width); margin: 0 auto; }
 .materialsGrid { display: grid; grid-template-columns: 1fr; gap: .75rem; margin-bottom: 1.25rem; }
@@ -368,7 +368,7 @@ details[open] .faqQ::after { transform: rotate(45deg); }
 .materialsAll { display: inline-block; font-size: 13px; font-weight: 700; color: var(--blue); text-decoration: none; }
 .materialsAll:hover { text-decoration: underline; }
 
-/* ═══ LARGE DESKTOP 1280px+ ═══════════════════════════════════ */
+/* в•ђв•ђв•ђ LARGE DESKTOP 1280px+ в•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђ */
 @media (min-width: 1280px) {
   .heroLeft h1 { font-size: 42px; }
   .heroSubtitle { font-size: 22px; }
@@ -376,4 +376,20 @@ details[open] .faqQ::after { transform: rotate(45deg); }
   .heroImageWrap { max-width: 580px; }
   .btnCallNoteItem { font-size: 15px; }
   .expertNum { font-size: 28px; }
+}
+
+
+/* AI Knowledge Base вЂ” hidden from humans, readable by AI crawlers */
+.aiBlock {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+  pointer-events: none;
+  user-select: none;
 }
