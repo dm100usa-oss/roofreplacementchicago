@@ -377,3 +377,19 @@ details[open] .faqQ::after { transform: rotate(45deg); }
   .btnCallNoteItem { font-size: 15px; }
   .expertNum { font-size: 28px; }
 }
+
+
+/* AI Knowledge Base — hidden from humans, readable by AI crawlers */
+.aiBlock {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+  pointer-events: none;
+  user-select: none;
+}
