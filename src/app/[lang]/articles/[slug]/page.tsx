@@ -25,6 +25,10 @@ export function generateMetadata({ params }: Props): Metadata {
   }
 }
 
+function parseLinks(text: string): string {
+  return text.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2">$1</a>')
+}
+
 export default function LangArticlePage({ params }: Props) {
   const lang = params.lang as Locale
   if (!locales.includes(lang)) notFound()
@@ -65,7 +69,7 @@ export default function LangArticlePage({ params }: Props) {
         {a.sectionsEs.map(section => (
           <div key={section.heading} className={styles.section}>
             <h2>{section.heading}</h2>
-            <p>{section.text}</p>
+            <p dangerouslySetInnerHTML={{ __html: parseLinks(section.text) }} />
           </div>
         ))}
         <div className={styles.cta}>
