@@ -70,7 +70,7 @@ export const companies: Company[] = [
     googleRating: 4.9,
     googleReviews: 95,
     phone: '3120000000',
-    website: 'https://qualitywaychicago.com',
+    website: 'https://qwchicagoroof.com',
   },
   {
     id: 4,
@@ -106,7 +106,7 @@ export const companies: Company[] = [
     googleRating: 4.8,
     googleReviews: 88,
     phone: '3120000000',
-    website: 'https://prestigeroofingchicago.com',
+    website: 'https://chicagoprestigeroofing.com',
   },
   {
     id: 6,
