@@ -26,7 +26,7 @@
   letter-spacing: -.01em;
 }
 .heroSubtitle {
-  font-size: 16px;
+  font-size: 18px;
   color: var(--text);
   font-weight: 800;
   line-height: 1.4;
@@ -196,14 +196,14 @@ details[open] .faqQ::after { transform: rotate(45deg); }
   /* Two-column layout: text left, image right */
   .heroContent { flex-direction: row; align-items: center; gap: 2rem; }
   .heroTextCol { flex: 1; gap: 1.25rem; }
-  .heroLeft { text-align: left; }
-  .heroBody { text-align: left; }
+  .heroLeft { text-align: center; }
+  .heroBody { text-align: center; }
   .heroLeft h1 { font-size: 24px; }
   .heroSubtitle { font-size: 17px; }
   .heroBody { font-size: 15px; }
-  .heroRight { align-items: flex-start; }
+  .heroRight { align-items: center; }
   .btnCall { font-size: 18px; }
-  .btnCallNote { justify-content: flex-start; }
+  .btnCallNote { justify-content: center; }
   .btnCallNoteItem { font-size: 14px; }
 
   /* Image */
@@ -228,17 +228,17 @@ details[open] .faqQ::after { transform: rotate(45deg); }
   /* Two-column layout */
   .heroContent { flex-direction: row; align-items: center; gap: 3rem; }
   .heroTextCol { flex: 1; }
-  .heroLeft { text-align: left; max-width: none; }
-  .heroLeft h1 { font-size: 34px; text-align: left; }
+  .heroLeft { text-align: center; max-width: none; }
+  .heroLeft h1 { font-size: 34px; text-align: center; }
   .heroSubtitle { font-size: 20px; }
-  .heroBody { font-size: 16px; text-align: left; }
+  .heroBody { font-size: 16px; text-align: center; }
   .heroExtra { font-size: 17px; }
   .heroCallout { font-size: 20px; }
 
   /* CTA */
-  .heroRight { width: 100%; align-items: flex-start; }
+  .heroRight { width: 100%; align-items: center; }
   .btnCall { font-size: 18px; padding: 20px; }
-  .btnCallNote { justify-content: flex-start; }
+  .btnCallNote { justify-content: center; }
 
   /* Image */
   .heroImageWrap { flex: 1; max-width: 520px; }
