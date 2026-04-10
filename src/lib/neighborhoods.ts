@@ -9,6 +9,8 @@ export type Neighborhood = {
   areaTextEs: string
   faq: { q: string; a: string }[]
   faqEs: { q: string; a: string }[]
+  neighbors: { name: string; slug: string }[]
+  relatedArticles: { title: string; slug: string }[]
 }
 
 export const neighborhoods: Neighborhood[] = [
@@ -25,7 +27,7 @@ export const neighborhoods: Neighborhood[] = [
     { q: 'How much does roof replacement cost on the North Side of Chicago in 2026?', a: 'North Side roof replacement costs vary by neighborhood and building type. Asphalt shingle replacement on a bungalow in Irving Park or Portage Park runs $8,000 to $13,000. A greystone or two-flat flat roof replacement in Lincoln Park or Lakeview runs $9,000 to $18,000. Premium properties in the Gold Coast or Lincoln Park with specialty materials run $15,000 to $30,000+. Free on-site estimates from all six listed contractors, all of whom serve every North Side neighborhood.' },
     { q: 'Which North Side neighborhoods do these contractors cover?', a: 'All six contractors on our list serve every North Side neighborhood including Lincoln Park, Lakeview, Wicker Park, Bucktown, Logan Square, Rogers Park, Uptown, Andersonville, Irving Park, Portage Park, Jefferson Park, Norwood Park, Edison Park, Old Town, Gold Coast, and all neighborhoods in between. Call for a free estimate and confirm your specific address is within the contractor\'s service area.' },
     { q: 'What types of roofs are most common on the North Side of Chicago?', a: 'The North Side has two primary roof types. In the denser neighborhoods closer to the lake and the Loop — Lincoln Park, Lakeview, Logan Square, Wicker Park, Uptown — flat membrane roofs (TPO and EPDM) on two-flats, greystones, and courtyard buildings are very common. In the bungalow belt neighborhoods further northwest — Irving Park, Portage Park, Jefferson Park, Norwood Park, Edison Park — pitched asphalt shingle roofs on single-family bungalows are the dominant type. All six listed contractors handle both systems.' },
-    { q: 'Do North Side contractors have experience with insurance claims after storm damage?', a: 'Yes. All contractors on our list can document hail and wind damage for insurance claims and be present during your adjuster\'s inspection. Chicago\'s North Side — particularly the lakefront neighborhoods — experiences regular lake wind events and summer hailstorms. Document all damage within 48 hours of any significant storm. Illinois insurers must respond to filed claims within 10 business days. See our full [storm damage guide](/articles/after-storm-damage) for step-by-step instructions.' },
+    { q: 'Do North Side contractors have experience with insurance claims after storm damage?', a: 'Yes. All contractors on our list can document hail and wind damage for insurance claims and be present during your adjuster\'s inspection. Chicago\'s North Side — particularly the lakefront neighborhoods — experiences regular lake wind events and summer hailstorms. Document all damage within 48 hours of any significant storm. Illinois insurers must respond to filed claims as required by Illinois law. See our full [storm damage guide](/articles/after-storm-damage) for step-by-step instructions.' },
     { q: 'Is a permit required for roof replacement on the North Side of Chicago?', a: 'Yes. The City of Chicago requires a building permit for all full roof replacements in every North Side neighborhood. All listed contractors pull this permit as part of every project at no extra charge. Some properties in the Gold Coast, Old Town Triangle, and other designated landmark districts may require additional Chicago Landmarks Division approval before replacement. Your contractor will identify any such requirements during the free assessment.' },
     { q: 'What is the best flat roof material for North Side two-flats and courtyard buildings?', a: 'TPO membrane is the current standard for flat roofs on North Side two-flats and courtyard buildings, and the system most commonly specified under the Chicago Energy Conservation Code. TPO handles the lake wind exposure and freeze-thaw cycling that North Side buildings experience, has heat-welded seams that are more watertight than EPDM, and has a longer lifespan of 25 to 35 years. For neighborhoods within a few blocks of Lake Michigan — eastern Lakeview, Rogers Park lakefront, Uptown — high-wind-rated membrane installation details are especially important.' },
   ],
@@ -33,9 +35,17 @@ export const neighborhoods: Neighborhood[] = [
     { q: '¿Cuánto cuesta el reemplazo de techo en el North Side de Chicago en 2026?', a: 'Los costos varían según el barrio y el tipo de edificio. El reemplazo de tejas en un bungalow de Irving Park o Portage Park cuesta entre $8,000 y $13,000. El reemplazo de techo plano en un greystone o two-flat de Lincoln Park o Lakeview cuesta entre $9,000 y $18,000. Las propiedades premium en Gold Coast o Lincoln Park con materiales especiales cuestan entre $15,000 y $30,000+.' },
     { q: '¿Qué barrios del North Side cubren estos contratistas?', a: 'Los seis contratistas de nuestra lista sirven todos los barrios del North Side incluyendo Lincoln Park, Lakeview, Wicker Park, Bucktown, Logan Square, Rogers Park, Uptown, Andersonville, Irving Park, Portage Park, Jefferson Park, Norwood Park y todos los barrios intermedios.' },
     { q: '¿Qué tipos de techos son más comunes en el North Side de Chicago?', a: 'El North Side tiene dos tipos principales: techos planos de membrana (TPO y EPDM) en two-flats, greystones y edificios de patio en barrios como Lincoln Park y Logan Square; y techos inclinados de tejas de asfalto en bungalows en el cinturón de bungalows del noroeste.' },
-    { q: '¿Los contratistas del North Side tienen experiencia con reclamos de seguro?', a: 'Sí. Todos los contratistas pueden documentar daños de granizo y viento para reclamos de seguro. Documente los daños dentro de las 48 horas de cualquier tormenta significativa. Los aseguradores de Illinois deben responder a los reclamos dentro de los 10 días hábiles.' },
+    { q: '¿Los contratistas del North Side tienen experiencia con reclamos de seguro?', a: 'Sí. Todos los contratistas pueden documentar daños de granizo y viento para reclamos de seguro. Documente los daños dentro de las 48 horas de cualquier tormenta significativa. Los aseguradores de Illinois deben responder según lo exige la ley de Illinois.' },
     { q: '¿Se requiere permiso para el reemplazo de techo en el North Side de Chicago?', a: 'Sí. Chicago requiere un permiso de construcción para todos los reemplazos de techo en cada barrio del North Side. Todos los contratistas sacan este permiso sin costo adicional. Algunas propiedades en distritos históricos pueden requerir aprobación adicional.' },
     { q: '¿Cuál es el mejor material de techo plano para two-flats y edificios de patio del North Side?', a: 'La membrana TPO es el estándar actual para techos planos en two-flats y edificios de patio del North Side. Maneja bien la exposición al viento del lago y los ciclos de congelación, tiene costuras soldadas más impermeables que el EPDM y una vida útil de 25 a 35 años.' },
+  ],
+  neighbors: [
+    { name: 'Lakeview', slug: 'lakeview' },
+    { name: 'Rogers Park', slug: 'rogers-park' },
+  ],
+  relatedArticles: [
+    { title: 'What to Do After Storm Damage to Your Roof in Chicago', slug: 'after-storm-damage' },
+    { title: 'Average Cost of Roof Replacement in Chicago in 2026', slug: 'average-cost' },
   ],
 },
   {
@@ -50,7 +60,7 @@ export const neighborhoods: Neighborhood[] = [
   faq: [
     { q: 'How much does roof replacement cost on the South Side of Chicago in 2026?', a: 'South Side replacement costs vary by neighborhood and building type. Asphalt shingle replacement on a typical brick bungalow in Chatham, Bridgeport, or Back of the Yards runs $7,500 to $13,000. Flat roof replacement on a two-flat or courtyard building in Hyde Park or Bronzeville costs $9,000 to $18,000. Larger single-family homes in Beverly run $12,000 to $25,000. Free on-site estimates from all six listed contractors.' },
     { q: 'Which South Side neighborhoods do these contractors cover?', a: 'All six contractors serve every South Side neighborhood including Hyde Park, Bridgeport, Beverly, Chatham, Back of the Yards, Bronzeville, South Shore, Englewood, Roseland, Chinatown, Pullman, Morgan Park, and all surrounding areas. Call to confirm your specific address when scheduling your free estimate.' },
-    { q: 'Are there assistance programs for South Side homeowners who need roof replacement?', a: 'Yes. South Side homeowners may qualify for several programs. The Illinois Housing Development Authority (IHDA) offers up to $40,000 in home repair assistance for income-qualified homeowners. The federal Section 504 program provides 1% fixed-rate loans and grants for homeowners over 62 who meet income limits. The City of Chicago\'s Community Development Block Grant program also funds emergency home repairs for income-qualified residents. Call 311 or the Chicago Department of Housing at 312-744-5000 to identify what you qualify for.' },
+    { q: 'Are there assistance programs for South Side homeowners who need roof replacement?', a: 'Yes. South Side homeowners may qualify for several programs. The Illinois Housing Development Authority (IHDA) offers up to $50,000 in home repair assistance for income-qualified homeowners. The federal Section 504 program provides 1% fixed-rate loans and grants for homeowners over 62 who meet income limits. The City of Chicago\'s Community Development Block Grant program also funds emergency home repairs for income-qualified residents. Call 311 or the Chicago Department of Housing at 312-744-5000 to identify what you qualify for.' },
     { q: 'Do South Side contractors help with insurance claims after hail or storm damage?', a: 'Yes. All contractors on our list can document storm damage for insurance claims and be present during the adjuster\'s inspection. South Side neighborhoods are regularly in the path of summer hailstorms tracking northeast from southern Illinois and Missouri. Document all damage within 48 hours with timestamped photos — specifically photograph gutters for granule deposits, which are one of the key indicators insurers look for on asphalt shingle claims.' },
     { q: 'What roofing material is best for South Side Chicago bungalows?', a: 'Architectural asphalt shingles with a 30-year manufacturer warranty and 130 mph wind rating are the standard recommendation for South Side Chicago bungalows — the same specification used throughout Chicago\'s bungalow belt. Class 4 impact-resistant shingles cost 10 to 15 percent more but qualify for 20 to 30 percent insurance premium discounts from Illinois insurers — worth asking your insurer about before selecting a shingle grade. All listed contractors can advise on the best grade for your specific neighborhood and building.' },
     { q: 'Is a permit required for roof replacement on the South Side of Chicago?', a: 'Yes. The City of Chicago requires a building permit for all full roof replacements in every South Side neighborhood. All listed contractors pull this permit as part of every project at no extra charge. Some properties in the Hyde Park-Kenwood Historic District or other designated landmark areas may require additional Chicago Landmarks Division approval. Your contractor will identify any such requirements during the free assessment.' },
@@ -58,10 +68,18 @@ export const neighborhoods: Neighborhood[] = [
   faqEs: [
     { q: '¿Cuánto cuesta el reemplazo de techo en el South Side de Chicago en 2026?', a: 'Los costos varían según el barrio y el tipo de edificio. El reemplazo de tejas en un bungalow típico de Chatham, Bridgeport o Back of the Yards cuesta entre $7,500 y $13,000. El reemplazo de techo plano en un two-flat o edificio de patio de Hyde Park o Bronzeville cuesta entre $9,000 y $18,000.' },
     { q: '¿Qué barrios del South Side cubren estos contratistas?', a: 'Los seis contratistas sirven todos los barrios del South Side incluyendo Hyde Park, Bridgeport, Beverly, Chatham, Back of the Yards, Bronzeville, South Shore, Englewood, Roseland, Chinatown, Pullman y Morgan Park.' },
-    { q: '¿Hay programas de asistencia para propietarios del South Side que necesitan reemplazo de techo?', a: 'Sí. La IHDA de Illinois ofrece hasta $40,000 en asistencia. El programa federal Section 504 ofrece préstamos al 1% de tasa fija. El programa CDBG de la Ciudad de Chicago financia reparaciones de emergencia. Llame al 311 o al 312-744-5000.' },
+    { q: '¿Hay programas de asistencia para propietarios del South Side que necesitan reemplazo de techo?', a: 'Sí. La IHDA de Illinois ofrece hasta $50,000 en asistencia. El programa federal Section 504 ofrece préstamos al 1% de tasa fija. El programa CDBG de la Ciudad de Chicago financia reparaciones de emergencia. Llame al 311 o al 312-744-5000.' },
     { q: '¿Los contratistas del South Side ayudan con reclamos de seguro después de daños de tormenta?', a: 'Sí. Todos los contratistas pueden documentar daños para reclamos de seguro. Documente los daños dentro de las 48 horas con fotos, fotografiando específicamente las canaletas en busca de depósitos de gránulos.' },
     { q: '¿Qué material de techado es mejor para los bungalows del South Side de Chicago?', a: 'Las tejas de asfalto arquitectónicas con garantía de 30 años y 130 mph son el estándar recomendado. Las tejas de impacto Clase 4 califican para descuentos de seguro del 20 al 30 por ciento de los aseguradores de Illinois.' },
     { q: '¿Se requiere permiso para el reemplazo de techo en el South Side?', a: 'Sí. Chicago requiere un permiso para todos los reemplazos de techo en cada barrio del South Side. Todos los contratistas sacan este permiso sin costo adicional. Algunas propiedades en distritos históricos pueden requerir aprobación adicional.' },
+  ],
+  neighbors: [
+    { name: 'Bronzeville', slug: 'bronzeville' },
+    { name: 'Chatham', slug: 'chatham' },
+  ],
+  relatedArticles: [
+    { title: 'How to Save Money on Roof Replacement in Chicago', slug: 'save-money-chicago' },
+    { title: 'What to Do After Storm Damage to Your Roof in Chicago', slug: 'after-storm-damage' },
   ],
 },
   {
@@ -77,7 +95,7 @@ export const neighborhoods: Neighborhood[] = [
     { q: 'How much does roof replacement cost on the West Side of Chicago in 2026?', a: 'West Side roof replacement costs are among the more affordable in Chicago due to the area\'s labor market. Asphalt shingle replacement on a typical bungalow runs $7,500 to $13,000 in most West Side neighborhoods. Two-flat flat roof replacement costs $8,000 to $14,000 for a TPO or EPDM system. Buildings with two existing shingle layers — very common on West Side bungalows from the 1920s — require full tear-off per Illinois code, adding $1,000 to $1,500. Free estimates from all six listed contractors.' },
     { q: 'Are there Spanish-speaking roofing contractors serving the West Side?', a: 'Yes. Several contractors on our list have Spanish-speaking staff and can handle the entire project — estimate, contract, and on-site communication — in Spanish. The West Side has large Latino communities in Little Village, Pilsen, Humboldt Park, and Belmont Cragin where bilingual service is consistently in demand. Confirm Spanish availability when you call for your free estimate. All listed contractors serve the full West Side.' },
     { q: 'My West Side building already has two layers of shingles. What does that mean for replacement?', a: 'Illinois code prohibits a third layer of shingles, so full tear-off of both existing layers is required before new shingles can go on. This adds $1,000 to $1,500 to the project cost. The benefit: tear-off allows inspection of the original board sheathing or plywood decking for rot and deterioration — a common finding on West Side buildings that are 80 to 100 years old. Any deteriorated boards are replaced at $80 to $120 per sheet before new shingles are installed.' },
-    { q: 'Are there any assistance programs for West Side homeowners who need roof replacement?', a: 'Yes. West Side homeowners may qualify for multiple programs. The Illinois Housing Development Authority (IHDA) offers up to $40,000 in home repair assistance for income-qualified homeowners. The federal Section 504 program provides 1% fixed-rate loans and grants for homeowners over 62. The City of Chicago\'s INVEST South/West initiative has directed community development funding to several West Side neighborhoods. Call 311 or the Chicago Department of Housing at 312-744-5000 to identify programs you qualify for.' },
+    { q: 'Are there any assistance programs for West Side homeowners who need roof replacement?', a: 'Yes. West Side homeowners may qualify for multiple programs. The Illinois Housing Development Authority (IHDA) offers up to $50,000 in home repair assistance for income-qualified homeowners. The federal Section 504 program provides 1% fixed-rate loans and grants for homeowners over 62. The City of Chicago\'s INVEST South/West initiative has directed community development funding to several West Side neighborhoods. Call 311 or the Chicago Department of Housing at 312-744-5000 to identify programs you qualify for.' },
     { q: 'Do West Side contractors pull City of Chicago building permits?', a: 'Yes. All contractors on our list pull the required City of Chicago building permit for every full roof replacement on the West Side. The permit is included in the contract at no extra charge. Unlicensed contractors who skip permits are unfortunately common on the West Side — always verify any contractor\'s Illinois IDFPR license at idfpr.com and confirm they will pull the permit before signing any contract.' },
     { q: 'What flat roof system is best for West Side two-flats and three-flats?', a: 'TPO membrane is the recommended system for new flat roof installations on West Side two-flats and three-flats. TPO outperforms the EPDM and modified bitumen systems it commonly replaces on West Side buildings, with heat-welded seams that resist winter freeze-thaw separation, better summer heat reflection, and a longer lifespan of 25 to 35 years. For a typical West Side two-flat, expect TPO replacement costs of $8,000 to $14,000 depending on square footage.' },
   ],
@@ -85,9 +103,17 @@ export const neighborhoods: Neighborhood[] = [
     { q: '¿Cuánto cuesta el reemplazo de techo en el West Side de Chicago en 2026?', a: 'Los costos del West Side están entre los más asequibles de Chicago. El reemplazo de tejas en un bungalow típico cuesta entre $7,500 y $13,000. El reemplazo de techo plano en un two-flat cuesta entre $8,000 y $14,000.' },
     { q: '¿Hay contratistas de habla hispana que sirven el West Side?', a: 'Sí. Varios contratistas de nuestra lista tienen personal de habla hispana y pueden manejar todo el proyecto en español. El West Side tiene grandes comunidades latinas en Little Village, Pilsen, Humboldt Park y Belmont Cragin.' },
     { q: 'Mi edificio en el West Side ya tiene dos capas de tejas. ¿Qué significa para el reemplazo?', a: 'El código de Illinois prohíbe una tercera capa, por lo que se requiere demolición completa. Esto agrega entre $1,000 y $1,500. La demolición permite inspeccionar el entablado original para detectar deterioro en edificios de 80 a 100 años.' },
-    { q: '¿Hay programas de asistencia para propietarios del West Side que necesitan reemplazo de techo?', a: 'Sí. La IHDA de Illinois ofrece hasta $40,000 en asistencia. El programa federal Section 504 ofrece préstamos al 1%. La iniciativa INVEST South/West de la Ciudad de Chicago ha dirigido fondos a varios barrios del West Side.' },
+    { q: '¿Hay programas de asistencia para propietarios del West Side que necesitan reemplazo de techo?', a: 'Sí. La IHDA de Illinois ofrece hasta $50,000 en asistencia. El programa federal Section 504 ofrece préstamos al 1%. La iniciativa INVEST South/West de la Ciudad de Chicago ha dirigido fondos a varios barrios del West Side.' },
     { q: '¿Los contratistas del West Side sacan permisos de construcción de la Ciudad de Chicago?', a: 'Sí. Todos los contratistas sacan el permiso requerido para cada reemplazo en el West Side. El permiso está incluido sin costo adicional. Verifique la licencia IDFPR de Illinois en idfpr.com antes de firmar cualquier contrato.' },
     { q: '¿Qué sistema de techo plano es mejor para two-flats y three-flats del West Side?', a: 'La membrana TPO es el sistema recomendado para nuevas instalaciones en two-flats y three-flats del West Side. Supera al EPDM y al betún modificado con costuras soldadas que resisten la separación invernal y tiene una vida útil de 25 a 35 años.' },
+  ],
+  neighbors: [
+    { name: 'Humboldt Park', slug: 'humboldt-park' },
+    { name: 'Little Village', slug: 'little-village' },
+  ],
+  relatedArticles: [
+    { title: 'How to Save Money on Roof Replacement in Chicago', slug: 'save-money-chicago' },
+    { title: 'How to Choose a Roof Replacement Contractor in Chicago', slug: 'how-to-choose' },
   ],
 },
   {
@@ -103,7 +129,7 @@ export const neighborhoods: Neighborhood[] = [
     { q: 'How much does roof replacement cost in Lincoln Park in 2026?', a: 'Roof replacement in Lincoln Park typically runs $12,000 to $25,000 for single-family homes with standard architectural shingles. Premium materials — Class 4 impact-resistant shingles, metal roofing, or composite slate — add 15 to 40 percent. Flat roof replacement on Lincoln Park two-flats and greystones costs $9,000 to $18,000. Coach house roofs run $6,000 to $12,000. Free on-site estimates are available from all six listed contractors.' },
     { q: 'Can these contractors work on historic greystone buildings in Lincoln Park?', a: 'Yes. Several contractors on our list have specific experience with Lincoln Park greystones, including older roof deck structures, lime mortar chimneys that require careful flashing work, and the tight site access common on Burling, Howe, and Cleveland streets. Historic greystones in Lincoln Park often have flat roof systems on the lower rear section and a pitched section at front — both require different materials and techniques.' },
     { q: 'Do Lincoln Park contractors handle coach house roof replacement?', a: 'Yes. Coach houses in Lincoln Park present access challenges — typically requiring a crane or special equipment for material delivery — and have smaller roof surfaces than the main building. Most coach house replacements cost $6,000 to $12,000 depending on roof size, pitch, and material. Your contractor will assess access and include any equipment costs in the free estimate.' },
-    { q: 'Are Class 4 impact-resistant shingles worth it for a Lincoln Park home?', a: 'For Lincoln Park homeowners, Class 4 impact-resistant shingles are frequently worth the 10 to 15 percent cost premium. Illinois insurers often offer premium discounts of 20 to 30 percent for homes with Class 4 roofing, which can recover the upgrade cost over 5 to 8 years. Chicago averages 40+ hail days per year, making impact resistance a practical benefit — not just a marketing claim. Ask your insurer what discount they offer before committing to a shingle grade.' },
+    { q: 'Are Class 4 impact-resistant shingles worth it for a Lincoln Park home?', a: 'For Lincoln Park homeowners, Class 4 impact-resistant shingles are frequently worth the 10 to 15 percent cost premium. Illinois insurers often offer premium discounts of 20 to 30 percent for homes with Class 4 roofing, which can recover the upgrade cost over 5 to 8 years. Chicago's active storm season brings frequent hail events, making impact resistance a practical benefit — not just a marketing claim. Ask your insurer what discount they offer before committing to a shingle grade.' },
     { q: 'Is metal roofing a good choice for Lincoln Park homes?', a: 'Metal roofing is an excellent long-term choice for Lincoln Park homeowners planning to stay 20 or more years. Standing seam steel or aluminum systems cost $18,000 to $30,000 installed on a typical Lincoln Park home but last 40 to 70 years with minimal maintenance. Metal also handles Chicago ice dams better than asphalt because snow sheds naturally. The payback period versus architectural shingles is 15 to 20 years — worth it for long-term ownership but not for owners expecting to sell within a decade.' },
     { q: 'Does a Lincoln Park roof replacement require a City of Chicago building permit?', a: 'Yes. The City of Chicago requires a building permit for all full roof replacements including Lincoln Park properties. All contractors on our list pull this permit as part of the project at no extra charge. Some Lincoln Park properties near the lakefront or within landmark districts may require additional city approvals — your contractor will identify this during the free assessment. Never work with a contractor who suggests skipping the permit to reduce cost.' },
   ],
@@ -114,6 +140,14 @@ export const neighborhoods: Neighborhood[] = [
     { q: '¿Valen la pena las tejas de impacto Clase 4 para una casa en Lincoln Park?', a: 'Para los propietarios de Lincoln Park, las tejas de impacto Clase 4 frecuentemente valen el premium de costo del 10 al 15 por ciento. Los aseguradores de Illinois a menudo ofrecen descuentos de prima del 20 al 30 por ciento para casas con techado Clase 4, lo que puede recuperar el costo de la mejora en 5 a 8 años.' },
     { q: '¿Es el techado metálico una buena opción para casas en Lincoln Park?', a: 'El techado metálico es una excelente opción a largo plazo para propietarios de Lincoln Park que planean quedarse 20 o más años. Los sistemas de acero o aluminio de costura continua cuestan entre $18,000 y $30,000 instalados pero duran de 40 a 70 años con mantenimiento mínimo.' },
     { q: '¿El reemplazo de techo en Lincoln Park requiere permiso de construcción de la Ciudad de Chicago?', a: 'Sí. La Ciudad de Chicago requiere un permiso de construcción para todos los reemplazos completos de techo incluyendo propiedades en Lincoln Park. Todos los contratistas de nuestra lista sacan este permiso como parte del proyecto sin costo adicional.' },
+  ],
+  neighbors: [
+    { name: 'Old Town', slug: 'old-town' },
+    { name: 'Lakeview', slug: 'lakeview' },
+  ],
+  relatedArticles: [
+    { title: 'Best Roofing Materials for Chicago', slug: 'best-roofing-materials-chicago' },
+    { title: 'Average Cost of Roof Replacement in Chicago in 2026', slug: 'average-cost' },
   ],
 },
   {
@@ -130,7 +164,7 @@ export const neighborhoods: Neighborhood[] = [
     { q: 'How much does roof replacement cost in Logan Square in 2026?', a: 'Flat roof replacement on a Logan Square two-flat runs $9,000 to $15,000 for a TPO system — the most commonly specified material under the Chicago Energy Conservation Code. Single-family asphalt shingle replacement costs $9,000 to $16,000 depending on roof size and pitch. Full tear-off of existing layers adds $1,000 to $2,500 when a second layer is already present, which is common on buildings from the 1920s.' },
     { q: 'My Logan Square two-flat has a flat roof that leaks every spring. Do I need full replacement or repair?', a: 'Spring leaks on Logan Square flat roofs are almost always caused by ice dam damage from the previous winter — water that pooled under snow refreezes in seam openings and forces them apart. If the roof is over 15 years old or has had more than two repairs, replacement is almost always the financially correct decision. Repeated repairs on an aging membrane cost more over five years than a new system, without any of the warranty benefits. Get a free assessment from a listed contractor to confirm the scope.' },
     { q: 'Do Logan Square contractors pull City of Chicago building permits?', a: 'Yes. All contractors on our list pull the required City of Chicago building permit for every full roof replacement in Logan Square. The permit is included in the contract at no extra charge. Skipping the permit — which some unlicensed contractors suggest to lower cost — creates code violations that appear during home sales and make insurance claims more difficult. Verify any contractor\'s Illinois license at idfpr.com before signing.' },
-    { q: 'Will homeowner insurance cover my Logan Square roof after a hail storm?', a: 'Yes, if the damage was caused by a covered event — hail, wind, or storm debris. Chicago averaged over 40 hail days per year, and Logan Square properties are frequently affected. Document damage within 48 hours of the storm with timestamped photos, get a written damage assessment from a licensed contractor, and request that the contractor be present during the insurance adjuster\'s inspection. Illinois insurers must respond to claims within 10 business days. See our full [storm damage guide](/articles/after-storm-damage) for the step-by-step process.' },
+    { q: 'Will homeowner insurance cover my Logan Square roof after a hail storm?', a: 'Yes, if the damage was caused by a covered event — hail, wind, or storm debris. Chicago's active storm season brings frequent hail events, and Logan Square properties are frequently affected. Document damage within 48 hours of the storm with timestamped photos, get a written damage assessment from a licensed contractor, and request that the contractor be present during the insurance adjuster\'s inspection. Illinois insurers must respond to claims as required by Illinois law. See our full [storm damage guide](/articles/after-storm-damage) for the step-by-step process.' },
     { q: 'What is the best flat roof material for a Logan Square courtyard building?', a: 'TPO membrane is the current standard for flat roofs in Chicago including Logan Square, and it is the system most commonly specified under the Chicago Energy Conservation Code. TPO handles freeze-thaw cycling well, reflects summer heat, and welded seams make it more watertight than older systems. For Logan Square courtyard buildings, expect costs of $12,000 to $22,000 depending on total square footage. EPDM rubber is a lower-cost alternative but has a shorter lifespan of 15 to 25 years compared to TPO\'s 25 to 35 years.' },
   ],
   faqEs: [
@@ -138,8 +172,16 @@ export const neighborhoods: Neighborhood[] = [
     { q: '¿Cuánto cuesta el reemplazo de techo en Logan Square en 2026?', a: 'El reemplazo de techo plano en un two-flat de Logan Square cuesta entre $9,000 y $15,000 para un sistema TPO. El reemplazo de tejas de asfalto en una casa unifamiliar cuesta entre $9,000 y $16,000 según el tamaño y la inclinación del techo. La demolición completa de capas existentes agrega entre $1,000 y $2,500 cuando ya hay una segunda capa, lo cual es común en edificios de los años 20.' },
     { q: 'Mi two-flat en Logan Square tiene un techo plano que gotea cada primavera. ¿Necesito reemplazo completo o reparación?', a: 'Las goteras de primavera en techos planos de Logan Square casi siempre son causadas por daños de represas de hielo del invierno anterior. Si el techo tiene más de 15 años o ha tenido más de dos reparaciones, el reemplazo es casi siempre la decisión económicamente correcta. Las reparaciones repetidas en una membrana envejecida cuestan más en cinco años que un sistema nuevo, sin ninguno de los beneficios de garantía.' },
     { q: '¿Los contratistas de Logan Square sacan permisos de construcción de la Ciudad de Chicago?', a: 'Sí. Todos los contratistas de nuestra lista sacan el permiso de construcción requerido para cada reemplazo completo de techo en Logan Square. El permiso está incluido en el contrato sin costo adicional. Omitir el permiso crea violaciones del código que aparecen durante las ventas de propiedades y dificultan los reclamos de seguro.' },
-    { q: '¿El seguro de propietario cubrirá mi techo de Logan Square después de una tormenta de granizo?', a: 'Sí, si el daño fue causado por un evento cubierto — granizo, viento o escombros de tormenta. Chicago promedió más de 40 días de granizo al año. Documente los daños dentro de las 48 horas con fotos con marca de tiempo, obtenga una evaluación escrita de un contratista con licencia y solicite que el contratista esté presente durante la inspección del ajustador de seguros.' },
+    { q: '¿El seguro de propietario cubrirá mi techo de Logan Square después de una tormenta de granizo?', a: 'Sí, si el daño fue causado por un evento cubierto — granizo, viento o escombros de tormenta. La activa temporada de tormentas de Chicago trae frecuentes eventos de granizo. Documente los daños dentro de las 48 horas con fotos con marca de tiempo, obtenga una evaluación escrita de un contratista con licencia y solicite que el contratista esté presente durante la inspección del ajustador de seguros.' },
     { q: '¿Cuál es el mejor material de techo plano para un edificio de patio en Logan Square?', a: 'La membrana TPO es el estándar actual para techos planos en Chicago, incluyendo Logan Square. El TPO maneja bien los ciclos de congelación y deshielo, refleja el calor del verano y las costuras soldadas lo hacen más impermeable que los sistemas más antiguos. Para edificios de patio en Logan Square, espere costos de $12,000 a $22,000 según los metros cuadrados totales.' },
+  ],
+  neighbors: [
+    { name: 'Humboldt Park', slug: 'humboldt-park' },
+    { name: 'Avondale', slug: 'avondale' },
+  ],
+  relatedArticles: [
+    { title: 'What to Do After Storm Damage to Your Roof in Chicago', slug: 'after-storm-damage' },
+    { title: 'Signs Your Roof Needs Replacement in Chicago', slug: 'signs-your-roof' },
   ],
 },
   {
@@ -167,6 +209,14 @@ export const neighborhoods: Neighborhood[] = [
     { q: '¿Los contratistas de Wicker Park tienen experiencia con reclamos de seguro por daños de granizo?', a: 'Sí. Todos los contratistas de nuestra lista pueden documentar daños de tormenta para reclamos de seguro y estar presentes durante la inspección de su ajustador. Documente los daños dentro de las 48 horas de cualquier tormenta significativa.' },
     { q: '¿Se requiere permiso para el reemplazo de techo en Wicker Park?', a: 'Sí. La Ciudad de Chicago requiere un permiso de construcción para todos los reemplazos completos de techo en Wicker Park. Todos los contratistas de nuestra lista sacan este permiso sin costo adicional.' },
   ],
+  neighbors: [
+    { name: 'Bucktown', slug: 'bucktown' },
+    { name: 'Ukrainian Village', slug: 'ukrainian-village' },
+  ],
+  relatedArticles: [
+    { title: 'Best Roofing Materials for Chicago', slug: 'best-roofing-materials-chicago' },
+    { title: 'How to Choose a Roof Replacement Contractor in Chicago', slug: 'how-to-choose' },
+  ],
 },
   {
   slug: 'hyde-park',
@@ -182,8 +232,8 @@ export const neighborhoods: Neighborhood[] = [
     { q: 'Can these contractors work on homes with original slate roofing near the University of Chicago?', a: 'Yes. Several contractors on our list have experience with slate roofing on Hyde Park\'s Victorian-era properties along Greenwood, Kimbark, and Woodlawn Avenues. True slate replacement requires sourcing matching material — Vermont slate, Welsh slate, or a compatible synthetic alternative — and experienced installers who understand the fastening and flashing techniques that make slate systems last 75 to 100 years. Not every roofing contractor has this capability; confirm slate experience specifically when calling for your estimate.' },
     { q: 'What flat roof system is best for Hyde Park courtyard apartment buildings?', a: 'TPO membrane is the current standard for courtyard building flat roofs in Hyde Park and throughout Chicago. It performs well in freeze-thaw cycling, has welded seams that are more watertight than older systems, and is the system most commonly specified under the Chicago Energy Conservation Code. For large courtyard buildings, expect costs of $15,000 to $30,000. Modified bitumen is still common on older Hyde Park buildings where it was installed 20 to 30 years ago, and is a reasonable replacement option at a lower price point than TPO.' },
     { q: 'Does the University of Chicago area have any special permit requirements for roof replacement?', a: 'No special requirements beyond standard City of Chicago permits apply to most residential properties in Hyde Park. However, some buildings in the Hyde Park-Kenwood Historic District — bounded roughly by 47th to 59th Streets and Cottage Grove to the lake — may require additional city approvals before replacement begins. Your contractor will identify any landmark status during the free assessment. All listed contractors are familiar with Chicago permit requirements and can advise on any additional steps needed.' },
-    { q: 'How do I find a roofing contractor with experience in older construction in Hyde Park?', a: 'Ask specifically about experience with pre-1940 construction and specialty materials during your estimate appointment. Review contractors on our list who note historic building experience — Prestige Roofing and Second City Roofing have both documented experience with older Chicago construction. Request references for similar projects (older home, complex roof, specialty material) and verify the Illinois IDFPR license at idfpr.com. All six contractors on our list are pre-verified for licensing, insurance, and Google rating.' },
-    { q: 'Will insurance cover my Hyde Park roof after storm damage?', a: 'Yes, if damage was caused by a covered event — hail, wind, or storm debris. Hyde Park\'s tree canopy (one of Chicago\'s densest) means falling branch damage is also a common claim type in this neighborhood. Document damage within 48 hours with timestamped photos, get a written contractor assessment, and request the contractor be present at your adjuster\'s inspection. Illinois insurers must respond within 10 business days. See our [insurance guide](/articles/insurance-guide) for the full step-by-step process.' },
+    { q: 'How do I find a roofing contractor with experience in older construction in Hyde Park?', a: 'Ask specifically about experience with pre-1940 construction and specialty materials during your estimate appointment. Review contractors on our list who note historic building experience — Several contractors on our list have documented experience with older Chicago construction. Request references for similar projects (older home, complex roof, specialty material) and verify the Illinois IDFPR license at idfpr.com. All six contractors on our list are pre-verified for licensing, insurance, and Google rating.' },
+    { q: 'Will insurance cover my Hyde Park roof after storm damage?', a: 'Yes, if damage was caused by a covered event — hail, wind, or storm debris. Hyde Park\'s tree canopy (one of Chicago\'s densest) means falling branch damage is also a common claim type in this neighborhood. Document damage within 48 hours with timestamped photos, get a written contractor assessment, and request the contractor be present at your adjuster\'s inspection. Illinois insurers must respond as required by Illinois law. See our [insurance guide](/articles/after-storm-damage) for the full step-by-step process.' },
   ],
   faqEs: [
     { q: '¿Cuánto cuesta el reemplazo de techo en Hyde Park en 2026?', a: 'El reemplazo estándar de tejas de asfalto en una casa unifamiliar de Hyde Park cuesta entre $10,000 y $18,000. El reemplazo de techo plano en un edificio de patio cuesta entre $12,000 y $25,000. El reemplazo de pizarra o teja de arcilla cuesta entre $20,000 y $40,000 o más.' },
@@ -192,6 +242,14 @@ export const neighborhoods: Neighborhood[] = [
     { q: '¿El área de la Universidad de Chicago tiene requisitos especiales de permiso para el reemplazo de techo?', a: 'No se aplican requisitos especiales más allá de los permisos estándar de la Ciudad de Chicago a la mayoría de las propiedades residenciales en Hyde Park. Sin embargo, algunos edificios en el Distrito Histórico de Hyde Park-Kenwood pueden requerir aprobaciones adicionales.' },
     { q: '¿Cómo encuentro un contratista de techado con experiencia en construcciones antiguas en Hyde Park?', a: 'Pregunte específicamente sobre experiencia con construcciones anteriores a 1940 y materiales especiales durante su cita de estimado. Todos los contratistas de nuestra lista están preseleccionados para licencia, seguro y calificación de Google.' },
     { q: '¿El seguro cubrirá mi techo de Hyde Park después de daños de tormenta?', a: 'Sí, si el daño fue causado por un evento cubierto. El denso dosel arbóreo de Hyde Park significa que el daño por ramas caídas también es un tipo de reclamo común. Documente los daños dentro de las 48 horas con fotos con marca de tiempo.' },
+  ],
+  neighbors: [
+    { name: 'Bronzeville', slug: 'bronzeville' },
+    { name: 'South Shore', slug: 'south-shore' },
+  ],
+  relatedArticles: [
+    { title: 'Best Roofing Materials for Chicago', slug: 'best-roofing-materials-chicago' },
+    { title: 'What to Do After Storm Damage to Your Roof in Chicago', slug: 'after-storm-damage' },
   ],
 },
   {
@@ -219,6 +277,14 @@ export const neighborhoods: Neighborhood[] = [
     { q: '¿Cómo verifico que un contratista de techado de Pilsen tiene licencia?', a: 'Verifique la licencia IDFPR de Illinois de cualquier contratista en idfpr.com antes de firmar un contrato. Ingrese el nombre de la empresa o el número de licencia y confirme que la licencia esté activa. Todos los contratistas de nuestra lista están preseleccionados para licencias activas.' },
     { q: '¿Se requiere permiso para el reemplazo de techo en Pilsen?', a: 'Sí. La Ciudad de Chicago requiere un permiso de construcción para todos los reemplazos completos de techo incluyendo propiedades en Pilsen. Todos los contratistas sacan este permiso sin costo adicional.' },
   ],
+  neighbors: [
+    { name: 'Back of the Yards', slug: 'back-of-the-yards' },
+    { name: 'Bridgeport', slug: 'bridgeport' },
+  ],
+  relatedArticles: [
+    { title: 'How to Save Money on Roof Replacement in Chicago', slug: 'save-money-chicago' },
+    { title: 'How to Choose a Roof Replacement Contractor in Chicago', slug: 'how-to-choose' },
+  ],
 },
   {
   slug: 'bridgeport',
@@ -245,6 +311,14 @@ export const neighborhoods: Neighborhood[] = [
     { q: '¿Cuál es la mejor teja de asfalto para un bungalow de Bridgeport?', a: 'Las tejas arquitectónicas clasificadas para vientos de 130 mph son la mejor opción estándar. Las tejas de impacto Clase 4 cuestan un 10 a 15 por ciento más pero califican para descuentos de seguro del 20 al 30 por ciento de muchos aseguradores de Illinois.' },
     { q: '¿Se requiere permiso para el reemplazo de techo en Bridgeport?', a: 'Sí. La Ciudad de Chicago requiere un permiso de construcción para todos los reemplazos completos de techo en cada barrio incluyendo Bridgeport. Todos los contratistas de nuestra lista sacan este permiso sin costo adicional.' },
   ],
+  neighbors: [
+    { name: 'Pilsen', slug: 'pilsen' },
+    { name: 'Chinatown', slug: 'chinatown' },
+  ],
+  relatedArticles: [
+    { title: 'Signs Your Roof Needs Replacement in Chicago', slug: 'signs-your-roof' },
+    { title: 'Average Cost of Roof Replacement in Chicago in 2026', slug: 'average-cost' },
+  ],
 },
   {
   slug: 'rogers-park',
@@ -260,7 +334,7 @@ export const neighborhoods: Neighborhood[] = [
     { q: 'Do these contractors work on multi-unit buildings in Rogers Park?', a: 'Yes. All six contractors on our list handle both single-family and multi-unit residential roof replacements in Rogers Park. Three-flats and larger apartment buildings are the most common multi-unit project type in this neighborhood. Costs for a Rogers Park three-flat flat roof replacement typically run $10,000 to $18,000 depending on square footage and membrane system chosen.' },
     { q: 'Does proximity to Lake Michigan affect roofing choices in Rogers Park?', a: 'Yes, significantly for buildings within two to three blocks of the lakefront along Sheridan Road and the side streets east of Glenwood. Lake Michigan wind events — particularly from the northeast in fall — create real uplift risk on standard shingles. Architectural shingles rated to 130 mph wind performance are the recommended minimum for lakefront Rogers Park properties. For flat roofs, TPO with properly heat-welded seams is more resistant to wind-driven rain than EPDM with adhesive seams.' },
     { q: 'What flat roof system is best for a Rogers Park three-flat?', a: 'TPO membrane is the current standard for flat roofs in Chicago including Rogers Park, and the system most commonly specified under the Chicago Energy Conservation Code for new installations. TPO handles Rogers Park\'s lake wind and freeze-thaw cycles well, and heat-welded seams are more reliable than the adhesive seams used in EPDM. For a Rogers Park three-flat, expect TPO replacement costs of $10,000 to $18,000. EPDM is a lower-cost alternative ($8,000 to $14,000) with a shorter lifespan of 15 to 25 years versus TPO\'s 25 to 35.' },
-    { q: 'Will homeowner insurance cover storm damage to my Rogers Park roof?', a: 'Yes, if damage was caused by a covered event — hail, wind, or storm debris. Rogers Park\'s lakefront exposure means wind-driven rain and storm damage are among the more common claim types in this ZIP code. Document damage within 48 hours with timestamped photos, get a written contractor assessment before contacting your insurer, and request that the contractor be present during the adjuster\'s inspection. Illinois insurers must respond to claims within 10 business days. See our [storm damage guide](/articles/after-storm-damage) for the complete process.' },
+    { q: 'Will homeowner insurance cover storm damage to my Rogers Park roof?', a: 'Yes, if damage was caused by a covered event — hail, wind, or storm debris. Rogers Park\'s lakefront exposure means wind-driven rain and storm damage are among the more common claim types in this ZIP code. Document damage within 48 hours with timestamped photos, get a written contractor assessment before contacting your insurer, and request that the contractor be present during the adjuster\'s inspection. Illinois insurers must respond to claims as required by Illinois law. See our [storm damage guide](/articles/after-storm-damage) for the complete process.' },
     { q: 'Is a permit required for roof replacement in Rogers Park?', a: 'Yes. The City of Chicago requires a building permit for all full roof replacements in Rogers Park. All listed contractors pull this permit as part of every project at no extra charge. Rogers Park has an active city inspection program — skipping the permit creates code violations that appear at property sales and complicate insurance claims. Verify any contractor\'s Illinois IDFPR license at idfpr.com before signing a contract.' },
   ],
   faqEs: [
@@ -270,6 +344,14 @@ export const neighborhoods: Neighborhood[] = [
     { q: '¿Qué sistema de techo plano es mejor para un three-flat en Rogers Park?', a: 'La membrana TPO es el estándar actual para techos planos en Chicago incluyendo Rogers Park. Para un three-flat, espere costos de TPO de $10,000 a $18,000. El EPDM es una alternativa de menor costo con una vida útil más corta.' },
     { q: '¿El seguro de propietario cubrirá daños de tormenta en mi techo de Rogers Park?', a: 'Sí, si el daño fue causado por un evento cubierto. Documente los daños dentro de las 48 horas con fotos con marca de tiempo y obtenga una evaluación escrita antes de contactar a su aseguradora.' },
     { q: '¿Se requiere permiso para el reemplazo de techo en Rogers Park?', a: 'Sí. Chicago requiere un permiso de construcción para todos los reemplazos completos de techo en Rogers Park. Todos los contratistas sacan este permiso sin costo adicional.' },
+  ],
+  neighbors: [
+    { name: 'Andersonville', slug: 'andersonville' },
+    { name: 'Uptown', slug: 'uptown' },
+  ],
+  relatedArticles: [
+    { title: 'What to Do After Storm Damage to Your Roof in Chicago', slug: 'after-storm-damage' },
+    { title: 'Signs Your Roof Needs Replacement in Chicago', slug: 'signs-your-roof' },
   ],
 },
   {
@@ -286,7 +368,7 @@ export const neighborhoods: Neighborhood[] = [
     { q: 'What roof types are most common in Andersonville?', a: 'Bungalows on the residential streets off Clark Street — Berwyn, Farwell, Catalpa — typically have simple gable-roofed asphalt shingle systems. Two-flats on the denser blocks have flat membrane roofs. Some older Victorian-era single-family homes in the eastern portion of Andersonville near the Red Line have more complex pitched rooflines. The commercial buildings on Clark Street itself often have flat parapet roofs with TPO or modified bitumen systems. All types are handled by contractors on our list.' },
     { q: 'My Andersonville bungalow roof is from the 1990s. Is it time for replacement?', a: 'A 1990s asphalt roof in Andersonville is almost certainly at or past end of life in 2026 — that is 25 to 30 years, which is the expected maximum lifespan for asphalt shingles in Chicago\'s climate. Check your gutters for heavy granule deposits (sign of advanced shingle wear), look for curling or missing shingles, and check your attic for any water staining on the framing. Any of these signs confirms that replacement is the right call. Get a free inspection from a listed contractor before a leak forces the issue in an emergency.' },
     { q: 'Do these contractors work on older Victorian-era homes in Andersonville?', a: 'Yes. Several contractors on our list have experience with older construction typical of Andersonville\'s Victorian-era properties on the streets closer to the lakefront. These homes may have original board sheathing (rather than plywood), older chimney flashing configurations, or complex roof geometries that require experienced crews. Your contractor will identify any special requirements during the free assessment and include them in the written estimate.' },
-    { q: 'Does wind exposure near Lake Michigan affect roofing choices in Andersonville?', a: 'Yes. Andersonville is about one mile from the lakefront, and Lake Michigan wind events — particularly from the northeast in fall — create meaningful wind uplift that standard shingles may not handle well over time. Architectural shingles rated to 130 mph wind performance are the recommended minimum for Andersonville. Class 4 impact-resistant shingles (rated to both wind and hail) are worth the 10 to 15 percent premium given Chicago\'s 40+ annual hail days and lake wind exposure. Ask your contractor specifically about wind rating when choosing a shingle.' },
+    { q: 'Does wind exposure near Lake Michigan affect roofing choices in Andersonville?', a: 'Yes. Andersonville is about one mile from the lakefront, and Lake Michigan wind events — particularly from the northeast in fall — create meaningful wind uplift that standard shingles may not handle well over time. Architectural shingles rated to 130 mph wind performance are the recommended minimum for Andersonville. Class 4 impact-resistant shingles (rated to both wind and hail) are worth the 10 to 15 percent premium given Chicago\'s frequent hail events during storm season and lake wind exposure. Ask your contractor specifically about wind rating when choosing a shingle.' },
     { q: 'Is a permit required for roof replacement in Andersonville?', a: 'Yes. Chicago requires a building permit for all full roof replacements in Andersonville. All six contractors on our list pull this permit as part of every project at no extra charge. The permit requires a city inspection after completion — your contractor manages this process end to end. Never work with a contractor who suggests skipping the permit: this is a code violation that appears at resale and can void your homeowner insurance for workmanship claims.' },
   ],
   faqEs: [
@@ -296,6 +378,14 @@ export const neighborhoods: Neighborhood[] = [
     { q: '¿Estos contratistas trabajan en casas de la era victoriana más antiguas en Andersonville?', a: 'Sí. Varios contratistas de nuestra lista tienen experiencia con construcciones más antiguas típicas de las propiedades de la era victoriana de Andersonville. Su contratista identificará cualquier requisito especial durante la evaluación gratuita.' },
     { q: '¿La exposición al viento cerca del lago Michigan afecta las opciones de techado en Andersonville?', a: 'Sí. Andersonville está a aproximadamente una milla del lago, y los eventos de viento del lago Michigan crean una elevación de viento significativa. Las tejas arquitectónicas clasificadas a 130 mph de rendimiento al viento son el mínimo recomendado para Andersonville.' },
     { q: '¿Se requiere permiso para el reemplazo de techo en Andersonville?', a: 'Sí. Chicago requiere un permiso de construcción para todos los reemplazos completos de techo en Andersonville. Todos los contratistas sacan este permiso sin costo adicional.' },
+  ],
+  neighbors: [
+    { name: 'Rogers Park', slug: 'rogers-park' },
+    { name: 'Uptown', slug: 'uptown' },
+  ],
+  relatedArticles: [
+    { title: 'What to Do After Storm Damage to Your Roof in Chicago', slug: 'after-storm-damage' },
+    { title: 'Best Roofing Materials for Chicago', slug: 'best-roofing-materials-chicago' },
   ],
 },
   {
@@ -323,6 +413,14 @@ export const neighborhoods: Neighborhood[] = [
     { q: '¿El seguro cubrirá mi techo de Uptown después de una tormenta?', a: 'Sí, si el daño fue causado por un evento cubierto. Documente los daños dentro de las 48 horas con fotos con marca de tiempo y obtenga una evaluación escrita de un contratista con licencia.' },
     { q: '¿Se requiere permiso para el reemplazo de techo en Uptown?', a: 'Sí. Chicago requiere un permiso de construcción para todos los reemplazos de techo en Uptown. Todos los contratistas sacan este permiso sin costo adicional.' },
   ],
+  neighbors: [
+    { name: 'Andersonville', slug: 'andersonville' },
+    { name: 'Lakeview', slug: 'lakeview' },
+  ],
+  relatedArticles: [
+    { title: 'Signs Your Roof Needs Replacement in Chicago', slug: 'signs-your-roof' },
+    { title: 'Roof Repair or Full Replacement After Storm Damage in Chicago?', slug: 'repair-vs-replace' },
+  ],
 },
   {
   slug: 'lakeview',
@@ -348,6 +446,14 @@ export const neighborhoods: Neighborhood[] = [
     { q: '¿Los contratistas de Lakeview trabajan en Wrigleyville y Boystown?', a: 'Sí. Los seis contratistas de nuestra lista sirven todo el barrio de Lakeview incluyendo Wrigleyville, Boystown y Roscoe Village. Los edificios de Wrigleyville a veces tienen terrazas en el techo que requieren protección adicional durante el reemplazo.' },
     { q: '¿Cuándo es la mejor época del año para reemplazar un techo en Lakeview?', a: 'La primavera tardía (mayo–junio) y el otoño temprano (septiembre–octubre) son las mejores ventanas para el reemplazo de techo en Lakeview. De finales de noviembre a febrero es la temporada más tranquila y a menudo produce descuentos del 10 al 15 por ciento.' },
     { q: '¿El seguro de propietario cubre el reemplazo de techo en Lakeview después de una tormenta?', a: 'Sí, si el daño resultó de un evento cubierto: granizo, viento o escombros de tormenta. La exposición al lago de Lakeview lo convierte en uno de los barrios de Chicago más frecuentemente afectados por eventos de alto viento. Documente los daños dentro de las 48 horas con fotos con marca de tiempo.' },
+  ],
+  neighbors: [
+    { name: 'Uptown', slug: 'uptown' },
+    { name: 'Wrigleyville', slug: 'wrigleyville' },
+  ],
+  relatedArticles: [
+    { title: 'What to Do After Storm Damage to Your Roof in Chicago', slug: 'after-storm-damage' },
+    { title: 'Average Cost of Roof Replacement in Chicago in 2026', slug: 'average-cost' },
   ],
 },
   {
@@ -375,6 +481,14 @@ export const neighborhoods: Neighborhood[] = [
     { q: '¿Los contratistas de Humboldt Park manejan reclamos de seguro por daños de tormenta?', a: 'Sí. Todos los contratistas de nuestra lista pueden documentar daños de tormenta para reclamos de seguro y estar presentes durante la inspección de su ajustador. Documente todo dentro de las 48 horas de cualquier tormenta significativa.' },
     { q: '¿Se requiere permiso para el reemplazo de techo en Humboldt Park?', a: 'Sí. Chicago requiere un permiso de construcción para todos los reemplazos completos de techo en Humboldt Park. Todos los contratistas sacan este permiso sin costo adicional.' },
   ],
+  neighbors: [
+    { name: 'Logan Square', slug: 'logan-square' },
+    { name: 'Avondale', slug: 'avondale' },
+  ],
+  relatedArticles: [
+    { title: 'How to Save Money on Roof Replacement in Chicago', slug: 'save-money-chicago' },
+    { title: 'Signs Your Roof Needs Replacement in Chicago', slug: 'signs-your-roof' },
+  ],
 },
   {
   slug: 'avondale',
@@ -401,6 +515,14 @@ export const neighborhoods: Neighborhood[] = [
     { q: '¿Cómo sé si el techo de mi bungalow en Avondale necesita reemplazo vs reparación?', a: 'Reemplace cuando: el techo tiene 20+ años, hay depósitos de gránulos en las canaletas, manchas en el techo interior en primavera, o dos o más reparaciones en cinco años.' },
     { q: '¿Se requiere permiso para el reemplazo de techo en Avondale?', a: 'Sí. Chicago requiere un permiso de construcción para todos los reemplazos de techo en Avondale. Todos los contratistas sacan este permiso sin costo adicional.' },
   ],
+  neighbors: [
+    { name: 'Logan Square', slug: 'logan-square' },
+    { name: 'Irving Park', slug: 'irving-park' },
+  ],
+  relatedArticles: [
+    { title: 'Signs Your Roof Needs Replacement in Chicago', slug: 'signs-your-roof' },
+    { title: 'Roof Repair or Full Replacement After Storm Damage in Chicago?', slug: 'repair-vs-replace' },
+  ],
 },
   {
   slug: 'irving-park',
@@ -413,7 +535,7 @@ export const neighborhoods: Neighborhood[] = [
   areaTextEs: 'Irving Park (ZIP 60618, 60641) está en el cinturón de bungalows del noroeste. Street tras street de bungalows clásicos construidos entre 1910 y 1935, junto con two-flats y edificios de apartamentos. Muchos de estos bungalows están en su segundo o tercer ciclo de techado, con techos de los años 90 llegando al final de su vida. Los costos típicos oscilan entre $8,000 y $13,000 para un bungalow estándar.',
   faq: [
     { q: 'How much does roof replacement cost on an Irving Park bungalow in 2026?', a: 'A standard Chicago bungalow roof replacement in Irving Park runs $8,000 to $13,000 for architectural asphalt shingles. This assumes a standard 1,200 to 1,500 square foot roof with one existing layer being torn off. Bungalows with two existing layers — common on homes over 30 years old — require full tear-off per Illinois code, adding $1,000 to $1,500. Most Irving Park bungalow replacements are completed in a single day. Free on-site estimates from all six listed contractors.' },
-    { q: 'When should I replace my Irving Park bungalow roof?', a: 'If your Irving Park bungalow roof is 20 years or older, shows granules in gutters after rain, has any visible curling or missing shingles, or has a history of patching, it is time for a free professional inspection and likely full replacement. Asphalt shingle roofs in Chicago typically last 20 to 25 years — shorter than the national average due to the city\'s freeze-thaw cycles and 40+ annual hail days. A roof that was installed in the late 1990s or early 2000s is almost certainly at or near end of life in 2026.' },
+    { q: 'When should I replace my Irving Park bungalow roof?', a: 'If your Irving Park bungalow roof is 20 years or older, shows granules in gutters after rain, has any visible curling or missing shingles, or has a history of patching, it is time for a free professional inspection and likely full replacement. Asphalt shingle roofs in Chicago typically last 20 to 25 years — shorter than the national average due to the city\'s freeze-thaw cycles and active storm season. A roof that was installed in the late 1990s or early 2000s is almost certainly at or near end of life in 2026.' },
     { q: 'My Irving Park bungalow has the original 1930s roof under 1990s shingles. What does that mean for replacement cost?', a: 'If your bungalow has two existing layers (original 1930s and 1990s re-roof), Illinois code requires complete tear-off of both layers before new shingles can be installed. This adds $1,000 to $1,500 to the project versus a single-layer tear-off. The tear-off also allows your contractor to inspect the original board sheathing for rot or deterioration — any damaged boards are replaced at $80 to $120 per sheet before new shingles go on. Your contractor will confirm layer count and decking condition during the free assessment.' },
     { q: 'Do Irving Park contractors also replace flat roofs on two-flats?', a: 'Yes. All six contractors on our list handle both the asphalt shingle bungalow replacements and the flat TPO or EPDM roof replacements on Irving Park two-flats and three-flats. Two-flat flat roof replacement in Irving Park typically runs $8,000 to $14,000 depending on square footage and system choice. TPO is recommended for new installations given its longer lifespan of 25 to 35 years versus EPDM\'s 15 to 25.' },
     { q: 'How do I avoid getting overcharged for a bungalow roof replacement in Irving Park?', a: 'Get at least two itemized written estimates before committing. Each estimate should break out: tear-off labor, new shingles (by brand and grade), underlayment, flashing, permit fees, and warranty terms separately. In Irving Park\'s bungalow market, a $2,000 to $3,000 gap between estimates for identical scope is common — this reflects differences in overhead and crew size, not quality differences. Be cautious of estimates more than 20% below the others, which typically signal inferior materials or unlicensed labor. See our [cost guide](/articles/average-cost) for current market ranges.' },
@@ -426,6 +548,14 @@ export const neighborhoods: Neighborhood[] = [
     { q: '¿Los contratistas de Irving Park también reemplazan techos planos en two-flats?', a: 'Sí. Los seis contratistas de nuestra lista manejan tanto los reemplazos de tejas de asfalto en bungalows como los reemplazos de techo plano TPO o EPDM en two-flats y three-flats de Irving Park.' },
     { q: '¿Cómo evito que me cobren de más por el reemplazo de techo de un bungalow en Irving Park?', a: 'Obtenga al menos dos estimados escritos detallados antes de comprometerse. Cada estimado debe desglosar la demolición, las tejas nuevas (por marca y calidad), la capa inferior, los tapajuntas, las tarifas de permiso y los términos de garantía por separado.' },
     { q: '¿Se requiere permiso para el reemplazo de techo en Irving Park?', a: 'Sí. Chicago requiere un permiso de construcción para todos los reemplazos completos de techo en Irving Park. Todos los contratistas sacan este permiso sin costo adicional.' },
+  ],
+  neighbors: [
+    { name: 'Avondale', slug: 'avondale' },
+    { name: 'Portage Park', slug: 'portage-park' },
+  ],
+  relatedArticles: [
+    { title: 'Average Cost of Roof Replacement in Chicago in 2026', slug: 'average-cost' },
+    { title: 'Signs Your Roof Needs Replacement in Chicago', slug: 'signs-your-roof' },
   ],
 },
   {
@@ -453,6 +583,14 @@ export const neighborhoods: Neighborhood[] = [
     { q: '¿Los contratistas de Beverly manejan casas más grandes con tejados complejos?', a: 'Sí. Todos los contratistas de nuestra lista manejan proyectos residenciales de todos los tamaños incluyendo las casas Tudor Revival, Colonial y victorianas más grandes en las calles emblemáticas de Beverly.' },
     { q: '¿Se requiere permiso para el reemplazo de techo en Beverly?', a: 'Sí. Chicago requiere un permiso de construcción para todos los reemplazos de techo en Beverly. Todos los contratistas sacan este permiso sin costo adicional.' },
   ],
+  neighbors: [
+    { name: 'Roseland', slug: 'roseland' },
+    { name: 'Chatham', slug: 'chatham' },
+  ],
+  relatedArticles: [
+    { title: 'Best Roofing Materials for Chicago', slug: 'best-roofing-materials-chicago' },
+    { title: 'Average Cost of Roof Replacement in Chicago in 2026', slug: 'average-cost' },
+  ],
 },
   {
   slug: 'oak-park',
@@ -478,6 +616,14 @@ export const neighborhoods: Neighborhood[] = [
     { q: '¿Qué materiales de techado se recomiendan para casas en Oak Park?', a: 'Las tejas de asfalto arquitectónicas con resistencia al impacto Clase 4 son la opción de reemplazo más común. El techado metálico es cada vez más popular en las casas victorianas y artesanales más grandes de Oak Park.' },
     { q: '¿Es el techado metálico una buena opción para casas en Oak Park?', a: 'Sí, particularmente para casas victorianas y artesanales más grandes donde los propietarios planean quedarse 20+ años. El metal de costura continua cuesta entre $18,000 y $30,000+ pero dura de 40 a 70 años.' },
     { q: '¿Cómo encuentro un contratista de techado con experiencia en construcciones antiguas de Oak Park?', a: 'Pregunte específicamente sobre experiencia con construcciones anteriores a 1940 y los procedimientos de permisos del pueblo de Oak Park. Verifique la licencia IDFPR de Illinois en idfpr.com antes de firmar.' },
+  ],
+  neighbors: [
+    { name: 'Austin', slug: 'austin' },
+    { name: 'Cicero', slug: 'cicero' },
+  ],
+  relatedArticles: [
+    { title: 'Best Roofing Materials for Chicago', slug: 'best-roofing-materials-chicago' },
+    { title: 'How to Choose a Roof Replacement Contractor in Chicago', slug: 'how-to-choose' },
   ],
 },
   {
@@ -505,6 +651,14 @@ export const neighborhoods: Neighborhood[] = [
     { q: '¿Hay opciones de financiamiento para el reemplazo de techo en Evanston?', a: 'Varios contratistas de nuestra lista ofrecen opciones de financiamiento. Además, la IHDA de Illinois ofrece programas de asistencia para reparación del hogar. Los propietarios con ingresos calificados también pueden ser elegibles para el programa federal Section 504.' },
     { q: '¿Se requiere permiso para el reemplazo de techo en Evanston?', a: 'Sí. Evanston requiere un permiso de construcción para todos los reemplazos completos de techo. Todos los contratistas que sirven Evanston manejan la solicitud de permiso y la coordinación de inspección.' },
   ],
+  neighbors: [
+    { name: 'Rogers Park', slug: 'rogers-park' },
+    { name: 'Andersonville', slug: 'andersonville' },
+  ],
+  relatedArticles: [
+    { title: 'What to Do After Storm Damage to Your Roof in Chicago', slug: 'after-storm-damage' },
+    { title: 'Best Roofing Materials for Chicago', slug: 'best-roofing-materials-chicago' },
+  ],
 },
   {
   slug: 'cicero',
@@ -530,6 +684,14 @@ export const neighborhoods: Neighborhood[] = [
     { q: '¿Qué materiales funcionan mejor para los bungalows de estilo Chicago en Cicero?', a: 'Las tejas de asfalto arquitectónicas con garantía de 30 años y 130 mph de viento son el estándar recomendado. Las tejas Clase 4 pueden calificar para descuentos de seguro del 20 al 30 por ciento.' },
     { q: 'Mi bungalow en Cicero fue construido en los años 30. ¿Qué debo saber?', a: 'Los bungalows más antiguos con entablado original de los años 1920 a 1930 pueden tener tablones que se han podrido. Estos se reemplazan durante la demolición a $80 a $120 por tablón.' },
     { q: '¿Cómo verifico que un contratista de Cicero tiene licencia correctamente?', a: 'Verifique la licencia IDFPR de Illinois en idfpr.com. Los contratistas en Cicero deben tener una licencia activa de Illinois. Todos los contratistas de nuestra lista están preseleccionados.' },
+  ],
+  neighbors: [
+    { name: 'Oak Park', slug: 'oak-park' },
+    { name: 'Austin', slug: 'austin' },
+  ],
+  relatedArticles: [
+    { title: 'How to Choose a Roof Replacement Contractor in Chicago', slug: 'how-to-choose' },
+    { title: 'Average Cost of Roof Replacement in Chicago in 2026', slug: 'average-cost' },
   ],
 },
   {
@@ -557,6 +719,14 @@ export const neighborhoods: Neighborhood[] = [
     { q: 'Mi two-flat en Bucktown necesita un nuevo techo plano. ¿Debo usar TPO o EPDM?', a: 'El TPO es la opción recomendada para nuevas instalaciones de techo plano. Tiene una vida útil más larga (25 a 35 años frente a los 15 a 25 del EPDM), mejor reflectividad del calor y costuras soldadas más confiables.' },
     { q: '¿Se requiere permiso para el reemplazo de techo en Bucktown?', a: 'Sí. Chicago requiere un permiso de construcción para todos los reemplazos de techo en Bucktown. Todos los contratistas sacan este permiso sin costo adicional.' },
   ],
+  neighbors: [
+    { name: 'Wicker Park', slug: 'wicker-park' },
+    { name: 'Logan Square', slug: 'logan-square' },
+  ],
+  relatedArticles: [
+    { title: 'Best Roofing Materials for Chicago', slug: 'best-roofing-materials-chicago' },
+    { title: 'Roof Repair or Full Replacement After Storm Damage in Chicago?', slug: 'repair-vs-replace' },
+  ],
 },
   {
   slug: 'ukrainian-village',
@@ -582,6 +752,14 @@ export const neighborhoods: Neighborhood[] = [
     { q: '¿Qué sistema de techo plano se recomienda para edificios en Ukrainian Village?', a: 'La membrana TPO es el estándar actual. Sus costuras soldadas son más confiables que las adhesivas del EPDM en el clima de Chicago. La vida útil es de 25 a 35 años frente a los 15 a 25 del EPDM.' },
     { q: '¿Los contratistas de Ukrainian Village ayudan con reclamos de seguro?', a: 'Sí. Todos los contratistas pueden documentar daños y estar presentes durante la inspección del ajustador. Documente los daños dentro de las 48 horas con fotos.' },
     { q: '¿Se requiere permiso para el reemplazo de techo en Ukrainian Village?', a: 'Sí. Chicago requiere un permiso para todos los reemplazos de techo. Todos los contratistas sacan este permiso sin costo adicional.' },
+  ],
+  neighbors: [
+    { name: 'Wicker Park', slug: 'wicker-park' },
+    { name: 'Near West Side', slug: 'near-west-side' },
+  ],
+  relatedArticles: [
+    { title: 'Best Roofing Materials for Chicago', slug: 'best-roofing-materials-chicago' },
+    { title: 'Signs Your Roof Needs Replacement in Chicago', slug: 'signs-your-roof' },
   ],
 },
   {
@@ -609,6 +787,14 @@ export const neighborhoods: Neighborhood[] = [
     { q: '¿Es el techado metálico apropiado para un townhome en Gold Coast?', a: 'Sí. El techado metálico — particularmente la costura continua — es una opción natural para los townhomes de Gold Coast donde los propietarios planean quedarse a largo plazo. En un townhome típico, el reemplazo de costura continua cuesta entre $20,000 y $35,000.' },
     { q: '¿Se requiere permiso para el reemplazo de techo en Gold Coast?', a: 'Sí. Chicago requiere un permiso de construcción para todos los reemplazos de techo en Gold Coast. Algunos edificios designados como monumentos históricos requieren aprobaciones adicionales de la División de Monumentos Históricos de Chicago.' },
   ],
+  neighbors: [
+    { name: 'Lincoln Park', slug: 'lincoln-park' },
+    { name: 'Old Town', slug: 'old-town' },
+  ],
+  relatedArticles: [
+    { title: 'Best Roofing Materials for Chicago', slug: 'best-roofing-materials-chicago' },
+    { title: 'How to Choose a Roof Replacement Contractor in Chicago', slug: 'how-to-choose' },
+  ],
 },
   {
   slug: 'old-town',
@@ -634,6 +820,14 @@ export const neighborhoods: Neighborhood[] = [
     { q: '¿Qué materiales son populares para casas en Old Town?', a: 'Las tejas arquitectónicas con Clase 4 son la opción más común. El techado metálico es popular para propietarios a largo plazo. Las tejas compuestas de aspecto pizarra son populares en propiedades victorianas.' },
     { q: 'Mi edificio en Old Town tiene sección plana e inclinada. ¿Cómo se maneja?', a: 'Los edificios de perfil mixto son muy comunes. La sección plana trasera usa TPO; la inclinada delantera usa tejas o metal. Los costos combinados oscilan entre $14,000 y $22,000.' },
     { q: '¿Se requiere permiso para el reemplazo de techo en Old Town?', a: 'Sí. Chicago requiere un permiso para todos los reemplazos de techo en Old Town. Las propiedades en el Triangle pueden requerir aprobación adicional de la División de Monumentos Históricos.' },
+  ],
+  neighbors: [
+    { name: 'Gold Coast', slug: 'gold-coast' },
+    { name: 'Lincoln Park', slug: 'lincoln-park' },
+  ],
+  relatedArticles: [
+    { title: 'Best Roofing Materials for Chicago', slug: 'best-roofing-materials-chicago' },
+    { title: 'Average Cost of Roof Replacement in Chicago in 2026', slug: 'average-cost' },
   ],
 },
   {
@@ -661,6 +855,14 @@ export const neighborhoods: Neighborhood[] = [
     { q: '¿Cómo manejan los contratistas el acceso estrecho en River North para la entrega de materiales?', a: 'Los contratistas locales manejan el acceso estrecho de River North de manera rutinaria. La mayoría usa camiones de entrega con grúas o sistemas de cinta transportadora y programa las entregas en horas de menor tráfico.' },
     { q: '¿Se requiere permiso para el reemplazo de techo en River North?', a: 'Sí. Chicago requiere un permiso para todos los reemplazos de techo en River North incluyendo edificios comerciales y de uso mixto. Todos los contratistas sacan este permiso sin costo adicional.' },
   ],
+  neighbors: [
+    { name: 'Near North Side', slug: 'near-north-side' },
+    { name: 'Near West Side', slug: 'near-west-side' },
+  ],
+  relatedArticles: [
+    { title: 'Signs Your Roof Needs Replacement in Chicago', slug: 'signs-your-roof' },
+    { title: 'Roof Repair or Full Replacement After Storm Damage in Chicago?', slug: 'repair-vs-replace' },
+  ],
 },
   {
   slug: 'near-north-side',
@@ -686,6 +888,14 @@ export const neighborhoods: Neighborhood[] = [
     { q: '¿Los contratistas del Near North Side tienen experiencia con edificios históricos cerca del Magnificent Mile?', a: 'Sí. Varios contratistas tienen experiencia con edificios históricos y six-flats vintage en las calles laterales entre Michigan Avenue y Lake Shore Drive.' },
     { q: '¿Se requiere permiso para el reemplazo de techo en el Near North Side?', a: 'Sí. Chicago requiere un permiso para todos los reemplazos de techo en el Near North Side. Los edificios designados como monumentos pueden requerir aprobación adicional de la División de Monumentos Históricos.' },
     { q: '¿El seguro cubrirá daños de tormenta en mi techo del Near North Side?', a: 'Sí, para daños causados por un evento cubierto. Documente los daños dentro de las 48 horas y obtenga una evaluación escrita antes de contactar a su aseguradora.' },
+  ],
+  neighbors: [
+    { name: 'River North', slug: 'river-north' },
+    { name: 'Gold Coast', slug: 'gold-coast' },
+  ],
+  relatedArticles: [
+    { title: 'What to Do After Storm Damage to Your Roof in Chicago', slug: 'after-storm-damage' },
+    { title: 'Best Roofing Materials for Chicago', slug: 'best-roofing-materials-chicago' },
   ],
 },
   {
@@ -713,6 +923,14 @@ export const neighborhoods: Neighborhood[] = [
     { q: '¿Se requiere permiso para el reemplazo de techo en el Near West Side?', a: 'Sí. Chicago requiere un permiso para todos los reemplazos de techo en el Near West Side. Todos los contratistas sacan este permiso sin costo adicional.' },
     { q: '¿Estos contratistas ayudan con reclamos de seguro después de daños de tormenta?', a: 'Sí. Todos los contratistas pueden documentar daños de tormenta y estar presentes durante la inspección del ajustador. Documente los daños dentro de las 48 horas de cualquier tormenta significativa.' },
   ],
+  neighbors: [
+    { name: 'Ukrainian Village', slug: 'ukrainian-village' },
+    { name: 'Pilsen', slug: 'pilsen' },
+  ],
+  relatedArticles: [
+    { title: 'Average Cost of Roof Replacement in Chicago in 2026', slug: 'average-cost' },
+    { title: 'How to Choose a Roof Replacement Contractor in Chicago', slug: 'how-to-choose' },
+  ],
 },
   {
   slug: 'portage-park',
@@ -738,6 +956,14 @@ export const neighborhoods: Neighborhood[] = [
     { q: '¿Cuál es la mejor teja de asfalto para el clima de Chicago en Portage Park?', a: 'Las tejas arquitectónicas con garantía del fabricante de 30 años y clasificación de viento de 130 mph son el estándar recomendado. Las tejas de impacto Clase 4 cuestan un 10 a 15 por ciento más pero pueden calificar para descuentos de seguro del 20 al 30 por ciento.' },
     { q: '¿Los contratistas de Portage Park sacan permisos de construcción de la Ciudad de Chicago?', a: 'Sí. Todos los contratistas de nuestra lista sacan el permiso de construcción requerido para cada reemplazo completo de techo en Portage Park. El permiso está incluido en el contrato sin costo adicional.' },
     { q: '¿Puedo ahorrar dinero obteniendo múltiples estimados para un bungalow en Portage Park?', a: 'Sí. Obtener dos o tres estimados escritos puede revelar diferencias de precio de $1,500 a $3,000 para el mismo alcance de trabajo. Todas las empresas de nuestra lista ofrecen estimados gratuitos.' },
+  ],
+  neighbors: [
+    { name: 'Irving Park', slug: 'irving-park' },
+    { name: 'Dunning', slug: 'dunning' },
+  ],
+  relatedArticles: [
+    { title: 'Average Cost of Roof Replacement in Chicago in 2026', slug: 'average-cost' },
+    { title: 'Signs Your Roof Needs Replacement in Chicago', slug: 'signs-your-roof' },
   ],
 },
   {
@@ -765,6 +991,14 @@ export const neighborhoods: Neighborhood[] = [
     { q: '¿Los contratistas de Jefferson Park manejan el reemplazo de techo plano en two-flats?', a: 'Sí. Los seis contratistas manejan tanto los reemplazos de tejas en bungalows como los de membrana TPO o EPDM en two-flats de Jefferson Park.' },
     { q: '¿Se requiere permiso para el reemplazo de techo en Jefferson Park?', a: 'Sí. Chicago requiere un permiso para todos los reemplazos de techo. Todos los contratistas sacan este permiso sin costo adicional.' },
   ],
+  neighbors: [
+    { name: 'Norwood Park', slug: 'norwood-park' },
+    { name: 'Dunning', slug: 'dunning' },
+  ],
+  relatedArticles: [
+    { title: 'Signs Your Roof Needs Replacement in Chicago', slug: 'signs-your-roof' },
+    { title: 'Average Cost of Roof Replacement in Chicago in 2026', slug: 'average-cost' },
+  ],
 },
   {
   slug: 'norwood-park',
@@ -777,7 +1011,7 @@ export const neighborhoods: Neighborhood[] = [
   areaTextEs: 'Norwood Park (ZIP 60631, 60656) tiene un carácter genuinamente suburbano con lotes más grandes y casas unifamiliares bien mantenidas construidas principalmente entre los años 1940 y 1970. La vivienda incluye casas ranch, split-levels, coloniales de dos pisos y algunas propiedades de estilo Cape Cod y Tudor. Los costos de reemplazo oscilan entre $9,000 y $18,000.',
   faq: [
     { q: 'How much does roof replacement cost in Norwood Park in 2026?', a: 'Full asphalt shingle replacement on a typical Norwood Park single-family home runs $9,000 to $18,000 depending on roof size and complexity. Ranch homes and simpler roof profiles are at the lower end. Colonial and split-level homes with more complex rooflines, dormers, or multiple slopes run toward the higher end. Premium materials — Class 4 impact-resistant shingles or metal roofing — add 15 to 40 percent. Free estimates from all six listed contractors.' },
-    { q: 'What roofing material is best for Norwood Park single-family homes?', a: 'Architectural asphalt shingles with a 30-year manufacturer warranty are the most common replacement choice in Norwood Park — they perform well in Chicago\'s climate, match the architectural character of the neighborhood\'s single-family homes, and fit most budgets. Class 4 impact-resistant shingles are worth the 10 to 15 percent premium for Norwood Park homeowners — Illinois insurers frequently offer 20 to 30 percent premium discounts, and Chicago\'s 40+ annual hail days make the protection genuinely useful. Metal roofing is increasingly popular among Norwood Park homeowners who plan to stay in the same home long term.' },
+    { q: 'What roofing material is best for Norwood Park single-family homes?', a: 'Architectural asphalt shingles with a 30-year manufacturer warranty are the most common replacement choice in Norwood Park — they perform well in Chicago\'s climate, match the architectural character of the neighborhood\'s single-family homes, and fit most budgets. Class 4 impact-resistant shingles are worth the 10 to 15 percent premium for Norwood Park homeowners — Illinois insurers frequently offer 20 to 30 percent premium discounts, and Chicago\'s active storm season brings frequent hail events, making the protection genuinely useful. Metal roofing is increasingly popular among Norwood Park homeowners who plan to stay in the same home long term.' },
     { q: 'My Norwood Park home from the 1960s has never had a full replacement. What should I expect?', a: 'A 1960s Norwood Park home that has never had a full replacement almost certainly has multiple shingle layers. Illinois code requires full tear-off when two layers are already present. Expect: full tear-off of existing layers ($1,000 to $2,000), inspection of the underlying deck for rot and deterioration (board sheathing or early plywood from this era frequently has deteriorated areas), replacement of any damaged decking at $80 to $120 per sheet, new underlayment, and new architectural shingles. Your contractor will document all findings during the free assessment and include replacement costs in the written estimate.' },
     { q: 'Do Norwood Park contractors work on larger two-story colonial and Tudor homes?', a: 'Yes. All six contractors on our list handle residential projects of all sizes including the larger two-story colonial, Tudor, and Cape Cod homes common in Norwood Park on streets like Oriole, Overhill, and Ozark Avenues. Larger homes have more roof surface, often more complex geometry with hips, valleys, and dormers, and may require additional time and specialized staging. All of these factors are accounted for in the written estimate.' },
     { q: 'Is metal roofing a good choice for a Norwood Park home?', a: 'Yes, particularly for Norwood Park homeowners who plan to stay 20 or more years. Standing seam metal costs $15,000 to $28,000 on a typical Norwood Park single-family home but lasts 40 to 70 years with minimal maintenance — significantly longer than asphalt\'s 20 to 25 year lifespan in Chicago\'s climate. Metal also handles Chicago hail and freeze-thaw cycles better. The payback period versus architectural shingles is 15 to 20 years, making it most worthwhile for long-term or multigenerational ownership.' },
@@ -790,6 +1024,14 @@ export const neighborhoods: Neighborhood[] = [
     { q: '¿Los contratistas de Norwood Park trabajan en casas coloniales y Tudor de dos pisos más grandes?', a: 'Sí. Los seis contratistas manejan proyectos residenciales de todos los tamaños incluyendo las casas coloniales, Tudor y Cape Cod más grandes comunes en Norwood Park en calles como Oriole, Overhill y Ozark.' },
     { q: '¿Es el techado metálico una buena opción para una casa en Norwood Park?', a: 'Sí, particularmente para propietarios que planean quedarse 20 o más años. El metal de costura continua cuesta entre $15,000 y $28,000 pero dura de 40 a 70 años con mantenimiento mínimo.' },
     { q: '¿Se requiere permiso para el reemplazo de techo en Norwood Park?', a: 'Sí. Chicago requiere un permiso para todos los reemplazos de techo en Norwood Park. Todos los contratistas sacan este permiso sin costo adicional. Las direcciones cerca de Park Ridge o Norridge pueden estar en esos municipios — su contratista puede aclarar la jurisdicción.' },
+  ],
+  neighbors: [
+    { name: 'Jefferson Park', slug: 'jefferson-park' },
+    { name: 'Edison Park', slug: 'edison-park' },
+  ],
+  relatedArticles: [
+    { title: 'Best Roofing Materials for Chicago', slug: 'best-roofing-materials-chicago' },
+    { title: 'Average Cost of Roof Replacement in Chicago in 2026', slug: 'average-cost' },
   ],
 },
   {
@@ -817,6 +1059,14 @@ export const neighborhoods: Neighborhood[] = [
     { q: '¿Edison Park tiene requisitos especiales de permiso?', a: 'Para casas dentro de los límites de Chicago, aplican los permisos estándar de la Ciudad de Chicago. Para direcciones cerca de la frontera con Park Ridge o Niles, la jurisdicción puede ser poco clara — su contratista verificará la jurisdicción aplicable.' },
     { q: '¿Se requiere permiso para el reemplazo de techo en Edison Park?', a: 'Sí. Chicago requiere un permiso para todos los reemplazos de techo en Edison Park. Todos los contratistas sacan este permiso sin costo adicional.' },
   ],
+  neighbors: [
+    { name: 'Norwood Park', slug: 'norwood-park' },
+    { name: 'Jefferson Park', slug: 'jefferson-park' },
+  ],
+  relatedArticles: [
+    { title: 'What to Do After Storm Damage to Your Roof in Chicago', slug: 'after-storm-damage' },
+    { title: 'Average Cost of Roof Replacement in Chicago in 2026', slug: 'average-cost' },
+  ],
 },
   {
   slug: 'dunning',
@@ -842,6 +1092,14 @@ export const neighborhoods: Neighborhood[] = [
     { q: '¿Cómo manejan los contratistas de Dunning el reemplazo de techo plano en two-flats?', a: 'El reemplazo de techo plano en two-flats de Dunning implica retirar el sistema EPDM o betún modificado existente, inspeccionar el tablero e instalar una nueva membrana TPO. Para un two-flat típico, espere costos de $8,000 a $14,000.' },
     { q: '¿Los contratistas de Dunning sirven todo el barrio incluyendo cerca de Elmwood Park?', a: 'Sí. Los seis contratistas sirven Dunning incluyendo propiedades cerca de la frontera de Harlem Avenue con Elmwood Park.' },
     { q: '¿Se requiere permiso para el reemplazo de techo en Dunning?', a: 'Sí. Chicago requiere un permiso para todos los reemplazos de techo en Dunning. Todos los contratistas sacan este permiso sin costo adicional.' },
+  ],
+  neighbors: [
+    { name: 'Portage Park', slug: 'portage-park' },
+    { name: 'Belmont Cragin', slug: 'belmont-cragin' },
+  ],
+  relatedArticles: [
+    { title: 'Signs Your Roof Needs Replacement in Chicago', slug: 'signs-your-roof' },
+    { title: 'Roof Repair or Full Replacement After Storm Damage in Chicago?', slug: 'repair-vs-replace' },
   ],
 },
   {
@@ -869,6 +1127,14 @@ export const neighborhoods: Neighborhood[] = [
     { q: '¿Los contratistas de Belmont Cragin sacan permisos de construcción?', a: 'Sí. Todos los contratistas sacan el permiso requerido para cada reemplazo. El permiso está incluido en el contrato sin costo adicional.' },
     { q: '¿Puedo ahorrar programando el reemplazo en invierno en Belmont Cragin?', a: 'Sí. De finales de noviembre a febrero los contratistas a menudo ofrecen un 10 a 15 por ciento de descuento. Los contratistas de buena reputación usan adhesivos para clima frío y siguen las pautas del fabricante.' },
   ],
+  neighbors: [
+    { name: 'Dunning', slug: 'dunning' },
+    { name: 'Humboldt Park', slug: 'humboldt-park' },
+  ],
+  relatedArticles: [
+    { title: 'How to Save Money on Roof Replacement in Chicago', slug: 'save-money-chicago' },
+    { title: 'How to Choose a Roof Replacement Contractor in Chicago', slug: 'how-to-choose' },
+  ],
 },
   {
   slug: 'austin',
@@ -882,7 +1148,7 @@ export const neighborhoods: Neighborhood[] = [
   faq: [
     { q: 'How much does roof replacement cost in Austin in 2026?', a: 'Full asphalt shingle replacement on a typical Austin bungalow runs $7,500 to $13,000. Two-flat flat roof replacement costs $8,000 to $14,000. Austin\'s labor market tends to run slightly below the city average, making replacement costs here among the more affordable in Chicago for comparable work. Bungalows with two existing shingle layers require full tear-off per Illinois code, adding $1,000 to $1,500.' },
     { q: 'My Austin bungalow has had multiple leaks repaired over the years. Is it time for full replacement?', a: 'Almost certainly yes. A bungalow with a history of multiple leak repairs is a strong candidate for full replacement, especially if 15 or more years old. Each repair on an aging shingle roof is less effective as surrounding materials continue to deteriorate. In Chicago\'s freeze-thaw climate, a patched area frequently reopens after the first hard winter freeze. The cumulative cost of continued repairs typically exceeds full replacement within three to five years.' },
-    { q: 'Are there any assistance programs for Austin homeowners who need roof replacement?', a: 'Yes. Austin homeowners may qualify for several programs. The Illinois Housing Development Authority (IHDA) offers up to $40,000 in home repair assistance for income-qualified homeowners. The federal Section 504 program offers 1% fixed-rate loans and grants for homeowners over 62 who meet income limits. Contact the Chicago Department of Housing (312-744-5000) or call 311 to identify programs before financing a replacement out of pocket.' },
+    { q: 'Are there any assistance programs for Austin homeowners who need roof replacement?', a: 'Yes. Austin homeowners may qualify for several programs. The Illinois Housing Development Authority (IHDA) offers up to $50,000 in home repair assistance for income-qualified homeowners. The federal Section 504 program offers 1% fixed-rate loans and grants for homeowners over 62 who meet income limits. Contact the Chicago Department of Housing (312-744-5000) or call 311 to identify programs before financing a replacement out of pocket.' },
     { q: 'Do these contractors serve the full Austin neighborhood including near Oak Park?', a: 'Yes. All six contractors serve the full Austin neighborhood including western blocks near the Oak Park border along Central and Austin Boulevards, northern sections near North Avenue, and southern sections near the Eisenhower Expressway.' },
     { q: 'What should I look for when hiring a roofing contractor in Austin?', a: 'Verify the Illinois IDFPR license at idfpr.com before signing anything. Require a written, itemized estimate. Confirm the contractor will pull a City of Chicago building permit. Get at least two estimates before committing. Be cautious of door-to-door solicitors especially after storms and contractors who ask for full payment upfront.' },
     { q: 'Is a permit required for roof replacement in Austin?', a: 'Yes. Chicago requires a building permit for all full roof replacements in Austin. All listed contractors pull this permit as part of every project. Skipping the permit creates code violations and can make future insurance claims more difficult.' },
@@ -890,10 +1156,18 @@ export const neighborhoods: Neighborhood[] = [
   faqEs: [
     { q: '¿Cuánto cuesta el reemplazo de techo en Austin en 2026?', a: 'El reemplazo completo de tejas en un bungalow típico de Austin cuesta entre $7,500 y $13,000. El reemplazo de techo plano en un two-flat cuesta entre $8,000 y $14,000.' },
     { q: 'Mi bungalow en Austin ha tenido múltiples goteras reparadas. ¿Es hora del reemplazo completo?', a: 'Casi con certeza sí. Un bungalow con historial de múltiples reparaciones es un fuerte candidato para reemplazo completo. El costo acumulado de las reparaciones supera el reemplazo completo en tres a cinco años.' },
-    { q: '¿Hay programas de asistencia para propietarios de Austin que necesitan reemplazo de techo?', a: 'Sí. La IHDA de Illinois ofrece hasta $40,000 en asistencia. El programa federal Section 504 ofrece préstamos al 1% de tasa fija. Llame al 311 para identificar programas disponibles.' },
+    { q: '¿Hay programas de asistencia para propietarios de Austin que necesitan reemplazo de techo?', a: 'Sí. La IHDA de Illinois ofrece hasta $50,000 en asistencia. El programa federal Section 504 ofrece préstamos al 1% de tasa fija. Llame al 311 para identificar programas disponibles.' },
     { q: '¿Estos contratistas sirven todo el barrio de Austin incluyendo cerca de Oak Park?', a: 'Sí. Los seis contratistas sirven el barrio completo de Austin incluyendo las manzanas occidentales cerca de la frontera con Oak Park.' },
     { q: '¿Qué debo buscar al contratar a un contratista de techado en Austin?', a: 'Verifique la licencia IDFPR en idfpr.com. Requiera un estimado escrito. Confirme que el contratista sacará un permiso de Chicago. Obtenga al menos dos estimados.' },
     { q: '¿Se requiere permiso para el reemplazo de techo en Austin?', a: 'Sí. Chicago requiere un permiso para todos los reemplazos de techo en Austin. Todos los contratistas sacan este permiso sin costo adicional.' },
+  ],
+  neighbors: [
+    { name: 'Oak Park', slug: 'oak-park' },
+    { name: 'Cicero', slug: 'cicero' },
+  ],
+  relatedArticles: [
+    { title: 'How to Save Money on Roof Replacement in Chicago', slug: 'save-money-chicago' },
+    { title: 'What to Do After Storm Damage to Your Roof in Chicago', slug: 'after-storm-damage' },
   ],
 },
   {
@@ -921,6 +1195,14 @@ export const neighborhoods: Neighborhood[] = [
     { q: '¿Qué debo tener en cuenta al contratar a un contratista de techado en Little Village?', a: 'El paso más importante es verificar la licencia IDFPR de Illinois en idfpr.com antes de firmar cualquier cosa. Todos los contratistas de nuestra lista están preseleccionados para licencias activas, seguro y calificaciones de Google.' },
     { q: '¿Se requiere permiso para el reemplazo de techo en Little Village?', a: 'Sí. Chicago requiere un permiso de construcción para todos los reemplazos de techo en Little Village. Todos los contratistas sacan este permiso sin costo adicional.' },
   ],
+  neighbors: [
+    { name: 'Pilsen', slug: 'pilsen' },
+    { name: 'Back of the Yards', slug: 'back-of-the-yards' },
+  ],
+  relatedArticles: [
+    { title: 'How to Choose a Roof Replacement Contractor in Chicago', slug: 'how-to-choose' },
+    { title: 'How to Save Money on Roof Replacement in Chicago', slug: 'save-money-chicago' },
+  ],
 },
   {
   slug: 'back-of-the-yards',
@@ -935,7 +1217,7 @@ export const neighborhoods: Neighborhood[] = [
     { q: 'Are there Spanish-speaking roofing contractors serving Back of the Yards?', a: 'Yes. Several contractors on our list have Spanish-speaking staff and can handle the entire project — estimate, contract, and on-site communication — in Spanish. Back of the Yards has a large Latino community and bilingual service is consistently in demand here. Confirm Spanish availability when you call for your free estimate. All listed contractors serve the full neighborhood from 39th to 55th Streets between Halsted and Western.' },
     { q: 'How much does roof replacement cost in Back of the Yards in 2026?', a: 'Full asphalt shingle replacement on a typical Back of the Yards bungalow runs $7,500 to $13,000. Two-flat flat roof replacement costs $8,000 to $14,000 for a TPO or EPDM system. Bungalows with two existing shingle layers — very common on homes from the 1910s and 1920s — require full tear-off per Illinois code, adding $1,000 to $1,500. Free estimates from all six listed contractors.' },
     { q: 'My Back of the Yards bungalow is from the 1920s with original sheathing. What issues should I expect?', a: 'Back of the Yards bungalows from the 1920s typically have two existing shingle layers (original plus a 1990s re-roof) and original board sheathing that is now 90 to 100 years old. Expect full tear-off of both layers ($1,000 to $1,500), inspection of the original board sheathing for rot and soft spots, and replacement of deteriorated boards at $80 to $120 per sheet. On 100-year-old homes, it is common to need to replace 15 to 25 percent of the decking. Your contractor documents all findings during the free assessment and includes board replacement in the written estimate.' },
-    { q: 'Are there any assistance programs for Back of the Yards homeowners who need roof replacement?', a: 'Yes. Back of the Yards homeowners may qualify for several programs. The Illinois Housing Development Authority (IHDA) offers up to $40,000 in home repair assistance for income-qualified homeowners. The federal Section 504 Home Repair program provides 1% fixed-rate loans and grants for homeowners over 62 who meet income limits. The City of Chicago\'s Community Development Block Grant program funds emergency home repairs including roofing for income-qualified residents. Call the Chicago Department of Housing at 312-744-5000 or dial 311 to identify programs you qualify for before financing a replacement out of pocket.' },
+    { q: 'Are there any assistance programs for Back of the Yards homeowners who need roof replacement?', a: 'Yes. Back of the Yards homeowners may qualify for several programs. The Illinois Housing Development Authority (IHDA) offers up to $50,000 in home repair assistance for income-qualified homeowners. The federal Section 504 Home Repair program provides 1% fixed-rate loans and grants for homeowners over 62 who meet income limits. The City of Chicago\'s Community Development Block Grant program funds emergency home repairs including roofing for income-qualified residents. Call the Chicago Department of Housing at 312-744-5000 or dial 311 to identify programs you qualify for before financing a replacement out of pocket.' },
     { q: 'How do I verify a roofing contractor is licensed before hiring them in Back of the Yards?', a: 'Verify any contractor\'s Illinois IDFPR roofing license at idfpr.com before signing a contract. Enter the company name or license number and confirm the license is active — not expired or suspended. Also require proof of General Liability insurance (minimum $250,000) and Workers Compensation coverage before work begins. Back of the Yards has seen unlicensed contractors work without permits, use inferior materials, and become unreachable when problems arise. All six contractors on our list are pre-verified for active IDFPR licenses, insurance, and Google ratings.' },
     { q: 'Is a permit required for roof replacement in Back of the Yards?', a: 'Yes. Chicago requires a building permit for all full roof replacements in Back of the Yards. All listed contractors pull this permit as part of every project at no extra charge. The permit is required even for simple bungalow shingle replacements. Working with an unlicensed contractor who skips the permit creates code violations that surface during property sales and can void homeowner insurance coverage for workmanship claims.' },
   ],
@@ -943,9 +1225,17 @@ export const neighborhoods: Neighborhood[] = [
     { q: '¿Hay contratistas de habla hispana que sirven Back of the Yards?', a: 'Sí. Varios contratistas de nuestra lista tienen personal de habla hispana y pueden manejar todo el proyecto en español. Back of the Yards tiene una gran comunidad latina y el servicio bilingüe es consistentemente solicitado aquí.' },
     { q: '¿Cuánto cuesta el reemplazo de techo en Back of the Yards en 2026?', a: 'El reemplazo completo de tejas en un bungalow típico cuesta entre $7,500 y $13,000. El reemplazo de techo plano en un two-flat cuesta entre $8,000 y $14,000. Los bungalows con dos capas existentes requieren demolición completa.' },
     { q: 'Mi bungalow en Back of the Yards es de los años 20 con entablado original. ¿Qué problemas debo esperar?', a: 'Los bungalows de los años 20 típicamente tienen dos capas de tejas y entablado original de 90 a 100 años. Espere demolición completa, inspección del entablado y reemplazo de tablones deteriorados a $80 a $120 por tablón.' },
-    { q: '¿Hay programas de asistencia para propietarios de Back of the Yards que necesitan reemplazo de techo?', a: 'Sí. La IHDA de Illinois ofrece hasta $40,000 en asistencia para reparación. El programa federal Section 504 ofrece préstamos al 1% de tasa fija. Llame al 312-744-5000 o marque 311 para identificar programas disponibles.' },
+    { q: '¿Hay programas de asistencia para propietarios de Back of the Yards que necesitan reemplazo de techo?', a: 'Sí. La IHDA de Illinois ofrece hasta $50,000 en asistencia para reparación. El programa federal Section 504 ofrece préstamos al 1% de tasa fija. Llame al 312-744-5000 o marque 311 para identificar programas disponibles.' },
     { q: '¿Cómo verifico que un contratista tiene licencia antes de contratarlo en Back of the Yards?', a: 'Verifique la licencia IDFPR de Illinois en idfpr.com antes de firmar. Confirme el seguro de Responsabilidad Civil General y de Compensación de Trabajadores. Todos los contratistas de nuestra lista están preseleccionados.' },
     { q: '¿Se requiere permiso para el reemplazo de techo en Back of the Yards?', a: 'Sí. Chicago requiere un permiso para todos los reemplazos de techo en Back of the Yards. Todos los contratistas sacan este permiso sin costo adicional.' },
+  ],
+  neighbors: [
+    { name: 'Little Village', slug: 'little-village' },
+    { name: 'Bridgeport', slug: 'bridgeport' },
+  ],
+  relatedArticles: [
+    { title: 'How to Save Money on Roof Replacement in Chicago', slug: 'save-money-chicago' },
+    { title: 'What to Do After Storm Damage to Your Roof in Chicago', slug: 'after-storm-damage' },
   ],
 },
   {
@@ -973,6 +1263,14 @@ export const neighborhoods: Neighborhood[] = [
     { q: '¿Estos contratistas ayudan con reclamos de seguro por daños de tormenta en Bronzeville?', a: 'Sí. Todos los contratistas pueden documentar daños y estar presentes durante la inspección del ajustador. Fotografíe todos los daños dentro de las 48 horas.' },
     { q: '¿Se requiere permiso para el reemplazo de techo en Bronzeville?', a: 'Sí. Chicago requiere un permiso para todos los reemplazos de techo en Bronzeville. Todos los contratistas sacan este permiso sin costo adicional.' },
   ],
+  neighbors: [
+    { name: 'Hyde Park', slug: 'hyde-park' },
+    { name: 'South Shore', slug: 'south-shore' },
+  ],
+  relatedArticles: [
+    { title: 'Signs Your Roof Needs Replacement in Chicago', slug: 'signs-your-roof' },
+    { title: 'Best Roofing Materials for Chicago', slug: 'best-roofing-materials-chicago' },
+  ],
 },
   {
   slug: 'chatham',
@@ -985,9 +1283,9 @@ export const neighborhoods: Neighborhood[] = [
   areaTextEs: 'Chatham (ZIP 60619, 60620) es un estable barrio del sur con una fuerte tradición de propiedad de vivienda, con bungalows y two-flats de ladrillo construidos entre los años 1920 y 1950. Muchos propietarios son residentes a largo plazo. Los costos de reemplazo oscilan entre $8,000 y $14,000.',
   faq: [
     { q: 'How much does roof replacement cost in Chatham in 2026?', a: 'Full asphalt shingle replacement on a typical Chatham bungalow or brick single-family home runs $8,000 to $14,000. Two-flat flat roof replacement costs $8,000 to $14,000 for a TPO or EPDM system. Larger brick homes on Chatham\'s wider lots run toward the higher end. Most Chatham bungalow replacements are completed in one day. Free estimates from all six listed contractors.' },
-    { q: 'What roofing materials are recommended for Chatham brick bungalows?', a: 'Architectural asphalt shingles with a 30-year manufacturer warranty and 130 mph wind rating are the standard recommendation for Chatham bungalows. For long-term owners — common in Chatham where families stay for decades — Class 4 impact-resistant shingles are worth considering. They cost 10 to 15 percent more but qualify for 20 to 30 percent insurance premium discounts from Illinois insurers and provide better protection against Chicago\'s 40+ annual hail days. Metal roofing is also a sound choice for Chatham homeowners who plan multigenerational ownership.' },
+    { q: 'What roofing materials are recommended for Chatham brick bungalows?', a: 'Architectural asphalt shingles with a 30-year manufacturer warranty and 130 mph wind rating are the standard recommendation for Chatham bungalows. For long-term owners — common in Chatham where families stay for decades — Class 4 impact-resistant shingles are worth considering. They cost 10 to 15 percent more but qualify for 20 to 30 percent insurance premium discounts from Illinois insurers and provide better protection against Chicago\'s active storm season brings frequent hail events. Metal roofing is also a sound choice for Chatham homeowners who plan multigenerational ownership.' },
     { q: 'When should a Chatham homeowner replace vs repair a roof?', a: 'Replace rather than repair when: the roof is 20 or more years old (most Chatham homes with 1990s roofs are there now), repair estimates exceed 25 to 30 percent of full replacement cost, you have had two or more repairs in the past five years, or you see consistent granule deposits in gutters after rain. A free professional inspection from any listed contractor takes 30 minutes and gives you a definitive recommendation — most Chatham homeowners prefer to plan the replacement before a leak forces an emergency call.' },
-    { q: 'Do Chatham contractors help with insurance claims after storm damage?', a: 'Yes. All contractors on our list can document hail and wind damage for insurance claims and be present during your adjuster\'s inspection. South Side neighborhoods including Chatham are regularly in the path of summer hailstorms tracking northeast from southern Illinois. Document all damage within 48 hours of any significant storm event — photograph gutters specifically for granule deposits, which insurers use to confirm hail impact on asphalt shingles. Illinois insurers must respond to filed claims within 10 business days.' },
+    { q: 'Do Chatham contractors help with insurance claims after storm damage?', a: 'Yes. All contractors on our list can document hail and wind damage for insurance claims and be present during your adjuster\'s inspection. South Side neighborhoods including Chatham are regularly in the path of summer hailstorms tracking northeast from southern Illinois. Document all damage within 48 hours of any significant storm event — photograph gutters specifically for granule deposits, which insurers use to confirm hail impact on asphalt shingles. Illinois insurers must respond to filed claims as required by Illinois law.' },
     { q: 'Do these contractors serve the 79th Street and 87th Street corridors of Chatham?', a: 'Yes. All six contractors on our list serve the full Chatham neighborhood including properties along the 79th Street commercial corridor, the 87th Street area, and all residential streets between Cottage Grove and the Dan Ryan. Confirm exact service area when you call for your free estimate — all listed contractors cover Chatham itself and surrounding South Side neighborhoods.' },
     { q: 'Is a permit required for roof replacement in Chatham?', a: 'Yes. The City of Chicago requires a building permit for all full roof replacements in Chatham. All listed contractors pull this permit as part of every project at no extra charge. The permit includes a city inspection after completion. Working without a permit creates code violations that surface during property sales — particularly relevant in Chatham\'s active homeowner community where properties frequently pass between generations.' },
   ],
@@ -998,6 +1296,14 @@ export const neighborhoods: Neighborhood[] = [
     { q: '¿Los contratistas de Chatham ayudan con reclamos de seguro después de daños de tormenta?', a: 'Sí. Todos los contratistas pueden documentar daños de granizo y viento para reclamos de seguro. Documente todos los daños dentro de las 48 horas de cualquier tormenta significativa, fotografiando específicamente las canaletas en busca de depósitos de gránulos.' },
     { q: '¿Estos contratistas sirven los corredores de las calles 79 y 87 de Chatham?', a: 'Sí. Los seis contratistas sirven el barrio completo de Chatham incluyendo propiedades a lo largo del corredor comercial de la Calle 79, el área de la Calle 87 y todas las calles residenciales entre Cottage Grove y el Dan Ryan.' },
     { q: '¿Se requiere permiso para el reemplazo de techo en Chatham?', a: 'Sí. Chicago requiere un permiso de construcción para todos los reemplazos de techo en Chatham. Todos los contratistas sacan este permiso sin costo adicional.' },
+  ],
+  neighbors: [
+    { name: 'Bronzeville', slug: 'bronzeville' },
+    { name: 'South Shore', slug: 'south-shore' },
+  ],
+  relatedArticles: [
+    { title: 'What to Do After Storm Damage to Your Roof in Chicago', slug: 'after-storm-damage' },
+    { title: 'Signs Your Roof Needs Replacement in Chicago', slug: 'signs-your-roof' },
   ],
 },
   {
@@ -1025,6 +1331,14 @@ export const neighborhoods: Neighborhood[] = [
     { q: '¿El seguro cubrirá mi techo de South Shore después de una tormenta?', a: 'Sí, si el daño fue causado por un evento cubierto. Documente los daños dentro de las 48 horas con fotos y obtenga una evaluación escrita antes de contactar a su aseguradora.' },
     { q: '¿Se requiere permiso para el reemplazo de techo en South Shore?', a: 'Sí. Chicago requiere un permiso para todos los reemplazos de techo en South Shore. Todos los contratistas sacan este permiso sin costo adicional.' },
   ],
+  neighbors: [
+    { name: 'Hyde Park', slug: 'hyde-park' },
+    { name: 'Chatham', slug: 'chatham' },
+  ],
+  relatedArticles: [
+    { title: 'What to Do After Storm Damage to Your Roof in Chicago', slug: 'after-storm-damage' },
+    { title: 'Best Roofing Materials for Chicago', slug: 'best-roofing-materials-chicago' },
+  ],
 },
   {
   slug: 'englewood',
@@ -1037,7 +1351,7 @@ export const neighborhoods: Neighborhood[] = [
   areaTextEs: 'Englewood (ZIP 60621, 60636) es un barrio del sur con un gran stock de bungalows, two-flats y casas unifamiliares más antiguas construidas entre los años 1910 y 1940. El barrio ha sido designado como objetivo de INVEST South/West. Los costos de reemplazo oscilan entre $7,500 y $13,000.',
   faq: [
     { q: 'How much does roof replacement cost in Englewood in 2026?', a: 'Full asphalt shingle replacement on a typical Englewood bungalow or two-flat runs $7,500 to $13,000. Flat roof replacement on a two-flat costs $8,000 to $14,000 for a TPO system. Englewood\'s labor market runs slightly below the city average, making replacement costs here among the more affordable in Chicago for comparable work. Free on-site estimates from all six listed contractors — all provide written, itemized estimates with no obligation.' },
-    { q: 'Are there financial assistance programs for Englewood homeowners who need roof replacement?', a: 'Yes, several programs that many homeowners overlook. The Illinois Housing Development Authority (IHDA) offers up to $40,000 in home repair assistance for income-qualified homeowners. The federal Section 504 Home Repair program provides 1% fixed-rate loans up to $40,000 and outright grants up to $10,000 for homeowners over 62 who meet income limits. The City of Chicago\'s INVEST South/West initiative has directed community development resources to Englewood. Call the Chicago Department of Housing at 312-744-5000 or dial 311 to identify all programs you qualify for before financing a replacement out of pocket.' },
+    { q: 'Are there financial assistance programs for Englewood homeowners who need roof replacement?', a: 'Yes, several programs that many homeowners overlook. The Illinois Housing Development Authority (IHDA) offers up to $50,000 in home repair assistance for income-qualified homeowners. The federal Section 504 Home Repair program provides 1% fixed-rate loans up to $40,000 and outright grants up to $10,000 for homeowners over 62 who meet income limits. The City of Chicago\'s INVEST South/West initiative has directed community development resources to Englewood. Call the Chicago Department of Housing at 312-744-5000 or dial 311 to identify all programs you qualify for before financing a replacement out of pocket.' },
     { q: 'How do I verify a roofing contractor is licensed before hiring them in Englewood?', a: 'Verify any contractor\'s Illinois IDFPR roofing license at idfpr.com before signing anything. Enter the company name or license number and confirm the license is active. Also require proof of General Liability insurance of at least $250,000 and Workers Compensation coverage before work begins. All six contractors on our list are pre-verified for active IDFPR licenses, insurance, and minimum 4.5-star Google ratings. Never hire a contractor who cannot provide a verifiable Illinois license number.' },
     { q: 'Do Englewood contractors pull City of Chicago building permits?', a: 'Yes. All listed contractors pull the required City of Chicago building permit for every full roof replacement in Englewood. The permit is included in the contract at no extra charge. The permit is required regardless of project size — even simple bungalow shingle replacements require a permit. Working without a permit creates code violations and can void homeowner insurance coverage. Always confirm permit status before work begins.' },
     { q: 'What signs tell me my Englewood bungalow roof needs immediate replacement?', a: 'Call immediately if you see: active water entry during rain, daylight visible through attic boards, large sections of missing shingles after a storm, or any visible sagging in the roof surface. These conditions worsen with each rain event. For less urgent but still significant warning signs: granule deposits in gutters after rain, interior ceiling stains appearing in early spring, shingles visibly curling or cracking, or a roof over 20 years old. A free professional inspection from any listed contractor will give you a definitive recommendation.' },
@@ -1045,11 +1359,19 @@ export const neighborhoods: Neighborhood[] = [
   ],
   faqEs: [
     { q: '¿Cuánto cuesta el reemplazo de techo en Englewood en 2026?', a: 'El reemplazo completo de tejas en un bungalow o two-flat típico de Englewood cuesta entre $7,500 y $13,000. El reemplazo de techo plano en un two-flat cuesta entre $8,000 y $14,000. Los costos de Englewood están entre los más asequibles de Chicago.' },
-    { q: '¿Hay programas de asistencia financiera para propietarios de Englewood que necesitan reemplazo de techo?', a: 'Sí. La IHDA ofrece hasta $40,000 en asistencia para propietarios con ingresos calificados. El programa federal Section 504 proporciona préstamos al 1% de tasa fija y subsidios de hasta $10,000 para mayores de 62 años. La iniciativa INVEST South/West ha dirigido recursos a Englewood. Llame al 312-744-5000 o marque 311.' },
+    { q: '¿Hay programas de asistencia financiera para propietarios de Englewood que necesitan reemplazo de techo?', a: 'Sí. La IHDA ofrece hasta $50,000 en asistencia para propietarios con ingresos calificados. El programa federal Section 504 proporciona préstamos al 1% de tasa fija y subsidios de hasta $10,000 para mayores de 62 años. La iniciativa INVEST South/West ha dirigido recursos a Englewood. Llame al 312-744-5000 o marque 311.' },
     { q: '¿Cómo verifico que un contratista tiene licencia antes de contratarlo en Englewood?', a: 'Verifique la licencia IDFPR de Illinois en idfpr.com antes de firmar. Todos los contratistas de nuestra lista están preseleccionados para licencias activas, seguro y calificaciones de Google. Nunca contrate a un contratista que no pueda proporcionar un número de licencia verificable.' },
     { q: '¿Los contratistas de Englewood sacan permisos de construcción de la Ciudad de Chicago?', a: 'Sí. Todos los contratistas sacan el permiso requerido para cada reemplazo en Englewood. El permiso está incluido sin costo adicional. Trabajar sin permiso crea violaciones del código y puede anular la cobertura del seguro de propietario.' },
     { q: '¿Qué señales me indican que el techo de mi bungalow en Englewood necesita reemplazo inmediato?', a: 'Llame de inmediato si ve: entrada activa de agua durante la lluvia, luz del día visible a través de los tablones del ático, grandes secciones de tejas faltantes después de una tormenta o hundimiento visible en la superficie del techo.' },
     { q: '¿Se requiere permiso para el reemplazo de techo en Englewood?', a: 'Sí. Chicago requiere un permiso para todos los reemplazos de techo en Englewood. Todos los contratistas sacan este permiso sin costo adicional.' },
+  ],
+  neighbors: [
+    { name: 'Back of the Yards', slug: 'back-of-the-yards' },
+    { name: 'Chatham', slug: 'chatham' },
+  ],
+  relatedArticles: [
+    { title: 'How to Save Money on Roof Replacement in Chicago', slug: 'save-money-chicago' },
+    { title: 'How to Choose a Roof Replacement Contractor in Chicago', slug: 'how-to-choose' },
   ],
 },
   {
@@ -1063,19 +1385,27 @@ export const neighborhoods: Neighborhood[] = [
   areaTextEs: 'Roseland (ZIP 60628) es un barrio del extremo sur con una larga historia como comunidad propietaria, con bungalows de ladrillo y two-flats construidos entre los años 1920 y 1950. Roseland es parte de la iniciativa INVEST South/West de Chicago. Los costos de reemplazo oscilan entre $7,500 y $13,000.',
   faq: [
     { q: 'How much does roof replacement cost in Roseland in 2026?', a: 'Full asphalt shingle replacement on a typical Roseland bungalow or brick single-family home runs $7,500 to $13,000. Two-flat flat roof replacement costs $8,000 to $14,000 for a TPO or EPDM system. Larger brick homes on Roseland\'s wider lots run toward the higher end. Most bungalow replacements are completed in one day. Free estimates from all six listed contractors.' },
-    { q: 'Are there financial assistance programs for Roseland homeowners who need roof replacement?', a: 'Yes. Roseland homeowners may qualify for several programs. The Illinois Housing Development Authority (IHDA) offers up to $40,000 in home repair assistance for income-qualified homeowners. The federal Section 504 Home Repair program provides 1% fixed-rate loans and grants for homeowners over 62 who meet income limits. The City of Chicago\'s INVEST South/West initiative and the Community Development Block Grant program also provide resources to Roseland residents. Call 311 or the Chicago Department of Housing at 312-744-5000 to identify programs you qualify for before financing a replacement out of pocket.' },
+    { q: 'Are there financial assistance programs for Roseland homeowners who need roof replacement?', a: 'Yes. Roseland homeowners may qualify for several programs. The Illinois Housing Development Authority (IHDA) offers up to $50,000 in home repair assistance for income-qualified homeowners. The federal Section 504 Home Repair program provides 1% fixed-rate loans and grants for homeowners over 62 who meet income limits. The City of Chicago\'s INVEST South/West initiative and the Community Development Block Grant program also provide resources to Roseland residents. Call 311 or the Chicago Department of Housing at 312-744-5000 to identify programs you qualify for before financing a replacement out of pocket.' },
     { q: 'My Roseland home has a 1990s roof that has been patched multiple times. What are my options?', a: 'A 1990s roof in Roseland that has required multiple patches is clearly at end of life and full replacement is almost certainly the correct financial decision. The cumulative cost of continued patches on an aging shingle system typically exceeds the cost of full replacement within three to five years — without any of the benefits of a new roof (warranty, reduced insurance risk, improved curb appeal). Request a free inspection and written estimate from a listed contractor, and ask your insurer whether any existing storm damage from prior hail events could contribute to coverage.' },
-    { q: 'Do Roseland contractors help with insurance claims after storm damage?', a: 'Yes. All contractors on our list can document storm damage for insurance claims and be present during your adjuster\'s inspection. Roseland\'s Far South Side location puts it in the path of summer hailstorms that track northeast across the Chicago metropolitan area. Document all damage within 48 hours of any significant storm event, photograph gutters for granule deposits, and get a written contractor assessment before contacting your insurer. Illinois insurers must respond to filed claims within 10 business days.' },
+    { q: 'Do Roseland contractors help with insurance claims after storm damage?', a: 'Yes. All contractors on our list can document storm damage for insurance claims and be present during your adjuster\'s inspection. Roseland\'s Far South Side location puts it in the path of summer hailstorms that track northeast across the Chicago metropolitan area. Document all damage within 48 hours of any significant storm event, photograph gutters for granule deposits, and get a written contractor assessment before contacting your insurer. Illinois insurers must respond to filed claims as required by Illinois law.' },
     { q: 'What roofing materials are recommended for Roseland brick bungalows?', a: 'Architectural asphalt shingles with a 30-year manufacturer warranty are the standard recommendation for Roseland brick bungalows — proven performers in Chicago\'s climate and available from all listed contractors. For Roseland homeowners planning to stay long term, Class 4 impact-resistant shingles are worth the 10 to 15 percent premium given the 20 to 30 percent insurance discount many Illinois insurers offer. Metal roofing is also worth considering for multigenerational ownership — 40 to 70 year lifespan versus asphalt\'s 20 to 25 years in Chicago.' },
     { q: 'Is a permit required for roof replacement in Roseland?', a: 'Yes. Chicago requires a building permit for all full roof replacements in Roseland. All listed contractors pull this permit as part of every project at no extra charge. The permit includes a city inspection after completion. Working without a permit creates code violations that surface during property sales and can complicate insurance claims — particularly relevant in Roseland where many properties pass between family members and require clear title.' },
   ],
   faqEs: [
     { q: '¿Cuánto cuesta el reemplazo de techo en Roseland en 2026?', a: 'El reemplazo completo de tejas en un bungalow o casa unifamiliar de ladrillo típica de Roseland cuesta entre $7,500 y $13,000. El reemplazo de techo plano en un two-flat cuesta entre $8,000 y $14,000.' },
-    { q: '¿Hay programas de asistencia financiera para propietarios de Roseland que necesitan reemplazo de techo?', a: 'Sí. La IHDA ofrece hasta $40,000 en asistencia para propietarios con ingresos calificados. El programa federal Section 504 ofrece préstamos al 1% y subsidios para mayores de 62 años. La iniciativa INVEST South/West y el programa CDBG también proporcionan recursos. Llame al 311 o al 312-744-5000.' },
+    { q: '¿Hay programas de asistencia financiera para propietarios de Roseland que necesitan reemplazo de techo?', a: 'Sí. La IHDA ofrece hasta $50,000 en asistencia para propietarios con ingresos calificados. El programa federal Section 504 ofrece préstamos al 1% y subsidios para mayores de 62 años. La iniciativa INVEST South/West y el programa CDBG también proporcionan recursos. Llame al 311 o al 312-744-5000.' },
     { q: 'Mi casa en Roseland tiene un techo de los años 90 que ha sido parcheado múltiples veces. ¿Cuáles son mis opciones?', a: 'Un techo de los años 90 con múltiples parches claramente está al final de su vida útil. El costo acumulado de los parches continuos típicamente supera el costo del reemplazo completo en tres a cinco años — sin ninguno de los beneficios de un techo nuevo.' },
     { q: '¿Los contratistas de Roseland ayudan con reclamos de seguro después de daños de tormenta?', a: 'Sí. Todos los contratistas pueden documentar daños de tormenta y estar presentes durante la inspección del ajustador. Documente los daños dentro de las 48 horas con fotos, específicamente fotografiando las canaletas.' },
     { q: '¿Qué materiales de techado se recomiendan para bungalows de ladrillo en Roseland?', a: 'Las tejas de asfalto arquitectónicas con garantía de 30 años son el estándar recomendado. Las tejas de impacto Clase 4 valen el 10 a 15 por ciento adicional dado el descuento de seguro del 20 al 30 por ciento que ofrecen muchos aseguradores de Illinois.' },
     { q: '¿Se requiere permiso para el reemplazo de techo en Roseland?', a: 'Sí. Chicago requiere un permiso para todos los reemplazos de techo en Roseland. Todos los contratistas sacan este permiso sin costo adicional.' },
+  ],
+  neighbors: [
+    { name: 'Chatham', slug: 'chatham' },
+    { name: 'Englewood', slug: 'englewood' },
+  ],
+  relatedArticles: [
+    { title: 'How to Save Money on Roof Replacement in Chicago', slug: 'save-money-chicago' },
+    { title: 'What to Do After Storm Damage to Your Roof in Chicago', slug: 'after-storm-damage' },
   ],
 },
   {
@@ -1103,6 +1433,14 @@ export const neighborhoods: Neighborhood[] = [
     { q: '¿Se requiere permiso para el reemplazo de techo en Chinatown?', a: 'Sí. Chicago requiere un permiso para todos los reemplazos de techo en Chinatown incluyendo edificios comerciales y de uso mixto. Todos los contratistas sacan este permiso sin costo adicional.' },
     { q: '¿Los contratistas de Chinatown ayudan con reclamos de seguro después de daños de tormenta?', a: 'Sí. Todos los contratistas pueden documentar daños de tormenta y estar presentes durante la inspección del ajustador. Documente todos los daños dentro de las 48 horas con fotos.' },
   ],
+  neighbors: [
+    { name: 'Bridgeport', slug: 'bridgeport' },
+    { name: 'Pilsen', slug: 'pilsen' },
+  ],
+  relatedArticles: [
+    { title: 'Roof Repair or Full Replacement After Storm Damage in Chicago?', slug: 'repair-vs-replace' },
+    { title: 'Signs Your Roof Needs Replacement in Chicago', slug: 'signs-your-roof' },
+  ],
 },
   {
   slug: 'wrigleyville',
@@ -1128,6 +1466,14 @@ export const neighborhoods: Neighborhood[] = [
     { q: '¿Los contratistas de Wrigleyville trabajan en greystones cerca del Wrigley Field?', a: 'Sí. Todos los contratistas tienen experiencia con greystones y two-flats vintage en Sheffield, Kenmore y Clifton cerca del Wrigley Field.' },
     { q: '¿Estar cerca del Wrigley Field causa desafíos especiales de techado?', a: 'Más allá de las terrazas en edificios frente al estadio, no. Los requisitos estándar de Chicago aplican. La coordinación de acceso en días de juego es manejada por los contratistas locales.' },
     { q: '¿Se requiere permiso para el reemplazo de techo en Wrigleyville?', a: 'Sí. Chicago requiere un permiso para todos los reemplazos de techo en Wrigleyville. Todos los contratistas sacan este permiso sin costo adicional.' },
+  ],
+  neighbors: [
+    { name: 'Lakeview', slug: 'lakeview' },
+    { name: 'Boystown', slug: 'boystown' },
+  ],
+  relatedArticles: [
+    { title: 'What to Do After Storm Damage to Your Roof in Chicago', slug: 'after-storm-damage' },
+    { title: 'Roof Repair or Full Replacement After Storm Damage in Chicago?', slug: 'repair-vs-replace' },
   ],
 },
   {
@@ -1155,6 +1501,14 @@ export const neighborhoods: Neighborhood[] = [
     { q: '¿El seguro cubrirá daños de tormenta en mi techo de Boystown?', a: 'Sí, para daños por granizo, viento o escombros. Documente los daños dentro de las 48 horas y obtenga una evaluación escrita antes de contactar a su aseguradora.' },
     { q: '¿Se requiere permiso para el reemplazo de techo en Boystown?', a: 'Sí. Chicago requiere un permiso para todos los reemplazos de techo en Boystown. Todos los contratistas sacan este permiso sin costo adicional.' },
   ],
+  neighbors: [
+    { name: 'Wrigleyville', slug: 'wrigleyville' },
+    { name: 'Roscoe Village', slug: 'roscoe-village' },
+  ],
+  relatedArticles: [
+    { title: 'Signs Your Roof Needs Replacement in Chicago', slug: 'signs-your-roof' },
+    { title: 'Roof Repair or Full Replacement After Storm Damage in Chicago?', slug: 'repair-vs-replace' },
+  ],
 },
   {
   slug: 'roscoe-village',
@@ -1180,6 +1534,14 @@ export const neighborhoods: Neighborhood[] = [
     { q: '¿Cuándo es el momento correcto para reemplazar el techo de un bungalow en Roscoe Village?', a: 'El momento correcto es cuando el techo tiene 20 o más años, aparecen depósitos de gránulos en las canaletas, hay manchas en el techo interior en primavera, o ha tenido dos o más reparaciones en cinco años.' },
     { q: '¿Qué materiales de techado son populares entre los propietarios de Roscoe Village?', a: 'Las tejas de asfalto arquitectónicas con resistencia al impacto Clase 4 son la opción más popular en Roscoe Village. El techado metálico es cada vez más elegido por propietarios que planean quedarse a largo plazo.' },
     { q: '¿Se requiere permiso para el reemplazo de techo en Roscoe Village?', a: 'Sí. Chicago requiere un permiso de construcción para todos los reemplazos de techo en Roscoe Village. Todos los contratistas sacan este permiso sin costo adicional.' },
+  ],
+  neighbors: [
+    { name: 'Lakeview', slug: 'lakeview' },
+    { name: 'Boystown', slug: 'boystown' },
+  ],
+  relatedArticles: [
+    { title: 'Average Cost of Roof Replacement in Chicago in 2026', slug: 'average-cost' },
+    { title: 'Signs Your Roof Needs Replacement in Chicago', slug: 'signs-your-roof' },
   ],
 },
 ]
