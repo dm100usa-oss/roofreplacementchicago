@@ -42,13 +42,16 @@ export default function LangNeighborhoodPage({ params }: Props) {
           </div>
           <h1 className={styles.h1}>{isEs ? `Reemplazo de Techo en ${n.name} Chicago` : n.title}</h1>
           <p className={styles.intro}>{isEs ? n.introEs : n.intro}</p>
+
           <div className={styles.callBlock}>
             <p>{isEs ? `Hable con un asesor sobre su proyecto en ${n.name}. Gratis, sin obligación.` : `Speak with a roofing advisor about your ${n.name} project. Free, no obligation.`}</p>
             <a href={`tel:${MAIN_PHONE}`} className={styles.btnCall}>
-              {isEs ? 'LLAMAR AHORA' : 'CALL NOW'}{'     '}{MAIN_PHONE_DISPLAY}
+              {isEs ? 'LLAMAR AHORA' : 'CALL NOW'}{'     '}{MAIN_PHONE_DISPLAY}
             </a>
           </div>
+
           <div className={styles.areaText}>{isEs ? n.areaTextEs : n.areaText}</div>
+
           <div className={styles.companiesSection}>
             <div className={styles.companiesLabel}>
               {isEs ? `6 contratistas verificados en ${n.name}` : `6 verified contractors serving ${n.name}`}
@@ -57,6 +60,7 @@ export default function LangNeighborhoodPage({ params }: Props) {
               <CompanyCard key={company.id} company={company} isFirst={i === 0} lang={lang} />
             ))}
           </div>
+
           {n.faq.length > 0 && (
             <div className={styles.faqSection}>
               <h2 className={styles.faqTitle}>
@@ -70,6 +74,31 @@ export default function LangNeighborhoodPage({ params }: Props) {
               ))}
             </div>
           )}
+
+          {n.neighbors && n.neighbors.length > 0 && (
+            <p className={styles.neighborLinks}>
+              {isEs ? 'Nuestros contratistas también sirven ' : 'Contractors on our list also serve nearby '}
+              {n.neighbors.map((nb, i) => (
+                <span key={nb.slug}>
+                  <a href={`${isEs ? '/es' : ''}/neighborhoods/${nb.slug}`}>{nb.name}</a>
+                  {i < n.neighbors.length - 1 ? (isEs ? ' y ' : ' and ') : ''}
+                </span>
+              ))}.
+            </p>
+          )}
+
+          {n.relatedArticles && n.relatedArticles.length > 0 && (
+            <p className={styles.articleLinks}>
+              {isEs ? 'Ver también: ' : 'See also: '}
+              {n.relatedArticles.map((a, i) => (
+                <span key={a.slug}>
+                  <a href={`${isEs ? '/es' : ''}/articles/${a.slug}`}>{a.title}</a>
+                  {i < n.relatedArticles.length - 1 ? ' · ' : ''}
+                </span>
+              ))}
+            </p>
+          )}
+
         </div>
       </div>
       <InternalLinks type="neighborhood" lang={lang} />
