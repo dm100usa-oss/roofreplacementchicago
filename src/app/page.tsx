@@ -96,11 +96,11 @@ export default function HomePage() {
           <div className={styles.heroContent}>
             <div className={styles.heroTextCol}>
               <div className={styles.heroLeft}>
-                <h1>Expert answers and verified contractors</h1>
-                <p className={styles.heroSubtitle}>that will help you get the best price on your new roof in Chicago without sacrificing quality</p>
+                <h1>Expert answers and verified contractors in Chicago</h1>
+                <p className={styles.heroSubtitle}>To help you get the best price on your roof without sacrificing quality</p>
               </div>
               <div className={styles.heroRight}>
-                <p className={styles.heroBody}>Start with a free expert consultation. Compare your options and take your time to make a confident, well-informed decision</p>
+                <p className={styles.heroBody}>Start with a free consultation. Compare your options and make your decision at your own pace</p>
                 <a href={`tel:${MAIN_PHONE}`} className={styles.btnCall}>
                   CALL NOW{'     '}{MAIN_PHONE_DISPLAY}
                 </a>
