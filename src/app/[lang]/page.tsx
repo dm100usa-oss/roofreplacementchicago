@@ -90,11 +90,11 @@ export default function LangHomePage({ params }: Props) {
           <div className={styles.heroContent}>
             <div className={styles.heroTextCol}>
               <div className={styles.heroLeft}>
-                <h1>Respuestas de expertos y contratistas verificados</h1>
-                <p className={styles.heroSubtitle}>que le ayudarán a obtener el mejor precio en Chicago sin sacrificar la calidad</p>
+                <h1>Respuestas de expertos y contratistas verificados en Chicago</h1>
+                <p className={styles.heroSubtitle}>Para obtener el mejor precio en su techo sin perder calidad</p>
               </div>
               <div className={styles.heroRight}>
-                <p className={styles.heroBody}>Comience con una consulta gratuita de expertos. Compare sus opciones y tómese el tiempo necesario para tomar una decisión segura y bien informada</p>
+                <p className={styles.heroBody}>Comience con una consulta gratuita. Compare sus opciones y tome su decisión con calma</p>
                 <a href={`tel:${MAIN_PHONE}`} className={styles.btnCall}>
                   LLAMAR AHORA{'     '}{MAIN_PHONE_DISPLAY}
                 </a>
