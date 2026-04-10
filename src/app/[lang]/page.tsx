@@ -91,7 +91,7 @@ export default function LangHomePage({ params }: Props) {
             <div className={styles.heroTextCol}>
               <div className={styles.heroLeft}>
                 <h1>Respuestas de expertos y contratistas verificados</h1>
-                <p className={styles.heroSubtitle}>Obtenga el Mejor Precio para su Nuevo Techo Sin Sacrificar la Calidad</p>
+                <p className={styles.heroSubtitle}>que le ayudarán a obtener el mejor precio en Chicago sin sacrificar la calidad</p>
               </div>
               <div className={styles.heroRight}>
                 <p className={styles.heroBody}>Comience con una consulta gratuita de expertos. Compare sus opciones y tómese el tiempo necesario para tomar una decisión segura y bien informada</p>
