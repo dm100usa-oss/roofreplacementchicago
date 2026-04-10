@@ -36,9 +36,14 @@ export default function Header() {
       <header className={styles.header}>
         <div className={styles.inner}>
           <div className={styles.logoWrap}>
-            <Link href={isEs ? '/es' : '/'} className={styles.logo}>
-              Roof Replacement <span>Chicago</span>
-            </Link>
+            <div>
+              <Link href={isEs ? '/es' : '/'} className={styles.logo}>
+                Roof Replacement <span>Chicago</span>
+              </Link>
+              <div style={{ fontSize: '12px', fontWeight: 400, color: '#9ca3af', marginTop: '4px' }}>
+                {isEs ? 'Orientación experta para propietarios' : 'Expert guidance for homeowners'}
+              </div>
+            </div>
             <Link href={togglePath} className={isEs ? styles.langBtnEng : styles.langBtnEsp}>
               {isEs ? 'ENG' : 'ESP'}
             </Link>
