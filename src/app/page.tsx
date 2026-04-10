@@ -97,7 +97,7 @@ export default function HomePage() {
             <div className={styles.heroTextCol}>
               <div className={styles.heroLeft}>
                 <h1>Expert answers and verified contractors in Chicago</h1>
-                <p className={styles.heroSubtitle}>To get the best price on your roof without losing quality</p>
+                <p className={styles.heroSubtitle}>To get the best price on your roof without sacrificing quality</p>
               </div>
               <div className={styles.heroRight}>
                 <p className={styles.heroBody}>Start with a free consultation. Compare your options and make your decision at your own pace</p>
