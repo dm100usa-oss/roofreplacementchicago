@@ -40,7 +40,7 @@ export default function Header() {
               <Link href={isEs ? '/es' : '/'} className={styles.logo}>
                 Roof Replacement <span>Chicago</span>
               </Link>
-              <div style={{ fontSize: '12px', fontWeight: 400, color: '#9ca3af', marginTop: '4px' }}>
+              <div style={{ fontSize: '13px', fontWeight: 400, color: '#9ca3af', marginTop: '4px' }}>
                 {isEs ? 'Orientación experta para propietarios' : 'Expert guidance for homeowners'}
               </div>
             </div>
