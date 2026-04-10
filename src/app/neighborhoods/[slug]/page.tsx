@@ -65,7 +65,7 @@ export default function NeighborhoodPage({ params }: Props) {
           <div className={styles.callBlock}>
             <p>Speak with a roofing advisor about your {n.name} project. Free, no obligation.</p>
             <a href={`tel:${MAIN_PHONE}`} className={styles.btnCall}>
-              CALL NOW{'     '}{MAIN_PHONE_DISPLAY}
+              CALL NOW{'     '}{MAIN_PHONE_DISPLAY}
             </a>
           </div>
 
@@ -89,6 +89,31 @@ export default function NeighborhoodPage({ params }: Props) {
               ))}
             </div>
           )}
+
+          {n.neighbors && n.neighbors.length > 0 && (
+            <p className={styles.neighborLinks}>
+              Contractors on our list also serve nearby{' '}
+              {n.neighbors.map((nb, i) => (
+                <span key={nb.slug}>
+                  <a href={`/neighborhoods/${nb.slug}`}>{nb.name}</a>
+                  {i < n.neighbors.length - 1 ? ' and ' : ''}
+                </span>
+              ))}.
+            </p>
+          )}
+
+          {n.relatedArticles && n.relatedArticles.length > 0 && (
+            <p className={styles.articleLinks}>
+              See also:{' '}
+              {n.relatedArticles.map((a, i) => (
+                <span key={a.slug}>
+                  <a href={`/articles/${a.slug}`}>{a.title}</a>
+                  {i < n.relatedArticles.length - 1 ? ' · ' : ''}
+                </span>
+              ))}
+            </p>
+          )}
+
         </div>
       </div>
       <InternalLinks type="neighborhood" />
