@@ -54,6 +54,31 @@
 details[open] .faqQ::after { transform: rotate(45deg); }
 .faqA { padding: 0 1rem .875rem; font-size: 13px; color: var(--text-muted); line-height: 1.65; }
 
+.neighborLinks {
+  margin-top: 2rem;
+  font-size: 14px;
+  color: var(--text-muted);
+  line-height: 1.65;
+}
+.neighborLinks a {
+  color: var(--blue);
+  text-decoration: underline;
+}
+.neighborLinks a:hover { text-decoration: none; }
+
+.articleLinks {
+  margin-top: 0.75rem;
+  margin-bottom: 2rem;
+  font-size: 14px;
+  color: var(--text-muted);
+  line-height: 1.65;
+}
+.articleLinks a {
+  color: var(--blue);
+  text-decoration: underline;
+}
+.articleLinks a:hover { text-decoration: none; }
+
 /* ═══ TABLET 768px+ ═══════════════════════════════════ */
 @media (min-width: 768px) {
   .h1 { font-size: 28px; }
@@ -64,6 +89,8 @@ details[open] .faqQ::after { transform: rotate(45deg); }
   .btnCall { margin: 0; flex: 0 0 auto; white-space: nowrap; }
   .faqTitle { font-size: 20px; }
   .faqQ { font-size: 15px; }
+  .neighborLinks { font-size: 15px; }
+  .articleLinks { font-size: 15px; }
 }
 
 /* ═══ DESKTOP 1024px+ ═════════════════════════════════ */
@@ -79,4 +106,6 @@ details[open] .faqQ::after { transform: rotate(45deg); }
   .faqTitle { font-size: 22px; }
   .faqQ { font-size: 15px; padding: 1rem 1.25rem; }
   .faqA { font-size: 14px; padding: 0 1.25rem 1rem; }
+  .neighborLinks { font-size: 15px; }
+  .articleLinks { font-size: 15px; }
 }
