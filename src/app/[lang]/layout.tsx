@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation'
 export const metadata: Metadata = {
   title: 'Reemplazo de Techo Chicago',
   description: 'Recurso experto para el reemplazo de techo en Chicago. Contratistas verificados, precios reales, guía de seguros.',
+  robots: { index: true, follow: true },
 }
 
 export function generateStaticParams() {
