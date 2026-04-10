@@ -90,7 +90,7 @@ export default function LangHomePage({ params }: Props) {
           <div className={styles.heroContent}>
             <div className={styles.heroTextCol}>
               <div className={styles.heroLeft}>
-                <h1>Reemplazo de Techo en Chicago: Respuestas Profesionales y Contratistas Verificados</h1>
+                <h1>Respuestas de expertos y contratistas verificados</h1>
                 <p className={styles.heroSubtitle}>Obtenga el Mejor Precio para su Nuevo Techo Sin Sacrificar la Calidad</p>
               </div>
               <div className={styles.heroRight}>
