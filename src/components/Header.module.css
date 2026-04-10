@@ -62,7 +62,7 @@
 .logo span { color: var(--blue); }
 
 .logoText {
-  text-align: center;
+  text-align: left;
 }
 
 .subtitle {

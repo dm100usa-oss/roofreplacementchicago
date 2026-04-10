@@ -94,7 +94,7 @@ export default function LangHomePage({ params }: Props) {
                 <p className={styles.heroSubtitle}>Para obtener el mejor precio en su techo <span style={{whiteSpace:"nowrap"}}>sin perder calidad</span></p>
               </div>
               <div className={styles.heroRight}>
-                <p className={styles.heroBody}>Comience con una consulta gratuita. Compare sus opciones y tome su decisión con calma</p>
+                <p className={styles.heroBody}>Comience con una consulta gratuita. Compare sus opciones <span style={{whiteSpace:'nowrap'}}>y tome su decisión con calma</span></p>
                 <a href={`tel:${MAIN_PHONE}`} className={styles.btnCall}>
                   LLAMAR AHORA{'     '}{MAIN_PHONE_DISPLAY}
                 </a>

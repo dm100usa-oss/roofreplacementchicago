@@ -100,7 +100,7 @@ export default function HomePage() {
                 <p className={styles.heroSubtitle}>to get the best price on your roof <span style={{whiteSpace:'nowrap'}}>without sacrificing quality</span></p>
               </div>
               <div className={styles.heroRight}>
-                <p className={styles.heroBody}>Start with a free consultation. Compare your options and make your decision at your own pace</p>
+                <p className={styles.heroBody}>Start with a free consultation. Compare your options <span style={{whiteSpace:'nowrap'}}>and make your decision at your own pace</span></p>
                 <a href={`tel:${MAIN_PHONE}`} className={styles.btnCall}>
                   CALL NOW{'     '}{MAIN_PHONE_DISPLAY}
                 </a>

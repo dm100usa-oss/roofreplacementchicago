@@ -199,7 +199,7 @@ details[open] .faqQ::after { transform: rotate(45deg); }
   .heroLeft { text-align: center; }
   .heroBody { text-align: center; }
   .heroLeft h1 { font-size: 24px; }
-  .heroSubtitle { font-size: 17px; }
+  .heroSubtitle { font-size: 19px; }
   .heroBody { font-size: 15px; }
   .heroRight { align-items: center; }
   .btnCall { font-size: 18px; }
@@ -230,7 +230,7 @@ details[open] .faqQ::after { transform: rotate(45deg); }
   .heroTextCol { flex: 1; }
   .heroLeft { text-align: center; max-width: none; }
   .heroLeft h1 { font-size: 34px; text-align: center; }
-  .heroSubtitle { font-size: 20px; }
+  .heroSubtitle { font-size: 22px; }
   .heroBody { font-size: 16px; text-align: center; }
   .heroExtra { font-size: 17px; }
   .heroCallout { font-size: 20px; }
@@ -371,7 +371,7 @@ details[open] .faqQ::after { transform: rotate(45deg); }
 /* в•ђв•ђв•ђ LARGE DESKTOP 1280px+ в•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђ */
 @media (min-width: 1280px) {
   .heroLeft h1 { font-size: 42px; }
-  .heroSubtitle { font-size: 22px; }
+  .heroSubtitle { font-size: 24px; }
   .heroBody { font-size: 17px; }
   .heroImageWrap { max-width: 580px; }
   .btnCallNoteItem { font-size: 15px; }
