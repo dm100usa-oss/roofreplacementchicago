@@ -125,7 +125,35 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* EXPERT SNAPSHOT */}
+      {/* 5 QUESTIONS */}
+      <section className={styles.questions}>
+        <div className={styles.questionsInner}>
+          <h2 className={styles.questionsTitle}>5 questions to ask before you hire</h2>
+          <ol className={styles.questionsList}>
+            <li className={styles.questionsItem}>
+              <p className={styles.questionsQ}>Do all your workers hold an active Illinois IDFPR roofing license?</p>
+              <p className={styles.questionsA}>Preferred answer: Yes — and we can show you our license number right now.</p>
+            </li>
+            <li className={styles.questionsItem}>
+              <p className={styles.questionsQ}>Do you pull the Chicago Building Permit and include the fee in the contract?</p>
+              <p className={styles.questionsA}>Preferred answer: Yes — we handle the permit and it is included in the price.</p>
+            </li>
+            <li className={styles.questionsItem}>
+              <p className={styles.questionsQ}>Do you have liability insurance and workers' compensation?</p>
+              <p className={styles.questionsA}>Preferred answer: Yes — here is our certificate of insurance.</p>
+            </li>
+            <li className={styles.questionsItem}>
+              <p className={styles.questionsQ}>Do you offer a warranty on labor and a separate warranty on materials?</p>
+              <p className={styles.questionsA}>Preferred answer: Yes — minimum 5 years on labor in writing, plus manufacturer warranty on materials.</p>
+            </li>
+            <li className={styles.questionsItem}>
+              <p className={styles.questionsQ}>Do you guarantee the final cost will not exceed the estimate?</p>
+              <p className={styles.questionsA}>Preferred answer: Yes — fixed price. Any changes require your written approval.</p>
+            </li>
+          </ol>
+          <a href="/questions-to-ask" className={styles.questionsBtn}>See all 11 questions →</a>
+        </div>
+      </section>
       <p className={styles.stripLabel}>Average project cost and timeline in Chicago today</p>
       <div className={styles.expertStrip}>
         <div className={styles.expertInner}>

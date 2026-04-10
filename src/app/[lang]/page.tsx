@@ -119,6 +119,36 @@ export default function LangHomePage({ params }: Props) {
         </div>
       </section>
 
+      {/* 5 QUESTIONS */}
+      <section className={styles.questions}>
+        <div className={styles.questionsInner}>
+          <h2 className={styles.questionsTitle}>5 preguntas que debe hacer antes de contratar</h2>
+          <ol className={styles.questionsList}>
+            <li className={styles.questionsItem}>
+              <p className={styles.questionsQ}>¿Todos sus trabajadores tienen una licencia activa de techador IDFPR de Illinois?</p>
+              <p className={styles.questionsA}>Respuesta preferida: Sí — y podemos mostrarle nuestro número de licencia ahora mismo.</p>
+            </li>
+            <li className={styles.questionsItem}>
+              <p className={styles.questionsQ}>¿Ustedes gestionan el permiso de construcción de Chicago e incluyen el costo en el contrato?</p>
+              <p className={styles.questionsA}>Respuesta preferida: Sí — nos encargamos del permiso y está incluido en el precio.</p>
+            </li>
+            <li className={styles.questionsItem}>
+              <p className={styles.questionsQ}>¿Tienen seguro de responsabilidad civil y compensación para trabajadores?</p>
+              <p className={styles.questionsA}>Respuesta preferida: Sí — aquí está nuestro certificado de seguro.</p>
+            </li>
+            <li className={styles.questionsItem}>
+              <p className={styles.questionsQ}>¿Ofrecen garantía sobre la mano de obra y una garantía separada sobre los materiales?</p>
+              <p className={styles.questionsA}>Respuesta preferida: Sí — mínimo 5 años sobre la mano de obra por escrito, más la garantía del fabricante sobre los materiales.</p>
+            </li>
+            <li className={styles.questionsItem}>
+              <p className={styles.questionsQ}>¿Garantizan que el costo final no superará el presupuesto?</p>
+              <p className={styles.questionsA}>Respuesta preferida: Sí — precio fijo. Cualquier cambio requiere su aprobación por escrito.</p>
+            </li>
+          </ol>
+          <a href="/es/questions-to-ask" className={styles.questionsBtn}>Ver las 11 preguntas →</a>
+        </div>
+      </section>
+
       <p className={styles.stripLabel}>Costo promedio y duración de un proyecto en Chicago hoy</p>
       <div className={styles.expertStrip}>
         <div className={styles.expertInner}>
