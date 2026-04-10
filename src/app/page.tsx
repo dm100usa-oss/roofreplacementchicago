@@ -96,7 +96,7 @@ export default function HomePage() {
           <div className={styles.heroContent}>
             <div className={styles.heroTextCol}>
               <div className={styles.heroLeft}>
-                <h1>Roof Replacement in Chicago: Expert Answers and Verified Contractors</h1>
+                <h1>Expert answers and verified contractors</h1>
                 <p className={styles.heroSubtitle}>Get the Best Price on Your New Roof Without Sacrificing Quality</p>
               </div>
               <div className={styles.heroRight}>
