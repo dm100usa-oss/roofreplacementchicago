@@ -36,11 +36,11 @@ export default function Header() {
       <header className={styles.header}>
         <div className={styles.inner}>
           <div className={styles.logoWrap}>
-            <div>
+            <div className={styles.logoText}>
               <Link href={isEs ? '/es' : '/'} className={styles.logo}>
                 Roof Replacement <span>Chicago</span>
               </Link>
-              <div style={{ fontSize: '13px', fontWeight: 400, color: '#9ca3af', marginTop: '4px' }}>
+              <div className={styles.subtitle}>
                 {isEs ? 'Orientación experta para propietarios' : 'Expert guidance for homeowners'}
               </div>
             </div>

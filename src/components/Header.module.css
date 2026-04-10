@@ -52,7 +52,7 @@
 .langBtnEng:hover { opacity: .85; }
 
 .logo {
-  font-size: 18px;
+  font-size: 21px;
   font-weight: 900;
   color: var(--text);
   letter-spacing: .01em;
@@ -60,6 +60,17 @@
   line-height: 1.2;
 }
 .logo span { color: var(--blue); }
+
+.logoText {
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 15px;
+  font-weight: 400;
+  color: #6b7280;
+  margin-top: 4px;
+}
 
 .desktopNav { display: none; align-items: center; gap: 1.25rem; }
 .navLink {
@@ -106,13 +117,14 @@
   .hamburger { display: none; }
   .mobileMenu { display: none !important; }
   .inner { padding: 1rem 1.5rem; }
-  .logo { font-size: 20px; }
+  .logo { font-size: 23px; }
+  .logoText { text-align: left; }
 }
 
 /* ═══ DESKTOP 1024px+ ═════════════════════════════════ */
 @media (min-width: 1024px) {
   .inner { padding: 1.125rem 2rem; }
-  .logo { font-size: 22px; }
+  .logo { font-size: 25px; }
   .navLink { font-size: 13px; }
   .desktopNav { gap: 1.25rem; }
 }
