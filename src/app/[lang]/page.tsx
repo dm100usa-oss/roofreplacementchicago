@@ -91,7 +91,7 @@ export default function LangHomePage({ params }: Props) {
             <div className={styles.heroTextCol}>
               <div className={styles.heroLeft}>
                 <h1>Respuestas de expertos y contratistas verificados en Chicago</h1>
-                <p className={styles.heroSubtitle}>Para obtener el mejor precio en su techo sin perder calidad</p>
+                <p className={styles.heroSubtitle}>Para obtener el mejor precio en su techo <span style={{whiteSpace:"nowrap"}}>sin perder calidad</span></p>
               </div>
               <div className={styles.heroRight}>
                 <p className={styles.heroBody}>Comience con una consulta gratuita. Compare sus opciones y tome su decisión con calma</p>
