@@ -59,8 +59,22 @@ const questions = [
 ];
 
 export default function QuestionsPage() {
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: questions
+      .filter(f => f.a !== '')
+      .map(f => ({
+        '@type': 'Question',
+        name: f.q,
+        acceptedAnswer: { '@type': 'Answer', text: f.a },
+      })),
+  }
+
   return (
-    <main className={styles.page}>
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <main className={styles.page}>
       <div className={styles.inner}>
         <Link href="/" className={styles.backLink}>← Back to main page</Link>
         <h1>12 questions to ask before you hire a roof replacement contractor in Chicago</h1>
@@ -75,5 +89,6 @@ export default function QuestionsPage() {
         <Link href="/" className={styles.backLink}>← Back to main page</Link>
       </div>
     </main>
+    </>
   );
 }
