@@ -32,8 +32,30 @@ export default function LangServicePage({ params }: Props) {
   const s = services.find(s => s.slug === params.slug)
   if (!s) notFound()
 
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: 'Inicio', item: 'https://www.roofreplacementchicago.com/es' },
+          { '@type': 'ListItem', position: 2, name: s.nameEs, item: `https://www.roofreplacementchicago.com/es/services/${s.slug}` },
+        ],
+      },
+      {
+        '@type': 'FAQPage',
+        mainEntity: s.faqEs.map(f => ({
+          '@type': 'Question',
+          name: f.q,
+          acceptedAnswer: { '@type': 'Answer', text: f.a },
+        })),
+      },
+    ],
+  }
+
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <div className={styles.wrap}>
         <div className={styles.inner}>
           <div className={nbStyles.breadcrumb}>
