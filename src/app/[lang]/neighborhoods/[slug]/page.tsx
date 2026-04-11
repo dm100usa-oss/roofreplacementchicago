@@ -33,8 +33,30 @@ export default function LangNeighborhoodPage({ params }: Props) {
   if (!n) notFound()
   const isEs = lang === 'es'
 
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: isEs ? 'Inicio' : 'Home', item: `https://www.roofreplacementchicago.com${isEs ? '/es' : ''}` },
+          { '@type': 'ListItem', position: 2, name: n.name, item: `https://www.roofreplacementchicago.com${isEs ? '/es' : ''}/neighborhoods/${n.slug}` },
+        ],
+      },
+      {
+        '@type': 'FAQPage',
+        mainEntity: (isEs ? n.faqEs : n.faq).map(f => ({
+          '@type': 'Question',
+          name: f.q,
+          acceptedAnswer: { '@type': 'Answer', text: f.a },
+        })),
+      },
+    ],
+  }
+
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <div className={styles.wrap}>
         <div className={styles.inner}>
           <div className={styles.breadcrumb}>
