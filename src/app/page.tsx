@@ -149,6 +149,10 @@ export default function HomePage() {
             <div className={styles.expertNum}>6</div>
             <div className={styles.expertLabel}>Verified contractors</div>
           </div>
+          <div className={`${styles.expertItem} ${styles.expertItemMobile}`}>
+            <div className={styles.expertNum}>Hail season</div>
+            <div className={styles.expertLabel}>May – Aug</div>
+          </div>
         </div>
       </div>
 

@@ -142,6 +142,10 @@ export default function LangHomePage({ params }: Props) {
             <div className={styles.expertNum}>6</div>
             <div className={styles.expertLabel}>Contratistas verificados</div>
           </div>
+          <div className={`${styles.expertItem} ${styles.expertItemMobile}`}>
+            <div className={styles.expertNum}>Temporada de granizo</div>
+            <div className={styles.expertLabel}>May – Aug</div>
+          </div>
         </div>
       </div>
 

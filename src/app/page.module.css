@@ -118,6 +118,7 @@
   color: var(--blue);
   margin-bottom: 1.5rem;
   letter-spacing: -.01em;
+  text-align: center;
 }
 .questionsList {
   list-style: none;
@@ -155,18 +156,20 @@
   line-height: 1.5;
 }
 .questionsBtn {
-  display: inline-block;
+  display: block;
+  width: 100%;
   background: #fff;
   color: var(--blue);
-  font-size: 15px;
-  font-weight: 700;
+  font-size: 17px;
+  font-weight: 900;
   text-decoration: none;
-  padding: 12px 28px;
-  border-radius: 10px;
+  padding: 17px;
+  border-radius: 14px;
   border: 1.5px solid var(--border);
   box-shadow: 0 4px 16px rgba(0,87,168,0.15);
   transition: box-shadow .15s;
   letter-spacing: .01em;
+  text-align: center;
 }
 .questionsBtn:hover {
   box-shadow: 0 6px 20px rgba(0,87,168,0.25);
@@ -190,7 +193,7 @@
 }
 .belowStrip {
   text-align: center;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 700;
   letter-spacing: .01em;
   color: var(--blue);
@@ -206,6 +209,7 @@
   padding: .75rem 0;
 }
 .expertItem { text-align: center; }
+.expertItemMobile { display: block; }
 .expertNum { font-size: 22px; font-weight: 900; color: #fff; letter-spacing: -.02em; }
 .expertLabel { font-size: 11px; color: #9CA3AF; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; margin-top: 3px; }
 
@@ -283,6 +287,7 @@ details[open] .faqQ::after { transform: rotate(45deg); }
   .expertNum { font-size: 22px; }
   .expertLabel { font-size: 11px; }
   .expertInner { grid-template-columns: repeat(5, 1fr); gap: .5rem; }
+  .expertItemMobile { display: none; }
   .whyGrid { grid-template-columns: 1fr 1fr; gap: 1rem; }
   .whyTitle { font-size: 22px; }
   .faqTitle { font-size: 22px; }
@@ -439,6 +444,10 @@ details[open] .faqQ::after { transform: rotate(45deg); }
 .materialMore { font-size: 12px; font-weight: 700; color: var(--blue); }
 .materialsAll { display: inline-block; font-size: 13px; font-weight: 700; color: var(--blue); text-decoration: none; }
 .materialsAll:hover { text-decoration: underline; }
+  .questionsList { column-count: 2; column-gap: 2rem; }
+  .questionsItem { break-inside: avoid; }
+  .questionsTitle { font-size: 22px; }
+  .questionsBtn { width: auto; display: block; max-width: 420px; margin: 0 auto; font-size: 18px; padding: 20px; }
 
 /* в•ђв•ђв•ђ LARGE DESKTOP 1280px+ в•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђ */
 @media (min-width: 1280px) {
