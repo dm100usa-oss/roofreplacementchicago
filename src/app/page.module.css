@@ -115,7 +115,7 @@
 .questionsTitle {
   font-size: 20px;
   font-weight: 900;
-  color: var(--text);
+  color: var(--blue);
   margin-bottom: 1.5rem;
   letter-spacing: -.01em;
 }
@@ -200,14 +200,14 @@
 .expertInner {
   max-width: var(--max-width);
   margin: 0 auto;
-  display: flex;
-  justify-content: space-around;
-  gap: .5rem;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem .5rem;
+  padding: .75rem 0;
 }
-.expertItem { text-align: center; flex: 1; min-width: 70px; }
-.expertNum { font-size: 13px; font-weight: 900; color: #fff; letter-spacing: -.02em; }
-.expertLabel { font-size: 10px; color: #9CA3AF; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; margin-top: 2px; }
+.expertItem { text-align: center; }
+.expertNum { font-size: 22px; font-weight: 900; color: #fff; letter-spacing: -.02em; }
+.expertLabel { font-size: 11px; color: #9CA3AF; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; margin-top: 3px; }
 
 /* в”Ђв”Ђв”Ђ WHY US в”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђ */
 .whyUs { padding: 1.75rem 1.25rem; background: var(--bg); }
@@ -282,6 +282,7 @@ details[open] .faqQ::after { transform: rotate(45deg); }
 
   .expertNum { font-size: 22px; }
   .expertLabel { font-size: 11px; }
+  .expertInner { grid-template-columns: repeat(5, 1fr); gap: .5rem; }
   .whyGrid { grid-template-columns: 1fr 1fr; gap: 1rem; }
   .whyTitle { font-size: 22px; }
   .faqTitle { font-size: 22px; }

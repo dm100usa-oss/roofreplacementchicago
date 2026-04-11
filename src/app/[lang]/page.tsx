@@ -119,10 +119,36 @@ export default function LangHomePage({ params }: Props) {
         </div>
       </section>
 
+      <p className={styles.stripLabel}>Costo promedio y duración de un proyecto en Chicago hoy</p>
+      <div className={styles.expertStrip}>
+        <div className={styles.expertInner}>
+          <div className={styles.expertItem}>
+            <div className={styles.expertNum}><DateDisplay /></div>
+            <div className={styles.expertLabel}>Actualizado</div>
+          </div>
+          <div className={styles.expertItem}>
+            <div className={styles.expertNum}>1-3 días</div>
+            <div className={styles.expertLabel}>Duración promedio del proyecto</div>
+          </div>
+          <div className={styles.expertItem}>
+            <div className={styles.expertNum}>$8K–$25K</div>
+            <div className={styles.expertLabel}>Costo típico en Chicago</div>
+          </div>
+          <div className={styles.expertItem}>
+            <div className={styles.expertNum}>Permiso</div>
+            <div className={styles.expertLabel}>Requerido por la Ciudad de Chicago</div>
+          </div>
+          <div className={styles.expertItem}>
+            <div className={styles.expertNum}>6</div>
+            <div className={styles.expertLabel}>Contratistas verificados</div>
+          </div>
+        </div>
+      </div>
+
       {/* 5 QUESTIONS */}
       <section className={styles.questions}>
         <div className={styles.questionsInner}>
-          <h2 className={styles.questionsTitle}>5 preguntas que debe hacer antes de contratar</h2>
+          <h2 className={styles.questionsTitle}>5 preguntas que puede hacerle al contratista cuando llame</h2>
           <ol className={styles.questionsList}>
             <li className={styles.questionsItem}>
               <p className={styles.questionsQ}>¿Todos sus trabajadores tienen una licencia activa de techador IDFPR de Illinois?</p>
@@ -149,31 +175,6 @@ export default function LangHomePage({ params }: Props) {
         </div>
       </section>
 
-      <p className={styles.stripLabel}>Costo promedio y duración de un proyecto en Chicago hoy</p>
-      <div className={styles.expertStrip}>
-        <div className={styles.expertInner}>
-          <div className={styles.expertItem}>
-            <div className={styles.expertNum}><DateDisplay /></div>
-            <div className={styles.expertLabel}>Actualizado</div>
-          </div>
-          <div className={styles.expertItem}>
-            <div className={styles.expertNum}>1-3 días</div>
-            <div className={styles.expertLabel}>Duración promedio del proyecto</div>
-          </div>
-          <div className={styles.expertItem}>
-            <div className={styles.expertNum}>$8K–$25K</div>
-            <div className={styles.expertLabel}>Costo típico en Chicago</div>
-          </div>
-          <div className={styles.expertItem}>
-            <div className={styles.expertNum}>Permiso</div>
-            <div className={styles.expertLabel}>Requerido por la Ciudad de Chicago</div>
-          </div>
-          <div className={styles.expertItem}>
-            <div className={styles.expertNum}>6</div>
-            <div className={styles.expertLabel}>Contratistas verificados</div>
-          </div>
-        </div>
-      </div>
       <p className={styles.belowStrip}>Este recurso fue creado para ayudarle a elegir la opción más conveniente y confiable para el reemplazo de su techo</p>
 
       <section className={styles.whyUs}>
