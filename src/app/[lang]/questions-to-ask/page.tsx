@@ -59,8 +59,22 @@ const questions = [
 ];
 
 export default function QuestionsPageEs() {
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: questions
+      .filter(f => f.a !== '')
+      .map(f => ({
+        '@type': 'Question',
+        name: f.q,
+        acceptedAnswer: { '@type': 'Answer', text: f.a },
+      })),
+  }
+
   return (
-    <main className={styles.page}>
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <main className={styles.page}>
       <div className={styles.inner}>
         <Link href="/es" className={styles.backLink}>← Volver a la página principal</Link>
         <h1>12 preguntas que debe hacer antes de contratar un techador en Chicago</h1>
@@ -75,5 +89,6 @@ export default function QuestionsPageEs() {
         <Link href="/es" className={styles.backLink}>← Volver a la página principal</Link>
       </div>
     </main>
+    </>
   );
 }
