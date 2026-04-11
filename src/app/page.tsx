@@ -159,7 +159,7 @@ export default function HomePage() {
       {/* 5 QUESTIONS */}
       <section className={styles.questions}>
         <div className={styles.questionsInner}>
-          <h2 className={styles.questionsTitle}>5 questions you can ask the contractor when you call</h2>
+          <h2 className={styles.questionsTitle}>6 questions you can ask the contractor when you call</h2>
           <ol className={styles.questionsList}>
             <li className={styles.questionsItem}>
               <p className={styles.questionsQ}>Do all your workers hold an active Illinois IDFPR roofing license?</p>
@@ -181,8 +181,12 @@ export default function HomePage() {
               <p className={styles.questionsQ}>Do you guarantee the final cost will not exceed the estimate?</p>
               <p className={styles.questionsA}>Preferred answer: Yes — fixed price. Any changes require your written approval.</p>
             </li>
+            <li className={styles.questionsItem}>
+              <p className={styles.questionsQ}>Does the estimate include debris removal, tear-off, and nail cleanup?</p>
+              <p className={styles.questionsA}>Preferred answer: Yes — including magnetic nail sweep of the entire property.</p>
+            </li>
           </ol>
-          <a href="/questions-to-ask" className={styles.questionsBtn}>See all 11 questions →</a>
+          <a href="/questions-to-ask" className={styles.questionsBtn}>See all 12 questions →</a>
         </div>
       </section>
 

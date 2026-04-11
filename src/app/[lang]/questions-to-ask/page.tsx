@@ -3,7 +3,7 @@ import Link from 'next/link';
 import styles from '../../static-page.module.css';
 
 export const metadata: Metadata = {
-  title: '11 preguntas que debe hacer antes de contratar un techador en Chicago',
+  title: '12 preguntas que debe hacer antes de contratar un techador en Chicago',
   description: 'Antes de firmar cualquier contrato, haga estas 9 preguntas a su contratista de techos en Chicago — licencia, permiso, seguro, garantía y más.',
 };
 
@@ -52,6 +52,10 @@ const questions = [
     q: '¿Su equipo es local de Chicago — o traen brigadas de otros estados?',
     a: 'Respuesta preferida: Somos una empresa local de Chicago. Nuestro equipo vive y trabaja aquí todo el año.',
   },
+  {
+    q: 'Otras preguntas que desea hacerle al contratista.',
+    a: '',
+  },
 ];
 
 export default function QuestionsPageEs() {
@@ -59,7 +63,7 @@ export default function QuestionsPageEs() {
     <main className={styles.page}>
       <div className={styles.inner}>
         <Link href="/es" className={styles.backLink}>← Volver a la página principal</Link>
-        <h1>11 preguntas que debe hacer antes de contratar un techador en Chicago</h1>
+        <h1>12 preguntas que debe hacer antes de contratar un techador en Chicago</h1>
         <ol className={styles.questionsList}>
           {questions.map((item, i) => (
             <li key={i} className={styles.questionsItem}>

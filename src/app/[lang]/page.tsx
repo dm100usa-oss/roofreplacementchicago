@@ -152,7 +152,7 @@ export default function LangHomePage({ params }: Props) {
       {/* 5 QUESTIONS */}
       <section className={styles.questions}>
         <div className={styles.questionsInner}>
-          <h2 className={styles.questionsTitle}>5 preguntas que puede hacerle al contratista cuando llame</h2>
+          <h2 className={styles.questionsTitle}>6 preguntas que puede hacerle al contratista cuando llame</h2>
           <ol className={styles.questionsList}>
             <li className={styles.questionsItem}>
               <p className={styles.questionsQ}>¿Todos sus trabajadores tienen una licencia activa de techador IDFPR de Illinois?</p>
@@ -174,8 +174,12 @@ export default function LangHomePage({ params }: Props) {
               <p className={styles.questionsQ}>¿Garantizan que el costo final no superará el presupuesto?</p>
               <p className={styles.questionsA}>Respuesta preferida: Sí — precio fijo. Cualquier cambio requiere su aprobación por escrito.</p>
             </li>
+            <li className={styles.questionsItem}>
+              <p className={styles.questionsQ}>¿El presupuesto incluye la remoción de escombros, el desmontaje y la limpieza de clavos?</p>
+              <p className={styles.questionsA}>Respuesta preferida: Sí — incluyendo el barrido magnético de clavos en toda la propiedad.</p>
+            </li>
           </ol>
-          <a href="/es/questions-to-ask" className={styles.questionsBtn}>Ver las 11 preguntas →</a>
+          <a href="/es/questions-to-ask" className={styles.questionsBtn}>Ver las 12 preguntas →</a>
         </div>
       </section>
 

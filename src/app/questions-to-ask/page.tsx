@@ -3,7 +3,7 @@ import Link from 'next/link';
 import styles from '../static-page.module.css';
 
 export const metadata: Metadata = {
-  title: '11 Questions to Ask Before Hiring a Roof Replacement Contractor in Chicago',
+  title: '12 Questions to Ask Before Hiring a Roof Replacement Contractor in Chicago',
   description: 'Before signing any contract, ask your Chicago roofing contractor these 9 questions — license, permit, insurance, warranty, and more.',
 };
 
@@ -52,6 +52,10 @@ const questions = [
     q: 'Is your crew local to Chicago — or do you bring in out-of-state teams?',
     a: 'Preferred answer: We are a local Chicago company. Our crew lives and works here year-round.',
   },
+  {
+    q: 'Other questions you want to ask the contractor.',
+    a: '',
+  },
 ];
 
 export default function QuestionsPage() {
@@ -59,7 +63,7 @@ export default function QuestionsPage() {
     <main className={styles.page}>
       <div className={styles.inner}>
         <Link href="/" className={styles.backLink}>← Back to main page</Link>
-        <h1>11 questions to ask before you hire a roof replacement contractor in Chicago</h1>
+        <h1>12 questions to ask before you hire a roof replacement contractor in Chicago</h1>
         <ol className={styles.questionsList}>
           {questions.map((item, i) => (
             <li key={i} className={styles.questionsItem}>

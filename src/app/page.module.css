@@ -447,7 +447,8 @@ details[open] .faqQ::after { transform: rotate(45deg); }
   .questionsList { column-count: 2; column-gap: 2rem; }
   .questionsItem { break-inside: avoid; }
   .questionsTitle { font-size: 22px; }
-  .questionsBtn { width: auto; display: block; max-width: 420px; margin: 0 auto; font-size: 18px; padding: 20px; }
+  .questionsBtn { max-width: 420px; margin: 0 auto; font-size: 18px; padding: 20px; }
+}
 
 /* в•ђв•ђв•ђ LARGE DESKTOP 1280px+ в•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђ */
 @media (min-width: 1280px) {
